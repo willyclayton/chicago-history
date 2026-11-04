@@ -18,7 +18,7 @@ const KINDS = new Set<MediaKind>([
   "map",
   "today",
 ]);
-const FIELDS = new Set(["source", "ref", "year", "approx", "caption", "kind", "sameView", "note"]);
+const FIELDS = new Set(["source", "ref", "year", "approx", "caption", "kind", "sensitive", "sameView", "note"]);
 const CURRENT_YEAR = new Date().getFullYear();
 const COMMONS_REF = /^File:[^/#?[\]{}|<>]+\.(jpe?g|png|gif|tiff?|webp|svg)$/i;
 const LOC_REF = /^https:\/\/www\.loc\.gov\/(item|pictures\/item|resource)\/[A-Za-z0-9.\-_]+\/$/;

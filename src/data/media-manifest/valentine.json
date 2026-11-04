@@ -5,6 +5,7 @@
     "year": 1929,
     "caption": "Police and onlookers over the bodies of Moran's North Side gang on the garage floor at 2122 N. Clark St.",
     "kind": "event",
+    "sensitive": true,
     "note": "Commons; Chicago Tribune (Tower bureau) press print via RR Auction, marked PD-US. Exact framing not seen."
   },
   {
@@ -13,6 +14,7 @@
     "year": 1929,
     "caption": "Bodies of the seven victims lie along the brick wall of the S.M.C. Cartage garage.",
     "kind": "event",
+    "sensitive": true,
     "note": "LOC NYWT&S collection, LC-USZ62-123251; UPI print of a 1929 photo (published 1929, so PD-US). Search showed URL without trailing slash."
   },
   {
@@ -21,6 +23,7 @@
     "year": 1929,
     "caption": "A press photographer's view from above of the murder scene inside the garage, February 1929.",
     "kind": "newspaper",
+    "sensitive": true,
     "note": "Commons; credited to Chicago Herald and Examiner, 15 Feb 1929, PD."
   },
   {
