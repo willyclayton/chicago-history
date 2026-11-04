@@ -6,7 +6,6 @@ export function MarkerList() {
   const year = useStore((s) => s.year);
   const cats = useStore((s) => s.cats);
   const query = useStore((s) => s.query);
-  const open = useStore((s) => s.cardOpen);
   const shown = ORDERED.filter((s) => s.year <= year && matches(s, { cats, query }));
   return (
     <ul className="mklist" aria-label="Sites on the map">
@@ -17,7 +16,7 @@ export function MarkerList() {
             aria-label={`${s.title}, ${s.date}`}
             onClick={() => {
               actions.stop();
-              actions.select(s.id, { pan: true, open });
+              actions.select(s.id, { pan: true });
             }}
           >
             {s.title}, {s.date}

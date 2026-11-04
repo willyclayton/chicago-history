@@ -11,6 +11,9 @@ export interface CameraRequest {
   seq: number;
 }
 
+export type Detent = "peek" | "half" | "full";
+export type ThemeMode = "auto" | "light" | "dark";
+
 export interface State {
   year: number;
   selectedId: string | null;
@@ -20,10 +23,15 @@ export interface State {
   /** Normalized query used for matching. */
   query: string;
   playing: boolean;
-  /** Phone bottom sheet: expanded to show the story and Street View. */
-  cardOpen: boolean;
-  /** Card dismissed with ✕ or Escape. */
-  cardHidden: boolean;
+  /** Playback speed multiplier. */
+  speed: 1 | 2 | 4;
+  /** Phone bottom sheet height. */
+  sheet: Detent;
+  /** Site previewed by hovering a marker, list row or timeline tick. */
+  hoverId: string | null;
+  helpOpen: boolean;
+  theme: ThemeMode;
+  toast: { text: string; seq: number } | null;
   showShoreline: boolean;
   camera: CameraRequest | null;
 }
@@ -37,8 +45,12 @@ let state: State = {
   queryRaw: "",
   query: "",
   playing: false,
-  cardOpen: false,
-  cardHidden: false,
+  speed: 1,
+  sheet: "peek",
+  hoverId: null,
+  helpOpen: false,
+  theme: "auto",
+  toast: null,
   showShoreline: true,
   camera: null,
 };
@@ -69,8 +81,8 @@ export interface SelectOptions {
   pan?: boolean;
   /** Never move the map. */
   noPan?: boolean;
-  /** Expand the phone sheet. */
-  open?: boolean;
+  /** Phone sheet height to show the story at (default: keep it, at least "peek"). */
+  sheet?: Detent;
   /** Set the slider to the site's year even if it is already visible. */
   setYear?: boolean;
 }
@@ -83,7 +95,8 @@ export const actions = {
   select(id: string, o: SelectOptions = {}) {
     const site = SITE_BY_ID[id];
     if (!site) return;
-    const patch: Partial<State> = { selectedId: id, cardHidden: false, cardOpen: !!o.open };
+    const patch: Partial<State> = { selectedId: id };
+    if (o.sheet) patch.sheet = o.sheet;
     if (!state.cats.has(site.category)) patch.cats = new Set([...state.cats, site.category]);
     if (o.setYear || site.year > state.year) patch.year = site.year;
     if (!o.noPan) patch.camera = { id, force: !!o.pan, seq: ++cameraSeq };
@@ -101,14 +114,37 @@ export const actions = {
 
   step(dir: 1 | -1) {
     const t = stepTarget(filtered(), state.selectedId, state.year, dir);
-    if (t) actions.select(t.id, { pan: true, setYear: true, open: state.cardOpen });
+    if (t) actions.select(t.id, { pan: true, setYear: true });
   },
 
-  setCardOpen(open: boolean) {
-    set({ cardOpen: open });
+  /** Back to the list. */
+  clear() {
+    if (state.selectedId == null) return;
+    set({ selectedId: null });
+    writeHash(null);
   },
-  hideCard() {
-    set({ cardHidden: true });
+  random() {
+    const pool = filtered().filter((s) => s.id !== state.selectedId);
+    const t = pool[Math.floor(Math.random() * pool.length)];
+    if (t) actions.select(t.id, { pan: true, setYear: true, sheet: state.sheet === "full" ? "full" : "half" });
+  },
+  setSheet(sheet: Detent) {
+    set({ sheet });
+  },
+  hover(id: string | null) {
+    if (state.hoverId !== id) set({ hoverId: id });
+  },
+  setHelp(helpOpen: boolean) {
+    set({ helpOpen });
+  },
+  setTheme(theme: ThemeMode) {
+    set({ theme });
+  },
+  setSpeed(speed: 1 | 2 | 4) {
+    set({ speed });
+  },
+  toast(text: string) {
+    set({ toast: { text, seq: (state.toast?.seq ?? 0) + 1 } });
   },
   setShoreline(v: boolean) {
     set({ showShoreline: v });
@@ -125,10 +161,10 @@ export const actions = {
       actions.setYear(y);
       const hits = ORDERED.filter((s) => s.year === y && matches(s));
       const hit = hits[hits.length - 1];
-      if (hit) actions.select(hit.id, { open: state.cardOpen });
-      playTimer = setTimeout(tick, hit ? PLAY_PAUSE_MS : PLAY_STEP_MS);
+      if (hit) actions.select(hit.id);
+      playTimer = setTimeout(tick, (hit ? PLAY_PAUSE_MS : PLAY_STEP_MS) / state.speed);
     };
-    playTimer = setTimeout(tick, PLAY_STEP_MS);
+    playTimer = setTimeout(tick, PLAY_STEP_MS / state.speed);
   },
   stop() {
     if (playTimer) clearTimeout(playTimer);
@@ -155,8 +191,9 @@ export function __reset() {
     cats: new Set(ALL_CATS),
     queryRaw: "",
     query: "",
-    cardOpen: false,
-    cardHidden: false,
+    sheet: "peek",
+    hoverId: null,
+    speed: 1,
     camera: null,
   };
 }

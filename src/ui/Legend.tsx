@@ -5,7 +5,7 @@ import { CATEGORIES } from "../data";
 export function Legend() {
   const shore = useStore((s) => s.showShoreline);
   return (
-    <details className="legend" id="legend">
+    <details className="legend glass" id="legend">
       <summary>Map key</summary>
       <div className="items">
         {CATEGORIES.map((c) => (

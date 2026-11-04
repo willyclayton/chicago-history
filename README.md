@@ -4,6 +4,15 @@ Chicago history on a real map of the city. Drag the timeline from 1780 to today,
 
 Built from [`docs/SPEC.md`](docs/SPEC.md) (v1 scope) and the reference [`docs/prototype.html`](docs/prototype.html).
 
+## Using it
+
+- **Map-first layout.** One panel switches between the site list and a site's story, with a back button. On phones it's a bottom sheet: drag it, flick it, or tap the handle to move between peek, half and full.
+- **Timeline dock.** Play (with 1×/2×/4× speed), drag the year, click an era band to jump to it, hover a tick to preview a site, and click one to open it.
+- **Linked previews.** Hovering a list row, a timeline tick or a star highlights the same site everywhere and shows a tooltip on the map.
+- **Story.** Swipe the header left or right to step through time, shuffle to a random site, share the link, and open Street View. Your place in the list is kept when you come back.
+- **Keyboard:** `/` search (Enter opens the top result, ↓ moves into the list), `Space` play/pause, `←` `→` previous/next site, `R` random, `T` light/dark, `Esc` back, `?` shortcuts.
+- A one-time tip points new visitors to Play (skip it with `?nocoach`). The light/dark choice is remembered.
+
 ## Run it
 
 ```sh
@@ -26,7 +35,7 @@ Copy `.env.example` to `.env` and set `VITE_GOOGLE_MAPS_EMBED_KEY` to embed Stre
 src/
   data/        sites.json, categories.json, eras.json, census.json, overlays.geojson (SPEC Appendix B)
   map/         MapView.tsx (MapLibre layers, fly-to, pulse, fades), starIcon.ts (SDF flag star), styles/basemap.ts
-  ui/          Timeline, Chips, SiteList, StoryCard, Legend, Counter, MarkerList (keyboard access to markers)
+  ui/          Panel (sidebar / bottom sheet), SiteList, StoryCard, Timeline dock, Chips, Legend, Overlays (help, toast), MarkerList
   state/       store.ts: year, selection, categories, query, playback
   lib/         filters.ts, census.ts, eras.ts, hash.ts, links.ts
   theme.css    tokens and layout ported from the prototype

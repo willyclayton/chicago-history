@@ -6,7 +6,9 @@ import { burnVisible, isRecent } from "../lib/filters";
 import { actions, getState, matches, subscribe, type State } from "../state/store";
 import { basemapLayers, basemapStyle, FONT_BOLD, type MapTokens } from "./styles/basemap";
 import { hatchPattern, starSdf, STAR_PIXEL_RATIO } from "./starIcon";
-import { isWide, prefersReducedMotion } from "../ui/media";
+import { isTouch, isWide, prefersReducedMotion } from "../ui/media";
+import { sheetHeight } from "../ui/sheet";
+import { FitIcon } from "../ui/Icons";
 
 export const START_CENTER: [number, number] = [-87.638, 41.887];
 export const START_ZOOM = 13;
@@ -56,23 +58,36 @@ const ALL_BOUNDS: LngLatBoundsLike = [
 
 const idIn = (ids: Iterable<string>): ExpressionSpecification => ["in", ["get", "id"], ["literal", [...ids]]];
 
-/** Space the story card covers, so fly-to and "in view" checks can avoid it. */
-function cardBox(): { right: number; bottom: number } {
-  const c = document.getElementById("card");
-  if (!c || c.offsetParent === null) return { right: 0, bottom: 0 };
-  return isWide() ? { right: c.offsetWidth + 20, bottom: 0 } : { right: 0, bottom: c.offsetHeight + 16 };
-}
-
+/**
+ * Map padding that keeps pins clear of the floating panel, the timeline dock and (on
+ * phones) the bottom sheet at the height it is heading to.
+ */
 function padding() {
-  const cb = cardBox();
-  return { top: 50, left: 40, right: 40 + cb.right, bottom: 30 + cb.bottom };
+  const app = document.querySelector(".app")?.getBoundingClientRect();
+  const dock = document.querySelector(".dock")?.getBoundingClientRect();
+  const panel = document.getElementById("panel")?.getBoundingClientRect();
+  if (!app) return { top: 40, left: 40, right: 40, bottom: 40 };
+  if (isWide()) {
+    return {
+      top: 40,
+      left: (panel ? panel.right - app.left : 0) + 40,
+      right: 70,
+      bottom: (dock ? app.bottom - dock.top : 0) + 40,
+    };
+  }
+  return {
+    top: (dock ? dock.bottom - app.top : 0) + 36,
+    left: 30,
+    right: 56,
+    bottom: sheetHeight(getState().sheet) + 30,
+  };
 }
 
 function inView(map: MlMap, lng: number, lat: number) {
   const p = map.project([lng, lat]);
   const el = map.getContainer();
-  const cb = cardBox();
-  return p.x > 40 && p.x < el.clientWidth - cb.right - 40 && p.y > 50 && p.y < el.clientHeight - cb.bottom - 24;
+  const pad = padding();
+  return p.x > pad.left && p.x < el.clientWidth - pad.right && p.y > pad.top && p.y < el.clientHeight - pad.bottom;
 }
 
 /** Which sites are drawn at a given state. */
@@ -84,6 +99,7 @@ function visibleIds(s: State) {
 
 export function MapView() {
   const el = useRef<HTMLDivElement>(null);
+  const tipRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MlMap | null>(null);
   const [failed, setFailed] = useState(false);
 
@@ -127,7 +143,8 @@ export function MapView() {
     mapRef.current = map;
     (window as unknown as { __map?: MlMap }).__map = map;
 
-    if (isWide()) map.jumpTo({ center: START_CENTER, zoom: START_ZOOM, padding: { left: 0, top: 0, bottom: 0, right: 380 } });
+    // frame downtown in the space the panel and dock leave free
+    map.jumpTo({ center: START_CENTER, zoom: isWide() ? START_ZOOM : START_ZOOM - 0.6, padding: padding() });
 
     map.on("error", (e) => {
       const msg = String((e as { error?: Error }).error?.message ?? "");
@@ -207,6 +224,30 @@ export function MapView() {
       pulseRaf = requestAnimationFrame(loop);
     };
 
+    // hover tooltip, anchored to the marker
+    const placeTip = () => {
+      const tip = tipRef.current;
+      if (!tip) return;
+      const s = getState();
+      const site = s.hoverId ? SITE_BY_ID[s.hoverId] : null;
+      if (!site || site.year > s.year || !matches(site, s) || (isTouch() && s.hoverId === s.selectedId)) {
+        tip.classList.remove("on");
+        return;
+      }
+      const p = map.project([site.lng, site.lat]);
+      tip.style.left = `${p.x}px`;
+      tip.style.top = `${p.y}px`;
+      tip.style.setProperty("--cc", `var(--c-${site.category})`);
+      tip.innerHTML = "";
+      const b = document.createElement("b");
+      b.textContent = String(site.year);
+      const small = document.createElement("small");
+      small.textContent = site.id === s.selectedId ? site.date : "Click to read the story";
+      tip.append(b, site.title, small);
+      tip.classList.add("on");
+    };
+    map.on("move", placeTip);
+
     let last: State | null = null;
     const sync = () => {
       if (!ready) return;
@@ -232,6 +273,11 @@ export function MapView() {
       if (!last || last.selectedId !== s.selectedId) {
         const sel = s.selectedId ?? "";
         map.setPaintProperty("site-flagring", "circle-radius", ["case", ["==", ["get", "id"], sel], 15, 13]);
+      }
+      if (!last || last.hoverId !== s.hoverId || last.year !== s.year || last.cats !== s.cats || last.query !== s.query) {
+        const h = s.hoverId && s.hoverId !== s.selectedId && visibleIds(s).has(s.hoverId) ? s.hoverId : "";
+        map.setFilter("site-hover", ["==", ["get", "id"], h]);
+        placeTip();
       }
       if (!last || last.showShoreline !== s.showShoreline)
         map.setLayoutProperty("shore-1830s", "visibility", s.showShoreline ? "visible" : "none");
@@ -290,6 +336,20 @@ export function MapView() {
       });
 
       const fade: ExpressionSpecification = ["coalesce", ["feature-state", "o"], 0];
+      map.addLayer({
+        id: "site-hover",
+        type: "circle",
+        source: "sites",
+        filter: ["==", ["get", "id"], ""],
+        paint: {
+          "circle-radius": 16,
+          "circle-color": categoryColor(),
+          "circle-opacity": 0.22,
+          "circle-stroke-color": categoryColor(),
+          "circle-stroke-width": 1.5,
+          "circle-stroke-opacity": 0.7,
+        },
+      });
       map.addLayer({
         id: "site-halo",
         type: "circle",
@@ -388,10 +448,18 @@ export function MapView() {
           const id = e.features?.[0]?.properties?.id as string | undefined;
           if (!id || (opacity.get(id) ?? 0) < 0.5) return;
           actions.stop();
-          actions.select(id, { open: getState().cardOpen });
+          const sheet = getState().sheet;
+          actions.select(id, { sheet: sheet === "full" ? "half" : sheet });
         });
-        map.on("mouseenter", layer, () => (map.getCanvas().style.cursor = "pointer"));
-        map.on("mouseleave", layer, () => (map.getCanvas().style.cursor = ""));
+        map.on("mousemove", layer, (e) => {
+          const id = e.features?.[0]?.properties?.id as string | undefined;
+          map.getCanvas().style.cursor = "pointer";
+          if (id && (opacity.get(id) ?? 0) >= 0.5) actions.hover(id);
+        });
+        map.on("mouseleave", layer, () => {
+          map.getCanvas().style.cursor = "";
+          actions.hover(null);
+        });
       }
     };
 
@@ -409,6 +477,8 @@ export function MapView() {
       map.setPaintProperty("site-halo", "circle-color", css("--red-soft"));
       map.setPaintProperty("site-halo", "circle-stroke-color", t.ink);
       map.setPaintProperty("site-pulse", "circle-stroke-color", cc);
+      map.setPaintProperty("site-hover", "circle-color", cc);
+      map.setPaintProperty("site-hover", "circle-stroke-color", cc);
       map.setPaintProperty("site-flagring", "circle-stroke-color", red);
       for (const layer of ["sites", "sites-sel"]) {
         map.setPaintProperty(layer, "icon-color", cc);
@@ -456,19 +526,22 @@ export function MapView() {
     <>
       <div id="map" ref={el} role="region" aria-label="Map of Chicago with historic sites" />
       {failed && (
-        <div className="mapfail" role="status">
+        <div className="mapfail glass" role="status">
           The street map couldn't load. Sites, the timeline and stories still work.
         </div>
       )}
-      <div className="zoom">
-        <button type="button" aria-label="Zoom in" onClick={() => zoom(1)}>
-          +
-        </button>
-        <button type="button" aria-label="Zoom out" onClick={() => zoom(-1)}>
-          −
-        </button>
-        <button type="button" aria-label="Show the whole city" title="Whole city" onClick={fitAll}>
-          ⤢
+      <div className="maptip" ref={tipRef} aria-hidden="true" />
+      <div className="mapctl">
+        <div className="grp">
+          <button className="iconbtn" type="button" aria-label="Zoom in" title="Zoom in" onClick={() => zoom(1)}>
+            +
+          </button>
+          <button className="iconbtn" type="button" aria-label="Zoom out" title="Zoom out" onClick={() => zoom(-1)}>
+            −
+          </button>
+        </div>
+        <button className="iconbtn" type="button" aria-label="Show the whole city" title="Whole city" onClick={fitAll}>
+          <FitIcon />
         </button>
       </div>
     </>
