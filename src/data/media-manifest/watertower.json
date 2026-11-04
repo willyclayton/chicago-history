@@ -1,0 +1,62 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2007660855/",
+    "year": 1871,
+    "caption": "The burned North Side five days after the fire, photographed from the top of the Water Works tower.",
+    "kind": "aftermath",
+    "note": "LOC; William Shaw albumen panorama 'The great conflagration of Chicago! October 8th and 9th, 1871' (also pan.6a04099)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/stereo.1s12373/",
+    "year": 1930,
+    "approx": true,
+    "caption": "The Water Tower at Chicago and Michigan avenues, already dwarfed by its neighbors around 1930.",
+    "kind": "place",
+    "note": "LOC; Keystone View Co. stereograph ca. 1930, cited in LOC 'Picture This' blog as hdl.loc.gov/loc.pnp/stereo.1s12373 (resource URL built from that id)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0097/",
+    "year": 1933,
+    "approx": true,
+    "caption": "Historic American Buildings Survey photo of the limestone tower and its standpipe shaft.",
+    "kind": "place",
+    "note": "LOC HABS IL-1041 (ILL,16-CHIG,43); survey record documented 1933. A multi-image HABS record: pick the exterior photo."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago (ILL) Near North Side, Magnificient Mile Chigaco Water Tower, 1869. (4824487135).jpg",
+    "year": 2010,
+    "caption": "The 1869 Water Tower on the Magnificent Mile, framed by high-rises.",
+    "kind": "today",
+    "note": "Commons Flickr import (vincent desjardins, 2010 upload; '1869' in the title is the build year)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Old Chicago Water Tower, Chicago, Illinois (11004222255).jpg",
+    "year": 2013,
+    "approx": true,
+    "caption": "The castle-like tower at Michigan and Chicago avenues today.",
+    "kind": "today",
+    "note": "Commons Flickr import (Ken Lund series, ~2013)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Water Tower from John Hancock Center Observatory, Chicago, Illinois (11004489633).jpg",
+    "year": 2013,
+    "caption": "Looking down on the little Water Tower from the Hancock observatory.",
+    "kind": "today",
+    "note": "Title seen in the listing of Commons Category:Chicago Water Tower; no File: URL shown. Ken Lund 2013 series."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Water Tower in Early Spring.jpg",
+    "year": 2015,
+    "approx": true,
+    "caption": "The Water Tower in early spring, with the shopping towers of Michigan Avenue behind it.",
+    "kind": "today",
+    "note": "Commons; date not seen in results."
+  }
+]

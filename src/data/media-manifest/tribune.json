@@ -1,0 +1,77 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017645480/",
+    "year": 1922,
+    "caption": "One of the 260 entries in the Tribune's 1922 contest for 'the most beautiful office building in the world.'",
+    "kind": "construction",
+    "note": "LOC '[Tribune Tower competition entry. Rendering]' (Loos's Doric column or Saarinen's second-prize design; which one not confirmed). Re-caption when seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/91783898/",
+    "year": 1925,
+    "caption": "The brand-new Tribune Tower beside the Wrigley Building, seen from the Clark Street bridge.",
+    "kind": "place",
+    "note": "LOC; Kaufmann & Fabry Co., Chicago, 1925."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018649313/",
+    "year": 1928,
+    "caption": "Tribune Tower and the Wrigley Building across Michigan Avenue in 1928.",
+    "kind": "place",
+    "sameView": "tribune-wrigley-michigan-ave",
+    "note": "LOC stereograph, 1928. Pairing with the 2010 photo is approximate (both show the two towers together)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/95508791/",
+    "year": 1931,
+    "approx": true,
+    "caption": "The Gothic crown of Tribune Tower, looking northeast, around 1931.",
+    "kind": "place",
+    "note": "LOC '[Tribune tower building, looking northeast, Chicago, Illinois]', ca. 1931."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/ppmsca.38413/",
+    "year": 1932,
+    "caption": "Downtown lit up at night in November 1932, photographed from the top of Tribune Tower.",
+    "kind": "place",
+    "note": "LOC NYWT&S collection."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2019630593/",
+    "year": 1947,
+    "caption": "Looking north up Michigan Avenue past the Wrigley Building and Tribune Tower in 1947.",
+    "kind": "place",
+    "note": "LOC 'View north on Michigan Avenue', 1947. Rights not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2020722068/",
+    "year": 2007,
+    "caption": "Tribune Tower in 2007, while it was still the newspaper's headquarters.",
+    "kind": "place",
+    "note": "LOC Carol M. Highsmith (public domain), 2007."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago - Wrigley Building and Tribune Tower (4278311331).jpg",
+    "year": 2010,
+    "caption": "The Wrigley Building and Tribune Tower facing each other across Michigan Avenue today.",
+    "kind": "today",
+    "sameView": "tribune-wrigley-michigan-ave",
+    "note": "Commons Flickr import (~2010)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Tribune Tower, Michigan Avenue, Streeterville, Chicago, IL (52862378122).jpg",
+    "year": 2023,
+    "caption": "Tribune Tower in 2023, now converted to condominiums.",
+    "kind": "today",
+    "note": "Commons Flickr import (~2023)."
+  }
+]

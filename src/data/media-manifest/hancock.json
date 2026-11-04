@@ -1,0 +1,69 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016653205/",
+    "year": 1968,
+    "approx": true,
+    "caption": "Workers and equipment on the Hancock construction site as the tapering tower climbs.",
+    "kind": "construction",
+    "note": "LOC '[John Hancock Center, Chicago, Illinois]'; likely the LOOK collection construction-site set (Archie Lieberman, ~80 slides). Content not confirmed."
+  },
+  {
+    "source": "commons",
+    "ref": "File:19680817 11 Chestnut St. @ LaSalle St. (28223845013).jpg",
+    "year": 1968,
+    "caption": "August 1968: the unfinished Hancock seen down Chestnut Street, months after topping out.",
+    "kind": "construction",
+    "note": "Commons Flickr import (David Wilson, Oak Park), dated 17 Aug 1968; described as a construction view."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/ppmsca.54501/",
+    "year": 1969,
+    "caption": "The just-finished Hancock Center framed by the 1869 Water Tower, a century between them.",
+    "kind": "place",
+    "note": "LOC; Hedrich-Blessing 1969, listed in LOC 'Free to Use: Skyscrapers'. Check rights in CI (Hedrich-Blessing images at CHM are restricted)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/ppmsca.71337/",
+    "year": 1970,
+    "approx": true,
+    "caption": "The Hancock lit up at night, its X-braced frame glowing over the Near North Side.",
+    "kind": "place",
+    "note": "LOC Balthazar Korab, night view; label says 1970, catalog says 1994. No known restrictions."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2021636629/",
+    "year": 1980,
+    "approx": true,
+    "caption": "Looking straight up a corner of the Hancock's black steel and diagonal braces.",
+    "kind": "place",
+    "note": "LOC Balthazar Korab, 'View from below at corner', dated 1975-1989."
+  },
+  {
+    "source": "commons",
+    "ref": "File:John Hancock Center, Chicago, Illinois (11004322146).jpg",
+    "year": 2013,
+    "caption": "The 100-story tower on Michigan Avenue in 2013.",
+    "kind": "today",
+    "note": "Commons; Ken Lund 2013."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2020721835/",
+    "year": 2017,
+    "caption": "Visitors lean out over the city in the glass observation deck high on the tower.",
+    "kind": "today",
+    "note": "LOC Carol M. Highsmith, 2017 (public domain). Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Sunken plaza in front of the John Hancock Building (51720661696) (1).jpg",
+    "year": 2021,
+    "caption": "The sunken plaza at the foot of the tower, now called 875 North Michigan Avenue, in 2021.",
+    "kind": "today",
+    "note": "Commons; Chris Rycroft, 7 Nov 2021."
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Kinzie House.png",
+    "year": 1830,
+    "approx": true,
+    "caption": "An early drawing of the Kinzie house, the riverbank home du Sable built and sold in 1800.",
+    "kind": "place",
+    "note": "Title seen in the listing of Commons Category:Chicago in the 1830s; no File: URL shown, date and source not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago skyline, 1930s (NBY 3132).jpg",
+    "year": 1935,
+    "approx": true,
+    "caption": "The Michigan Avenue bridge and the riverfront towers on the old du Sable homesite in the 1930s.",
+    "kind": "place",
+    "sameView": "michigan-ave-bridge",
+    "note": "Commons; Newberry Library, Chicago Architectural Photographing Co., dated 1930/1939. Labeled with the Michigan Avenue Bridge; sameView pairing is approximate."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0630/",
+    "year": 1987,
+    "approx": true,
+    "caption": "Engineering survey photo of the 1920 double-leaf bascule bridge at Michigan Avenue.",
+    "kind": "place",
+    "note": "LOC HAER IL-37 (public domain). Survey date not seen; HAER Chicago bridge surveys were mostly 1980s-90s."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Jean Baptiste Point Du Sable Homesite (7177758767).jpg",
+    "year": 2012,
+    "caption": "The National Historic Landmark plaque at the du Sable homesite in Pioneer Court.",
+    "kind": "today",
+    "note": "Commons Flickr import (~2012)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:The Pioneers James Earle Fraser.jpg",
+    "year": 2012,
+    "approx": true,
+    "caption": "James Earle Fraser's 1928 'Pioneers' relief on the bridge, honoring the river's first settlers.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Michigan Avenue Bridge, Chicago River, Chicago, Illinois (9179449989).jpg",
+    "year": 2013,
+    "caption": "The Michigan Avenue (now DuSable) bridge over the river today.",
+    "kind": "today",
+    "sameView": "michigan-ave-bridge",
+    "note": "Commons; Ken Lund 2013. sameView pairing approximate."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago in 2022 Flags over the DuSable Bridge with the Tribune Tower in the background (52058026729).jpg",
+    "year": 2022,
+    "caption": "Flags fly over the DuSable Bridge, renamed in 2010, with Tribune Tower behind.",
+    "kind": "today",
+    "note": "Commons Flickr import, 2022."
+  }
+]

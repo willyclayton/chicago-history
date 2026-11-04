@@ -1,0 +1,64 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Birds eye view of first Fort Dearborn.jpg",
+    "year": 1803,
+    "approx": true,
+    "caption": "A later reconstruction drawing of the first Fort Dearborn and its stockade at the river mouth.",
+    "kind": "place",
+    "note": "Commons; year is the scene depicted (the drawing is a 19th-century reconstruction, creation date not seen)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago in 1856 - 2nd fort Dearborn.jpg",
+    "year": 1856,
+    "caption": "The last buildings of the second Fort Dearborn, photographed in 1856 amid the growing city.",
+    "kind": "place",
+    "note": "Commons; PD, author unknown, 1280x792."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2012645255/",
+    "year": 1856,
+    "approx": true,
+    "caption": "Rufus Blanchard's hand-colored view of old Fort Dearborn and its surroundings as they stood in 1856.",
+    "kind": "map",
+    "note": "LOC; lithograph published by Rufus Blanchard, Chicago, 1894, depicting 1856."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/stereo.1s12432/",
+    "year": 1930,
+    "approx": true,
+    "caption": "The bronze Fort Dearborn tablet on the London Guarantee Building, marking the fort's site.",
+    "kind": "place",
+    "note": "LOC Keystone View Co. stereograph, ca. 1930."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018648964/",
+    "year": 1930,
+    "approx": true,
+    "caption": "The Fort Dearborn massacre monument that stood near the 1812 battle site on the South Side.",
+    "kind": "place",
+    "note": "LOC Keystone View Co. stereograph, ca. 1930. The statue is at the Prairie Ave battle site, not the fort itself."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Defense Henry Hering.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "Henry Hering's 1928 'Defense' relief on the Michigan Avenue bridge, showing the 1812 battle.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Landmark (Ft Dearborn) P8190063.jpg",
+    "year": 2015,
+    "approx": true,
+    "caption": "Markers in the sidewalk at Michigan and Wacker trace the outline of the old fort.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

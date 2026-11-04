@@ -1,0 +1,70 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2004681789/",
+    "year": 1960,
+    "approx": true,
+    "caption": "'A city within a city': the promotional picture of Bertrand Goldberg's twin round towers.",
+    "kind": "construction",
+    "note": "LOC 'Marina City, a city within a city'; format and date not seen (likely a 1959-62 promotional print)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016652082/",
+    "year": 1962,
+    "caption": "The two concrete cores rising on the riverbank in August 1962, before the petal balconies.",
+    "kind": "construction",
+    "note": "LOC; dated 27 Aug 1962; notes mention parking for 900 cars and a 700-boat marina."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016653214/",
+    "year": 1963,
+    "caption": "Aerial view of the Marina City complex and its 'corncob' towers in 1963.",
+    "kind": "place",
+    "note": "LOC LOOK magazine assignment, Archie Lieberman, 1963."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016653211/",
+    "year": 1963,
+    "caption": "Cars parked on the open spiral decks that fill the towers' lower floors.",
+    "kind": "place",
+    "note": "LOC LOOK, Archie Lieberman, 1963."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016653210/",
+    "year": 1963,
+    "caption": "Residents on a curved balcony look out over downtown.",
+    "kind": "people",
+    "note": "LOC LOOK, Archie Lieberman, 1963."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2023640997/",
+    "year": 1967,
+    "caption": "The finished towers in color, with the Chicago River in the foreground.",
+    "kind": "place",
+    "sameView": "marina-from-river",
+    "note": "LOC Balthazar Korab Studios, KORAB F2430 no. 24, 1967; no known restrictions."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Marina City - Chicago, Illinois.JPG",
+    "year": 2010,
+    "approx": true,
+    "caption": "The twin corncob towers on State Street at the river.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Marina City, Chicago, Illinois, Estados Unidos, 2012-10-20, DD 01.jpg",
+    "year": 2012,
+    "caption": "Marina City from the river in 2012, still apartments stacked over parking.",
+    "kind": "today",
+    "sameView": "marina-from-river",
+    "note": "Commons; Diego Delso, 20 Oct 2012 (CC BY-SA). River vantage assumed; sameView pairing approximate."
+  }
+]

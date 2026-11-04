@@ -1,0 +1,54 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2007675576/",
+    "year": 1930,
+    "caption": "Bird's-eye view of the brand-new Merchandise Mart beside the river, April 1930.",
+    "kind": "place",
+    "note": "LOC 'Merchandise Mart building, Chicago, Ill.', dated 8 Apr 1930."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018649177/",
+    "year": 1931,
+    "caption": "'The Colossus of Market Places': the Mart seen from the river in 1931.",
+    "kind": "place",
+    "sameView": "mart-from-river",
+    "note": "LOC stereograph, 1931, river-level view. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2002705898/",
+    "year": 1940,
+    "approx": true,
+    "caption": "Steam locomotive whistles and bells on the Mart's roof, part of NBC radio's sound effects.",
+    "kind": "people",
+    "note": "LOC; NBC had studios in the Mart from 1930. Date not seen. Result URL was loc.gov without www."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/highsm.18061/",
+    "year": 1995,
+    "approx": true,
+    "caption": "The Merchandise Mart, once the largest building in the world, photographed by Carol Highsmith.",
+    "kind": "place",
+    "note": "LOC Carol M. Highsmith (public domain), 1980-2006 range."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago (ILL), Near North Side, Merchandise Mart, 1930 (4826181116).jpg",
+    "year": 2010,
+    "caption": "The Mart's limestone bulk on the north bank of the river in 2010.",
+    "kind": "today",
+    "note": "Commons Flickr import (vincent desjardins 2010; 1930 in title is the build year)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Merchandise Mart and Wells Street Bridge, River North, Chicago, IL - 52908146141.jpg",
+    "year": 2023,
+    "caption": "The Mart and the Wells Street bridge from the river today.",
+    "kind": "today",
+    "sameView": "mart-from-river",
+    "note": "Commons Flickr import (~2023). sameView pairing approximate."
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Robie House exterior HABS ILL,16-CHIG,33-1.jpg",
+    "year": 1911,
+    "caption": "The new Robie House as Wright published it in 1911: long brick bands and cantilevered roofs.",
+    "kind": "place",
+    "sameView": "robie-south-facade",
+    "note": "Commons; HABS photocopy of plate 12 of Wright's Ausgefuhrte Bauten (Wasmuth, Berlin, 1911), south facade."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Robie House Interior HABS ILL,16-CHIG,33-7.jpg",
+    "year": 1911,
+    "caption": "The open living room with Wright's built-in furniture, as published in 1911.",
+    "kind": "place",
+    "note": "Commons; HABS photocopy of plate 115, Wasmuth 1911."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/il0039/",
+    "year": 1963,
+    "caption": "The south facade from the southwest in 1963, the year the University of Chicago took over the house.",
+    "kind": "place",
+    "note": "LOC HABS IL-1005 record (9 photos, 25 drawings). Wanted image: photo 2, Cervin Robinson 18 Aug 1963, south facade from southwest; photo 1 is the 1911 plate already listed from Commons."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2011634997/",
+    "year": 1995,
+    "approx": true,
+    "caption": "The Robie House in Hyde Park, photographed by Carol Highsmith before its restoration.",
+    "kind": "place",
+    "note": "LOC Carol M. Highsmith color transparency, c. 1980-2006 (public domain)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Frank Lloyd Wright - Robie House 3.JPG",
+    "year": 2010,
+    "approx": true,
+    "caption": "The house's low horizontal lines from the street.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago, robie house di frank lloyd wright, 1908-1910, salone al primo piano, 01.jpg",
+    "year": 2016,
+    "approx": true,
+    "caption": "The restored living room on the main floor today.",
+    "kind": "today",
+    "note": "Commons; Italian-titled interior series (likely Sailko, ~2016); date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Frederick C. Robie House, Woodlawn Avenue and 58th Street, Hyde Park, Chicago, IL - 54213534566.jpg",
+    "year": 2024,
+    "approx": true,
+    "caption": "The Robie House at Woodlawn and 58th Street, restored and a UNESCO World Heritage Site.",
+    "kind": "today",
+    "sameView": "robie-south-facade",
+    "note": "Commons Flickr import (~2024). sameView pairing with the 1911 south facade is approximate."
+  }
+]

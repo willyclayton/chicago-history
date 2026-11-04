@@ -1,0 +1,85 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2005689943/",
+    "year": 1892,
+    "approx": true,
+    "caption": "Jackson Park torn up for the fair: dredged lagoons and rising steel frames before the 1893 opening.",
+    "kind": "construction",
+    "note": "LOC; C.D. Arnold set 'World's Columbian Exposition, Chicago, under construction', 62 prints 1891-1893 (a multi-print record)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2002707105/",
+    "year": 1892,
+    "caption": "The bare iron frame of the Mines Building going up in 1892.",
+    "kind": "construction",
+    "note": "LOC; Frances Benjamin Johnston, 'World's Fair, Chicago, 1892 Frame for Mines Building.'"
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/92514561/",
+    "year": 1893,
+    "caption": "Bird's-eye view of the White City, with a monument and canal in the foreground.",
+    "kind": "place",
+    "note": "LOC; Frances Benjamin Johnston platinum print, cph.3b40727."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/ds.14202/",
+    "year": 1893,
+    "caption": "Fountains and the Grand Basin framed by the fair's white exhibition palaces.",
+    "kind": "place",
+    "note": "LOC; Frances Benjamin Johnston gelatin silver print, LC-DIG-ds-14202."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2022654527/",
+    "year": 1893,
+    "caption": "The Columbian Fountain at the west end of the Court of Honor.",
+    "kind": "place",
+    "note": "LOC stereograph, 1893, bilingual English/Spanish caption."
+  },
+  {
+    "source": "commons",
+    "ref": "File:View of North Lagoon, Art Palace and State Buildings, William Henry Jackson, 1893.jpg",
+    "year": 1893,
+    "caption": "The Palace of Fine Arts across the North Lagoon in 1893, the one fair building that still stands.",
+    "kind": "place",
+    "sameView": "expo-fine-arts-lagoon",
+    "note": "Title seen in the listing of Commons Category:Lagoon at the World's Columbian Exposition (5256x4204); no File: URL shown. William Henry Jackson, 1893."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2002718798/",
+    "year": 1893,
+    "caption": "George Ferris's 264-foot wheel, the fair's answer to the Eiffel Tower, on the Midway.",
+    "kind": "place",
+    "note": "LOC 'Ferris wheel at the World's Columbian Exposition, Chicago, 1893'."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2006680022/",
+    "year": 1893,
+    "caption": "Crowds on the Midway Plaisance, the fair's mile-long strip of rides and shows.",
+    "kind": "place",
+    "note": "LOC 'World's Columbian Exposition, 1893, Chicago Midway'. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Aerial View of Chicago, Museum of Science and Industry, 1930 (NBY 5278).jpg",
+    "year": 1930,
+    "caption": "The old Fine Arts Palace in 1930, being rebuilt in stone as the Museum of Science and Industry.",
+    "kind": "construction",
+    "note": "Commons; Newberry Library NBY 5278, 1930 aerial. Reconstruction ran 1929-1933 (museum opened for the 1933 fair)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Museum of Science and Industry (Chicago).jpg",
+    "year": 2007,
+    "caption": "The same building today, the Museum of Science and Industry, seen from the lagoon on its south side.",
+    "kind": "today",
+    "sameView": "expo-fine-arts-lagoon",
+    "note": "Commons; 2007 Flickr photo 'from the south side by the lagoon'. sameView pairing with Jackson 1893 is approximate."
+  }
+]
