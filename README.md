@@ -7,10 +7,12 @@ Built from [`docs/SPEC.md`](docs/SPEC.md) (v1 scope) and the reference [`docs/pr
 ## Using it
 
 - **Map-first layout.** One panel switches between the site list and a site's story, with a back button. On phones it's a bottom sheet: drag it, flick it, or tap the handle to move between peek, half and full.
-- **Timeline dock.** Play (with 1×/2×/4× speed), drag the year, click an era band to jump to it, hover a tick to preview a site, and click one to open it.
+- **Timeline dock.** Play (with 1×/2×/4× speed and a progress ring), drag the star along a population curve (it settles on events), click an era to jump to it, hover a tick to preview a site, and use Next, which names the next event.
 - **Linked previews.** Hovering a list row, a timeline tick or a star highlights the same site everywhere and shows a tooltip on the map.
 - **Story.** Swipe the header left or right to step through time, shuffle to a random site, share the link, and open Street View. Your place in the list is kept when you come back.
 - **Keyboard:** `/` search (Enter opens the top result, ↓ moves into the list), `Space` play/pause, `←` `→` previous/next site, `R` random, `T` light/dark, `Esc` back, `?` shortcuts.
+- **Map:** clusters with counts when zoomed out (click to zoom in), a hover card that stays clear of the panels, a glowing ring on the open site, and a Map key whose theme rows filter the map and whose switches show the 1830s shoreline and the 1871 burn area.
+- **List extras:** match highlighting with excerpts, "did you mean" suggestions, recently viewed sites, era progress and a line marking the slider year, plus nearby and same-theme cards at the end of each story.
 - A one-time tip points new visitors to Play (skip it with `?nocoach`). The light/dark choice is remembered.
 
 ## Run it

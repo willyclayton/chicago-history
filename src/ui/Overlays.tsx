@@ -20,6 +20,8 @@ const GROUPS: { title: string; rows: Row[] }[] = [
     title: "Find a story",
     rows: [
       [["/"], "Search"],
+      [["↑", "↓"], "Move through the list (Home and End jump)"],
+      [["Enter"], "Open the highlighted site"],
       [["R"], "Random site"],
       [["Esc"], "Back to the list"],
     ],

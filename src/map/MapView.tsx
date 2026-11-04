@@ -174,6 +174,7 @@ function computeClusters(ids: Set<string>, z: number, keepOut: string | null): C
     a.sites.push(...b.sites);
     groups.splice(bj, 1);
   }
+  for (const g of groups) g.sites.sort((a, b) => Number(!!b.flagStar) - Number(!!a.flagStar) || a.year - b.year);
   return groups
     .filter((g) => g.sites.length > 1)
     .map((g) => {
