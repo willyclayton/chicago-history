@@ -1,0 +1,37 @@
+[
+  {
+    "from": 1780,
+    "to": 1836,
+    "name": "Frontier outpost"
+  },
+  {
+    "from": 1837,
+    "to": 1870,
+    "name": "Boomtown"
+  },
+  {
+    "from": 1871,
+    "to": 1892,
+    "name": "Fire and rebuilding"
+  },
+  {
+    "from": 1893,
+    "to": 1919,
+    "name": "Industrial giant"
+  },
+  {
+    "from": 1920,
+    "to": 1945,
+    "name": "Gangland and Depression"
+  },
+  {
+    "from": 1946,
+    "to": 1979,
+    "name": "Postwar city"
+  },
+  {
+    "from": 1980,
+    "to": 2026,
+    "name": "Global city"
+  }
+]
