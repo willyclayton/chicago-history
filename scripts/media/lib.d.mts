@@ -72,11 +72,12 @@ export declare function commonsRecords(json: unknown, titles: string[], fetchedA
 export declare function commonsResult(rec: CommonsRecord | undefined): Result;
 export declare function parseCommonsResponse(json: unknown, titles: string[]): Map<string, Result>;
 export declare function mergeCommonsPages<T extends object>(a: T, b: unknown): T;
-export declare function locImageCandidates(json: unknown): ImageCandidate[];
+export declare function locImageCandidates(json: unknown, scope?: "primary" | "rest" | "all"): ImageCandidate[];
+export declare function locResourceImage(jsons: unknown[], resourceId: string): ImageCandidate | null;
 export declare function pickLocImage(json: unknown): ImageCandidate | null;
 export declare function locItemIdFromResource(json: unknown): string | null;
 export declare function trimLocJson(json: unknown): unknown;
-export declare function parseLocItem(json: unknown, id: string): Result;
+export declare function parseLocItem(json: unknown, id: string | null, res?: { resource: unknown; resourceId: string }): Result;
 export declare function isRetryableStatus(status: number): boolean;
 export declare function netErrorCode(err: unknown): string | null;
 export declare function isUnreachable(code: string | null): boolean;

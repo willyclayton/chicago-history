@@ -300,13 +300,14 @@ async function run(o) {
       if (!fresh(rec)) {
         let next = null;
         try {
-          let itemId = r.kind === "item" ? r.id : null;
-          let json = await getJson(L.locJsonUrl(r));
-          if (r.kind === "resource") {
-            itemId = L.locItemIdFromResource(json);
-            if (itemId) json = await getJson(L.locJsonUrl({ kind: "item", id: itemId }));
+          const first = await getJson(L.locJsonUrl(r));
+          if (r.kind === "item") next = { ref: key, fetchedAt: o.now(), itemId: r.id, json: L.trimLocJson(first) };
+          else {
+            // a resource is one image of an item: its picture, the item's rights
+            const itemId = L.locItemIdFromResource(first);
+            const item = itemId ? await getJson(L.locJsonUrl({ kind: "item", id: itemId })) : first;
+            next = { ref: key, fetchedAt: o.now(), itemId, resourceId: r.id, json: L.trimLocJson(item), resource: L.trimLocJson(first) };
           }
-          next = { ref: key, fetchedAt: o.now(), itemId: itemId ?? r.id, json: L.trimLocJson(json) };
         } catch (err) {
           if (err instanceof L.HttpError && (err.status === 404 || err.status === 410)) {
             next = { ref: key, fetchedAt: o.now(), status: err.status };
@@ -322,7 +323,7 @@ async function run(o) {
         }
       }
       if (rec.status) results.set(key, { ok: false, code: "missing", detail: `LOC HTTP ${rec.status}` });
-      else results.set(key, L.parseLocItem(rec.json, rec.itemId));
+      else results.set(key, L.parseLocItem(rec.json, rec.itemId, rec.resourceId ? { resource: rec.resource, resourceId: rec.resourceId } : undefined));
     }),
   );
 
@@ -454,6 +455,7 @@ async function run(o) {
         caption: c.caption.trim(),
         kind: c.kind,
         ...(c.sameView ? { sameView: c.sameView } : {}),
+        ...(c.sensitive === true ? { sensitive: true } : {}),
         credit: x.rec.credit,
         license: x.rec.license,
         ...(x.rec.licenseUrl ? { licenseUrl: x.rec.licenseUrl } : {}),

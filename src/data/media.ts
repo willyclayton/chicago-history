@@ -38,6 +38,8 @@ export interface MediaCandidate {
   /** Images that show the same view (e.g. the same facade) share a key, so the
    *  then-and-now scrubber can blend them. */
   sameView?: string;
+  /** Graphic content; the UI blurs it behind a tap-to-view. */
+  sensitive?: boolean;
   /** Where the candidate was found and anything to double-check. Not shown. */
   note?: string;
 }
@@ -46,7 +48,8 @@ export interface MediaCandidate {
 export interface MediaImage {
   id: string; // `${siteId}-${n}`
   siteId: string;
-  /** Paths relative to the site root (no leading slash), e.g. "media/valentine/1-1280.jpg". */
+  /** Paths relative to the site root (no leading slash), e.g. "media/valentine/1-1280.jpg?v=3f2a9c01de".
+   *  The ?v= content hash changes whenever the image does, so caches never serve an old one. */
   src: string;
   thumb: string;
   width: number;
@@ -56,6 +59,8 @@ export interface MediaImage {
   caption: string;
   kind: MediaKind;
   sameView?: string;
+  /** Graphic content; the UI blurs it behind a tap-to-view. */
+  sensitive?: boolean;
   /** Photographer or publisher, as the archive gives it. */
   credit: string;
   /** "Public domain", "No known restrictions", "CC BY-SA 4.0", ... */

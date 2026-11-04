@@ -99,6 +99,10 @@ describe("refs", () => {
     expect(normalizeLocRef("https://www.loc.gov/pictures/item/92508756/")).toEqual({ kind: "item", id: "92508756" });
     expect(normalizeLocRef("http://loc.gov/item/2016823114/?r=0.5,0,1")).toEqual({ kind: "item", id: "2016823114" });
     expect(normalizeLocRef("https://www.loc.gov/resource/fsa.8b29516/")).toEqual({ kind: "resource", id: "fsa.8b29516" });
+    expect(normalizeLocRef("https://www.loc.gov/resource/stereo.1s12373/")).toEqual({ kind: "resource", id: "stereo.1s12373" });
+    // HABS/HAER survey numbers are item ids
+    expect(normalizeLocRef("https://www.loc.gov/pictures/item/il0097/")).toEqual({ kind: "item", id: "il0097" });
+    expect(normalizeLocRef("https://www.loc.gov/item/il0097/")).toEqual({ kind: "item", id: "il0097" });
     expect(normalizeLocRef("https://example.com/item/1/")).toBeNull();
     expect(normalizeLocRef("")).toBeNull();
   });
@@ -233,6 +237,29 @@ describe("LOC API", () => {
     });
   });
 
+  it("uses a multi-image record's first picture, or the resource that was asked for", () => {
+    const habs = {
+      item: { rights_advisory: "No known restrictions on images made by the U.S. Government; images copied from other sources may be restricted." },
+      resources: [
+        { url: "https://www.loc.gov/resource/hhh.il0097.photos/?sp=1", files: [[{ mimetype: "image/jpeg", url: "https://tile.loc.gov/p1.jpg", width: 1700, height: 1300 }]] },
+        { url: "https://www.loc.gov/resource/hhh.il0097.photos/?sp=2", files: [[{ mimetype: "image/jpeg", url: "https://tile.loc.gov/p2.jpg", width: 2000, height: 1600 }]] },
+      ],
+    };
+    expect(pickLocImage(habs)?.url).toBe("https://tile.loc.gov/p1.jpg");
+    expect(parseLocItem(habs, "il0097")).toMatchObject({ ok: true, record: { url: "https://tile.loc.gov/p1.jpg", license: "No known restrictions on images made by the U.S. Government" } });
+
+    const item = locItem("2017650123", "No known restrictions on publication.");
+    item.resources.push({
+      url: "https://www.loc.gov/resource/stereo.1s12373/",
+      image: "https://tile.loc.gov/stereo/1s12373r.jpg",
+      files: [[{ mimetype: "image/jpeg", url: "https://tile.loc.gov/stereo/1s12373v.jpg", width: 1024, height: 520 }] as object[]],
+    });
+    const r = parseLocItem(item, "2017650123", { resource: { item: {} }, resourceId: "stereo.1s12373" });
+    expect(r).toMatchObject({ ok: true, record: { url: "https://tile.loc.gov/stereo/1s12373v.jpg", sourceUrl: "https://www.loc.gov/item/2017650123/" } });
+    const orphan = parseLocItem({ item: { rights_advisory: "No known restrictions on publication." }, resource: { url: "https://www.loc.gov/resource/stereo.1s1/", image: "https://tile.loc.gov/x.jpg" } }, null, { resource: {}, resourceId: "stereo.1s1" });
+    expect(orphan).toMatchObject({ ok: true, record: { url: "https://tile.loc.gov/x.jpg", sourceUrl: "https://www.loc.gov/resource/stereo.1s1/" } });
+  });
+
   it("falls back to image_url sizes, then the resource image", () => {
     expect(pickLocImage(locItem("1", "x"))?.url).toBe("https://tile.loc.gov/storage-services/service/pnp/cph/1v.jpg");
     expect(pickLocImage({ item: {}, resources: [{ image: "//tile.loc.gov/a/b.jpg" }] })?.url).toBe("https://tile.loc.gov/a/b.jpg");
@@ -299,7 +326,7 @@ describe("buildMedia", () => {
 
   const MANIFESTS = {
     fire: [
-      { source: "commons", ref: "File:Chicago in flames.jpg", year: 1871, caption: "The fire.", kind: "event" },
+      { source: "commons", ref: "File:Chicago in flames.jpg", year: 1871, caption: "The fire.", kind: "event", sensitive: true },
       { source: "loc", ref: "https://www.loc.gov/pictures/item/2002712345/", year: 1871, caption: "Ruins.", kind: "aftermath" },
       { source: "commons", ref: "File:Water tower today.jpg", year: 2019, caption: "Today.", kind: "today", sameView: "tower" },
       { source: "commons", ref: "File:Nc photo.jpg", year: 1872, caption: "NC.", kind: "place" },
@@ -311,6 +338,7 @@ describe("buildMedia", () => {
     valentine: [
       { source: "loc", ref: "https://www.loc.gov/item/99404755/", year: 1929, caption: "Garage.", kind: "event" },
       { source: "commons", ref: "File:Chicago in flames.jpg", year: 1871, caption: "Shared file.", kind: "map", approx: true },
+      { source: "loc", ref: "https://www.loc.gov/resource/stereo.1s12373/", year: 1880, caption: "Stereo card.", kind: "place" },
     ],
     nosuchsite: [{ source: "commons", ref: "File:X.jpg", year: 1900, caption: "x", kind: "place" }],
   };
@@ -342,8 +370,14 @@ describe("buildMedia", () => {
         return Response.json({ batchcomplete: true, query: { pages } });
       }
       if (u.host === "www.loc.gov") {
-        const id = u.pathname.split("/")[2];
+        const [, kind, id] = u.pathname.split("/");
         if (u.searchParams.get("fo") !== "json") return new Response("html", { status: 400 });
+        if (kind === "resource" && id === "stereo.1s12373")
+          return Response.json({
+            item: { id: "http://www.loc.gov/item/2017650123/" },
+            resource: { url: "https://www.loc.gov/resource/stereo.1s12373/", files: [[{ mimetype: "image/jpeg", url: "https://tile.loc.gov/stereo/1s12373.jpg", width: 1800, height: 900 }]] },
+          });
+        if (id === "2017650123") return Response.json(locItem(id, "No known restrictions on publication."));
         if (id === "2002712345") return Response.json(locItem(id, "No known restrictions on publication.", [{ mimetype: "image/jpeg", url: `https://tile.loc.gov/${id}/full.jpg`, width: 900, height: 1400 }]));
         if (id === "99404755") return Response.json(locItem(id, "Publication may be restricted."));
         return new Response("not found", { status: 404 });
@@ -379,21 +413,26 @@ describe("buildMedia", () => {
     expect(Object.keys(idx).sort()).toEqual(["fire", "valentine"]);
     expect(idx.fire.map((m) => m.year)).toEqual([1871, 1871, 2019]);
     expect(idx.fire.map((m) => m.caption)).toEqual(["The fire.", "Ruins.", "Today."]);
+    expect(idx.fire.map((m) => m.sensitive)).toEqual([true, undefined, undefined]);
     const [first, ruins, today] = idx.fire;
     expect(first).toMatchObject({ id: "fire-1", siteId: "fire", kind: "event", credit: "Chicago Daily News", license: "Public domain", archive: "Wikimedia Commons", width: 1280, height: 960 });
     expect(first.src).toMatch(/^media\/fire\/1-1280\.jpg\?v=[0-9a-f]{10}$/);
     expect(first.thumb).toMatch(/^media\/fire\/1-480\.jpg\?v=[0-9a-f]{10}$/);
     expect(ruins).toMatchObject({ archive: "Library of Congress", license: "No known restrictions on publication", sourceUrl: "https://www.loc.gov/item/2002712345/", width: 823, height: 1280 });
     expect(today).toMatchObject({ credit: "Jane Doe", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0", sameView: "tower" });
-    expect(idx.valentine).toHaveLength(1);
+    expect(idx.valentine).toHaveLength(2);
     expect(idx.valentine[0]).toMatchObject({ kind: "map", approx: true, year: 1871 });
+    expect(idx.valentine[0].sensitive).toBeUndefined(); // the flag belongs to the candidate, not the file
+    // a resource ref: that resource's own image, the item's rights and page
+    expect(idx.valentine[1]).toMatchObject({ caption: "Stereo card.", sourceUrl: "https://www.loc.gov/item/2017650123/", license: "No known restrictions on publication" });
+    expect(net.calls).toContain("https://tile.loc.gov/stereo/1s12373.jpg");
 
     const meta = await sharp(path.join(root, "public/media/fire/1-1280.jpg")).metadata();
     expect(meta).toMatchObject({ format: "jpeg", width: 1280, height: 960, isProgressive: true });
     expect(meta.exif).toBeUndefined();
     const thumb = await sharp(path.join(root, "public/media/fire/2-480.jpg")).metadata();
     expect(Math.max(thumb.width!, thumb.height!)).toBe(480);
-    expect(r.summary).toMatch(/^kept 4, dropped 7: /);
+    expect(r.summary).toMatch(/^kept 5, dropped 7: /);
     expect(r.changed).toBe(true);
 
     // the same file used by two sites is downloaded once
@@ -402,12 +441,12 @@ describe("buildMedia", () => {
     // a rerun is served from the cache: no network at all, same output
     const again = await buildMedia({ ...quiet, root, fetch: offline as typeof fetch });
     expect(await readIndex(root)).toEqual(idx);
-    expect(again.kept).toBe(4);
+    expect(again.kept).toBe(5);
     expect(again.changed).toBe(false);
 
     // forced refresh with the archives unreachable still uses the stale cache
     const stale = await buildMedia({ ...quiet, root, refresh: true, fetch: offline as typeof fetch });
-    expect(stale.kept).toBe(4);
+    expect(stale.kept).toBe(5);
     expect(Object.keys(stale.unreachable)).toContain("commons.wikimedia.org");
     expect(await readIndex(root)).toEqual(idx);
   });

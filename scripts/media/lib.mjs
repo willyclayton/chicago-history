@@ -132,7 +132,8 @@ export function isAllowedLicense(text) {
 /** Short display form of a rights statement: first sentence, no trailing period or URL. */
 export function licenseLabel(text) {
   let s = stripHtml(text).replace(/\(?https?:\/\/\S+\)?/g, "").trim();
-  const dot = s.search(/\.(\s|$)/);
+  // first sentence or clause, not fooled by initials ("the U.S. Government")
+  const dot = s.search(/(?<!\b[A-Z])[.;](\s|$)/);
   if (dot > 0) s = s.slice(0, dot);
   return clip(s.trim(), 80);
 }
@@ -292,8 +293,9 @@ const list = (v) => (v == null ? [] : Array.isArray(v) ? v.flat(2) : [v]);
 const str = (v) => list(v).filter((x) => typeof x === "string" && x.trim());
 const abs = (u) => (u.startsWith("//") ? "https:" + u : u);
 
-/** Image URL candidates with their size, from every place the LOC JSON lists them. */
-export function locImageCandidates(json) {
+/** Image URL candidates with their size, from every place the LOC JSON lists them.
+ *  `scope`: "primary" (the record's first image), "rest" (its other images) or "all". */
+export function locImageCandidates(json, scope = "all") {
   const out = [];
   const add = (url, width, height, mime) => {
     if (typeof url !== "string" || !url) return;
@@ -304,31 +306,55 @@ export function locImageCandidates(json) {
     const type = mime || (/\.(jpe?g)(\?|$)/i.test(base) || /default\.jpg/i.test(base) ? "image/jpeg" : /\.png(\?|$)/i.test(base) ? "image/png" : /\.gif(\?|$)/i.test(base) ? "image/gif" : /\.(tiff?|jp2)(\?|$)/i.test(base) ? "image/tiff" : "");
     out.push({ url: base, width: w, height: h, mime: type });
   };
-  const item = json?.item ?? {};
-  for (const r of list(json?.resources)) {
-    if (!r || typeof r !== "object") continue;
+  const fromResource = (r) => {
+    if (!r || typeof r !== "object") return;
     for (const f of list(r.files)) if (f && typeof f === "object") add(f.url, f.width, f.height, f.mimetype);
     if (typeof r.image === "string") add(r.image);
+  };
+  const item = json?.item ?? {};
+  const resources = [json?.resource, ...list(json?.resources)].filter((r) => r && typeof r === "object");
+  if (scope !== "rest") {
+    // a resource page's own image, else the item's first resource and its listed sizes
+    fromResource(resources[0]);
+    for (const f of list(json?.files)) if (f && typeof f === "object") add(f.url, f.width, f.height, f.mimetype);
+    for (const u of [...str(item.image_url), ...str(json?.image_url)]) add(u);
   }
-  for (const u of [...str(item.image_url), ...str(json?.image_url)]) add(u);
+  if (scope !== "primary") resources.slice(1).forEach(fromResource);
   return out;
 }
 
+const longEdge = (c) => Math.max(c.width, c.height);
+
+function bestOf(cands) {
+  const all = cands.filter((c) => /^image\/(jpeg|png|gif)$/.test(c.mime));
+  if (!all.length) return null;
+  const sized = all.filter((c) => longEdge(c) > 0 && longEdge(c) <= 6000);
+  const atLeast = (min) => sized.filter((c) => longEdge(c) >= min).sort((a, b) => longEdge(a) - longEdge(b))[0];
+  // no sizes given: resources[].image is LOC's own display image
+  return atLeast(1600) ?? atLeast(1280) ?? sized.sort((a, b) => longEdge(b) - longEdge(a))[0] ?? all.find((c) => !longEdge(c)) ?? null;
+}
+
 /**
- * The largest reasonable image: the smallest JPEG/PNG/GIF whose long edge is at least
- * 1600px (else 1280px, else the biggest), ignoring TIFF/JP2 masters and anything huge.
+ * The largest reasonable image of the record's primary picture: the smallest JPEG/PNG/GIF
+ * whose long edge is at least 1600px (else 1280px, else the biggest), ignoring TIFF/JP2
+ * masters and anything huge. Multi-image records (HABS, stereographs) use their first image.
  */
 export function pickLocImage(json) {
-  const all = locImageCandidates(json).filter((c) => /^image\/(jpeg|png|gif)$/.test(c.mime));
-  if (!all.length) return null;
-  const long = (c) => Math.max(c.width, c.height);
-  const sized = all.filter((c) => long(c) > 0 && long(c) <= 6000);
-  const pick = (min) => sized.filter((c) => long(c) >= min).sort((a, b) => long(a) - long(b))[0];
-  const best = pick(1600) ?? pick(1280) ?? sized.sort((a, b) => long(b) - long(a))[0];
-  if (best) return best;
-  // no sizes given: resources[].image is LOC's own display image
-  const plain = all.find((c) => !long(c));
-  return plain ?? null;
+  return bestOf(locImageCandidates(json, "primary")) ?? bestOf(locImageCandidates(json, "rest"));
+}
+
+/** The image of one resource (a single picture of a multi-image item), found by its id. */
+export function locResourceImage(jsons, resourceId) {
+  const want = `/resource/${String(resourceId).toLowerCase()}/`;
+  for (const json of jsons) {
+    for (const r of [json?.resource, ...list(json?.resources)]) {
+      if (r && typeof r === "object" && typeof r.url === "string" && abs(r.url).toLowerCase().includes(want)) {
+        const hit = bestOf(locImageCandidates({ resources: [r] }, "primary"));
+        if (hit) return hit;
+      }
+    }
+  }
+  return null;
 }
 
 /** For a resource record, the item it belongs to. */
@@ -347,15 +373,20 @@ export function trimLocJson(json) {
   const keep = ["id", "url", "title", "rights_advisory", "rights", "rights_information", "image_url", "contributor_names", "creator", "contributors", "created_published", "date", "original_format", "online_format"];
   const t = { item: {} };
   for (const k of keep) if (item[k] != null) t.item[k] = item[k];
+  const res = (r) => ({ url: r.url, image: r.image, files: r.files });
   t.resources = list(json?.resources)
     .filter((r) => r && typeof r === "object")
-    .map((r) => ({ url: r.url, image: r.image, files: r.files }));
-  for (const k of ["image_url", "rights", "rights_advisory", "item_url"]) if (json?.[k] != null) t[k] = json[k];
+    .map(res);
+  if (json?.resource && typeof json.resource === "object") t.resource = res(json.resource);
+  for (const k of ["image_url", "rights", "rights_advisory", "item_url", "files"]) if (json?.[k] != null) t[k] = json[k];
   return t;
 }
 
-/** { ok: true, record } or { ok: false, code, detail } for an LOC item JSON. */
-export function parseLocItem(json, id) {
+/**
+ * { ok: true, record } or { ok: false, code, detail } for an LOC item JSON.
+ * For a resource ref, `res` holds the resource's own JSON: its image is used, with the item's rights.
+ */
+export function parseLocItem(json, id, res) {
   if (!json || typeof json !== "object" || !json.item) return { ok: false, code: "missing", detail: "no item in the LOC response" };
   const item = json.item;
   const rights = [...str(item.rights_advisory), ...str(json.rights_advisory), ...str(item.rights), ...str(json.rights), ...str(item.rights_information)].map(stripHtml);
@@ -363,7 +394,7 @@ export function parseLocItem(json, id) {
   if (!isAllowedLicense(statement)) {
     return { ok: false, code: "license", detail: statement ? `"${licenseLabel(statement)}" is not on the allowlist` : "no rights statement" };
   }
-  const img = pickLocImage(json);
+  const img = res ? locResourceImage([res.resource, json], res.resourceId) ?? pickLocImage(res.resource) ?? pickLocImage(json) : pickLocImage(json);
   if (!img) return { ok: false, code: "not-image", detail: "no JPEG, PNG or GIF in the record" };
   const credit = [...str(item.contributor_names), ...str(item.creator), ...str(item.contributors)].map(stripHtml).find(Boolean);
   const link = statement.match(/https?:\/\/[^\s)]+/)?.[0];
@@ -377,7 +408,7 @@ export function parseLocItem(json, id) {
       license: licenseLabel(statement),
       licenseUrl: link,
       credit: clip(credit || "Library of Congress, Prints and Photographs Division", 140),
-      sourceUrl: locItemUrl(id),
+      sourceUrl: id ? locItemUrl(id) : `${LOC_ORIGIN}/resource/${res?.resourceId}/`,
       archive: "Library of Congress",
     },
   };
