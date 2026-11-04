@@ -1,11 +1,24 @@
-import type { Detent } from "../state/store";
+import { getState, type Detent } from "../state/store";
 
-/** Phone bottom-sheet heights, in px. */
+/** Phone bottom-sheet heights, in px. A story's peek is a little taller to fit its title. */
 export function sheetHeight(d: Detent): number {
   const h = window.innerHeight;
-  if (d === "peek") return 178;
-  if (d === "half") return Math.round(h * 0.5);
-  return h - 100;
+  if (d === "peek") return getState().selectedId ? 206 : 178;
+  if (d === "half") return Math.round(h * 0.52);
+  return h - 140; // leaves the timeline dock at the top of the screen in view
+}
+
+/**
+ * Height for a raw drag position: free between peek and full, with rubber-band
+ * resistance past either end so the sheet feels like it has weight.
+ */
+export function rubberBand(px: number): number {
+  const lo = sheetHeight("peek");
+  const hi = sheetHeight("full");
+  const band = (over: number) => (over * 0.5) / (1 + over / 160);
+  if (px > hi) return hi + band(px - hi);
+  if (px < lo) return lo - band(lo - px);
+  return px;
 }
 
 export function nearestDetent(px: number, velocity: number): Detent {

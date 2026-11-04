@@ -1,13 +1,20 @@
 import { useEffect, useState } from "react";
-import { CENSUS, ERAS, MAX_YEAR, MIN_YEAR, ORDERED, SITE_BY_ID } from "../data";
+import { CENSUS, ERAS, MAX_YEAR, MIN_YEAR } from "../data";
 import { censusLine } from "../lib/census";
 import { eraOf } from "../lib/eras";
-import { actions, getState, matches, subscribe, useStore } from "../state/store";
+import { stepTarget } from "../lib/filters";
+import { actions, filtered, getState, PLAY_STEP_MS, subscribe, useStore } from "../state/store";
+import type { Site } from "../types";
 import { ChevronLeft, ChevronRight, PauseIcon, PlayIcon } from "./Icons";
+import { Coach } from "./timeline/Coach";
+import { frac, roman } from "./timeline/geometry";
+import { Scrubber } from "./timeline/Scrubber";
+import { useTween } from "./timeline/useTween";
+import "./timeline.css";
 
-const pct = (y: number) => ((y - MIN_YEAR) / (MAX_YEAR - MIN_YEAR)) * 100;
-const TICKS = [1780, 1850, 1900, 1950, MAX_YEAR];
 const COACH_KEY = "ctm-coach-done";
+/** Fired (on window) to show the first-visit tip again, e.g. from the help sheet. */
+export const TOUR_EVENT = "ctm:tour";
 
 function coachDone() {
   try {
@@ -24,6 +31,36 @@ function setCoachDone() {
   }
 }
 
+/** Previous/next site for the step buttons, or null when there is nowhere to go. */
+function stepFor(list: Site[], selectedId: string | null, year: number, dir: 1 | -1): Site | null {
+  const t = stepTarget(list, selectedId, year, dir);
+  if (!t || t.id === selectedId) return null;
+  if (!selectedId && (dir > 0 ? t.year <= year : t.year >= year)) return null;
+  return t;
+}
+
+/** Play/pause with a ring that shows how far through time we are. */
+function PlayButton({ year, playing, onPress }: { year: number; playing: boolean; onPress: () => void }) {
+  const C = 2 * Math.PI * 27;
+  return (
+    <button
+      className={`tl-play${playing ? " on" : ""}`}
+      id="play"
+      type="button"
+      aria-pressed={playing}
+      aria-label={playing ? "Pause" : year >= MAX_YEAR ? `Play from ${MIN_YEAR}` : `Play from ${year}`}
+      title={playing ? "Pause (Space)" : "Play (Space)"}
+      onClick={onPress}
+    >
+      <svg className="ring" viewBox="0 0 60 60" aria-hidden="true">
+        <circle cx="30" cy="30" r="27" />
+        <circle cx="30" cy="30" r="27" className="prog" strokeDasharray={C} strokeDashoffset={C * (1 - frac(year))} />
+      </svg>
+      <span className="core">{playing ? <PauseIcon /> : <PlayIcon />}</span>
+    </button>
+  );
+}
+
 export function Timeline() {
   const year = useStore((s) => s.year);
   const playing = useStore((s) => s.playing);
@@ -34,26 +71,41 @@ export function Timeline() {
   const speed = useStore((s) => s.speed);
   const [coach, setCoach] = useState(false);
   const f = { cats, query };
-  const total = ORDERED.filter((s) => matches(s, f));
-  const shown = total.filter((s) => s.year <= year).length;
-  const hov = hoverId ? SITE_BY_ID[hoverId] : null;
+  const list = filtered(f);
+  const shown = list.filter((s) => s.year <= year).length;
   const era = eraOf(year, ERAS);
+  const eraIdx = ERAS.indexOf(era);
+  const shownYear = useTween(year, playing);
+  const prev = stepFor(list, selectedId, year, -1);
+  const next = stepFor(list, selectedId, year, 1);
 
-  // first visit: point at Play, until the timeline is used
+  // first visit: teach the three moves, until the timeline is used
   useEffect(() => {
-    if (coachDone() || /[?&]nocoach/.test(location.search)) return;
-    const t = setTimeout(() => setCoach(true), 900);
-    const start = getState();
-    const unsub = subscribe(() => {
-      const s = getState();
-      if (s.playing || s.year !== start.year) {
-        setCoach(false);
-        setCoachDone();
-      }
-    });
+    let t: ReturnType<typeof setTimeout> | undefined;
+    let unsub: (() => void) | undefined;
+    const arm = (delay: number) => {
+      clearTimeout(t);
+      unsub?.();
+      t = setTimeout(() => setCoach(true), delay);
+      const start = getState();
+      unsub = subscribe(() => {
+        const s = getState();
+        if (s.playing || s.year !== start.year) {
+          clearTimeout(t);
+          setCoach(false);
+          setCoachDone();
+          unsub?.();
+          unsub = undefined;
+        }
+      });
+    };
+    if (!coachDone() && !/[?&]nocoach/.test(location.search)) arm(900);
+    const replay = () => arm(250);
+    addEventListener(TOUR_EVENT, replay);
     return () => {
       clearTimeout(t);
-      unsub();
+      unsub?.();
+      removeEventListener(TOUR_EVENT, replay);
     };
   }, []);
   const dismiss = () => {
@@ -61,170 +113,116 @@ export function Timeline() {
     setCoachDone();
   };
 
+  const go = (dir: 1 | -1) => {
+    dismiss();
+    actions.stop();
+    actions.step(dir);
+  };
+
   return (
-    <section className="dock glass" aria-label="Timeline">
+    <section className={`dock tl glass${playing ? " playing" : ""}`} aria-label="Timeline">
       {coach && (
-        <div className="coach" role="dialog" aria-label="Tip">
-          <b>Watch Chicago grow</b>
-          Press play to travel from 1780 to today, or drag the red dot. Tap any star to read its story.
-          <div className="row">
-            <button
-              type="button"
-              onClick={() => {
-                dismiss();
-                actions.play();
-              }}
-            >
-              ▶ Play from 1780
-            </button>
-            <button type="button" className="ghost" onClick={dismiss}>
-              Got it
-            </button>
-          </div>
-        </div>
-      )}
-
-      <button
-        className="play"
-        id="play"
-        type="button"
-        aria-pressed={playing}
-        aria-label={playing ? "Pause" : year >= MAX_YEAR ? "Play from 1780" : `Play from ${year}`}
-        title={playing ? "Pause (Space)" : "Play (Space)"}
-        onClick={() => {
-          dismiss();
-          actions.togglePlay();
-        }}
-      >
-        {playing ? <PauseIcon /> : <PlayIcon />}
-      </button>
-
-      <div className="readout">
-        <div className="year" id="yearOut">
-          {year}
-        </div>
-        <span className="era" id="eraOut">
-          {era.name}
-        </span>
-        <span className="pop" id="popOut">
-          {censusLine(year, CENSUS)}
-        </span>
-        <span className="count" id="countOutPhone" aria-hidden="true">
-          {shown} of {total.length} sites
-        </span>
-      </div>
-
-      <div className="slider">
-        {hov && (
-          <div className="ticktip" style={{ left: `${Math.min(88, Math.max(12, pct(hov.year)))}%` }} aria-hidden="true">
-            <b>{hov.year}</b>
-            {hov.title}
-          </div>
-        )}
-        <div className="evts">
-          {ORDERED.map((s) => {
-            const cls = [
-              !matches(s, f) && "off",
-              s.year > year && "later",
-              s.id === selectedId && "sel",
-              s.id === hoverId && "hov",
-            ]
-              .filter(Boolean)
-              .join(" ");
-            return (
-              <i
-                key={s.id}
-                data-id={s.id}
-                className={cls || undefined}
-                style={{ left: `${pct(s.year)}%`, background: `var(--c-${s.category})` }}
-                onMouseEnter={() => actions.hover(s.id)}
-                onMouseLeave={() => getState().hoverId === s.id && actions.hover(null)}
-                onClick={() => {
-                  actions.stop();
-                  actions.select(s.id, { pan: true, setYear: true });
-                }}
-              />
-            );
-          })}
-        </div>
-        <div className="eras">
-          {ERAS.map((e, i) => (
-            <span
-              key={e.from}
-              title={`${e.name}, ${e.from}–${Math.min(e.to, MAX_YEAR)}`}
-              onClick={() => {
-                actions.stop();
-                actions.setYear(e.from);
-              }}
-              style={{
-                width: `${pct(Math.min(e.to + 1, MAX_YEAR)) - pct(e.from)}%`,
-                background: `color-mix(in srgb, var(--red) ${12 + i * 14}%, var(--lake))`,
-              }}
-            />
-          ))}
-        </div>
-        <input
-          type="range"
-          id="year"
-          min={MIN_YEAR}
-          max={MAX_YEAR}
-          step={1}
-          value={year}
-          aria-label="Year"
-          aria-valuetext={`${year}, ${era.name}, ${shown} sites`}
-          onChange={(e) => {
+        <Coach
+          onClose={dismiss}
+          onPlay={() => {
+            dismiss();
             actions.stop();
-            actions.setYear(+e.target.value);
+            actions.setYear(MIN_YEAR);
+            actions.play();
           }}
         />
-        <div className="ticks" aria-hidden="true">
-          {TICKS.map((t) => (
-            <span key={t} style={{ left: `${pct(t)}%` }}>
-              {t}
+      )}
+
+      <div className="tl-head">
+        <PlayButton
+          year={year}
+          playing={playing}
+          onPress={() => {
+            dismiss();
+            actions.togglePlay();
+          }}
+        />
+
+        <div className="tl-read">
+          <div className="tl-year" id="yearOut" aria-live="off">
+            {shownYear}
+          </div>
+          <div className="tl-meta">
+            <div className="tl-era">
+              <span className="ch" title={`Chapter ${eraIdx + 1} of ${ERAS.length}`}>
+                {roman(eraIdx + 1)}
+              </span>
+              <span id="eraOut" key={era.name}>
+                {era.name}
+              </span>
+            </div>
+            <div className="tl-sub">
+              <span className="tl-census" id="popOut">
+                {censusLine(year, CENSUS)}
+              </span>
+              <span className="tl-count" id="countOut">
+                {shown} of {list.length} sites by {year}
+              </span>
+              <span className="tl-count-phone" id="countOutPhone" aria-hidden="true">
+                {shown} of {list.length} sites
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="tl-nav">
+          <button
+            className="tl-step prev"
+            type="button"
+            disabled={!prev}
+            aria-label={prev ? `Previous event: ${prev.year}, ${prev.title}` : "Previous event"}
+            title="Previous event (←)"
+            onClick={() => go(-1)}
+          >
+            <ChevronLeft />
+          </button>
+          <button
+            className="tl-step next"
+            type="button"
+            disabled={!next}
+            aria-label={next ? `Next event: ${next.year}, ${next.title}` : "Next event"}
+            title="Next event (→)"
+            onClick={() => go(1)}
+          >
+            {next && (
+              <span className="lbl" aria-hidden="true">
+                <small>Next · {next.year}</small>
+                <b>{next.title}</b>
+              </span>
+            )}
+            <ChevronRight />
+          </button>
+          <button
+            className="tl-speed"
+            type="button"
+            aria-label={`Playback speed ${speed}x`}
+            title="Playback speed"
+            onClick={() => actions.setSpeed(speed === 1 ? 2 : speed === 2 ? 4 : 1)}
+          >
+            <span className="bars" aria-hidden="true" data-speed={speed}>
+              <i />
+              <i />
+              <i />
             </span>
-          ))}
+            {speed}×
+          </button>
         </div>
       </div>
 
-      <div className="dock-r">
-        <button
-          className="iconbtn"
-          type="button"
-          aria-label="Previous event"
-          title="Previous event (←)"
-          onClick={() => {
-            actions.stop();
-            actions.step(-1);
-          }}
-        >
-          <ChevronLeft />
-        </button>
-        <button
-          className="iconbtn"
-          type="button"
-          aria-label="Next event"
-          title="Next event (→)"
-          onClick={() => {
-            actions.stop();
-            actions.step(1);
-          }}
-        >
-          <ChevronRight />
-        </button>
-        <button
-          className="speed"
-          type="button"
-          aria-label={`Playback speed ${speed}x`}
-          title="Playback speed"
-          onClick={() => actions.setSpeed(speed === 1 ? 2 : speed === 2 ? 4 : 1)}
-        >
-          {speed}×
-        </button>
-        <span className="count" id="countOut">
-          {shown} of {total.length} sites by {year}
-        </span>
-      </div>
+      <Scrubber
+        year={year}
+        playing={playing}
+        selectedId={selectedId}
+        hoverId={hoverId}
+        filter={f}
+        shown={shown}
+        stepMs={Math.round(PLAY_STEP_MS / speed)}
+      />
     </section>
   );
 }
-

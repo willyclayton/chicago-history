@@ -33,20 +33,26 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: npm run test:smoke
       - uses: actions/upload-pages-artifact@v3
-        if: github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           path: dist
 
+  # Only main deploys: the github-pages environment rejects other branches.
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
+      - id: pages
+        uses: actions/configure-pages@v5
+        continue-on-error: true
+      - name: Pages is not switched on yet
+        if: steps.pages.outcome == 'failure'
+        run: |
+          echo "::error title=Turn on GitHub Pages::Open https://github.com/${{ github.repository }}/settings/pages and set Build and deployment > Source to 'GitHub Actions', then re-run this workflow. (The workflow's token is not allowed to turn Pages on by itself.)"
+          exit 1
       - id: deployment
         uses: actions/deploy-pages@v4

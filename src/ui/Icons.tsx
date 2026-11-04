@@ -30,3 +30,45 @@ export const KeyboardIcon = (p: P) => (
 export const StreetIcon = (p: P) => (
   <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><circle cx="12" cy="5" r="2.5" /><path d="M12 8v7M9 21l3-6 3 6M8 12h8" /></svg>
 );
+export const PinIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+);
+export const ClockIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+);
+export const ArrowUpRight = (p: P) => <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M7 17 17 7M8 7h9v9" /></svg>;
+export const CheckIcon = (p: P) => <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="m5 12.5 4.5 4.5L19 7.5" /></svg>;
+export const BookIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z" /><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5" /></svg>
+);
+/** The six-point star from the Chicago flag. Filled with currentColor. */
+export const StarIcon = (p: P) => (
+  <svg viewBox="-10 -10 20 20" aria-hidden="true" {...p}>
+    <path fill="currentColor" d="M0 -9L2.16 -3.74L8.28 -4.5L4.32 0L8.28 4.5L2.16 3.74L0 9L-2.16 3.74L-8.28 4.5L-4.32 0L-8.28 -4.5L-2.16 -3.74Z" />
+  </svg>
+);
+/** A tiny Chicago flag: two light-blue bars and four red stars. Colors come from the theme tokens. */
+export const FlagMark = (p: P) => (
+  <svg viewBox="0 0 36 24" aria-hidden="true" {...p}>
+    <rect x="0.5" y="0.5" width="35" height="23" rx="3" fill="var(--panel)" stroke="var(--line)" />
+    <rect x="1" y="4.5" width="34" height="3.4" fill="var(--river)" />
+    <rect x="1" y="16.1" width="34" height="3.4" fill="var(--river)" />
+    {[6.5, 14, 22, 29.5].map((x) => (
+      <path
+        key={x}
+        transform={`translate(${x} 12) scale(.29)`}
+        fill="var(--red)"
+        d="M0 -9L2.16 -3.74L8.28 -4.5L4.32 0L8.28 4.5L2.16 3.74L0 9L-2.16 3.74L-8.28 4.5L-4.32 0L-8.28 -4.5L-2.16 -3.74Z"
+      />
+    ))}
+  </svg>
+);
+/* map chrome */
+export const PlusIcon = (p: P) => <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M12 5v14M5 12h14" /></svg>;
+export const MinusIcon = (p: P) => <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M5 12h14" /></svg>;
+export const TargetIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><circle cx="12" cy="12" r="7" /><circle cx="12" cy="12" r="2.2" fill="currentColor" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3" /></svg>
+);
+export const LayersIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="m12 3 9 5-9 5-9-5 9-5Z" /><path d="m3 13 9 5 9-5" /></svg>
+);

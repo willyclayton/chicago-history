@@ -76,6 +76,18 @@ export function basemapLayers(t: MapTokens): LayerSpecification[] {
       paint: { "fill-color": t.lake },
     },
     {
+      // a crisp, faint shoreline so the lake edge (Chicago's defining border) reads clearly
+      id: "water-shore",
+      type: "line",
+      ...src,
+      "source-layer": "water",
+      paint: {
+        "line-color": t.river,
+        "line-width": ["interpolate", ["linear"], ["zoom"], 9, 0.5, 14, 1.2, 18, 2],
+        "line-opacity": 0.45,
+      },
+    },
+    {
       id: "river-water",
       type: "fill",
       ...src,
