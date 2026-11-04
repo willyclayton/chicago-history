@@ -1,0 +1,941 @@
+<title>Chicago Time Map</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: year + timeline strip on top, category chips, then a browse list beside a large drawn map with a floating story card (bottom sheet on phones) */
+:root{
+  --bg:#F2F5F7; --land:#E4E9EC; --lake:#B3DDF2; --river:#58A6D6; --street:#FAFCFD; --artery:#C6D0D7;
+  --made:#D3E3D0; --ink:#11202C; --muted:#56656F; --line:#D2DAE0; --panel:#FFFFFF; --red:#D7172F;
+  --red-soft:rgba(215,23,47,.14); --focus:#1D6FB8; --lakelabel:#5E93B3; --shadow:0 8px 28px rgba(17,32,44,.16);
+  --c-growth:#9C7410; --c-dark:#D7172F; --c-rights:#7646C2; --c-building:#0F7F6E; --c-culture:#D9650A; --c-play:#2160C4; --c-fairs:#4F8519;
+  --display:"Big Shoulders Display","Arial Narrow","Roboto Condensed",Impact,sans-serif;
+  --body:"Libre Franklin","Franklin Gothic Medium","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0C1217; --land:#141D24; --lake:#173A4F; --river:#2F7BAA; --street:#1E2A33; --artery:#2B3945;
+  --made:#17291F; --ink:#E6EEF2; --muted:#93A4B0; --line:#25323C; --panel:#141C23; --red:#FF4A5C;
+  --red-soft:rgba(255,74,92,.18); --focus:#6CB4F0; --lakelabel:#6FA8C9; --shadow:0 8px 28px rgba(0,0,0,.5);
+  --c-growth:#E2B34C; --c-dark:#FF5466; --c-rights:#AD8BF2; --c-building:#3CC4AE; --c-culture:#FF9C4A; --c-play:#72A4FF; --c-fairs:#9BCB5E; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0C1217; --land:#141D24; --lake:#173A4F; --river:#2F7BAA; --street:#1E2A33; --artery:#2B3945;
+  --made:#17291F; --ink:#E6EEF2; --muted:#93A4B0; --line:#25323C; --panel:#141C23; --red:#FF4A5C;
+  --red-soft:rgba(255,74,92,.18); --focus:#6CB4F0; --lakelabel:#6FA8C9; --shadow:0 8px 28px rgba(0,0,0,.5);
+  --c-growth:#E2B34C; --c-dark:#FF5466; --c-rights:#AD8BF2; --c-building:#3CC4AE; --c-culture:#FF9C4A; --c-play:#72A4FF; --c-fairs:#9BCB5E; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px 28px}
+.app{max-width:1480px;margin:0 auto;display:grid;gap:12px}
+button,input{font:inherit;color:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+.top{display:flex;align-items:baseline;justify-content:space-between;gap:4px 16px;flex-wrap:wrap}
+.top h1{font-family:var(--display);font-weight:900;font-size:clamp(28px,4.4vw,44px);line-height:.95;letter-spacing:.01em;margin:0;text-transform:uppercase}
+.top h1 .star{color:var(--red)}
+.top p{margin:0;color:var(--muted);font-size:14px;max-width:56ch}
+
+/* timeline */
+.timebar{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 26px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+.readout{display:flex;align-items:center;gap:14px;min-width:0}
+.year{flex:none;font-family:var(--display);font-weight:900;font-size:62px;line-height:.85;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.yearmeta{display:grid;gap:2px;font-size:13px;min-width:0}
+.era{font-family:var(--display);font-weight:800;font-size:18px;text-transform:uppercase;letter-spacing:.06em;color:var(--red);line-height:1.1}
+#popOut{color:var(--muted);font-variant-numeric:tabular-nums}
+.ctrls{display:flex;gap:6px;margin-left:auto}
+.btn{border:1px solid var(--line);background:var(--bg);border-radius:999px;height:36px;padding:0 14px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+.btn.icon{width:36px;padding:0;justify-content:center;font-size:16px}
+.btn:hover{border-color:var(--ink)}
+.btn.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.slider{position:relative;min-width:0}
+.evts{position:relative;height:14px;margin-bottom:3px}
+.evts i{position:absolute;bottom:0;width:3px;height:12px;border-radius:2px;transform:translateX(-50%);transition:opacity .2s,height .2s}
+.evts i.off{opacity:.15;height:6px}
+.evts i.later{opacity:.35}
+.evts i.sel{height:14px;width:4px;box-shadow:0 0 0 1.5px var(--panel),0 0 0 3px var(--ink)}
+.eras{position:relative;height:10px;border-radius:5px;overflow:hidden;display:flex}
+.eras span{height:100%;border-right:2px solid var(--panel)}
+.eras span:last-child{border-right:0}
+#year{-webkit-appearance:none;appearance:none;width:100%;background:transparent;margin:-17px 0 0;height:24px;position:relative;cursor:pointer;display:block}
+#year::-webkit-slider-runnable-track{height:24px;background:transparent}
+#year::-moz-range-track{height:24px;background:transparent}
+#year::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;margin-top:1px;border-radius:50%;background:var(--red);border:3px solid var(--panel);box-shadow:0 0 0 1px var(--ink)}
+#year::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--red);border:3px solid var(--panel);box-shadow:0 0 0 1px var(--ink)}
+.ticks{position:relative;height:16px;font-size:11px;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:2px}
+.ticks span{position:absolute;transform:translateX(-50%)}
+.ticks span:first-child{transform:none}
+.ticks span:last-child{transform:translateX(-100%)}
+
+/* category chips */
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 11px 0 10px;border-radius:999px;border:1px solid var(--line);background:var(--panel);cursor:pointer;font-size:12.5px;font-weight:600;white-space:nowrap}
+.chip .dot{width:10px;height:10px;border-radius:50%;background:var(--cc,var(--ink));box-shadow:0 0 0 2px var(--panel),0 0 0 3px var(--cc,var(--ink))}
+.chip .n{color:var(--muted);font-weight:500;font-variant-numeric:tabular-nums}
+.chip[aria-pressed="false"]{color:var(--muted);background:transparent}
+.chip[aria-pressed="false"] .dot{background:transparent}
+.chip:hover{border-color:var(--ink)}
+
+/* stage */
+.stage{display:grid;grid-template-columns:320px minmax(0,1fr);gap:12px;height:clamp(560px,calc(100dvh - 250px),980px)}
+.browse{display:flex;flex-direction:column;min-height:0;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.browse-head{padding:12px 14px 10px;display:grid;gap:8px;border-bottom:1px solid var(--line)}
+.browse-head h2{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:19px;margin:0;display:flex;justify-content:space-between;align-items:baseline}
+.browse-head h2 span{color:var(--muted);font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:0;text-transform:none;font-variant-numeric:tabular-nums}
+#q{width:100%;height:38px;border-radius:8px;border:1px solid var(--line);background:var(--bg);padding:0 12px;font-size:14px}
+#q::placeholder{color:var(--muted)}
+.listwrap{overflow:auto;min-height:0;flex:1;padding:4px 6px 10px;scrollbar-width:thin}
+.list{list-style:none;margin:0;padding:0}
+.list .eh{font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:13px;color:var(--muted);padding:12px 10px 4px;display:flex;justify-content:space-between}
+.list .eh b{font-weight:700;font-family:var(--body);letter-spacing:0;font-size:11px;font-variant-numeric:tabular-nums}
+.list button{display:grid;grid-template-columns:40px 10px minmax(0,1fr);gap:9px;width:100%;text-align:left;background:none;border:0;border-radius:7px;padding:6px 8px;cursor:pointer;align-items:baseline}
+.list button:hover{background:var(--bg)}
+.list button.sel{background:var(--red-soft)}
+.list button.later{opacity:.45}
+.list .y{font-family:var(--display);font-weight:800;font-size:16px;font-variant-numeric:tabular-nums}
+.list .d{width:9px;height:9px;border-radius:50%;background:var(--cc);align-self:center}
+.list .t{font-weight:600;font-size:14px;line-height:1.3;min-width:0}
+.list .t small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
+.empty{padding:18px 10px;color:var(--muted);font-size:14px}
+
+.mapwrap{position:relative;min-height:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--lake);touch-action:none}
+#map{display:block;width:100%;height:100%;cursor:grab;user-select:none;-webkit-user-select:none}
+#map.dragging{cursor:grabbing}
+.count{position:absolute;left:10px;top:10px;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}
+.zoom{position:absolute;right:10px;bottom:10px;display:grid;gap:6px}
+.zoom button{width:38px;height:38px;border-radius:9px;border:1px solid var(--line);background:var(--panel);font-size:18px;font-weight:600;cursor:pointer;line-height:1;box-shadow:var(--shadow)}
+.zoom button:hover{border-color:var(--ink)}
+.legend{position:absolute;left:10px;bottom:10px;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:7px 11px;font-size:11.5px;max-width:calc(100% - 70px)}
+.legend summary{cursor:pointer;font-weight:600;font-size:12px;list-style:none}
+.legend summary::-webkit-details-marker{display:none}
+.legend summary::before{content:"+ ";color:var(--red)}
+.legend[open] summary::before{content:"− "}
+.legend .items{display:grid;gap:4px;margin-top:6px}
+.legend .items div{display:flex;align-items:center;gap:8px}
+.legend svg{flex:none}
+
+/* story card */
+.card{position:absolute;top:10px;right:10px;width:370px;max-height:calc(100% - 20px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:14px 16px 14px;display:grid;gap:9px;scrollbar-width:thin}
+.card .head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.kicker{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--cc)}
+.kicker .yr{color:var(--ink)}
+.flagchip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--red);color:var(--red);border-radius:999px;padding:0 7px;font-size:10.5px;letter-spacing:.04em}
+.card h2{font-family:var(--display);font-weight:800;font-size:32px;line-height:.98;margin:0;text-transform:uppercase;text-wrap:balance;cursor:default}
+.card .date{font-weight:600;font-size:13.5px}
+.card .body{display:grid;gap:9px}
+.card p{margin:0;max-width:62ch}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px;border-top:1px solid var(--line);padding-top:9px;margin:0}
+.card dt{color:var(--muted);text-transform:uppercase;font-size:10.5px;letter-spacing:.08em;padding-top:2px}
+.card dd{margin:0}
+.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.actions a,.actions button{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:600;font-size:13px;border-radius:999px;height:36px;padding:0 14px;border:1px solid var(--line);color:var(--ink);background:none;cursor:pointer}
+.actions a.primary{background:var(--red);border-color:var(--red);color:#fff}
+.actions a:hover,.actions button:hover{border-color:var(--ink)}
+.actions .more{display:none}
+.nav{display:flex;justify-content:space-between;gap:8px;border-top:1px solid var(--line);padding-top:6px}
+.nav button{background:none;border:0;padding:4px 0;cursor:pointer;color:var(--muted);font-size:12.5px;font-weight:600;max-width:48%;text-align:left}
+.nav button:last-child{text-align:right}
+.nav button:hover{color:var(--ink)}
+.closecard{display:none}
+
+.foot{color:var(--muted);font-size:12px;max-width:95ch}
+
+/* map drawing */
+.lake{fill:var(--lake)} .land{fill:var(--land)} .park{fill:var(--made)}
+.made{fill:var(--lake);transition:fill .6s}
+.made.filled{fill:var(--made)}
+.oldshore{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-dasharray:4 4;opacity:.4;vector-effect:non-scaling-stroke}
+.river{fill:none;stroke:var(--river);stroke-linecap:round;stroke-linejoin:round}
+.st{stroke:var(--street);fill:none;vector-effect:non-scaling-stroke;stroke-width:1.3}
+.st.major{stroke:var(--artery);stroke-width:2.2}
+.lbl{font-family:var(--body);fill:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;paint-order:stroke;stroke:var(--land);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.lbl.lakel{fill:var(--lakelabel);stroke:none;font-family:var(--display);font-weight:800;letter-spacing:.32em}
+.lbl.hood{font-weight:700;letter-spacing:.18em;fill:var(--ink);opacity:0;transition:opacity .25s}
+.lbl.parkl{fill:var(--c-building);letter-spacing:.1em;font-style:italic;text-transform:none;font-weight:600;stroke:var(--made);opacity:0;transition:opacity .25s}
+svg.z1:not(.z2) .lbl.hood{opacity:.5} svg.z1 .lbl.parkl{opacity:.9}
+.lbl.edge{fill:var(--muted);opacity:.85}
+.burn{fill:url(#hatch);stroke:var(--red);stroke-width:1.4;stroke-dasharray:6 3;vector-effect:non-scaling-stroke;opacity:0;transition:opacity .5s;pointer-events:none}
+.burn.show{opacity:1}
+.pier{fill:var(--land);transition:opacity .5s}
+.mk{cursor:pointer;transition:opacity .3s}
+.mk.hidden{opacity:0;pointer-events:none}
+.mk .s{fill:var(--mc);stroke:var(--panel);stroke-width:1.6}
+.mk .fr{fill:none;stroke:var(--red);stroke-width:1.6}
+.mk .ring{fill:none;stroke:var(--mc);stroke-width:2;opacity:0;transform-box:fill-box;transform-origin:center}
+.mk.recent .ring{opacity:.6}
+.mk .halo{fill:transparent}
+.mk.sel .halo{fill:var(--red-soft);stroke:var(--ink);stroke-width:1.5}
+.mk.sel .s{stroke:var(--ink);stroke-width:2}
+.mk text{font-family:var(--display);font-weight:800;font-size:13.5px;fill:var(--ink);paint-order:stroke;stroke:var(--land);stroke-width:3.5px;stroke-linejoin:round;opacity:0;transition:opacity .2s;pointer-events:none}
+svg.z2 .mk text,.mk.sel text,.mk:hover text{opacity:1}
+svg.z2 .mk.nolbl:not(.sel):not(:hover) text{opacity:0}
+@media (prefers-reduced-motion:no-preference){.mk.recent .ring{animation:pulse 2.2s ease-out infinite}}
+@keyframes pulse{0%{transform:scale(.7);opacity:.6}100%{transform:scale(1.7);opacity:0}}
+
+@media (max-width:1000px){
+  .stage{grid-template-columns:1fr;height:auto}
+  .mapwrap{order:-1;height:max(440px,74dvh)}
+  .browse{max-height:none}
+  .listwrap{overflow:visible}
+  .card{top:auto;bottom:8px;left:8px;right:8px;width:auto;max-height:calc(100% - 16px);padding:12px 14px}
+  .card:not(.open) .body,.card:not(.open) .nav{display:none}
+  .card:not(.open) h2{font-size:26px}
+  .actions .more{display:inline-flex}
+  .closecard{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--bg);cursor:pointer;font-size:15px;flex:none}
+  .card.min{display:none}
+  .zoom{top:10px;bottom:auto}
+  .legend{top:44px;bottom:auto}
+  .chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px;padding-block:2px}
+  .chips::-webkit-scrollbar{display:none}
+}
+@media (max-width:600px){
+  .timebar{grid-template-columns:1fr;padding:12px}
+  .year{font-size:52px}
+  .ctrls .lbltxt{display:none}
+  .readout{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px}
+  .era{font-size:15px}
+  #popOut{font-size:12px;line-height:1.3}
+  .ctrls .btn{width:34px;height:34px;padding:0;justify-content:center}
+  .card .date{font-size:12.5px}
+  .actions a,.actions button{padding:0 12px;height:34px}
+}
+</style>
+
+<div class="app">
+  <header class="top">
+    <h1><span class="star">✶</span> Chicago Time Map</h1>
+    <p>Drag the timeline, filter by theme, and tap a star to read what happened there. Every spot opens in Street View.</p>
+  </header>
+
+  <section class="timebar" aria-label="Timeline">
+    <div class="readout">
+      <div class="year" id="yearOut">2026</div>
+      <div class="yearmeta">
+        <span class="era" id="eraOut">Global city</span>
+        <span id="popOut"></span>
+      </div>
+      <div class="ctrls">
+        <button class="btn icon" id="prevEv" type="button" aria-label="Previous event">‹</button>
+        <button class="btn" id="play" type="button" aria-pressed="false">▶<span class="lbltxt">Play</span></button>
+        <button class="btn icon" id="nextEv" type="button" aria-label="Next event">›</button>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="evts" id="evts" aria-hidden="true"></div>
+      <div class="eras" id="eras" aria-hidden="true"></div>
+      <input type="range" id="year" min="1780" max="2026" value="2026" step="1" aria-label="Year">
+      <div class="ticks" id="ticks" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <nav class="chips" id="chips" aria-label="Filter by theme"></nav>
+
+  <main class="stage">
+    <aside class="browse" aria-label="Browse sites">
+      <div class="browse-head">
+        <h2>Sites <span id="listCount"></span></h2>
+        <input type="search" id="q" placeholder="Search places, people, streets" autocomplete="off" aria-label="Search sites">
+      </div>
+      <div class="listwrap"><ol class="list" id="list"></ol></div>
+    </aside>
+
+    <div class="mapwrap" id="mapwrap">
+      <svg id="map" role="application" aria-label="Map of Chicago with historic sites"></svg>
+      <div class="count" id="countOut"></div>
+      <details class="legend" id="legend">
+        <summary>Map key</summary>
+        <div class="items">
+          <div><svg width="18" height="18" viewBox="-9 -9 18 18"><circle r="8" fill="none" stroke="var(--red)" stroke-width="1.5"/><path class="lgstar" d="" fill="var(--ink)" transform="scale(.8)"/></svg>Star on the city flag</div>
+          <div><svg width="18" height="18" viewBox="-9 -9 18 18"><circle r="7" fill="none" stroke="var(--ink)" stroke-width="1.5" opacity=".6"/><circle r="3" fill="var(--ink)"/></svg>Happened in the 10 years before the slider</div>
+          <div><svg width="18" height="12"><rect width="18" height="12" fill="url(#hatchLg)" stroke="var(--red)" stroke-dasharray="3 2"/><defs><pattern id="hatchLg" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="1.6" height="4" fill="var(--red)" opacity=".5"/></pattern></defs></svg>Burned in 1871</div>
+          <div><svg width="18" height="12"><rect width="18" height="12" fill="var(--made)" stroke="var(--line)"/></svg>Parks and made land</div>
+          <div><svg width="18" height="12"><line x1="0" y1="6" x2="18" y2="6" stroke="var(--ink)" stroke-dasharray="3 3" opacity=".6"/></svg>Lake shoreline in the 1830s</div>
+        </div>
+      </details>
+      <div class="zoom">
+        <button id="zin" type="button" aria-label="Zoom in">+</button>
+        <button id="zout" type="button" aria-label="Zoom out">−</button>
+        <button id="zfit" type="button" aria-label="Show the whole city" title="Whole city">⤢</button>
+      </div>
+      <article class="card" id="card" aria-live="polite"></article>
+    </div>
+  </main>
+
+  <footer class="foot">
+    The map is drawn from approximate coordinates, with simplified streets and shorelines. Sites are pinned at their commonly cited locations, and many original buildings are gone. Death tolls and crowd sizes are historical estimates. Population figures are U.S. Census decennial counts for the city of Chicago.
+  </footer>
+</div>
+<script>
+const ERAS = [
+  {from:1780,to:1836,name:"Frontier outpost"},
+  {from:1837,to:1870,name:"Boomtown"},
+  {from:1871,to:1892,name:"Fire and rebuilding"},
+  {from:1893,to:1919,name:"Industrial giant"},
+  {from:1920,to:1945,name:"Gangland and Depression"},
+  {from:1946,to:1979,name:"Postwar city"},
+  {from:1980,to:2026,name:"Global city"}
+];
+const CENSUS = [[1840,4470],[1850,29963],[1860,112172],[1870,298977],[1880,503185],[1890,1099850],[1900,1698575],[1910,2185283],[1920,2701705],[1930,3376438],[1940,3396808],[1950,3620962],[1960,3550404],[1970,3366957],[1980,3005072],[1990,2783726],[2000,2896016],[2010,2695598],[2020,2746388]];
+
+const SITES = [
+ {id:"dusable",y:1784,date:"c. 1780s",title:"Point du Sable's trading post",short:"Du Sable",lat:41.8893,lng:-87.6240,
+  addr:"North bank at the river mouth, near 401 N. Michigan Ave",
+  story:"Jean Baptiste Point du Sable, a Black trader of likely Haitian and French descent, built a farm and trading post on the north bank of the river in the 1780s. He is counted as Chicago's first permanent non-Native settler. He and his Potawatomi wife, Kitihawa, ran the post until he sold it in 1800.",
+  now:"Pioneer Court, beside the DuSable Bridge"},
+ {id:"fortdearborn",y:1803,date:"1803 to 1857",title:"Fort Dearborn",short:"Fort Dearborn",lat:41.8874,lng:-87.6243,flag:true,
+  addr:"Michigan Ave and Wacker Dr, south bank of the river",
+  story:"The U.S. Army built Fort Dearborn here in 1803. In August 1812, during the War of 1812, the garrison and settlers evacuated and were attacked by Potawatomi warriors along the lakeshore near today's 18th St and Prairie Ave, and the fort was burned. It was rebuilt in 1816 and taken apart over the following decades; the last building was gone by 1857.",
+  now:"Brass markers in the sidewalk outline the fort's footprint"},
+ {id:"wolfpoint",y:1830,date:"1830s",title:"Wolf Point",short:"Wolf Point",lat:41.8869,lng:-87.6378,
+  addr:"Where the North and South Branches meet",
+  story:"In the late 1820s and early 1830s, the land where the river's branches meet held Chicago's first taverns and store and some of its first church services. Chicago was incorporated as a town in 1833 with a few hundred residents, then as a city in 1837.",
+  now:"Wolf Point towers and the Riverwalk"},
+ {id:"cemetery",y:1843,date:"1843 to 1860s",title:"City Cemetery",short:"Cemetery",lat:41.9132,lng:-87.6338,
+  addr:"Lakefront north of North Ave",
+  story:"The city buried its dead on the lakefront north of town starting in 1843. Fear that graves this close to the lake were spreading disease led the city to move burials away in the 1860s and turn the land into Lincoln Park. Not every grave was moved, and remains still turn up during construction.",
+  now:"The 1858 Couch family tomb, behind the Chicago History Museum"},
+ {id:"canal",y:1848,date:"April 1848",title:"Illinois & Michigan Canal",short:"I&M Canal",lat:41.8435,lng:-87.6650,
+  addr:"South Branch at Bridgeport (approximate)",
+  story:"The 96-mile canal ran from the South Branch at Bridgeport to the Illinois River, linking the Great Lakes to the Mississippi. It made Chicago the country's shipping hub, and many of the Irish laborers who dug it settled in Bridgeport.",
+  now:"Canal Origins Park area in Bridgeport"},
+ {id:"wigwam",y:1860,date:"May 18, 1860",title:"The Wigwam",short:"Wigwam",lat:41.8857,lng:-87.6372,
+  addr:"Lake St and Wacker Dr (then Market St)",
+  story:"Republicans held their national convention in a temporary wooden hall called the Wigwam and nominated Abraham Lincoln for president on the third ballot. Chicago has hosted more major party conventions than any other city.",
+  now:"An office building; a plaque marks the site"},
+ {id:"stockyards",y:1865,date:"Dec 25, 1865",title:"Union Stock Yards",short:"Stock Yards",lat:41.8200,lng:-87.6487,
+  addr:"Exchange Ave and Peoria St",
+  story:"The Union Stock Yards opened on Christmas Day 1865 and made Chicago the meatpacking capital of the world, the city Carl Sandburg called \"Hog Butcher for the World.\" Upton Sinclair's 1906 novel The Jungle exposed conditions in the packinghouses. The yards closed in 1971.",
+  now:"The limestone Union Stock Yard Gate still stands"},
+ {id:"watertower",y:1869,date:"1869",title:"Chicago Water Tower",short:"Water Tower",lat:41.8972,lng:-87.6243,
+  addr:"806 N. Michigan Ave",
+  story:"The limestone tower hid a standpipe for the city's new waterworks, which drew water from an intake crib two miles out in the lake. Two years later it was one of the few structures in the burned district to survive the Great Fire.",
+  now:"Water Tower, now a free city art gallery"},
+ {id:"fire",y:1871,date:"Oct 8 to 10, 1871",title:"Great Chicago Fire",short:"Fire starts",lat:41.8690,lng:-87.6418,flag:true,burn:true,
+  addr:"O'Leary barn, 137 DeKoven St (now 558 W.)",
+  story:"The fire started in or near the O'Leary family barn on the night of Oct 8. A dry summer and a strong southwest wind pushed it across the river twice. It burned about 3.3 square miles and roughly 17,500 buildings; about 300 people died and some 100,000 lost their homes. The story of Mrs. O'Leary's cow was made up by a reporter, who later admitted it.",
+  now:"The Chicago Fire Academy, with a bronze Pillar of Fire sculpture"},
+ {id:"homeins",y:1885,date:"1885",title:"Home Insurance Building",short:"First skyscraper",lat:41.8796,lng:-87.6323,
+  addr:"LaSalle St and Adams St",
+  story:"William Le Baron Jenney's 10-story office building carried its weight on a metal frame instead of thick masonry walls, and it is often called the first skyscraper. It was torn down in 1931.",
+  now:"The Field Building (135 S. LaSalle)"},
+ {id:"haymarket",y:1886,date:"May 4, 1886",title:"Haymarket Affair",short:"Haymarket",lat:41.8846,lng:-87.6443,
+  addr:"Desplaines St near Randolph St",
+  story:"At a rally for the eight-hour workday, someone threw a bomb as police moved in to break up the crowd. Seven officers and at least four civilians died from the blast and the gunfire that followed. Eight anarchists were convicted in a trial widely seen as unfair, and four were hanged. The event is why much of the world marks May Day as a workers' holiday.",
+  now:"The Haymarket Memorial sculpture"},
+ {id:"hullhouse",y:1889,date:"Sept 18, 1889",title:"Hull House",short:"Hull House",lat:41.8717,lng:-87.6476,
+  addr:"800 S. Halsted St",
+  story:"Jane Addams and Ellen Gates Starr opened a settlement house in an old mansion to serve the neighborhood's immigrant families, with classes, a kindergarten, a gym and public baths. Addams won the Nobel Peace Prize in 1931.",
+  now:"Jane Addams Hull-House Museum, on the UIC campus"},
+ {id:"expo",y:1893,date:"May to Oct 1893",title:"World's Columbian Exposition",short:"White City",lat:41.7880,lng:-87.5810,flag:true,
+  addr:"Jackson Park",
+  story:"Chicago beat New York to host the world's fair for the 400th anniversary of Columbus's voyage. Daniel Burnham's \"White City\" of plaster palaces drew about 27 million visits and introduced the Ferris wheel.",
+  now:"Jackson Park; the Palace of Fine Arts is now the Museum of Science and Industry"},
+ {id:"iroquois",y:1903,date:"Dec 30, 1903",title:"Iroquois Theater fire",short:"Iroquois fire",lat:41.8847,lng:-87.6288,
+  addr:"24 W. Randolph St",
+  story:"During a packed holiday matinee, a stage light set a curtain on fire. Locked, hidden and inward-opening exits trapped the audience, and at least 602 people died, many of them children. It remains the deadliest single-building fire in U.S. history and led to panic bars and outward-opening exit doors.",
+  now:"The James M. Nederlander Theatre"},
+ {id:"wrigley",y:1914,date:"Apr 23, 1914",title:"Wrigley Field",short:"Wrigley",lat:41.9484,lng:-87.6553,
+  addr:"1060 W. Addison St",
+  story:"The park opened as Weeghman Park for the Chicago Whales of the short-lived Federal League. The Cubs moved in for 1916, and it took the Wrigley name in 1926. Lights arrived in 1988.",
+  now:"Home of the Cubs, MLB's second-oldest ballpark"},
+ {id:"eastland",y:1915,date:"July 24, 1915",title:"Eastland disaster",short:"Eastland",lat:41.8871,lng:-87.6319,
+  addr:"South bank between Clark and LaSalle",
+  story:"The excursion steamer Eastland, packed with Western Electric workers and their families heading to a company picnic, rolled onto its side while still tied to the dock. 844 passengers and crew died, only feet from shore.",
+  now:"A marker on the Riverwalk by the Clark St bridge"},
+ {id:"navypier",y:1916,date:"1916",title:"Navy Pier",short:"Navy Pier",lat:41.8917,lng:-87.6050,
+  addr:"600 E. Grand Ave",
+  story:"Opened as Municipal Pier, built from Burnham's 1909 Plan of Chicago for freight, passenger ships and public recreation. It was renamed in 1927 for Navy veterans of World War I, trained sailors in World War II, and later held a university campus.",
+  now:"Navy Pier"},
+ {id:"riot1919",y:1919,date:"July 27, 1919",title:"1919 race riot",short:"1919 riot",lat:41.8433,lng:-87.6085,
+  addr:"29th Street beach",
+  story:"Eugene Williams, a Black teenager, drifted on a raft across an unofficial color line at the 29th Street beach. White men threw rocks, and he drowned. When police would not arrest the man witnesses named, a week of violence followed: 38 people were killed and more than 500 injured.",
+  now:"A historical marker near the beach"},
+ {id:"valentine",y:1929,date:"Feb 14, 1929",title:"St. Valentine's Day Massacre",short:"Massacre",lat:41.9217,lng:-87.6403,
+  addr:"2122 N. Clark St",
+  story:"Seven men tied to Bugs Moran's North Side gang were lined up against the wall of a garage and shot by gunmen dressed as police. Al Capone's outfit was widely blamed, but no one was convicted. The garage was torn down in 1967.",
+  now:"A fenced lawn next to a senior residence; no marker"},
+ {id:"progress",y:1933,date:"1933 to 1934",title:"Century of Progress",short:"Century of Progress",lat:41.8600,lng:-87.6085,flag:true,
+  addr:"Northerly Island and the lakefront",
+  story:"Chicago's second world's fair marked 100 years since the town's founding. It was built on new lakefront fill, including Northerly Island, in the depths of the Depression, and was popular enough to reopen for a second summer.",
+  now:"Northerly Island park"},
+ {id:"biograph",y:1934,date:"July 22, 1934",title:"Biograph Theater",short:"Dillinger",lat:41.9266,lng:-87.6493,
+  addr:"2433 N. Lincoln Ave",
+  story:"FBI agents shot bank robber John Dillinger, then \"Public Enemy No. 1,\" in the alley beside the Biograph after he walked out of a movie. One of the two women with him had tipped off the agents.",
+  now:"The Biograph Theater building still stands"},
+ {id:"pile1",y:1942,date:"Dec 2, 1942",title:"Chicago Pile-1",short:"Chicago Pile-1",lat:41.7925,lng:-87.6013,
+  addr:"Ellis Ave near 57th St, University of Chicago",
+  story:"Under the stands of the old Stagg Field, Enrico Fermi's team ran the first controlled, self-sustaining nuclear chain reaction in a stack of graphite blocks and uranium. It was a key step for the Manhattan Project.",
+  now:"Henry Moore's Nuclear Energy sculpture"},
+ {id:"chess",y:1957,date:"1957 to 1967",title:"Chess Records",short:"Chess Records",lat:41.8537,lng:-87.6240,
+  addr:"2120 S. Michigan Ave",
+  story:"Leonard and Phil Chess ran their label here on what was called Record Row. Muddy Waters, Howlin' Wolf, Chuck Berry and Etta James recorded in the building, and the Rolling Stones cut a session here in 1964.",
+  now:"Willie Dixon's Blues Heaven Foundation"},
+ {id:"picasso",y:1967,date:"Aug 15, 1967",title:"The Chicago Picasso",short:"Picasso",lat:41.8839,lng:-87.6299,
+  addr:"Daley Plaza, 50 W. Washington St",
+  story:"Pablo Picasso designed the 50-foot Cor-Ten steel sculpture for the new Civic Center plaza and gave the design to the city. Chicagoans have argued ever since about whether it's a woman, a baboon or an Afghan hound.",
+  now:"Daley Plaza"},
+ {id:"dnc68",y:1968,date:"Aug 28, 1968",title:"1968 convention protests",short:"1968 DNC",lat:41.8726,lng:-87.6243,
+  addr:"Michigan Ave at Balbo, by the Conrad Hilton",
+  story:"While the Democratic National Convention met at the International Amphitheatre, thousands of antiwar protesters gathered in Grant Park. On Aug 28, police and demonstrators clashed in front of the Conrad Hilton on live TV. A federal study commission later described the police response as a \"police riot.\"",
+  now:"Hilton Chicago, 720 S. Michigan Ave"},
+ {id:"sears",y:1973,date:"1973",title:"Sears Tower",short:"Sears Tower",lat:41.8789,lng:-87.6359,
+  addr:"233 S. Wacker Dr",
+  story:"At 1,450 feet and 108 stories, Sears Tower became the world's tallest building and kept the title until 1998. Bruce Graham and engineer Fazlur Khan of SOM designed its bundled-tube frame. It was renamed Willis Tower in 2009.",
+  now:"Willis Tower and the Skydeck"},
+ {id:"disco",y:1979,date:"July 12, 1979",title:"Disco Demolition Night",short:"Disco Demolition",lat:41.8318,lng:-87.6347,
+  addr:"Old Comiskey Park, 35th St and Shields Ave",
+  story:"Between games of a White Sox doubleheader, radio DJ Steve Dahl blew up a crate of disco records in center field. Thousands of fans stormed the field, and the Sox had to forfeit the second game.",
+  now:"A parking lot north of today's ballpark, with old home plate marked"},
+ {id:"millennium",y:2004,date:"July 2004",title:"Millennium Park",short:"The Bean",lat:41.8827,lng:-87.6233,
+  addr:"Michigan Ave between Randolph and Monroe",
+  story:"Built over Illinois Central rail yards and parking lots, Millennium Park opened four years late and far over budget. Anish Kapoor's Cloud Gate, known as the Bean, was finished in 2006.",
+  now:"Millennium Park"},
+ {id:"cubs16",y:2016,date:"Nov 4, 2016",title:"Cubs World Series rally",short:"Cubs rally",lat:41.8716,lng:-87.6207,
+  addr:"Hutchinson Field, Grant Park",
+  story:"Two days after the Cubs won Game 7 in Cleveland and ended a 108-year title drought, the parade ran from Wrigley Field to a rally in Grant Park. The city estimated the crowd at 5 million, a number crowd experts have questioned.",
+  now:"Hutchinson Field, Grant Park"}
+];
+SITES.push(
+ {id:"stpats",y:1856,date:"1856",title:"Old St. Patrick's Church",short:"Old St. Pat's",lat:41.8790,lng:-87.6445,
+  addr:"700 W. Adams St",
+  story:"Built by Irish immigrants and dedicated in 1856, the church sat just west of the path of the 1871 fire and came through untouched. It is often called the oldest public building in the city.",
+  now:"Still an active parish, known for its block party"},
+ {id:"graceland",y:1860,date:"1860",title:"Graceland Cemetery",short:"Graceland",lat:41.9550,lng:-87.6620,
+  addr:"4001 N. Clark St",
+  story:"A rural garden cemetery when it opened, Graceland became the resting place of the people who built Chicago: Daniel Burnham, Louis Sullivan, Mies van der Rohe, Potter and Bertha Palmer, detective Allan Pinkerton and boxer Jack Johnson.",
+  now:"Open to visitors; Lorado Taft's Eternal Silence statue is a landmark"},
+ {id:"campdouglas",y:1862,date:"1862 to 1865",title:"Camp Douglas",short:"Camp Douglas",lat:41.8360,lng:-87.6140,
+  addr:"31st St to 33rd St at Cottage Grove Ave",
+  story:"Opened as a Union training camp, it became one of the largest prison camps for captured Confederate soldiers. Crowding, disease and cold winters killed thousands of prisoners before the war ended.",
+  now:"Homes and a park in Bronzeville; a historical marker"},
+ {id:"crib",y:1867,date:"1867",title:"Two-Mile Crib",short:"Two-Mile Crib",lat:41.8975,lng:-87.5835,
+  addr:"Lake Michigan, about 2 miles off Chicago Ave",
+  story:"Engineer Ellis Chesbrough ran a tunnel two miles under the lake bed to an intake crib, so the city could draw clean water far from the sewage flowing out of the river. The Water Tower on Michigan Ave was built to go with it.",
+  now:"The crib still stands offshore, visible from the lakefront (location approximate)"},
+ {id:"zoo",y:1868,date:"1868",title:"Lincoln Park Zoo",short:"Zoo",lat:41.9211,lng:-87.6340,
+  addr:"2001 N. Clark St",
+  story:"The zoo started with a gift of two pairs of swans from New York's Central Park. It is one of the oldest zoos in North America and has always been free.",
+  now:"Lincoln Park Zoo, still free"},
+ {id:"pullman",y:1880,date:"1880; strike 1894",title:"Pullman",short:"Pullman",lat:41.6918,lng:-87.6094,
+  addr:"Hotel Florence, 111th St and Forrestville Ave",
+  story:"Railroad car maker George Pullman built a company town for his workers starting in 1880, with housing, shops and churches he controlled. When he cut wages in 1894 without lowering rents, workers struck. The boycott spread to railroads across the country until federal troops broke it.",
+  now:"Pullman National Monument (designated 2015)"},
+ {id:"glessner",y:1887,date:"1887",title:"Glessner House",short:"Glessner House",lat:41.8577,lng:-87.6215,
+  addr:"1800 S. Prairie Ave",
+  story:"H.H. Richardson designed this fortress-like granite home on Prairie Avenue, the city's millionaires' row, where Marshall Field and George Pullman also lived. Its plain street wall and sunny inner courtyard broke with Victorian fashion.",
+  now:"Glessner House museum"},
+ {id:"auditorium",y:1889,date:"Dec 1889",title:"Auditorium Building",short:"Auditorium",lat:41.8760,lng:-87.6253,
+  addr:"50 E. Ida B. Wells Dr",
+  story:"Adler and Sullivan's combined theater, hotel and office block was the tallest building in Chicago when it opened. Its theater was praised for its acoustics, which engineer Dankmar Adler tuned himself.",
+  now:"Roosevelt University and the Auditorium Theatre"},
+ {id:"westside",y:1893,date:"1893 to 1915",title:"West Side Grounds",short:"West Side Grounds",lat:41.8711,lng:-87.6727,
+  addr:"Polk St and Wood St",
+  story:"Before Wrigley Field, the Cubs played here. It was their home when they won the World Series in 1907 and 1908, their last title for 108 years.",
+  now:"The University of Illinois medical campus; a plaque marks the site"},
+ {id:"artinst",y:1893,date:"1893",title:"Art Institute of Chicago",short:"Art Institute",lat:41.8796,lng:-87.6237,
+  addr:"111 S. Michigan Ave",
+  story:"The building went up on the lakefront for meetings tied to the 1893 world's fair, and the Art Institute moved in when the fair ended. The bronze lions out front arrived in 1894.",
+  now:"Art Institute of Chicago, with the Modern Wing added in 2009"},
+ {id:"reversal",y:1900,date:"Jan 1900",title:"River reversed",short:"River reversed",lat:41.8888,lng:-87.6110,
+  addr:"Mouth of the Chicago River",
+  story:"Sewage from the river was fouling the lake the city drank from. Engineers dug the Sanitary and Ship Canal and made the river flow backward, away from the lake and toward the Mississippi. St. Louis sued; Chicago won.",
+  now:"The Chicago Harbor Lock, built in 1938, controls flow at the mouth"},
+ {id:"riverview",y:1904,date:"1904 to 1967",title:"Riverview Park",short:"Riverview",lat:41.9440,lng:-87.6880,
+  addr:"Western Ave and Belmont Ave",
+  story:"For six decades this amusement park on the North Branch promised Chicagoans they could laugh their troubles away. It was famous for wooden coasters like the Bobs. It closed for good after the 1967 season.",
+  now:"Shopping center, offices and a small park"},
+ {id:"defender",y:1905,date:"1905",title:"Chicago Defender",short:"Defender",lat:41.8298,lng:-87.6229,
+  addr:"3435 S. Indiana Ave (offices from 1920s)",
+  story:"Robert S. Abbott started the Defender in his landlady's kitchen. It became the most influential Black newspaper in the country, and Pullman porters carried copies south. Its calls to leave the Jim Crow South helped drive the Great Migration to Chicago.",
+  now:"The former Defender building, a city landmark"},
+ {id:"greenmill",y:1907,date:"1907",title:"Green Mill",short:"Green Mill",lat:41.9690,lng:-87.6597,
+  addr:"4802 N. Broadway",
+  story:"The Uptown bar opened in 1907. In the Prohibition years, Capone gunman \"Machine Gun\" Jack McGurn had a stake in it. In 1986 it became home to Marc Smith's Uptown Poetry Slam, which spread the poetry slam around the world.",
+  now:"Still a jazz club, and the slam still runs on Sunday nights"},
+ {id:"essanay",y:1907,date:"1907 to 1917",title:"Essanay Studios",short:"Essanay",lat:41.9733,lng:-87.6615,
+  addr:"1345 W. Argyle St",
+  story:"Before Hollywood, Chicago was a movie capital. Essanay cranked out silent films here, gave Gloria Swanson an early start, and signed Charlie Chaplin, who made His New Job at the studio in 1915.",
+  now:"St. Augustine College; the studio's terra cotta logo is still over the door"},
+ {id:"conservatory",y:1908,date:"1908",title:"Garfield Park Conservatory",short:"Conservatory",lat:41.8863,lng:-87.7173,
+  addr:"300 N. Central Park Ave",
+  story:"Landscape architect Jens Jensen designed the glass houses to look like a haystack rising from the prairie. It is one of the largest conservatories in the country.",
+  now:"Garfield Park Conservatory, free"},
+ {id:"robie",y:1910,date:"1910",title:"Robie House",short:"Robie House",lat:41.7897,lng:-87.5960,
+  addr:"5757 S. Woodlawn Ave",
+  story:"Frank Lloyd Wright's long, low brick house with its cantilevered roofs is the classic example of his Prairie style. It is part of a UNESCO World Heritage listing of his buildings.",
+  now:"Frederick C. Robie House museum"},
+ {id:"chinatown",y:1912,date:"c. 1912",title:"Chinatown",short:"Chinatown",lat:41.8526,lng:-87.6320,
+  addr:"Wentworth Ave and Cermak Rd",
+  story:"Rising rents pushed Chicago's Chinese community out of the Loop around Clark and Van Buren, and many businesses relocated to Wentworth Ave. The On Leong building went up in 1928, and the Chinatown Gate in 1975.",
+  now:"Chinatown, with its gate over Wentworth Ave"},
+ {id:"maxwell",y:1912,date:"1912 to 1994",title:"Maxwell Street Market",short:"Maxwell St",lat:41.8647,lng:-87.6470,
+  addr:"Maxwell St and Halsted St",
+  story:"The open-air market served waves of immigrants, first Jewish, then Black and Mexican families. Blues players plugged in on the sidewalk, which helped shape the electric Chicago blues sound. It is also home of the Maxwell Street Polish.",
+  now:"UIC housing; the market moved to Desplaines St"}
+);
+SITES.push(
+ {id:"soldier",y:1924,date:"1924",title:"Soldier Field",short:"Soldier Field",lat:41.8623,lng:-87.6167,
+  addr:"1410 Museum Campus Dr",
+  story:"The colonnaded stadium opened in 1924 as a memorial to World War I soldiers. About 100,000 people watched the 1927 Dempsey and Tunney \"long count\" fight here, and Martin Luther King Jr. led a Chicago Freedom Movement rally on its field in July 1966. The Bears moved in in 1971.",
+  now:"Home of the Bears"},
+ {id:"tribune",y:1925,date:"1925",title:"Tribune Tower",short:"Tribune Tower",lat:41.8904,lng:-87.6234,
+  addr:"435 N. Michigan Ave",
+  story:"The neo-Gothic tower won a famous 1922 design contest. Tribune correspondents brought back fragments of famous buildings and sites, from the Great Wall to Westminster Abbey, which are set into its walls at street level.",
+  now:"Condos; the stones are still in the walls"},
+ {id:"union",y:1925,date:"1925",title:"Union Station",short:"Union Station",lat:41.8787,lng:-87.6403,
+  addr:"225 S. Canal St",
+  story:"Ten years in the making, the station opened in 1925 with a skylit Great Hall. Chicago was the country's rail hub, and most long-distance trips across the U.S. changed trains here. The baby carriage shootout in The Untouchables was filmed on its stairs.",
+  now:"Amtrak and Metra's main Chicago station"},
+ {id:"midway",y:1927,date:"1927",title:"Midway Airport",short:"Midway",lat:41.7868,lng:-87.7522,
+  addr:"5700 S. Cicero Ave",
+  story:"Opened as Chicago Municipal Airport, it was among the busiest airports in the world through the 1930s, 40s and 50s. It was renamed in 1949 for the Battle of Midway, and lost most of its traffic once O'Hare opened for jets.",
+  now:"Chicago Midway International Airport"},
+ {id:"buckingham",y:1927,date:"Aug 1927",title:"Buckingham Fountain",short:"Buckingham",lat:41.8758,lng:-87.6189,
+  addr:"Grant Park at Congress Plaza",
+  story:"Kate Buckingham gave the fountain in memory of her brother Clarence. It was modeled on the Latona Fountain at Versailles but built about twice as large, and its four sea horses stand for the states that border Lake Michigan.",
+  now:"Runs from spring to fall, with water shows every hour"},
+ {id:"regal",y:1928,date:"1928 to 1973",title:"Regal Theater",short:"Regal",lat:41.8094,lng:-87.6166,
+  addr:"47th St and King Dr (then South Parkway)",
+  story:"The ornate Bronzeville movie palace was a top stop for Black performers: Duke Ellington, Ella Fitzgerald, Nat King Cole and later the Jackson 5 played its stage. It was torn down in 1973.",
+  now:"Shops and a cultural center on 47th St"},
+ {id:"stadium",y:1929,date:"1929 to 1994",title:"Chicago Stadium",short:"Chicago Stadium",lat:41.8815,lng:-87.6715,
+  addr:"1800 W. Madison St",
+  story:"The Madhouse on Madison held both parties' 1932 conventions; Franklin Roosevelt flew in to accept his nomination in person, a first. The Blackhawks and the Michael Jordan Bulls played here until the United Center opened across the street in 1994.",
+  now:"A parking lot north of the United Center"},
+ {id:"mart",y:1930,date:"1930",title:"Merchandise Mart",short:"Merch Mart",lat:41.8885,lng:-87.6354,
+  addr:"222 W. Merchandise Mart Plaza",
+  story:"Built by Marshall Field & Co. as a wholesale market, it had more floor space than any building in the world until the Pentagon. Joseph Kennedy bought it in 1945, and his family owned it for half a century.",
+  now:"Offices and showrooms; Art on the Mart lights up its river wall at night"},
+ {id:"adler",y:1930,date:"May 1930",title:"Adler Planetarium",short:"Adler",lat:41.8663,lng:-87.6068,
+  addr:"1300 S. DuSable Lake Shore Dr",
+  story:"Max Adler, a Sears executive, gave the city the first planetarium in the Western Hemisphere. It sits at the tip of fill built for the lakefront, with one of the best skyline views in town.",
+  now:"Adler Planetarium"},
+ {id:"till",y:1955,date:"Sept 1955",title:"Emmett Till's funeral",short:"Till funeral",lat:41.8232,lng:-87.6263,
+  addr:"Roberts Temple Church of God in Christ, 4021 S. State St",
+  story:"Emmett Till, a 14-year-old from Chicago, was murdered while visiting family in Mississippi. His mother, Mamie Till-Mobley, insisted on an open casket so the world could see what was done to him. Tens of thousands came, and photos in Jet magazine helped spark the civil rights movement.",
+  now:"Roberts Temple, part of a national monument since 2023"},
+ {id:"secondcity",y:1959,date:"Dec 1959",title:"The Second City",short:"Second City",lat:41.9152,lng:-87.6347,
+  addr:"1842 N. Wells St (first stage)",
+  story:"An improv theater named after a sneering New Yorker magazine profile of Chicago opened in a former Chinese laundry. Its stage trained a long line of comics, including Bill Murray, Gilda Radner, Stephen Colbert, Tina Fey and Steve Carell.",
+  now:"The Second City, now a few blocks south at 1616 N. Wells"},
+ {id:"dusablemuseum",y:1961,date:"1961",title:"DuSable Museum",short:"DuSable Museum",lat:41.7917,lng:-87.6075,
+  addr:"740 E. 56th Pl, Washington Park",
+  story:"Artist and teacher Margaret Burroughs and others founded a museum of Black history in her home. It moved into a former park building in Washington Park in 1973.",
+  now:"DuSable Black History Museum and Education Center"},
+ {id:"marina",y:1964,date:"1964",title:"Marina City",short:"Marina City",lat:41.8879,lng:-87.6286,
+  addr:"300 N. State St",
+  story:"Bertrand Goldberg's twin round towers, nicknamed the corncobs, put apartments over spiral parking ramps and a boat marina. It was a bet that people would live downtown again.",
+  now:"Apartments, a hotel and House of Blues"},
+ {id:"mlk",y:1966,date:"Aug 5, 1966",title:"King's Marquette Park march",short:"MLK march",lat:41.7705,lng:-87.7000,
+  addr:"Marquette Park",
+  story:"Martin Luther King Jr. moved into a North Lawndale apartment in 1966 to push for open housing. During a march through Marquette Park, a crowd of white residents threw rocks and bottles, and King was hit in the head. He said afterward that he had never seen such hostility, even in the South.",
+  now:"Marquette Park, with a 2016 memorial to the march"},
+ {id:"hancock",y:1969,date:"1969",title:"John Hancock Center",short:"Hancock",lat:41.8988,lng:-87.6229,
+  addr:"875 N. Michigan Ave",
+  story:"The same SOM team behind Sears Tower, Bruce Graham and Fazlur Khan, gave this 100-story tower its exterior X-braces, which let it use far less steel. It mixed apartments, offices and shops in one building.",
+  now:"875 North Michigan Avenue and the 360 Chicago observation deck"},
+ {id:"warehouse",y:1977,date:"1977 to 1982",title:"The Warehouse",short:"The Warehouse",lat:41.8792,lng:-87.6427,
+  addr:"206 S. Jefferson St",
+  story:"DJ Frankie Knuckles played all-night sets at this members-only club in a three-story factory building. Record stores started labeling the music people heard there \"house,\" and the name stuck worldwide.",
+  now:"An office building"},
+ {id:"harpo",y:1990,date:"1990 to 2015",title:"Harpo Studios",short:"Harpo",lat:41.8829,lng:-87.6538,
+  addr:"1058 W. Washington Blvd",
+  story:"Oprah Winfrey bought a West Loop warehouse and taped The Oprah Winfrey Show here until its last episode in 2011. Her move helped kick off the West Loop's turn from meatpacking to restaurants and offices.",
+  now:"McDonald's global headquarters"},
+ {id:"flood",y:1992,date:"Apr 13, 1992",title:"Chicago Flood",short:"Chicago Flood",lat:41.8892,lng:-87.6388,
+  addr:"Kinzie St bridge over the North Branch",
+  story:"Pilings driven near the bridge had cracked a forgotten 1900s freight tunnel under the river. River water poured into the tunnel network and flooded Loop basements, shutting down much of downtown for days. Damage was estimated in the billions.",
+  now:"The Kinzie St bridge; the tunnels are sealed"},
+ {id:"paseo",y:1995,date:"1995",title:"Paseo Boricua",short:"Paseo Boricua",lat:41.9030,lng:-87.6868,
+  addr:"Division St at Western Ave",
+  story:"Two giant steel Puerto Rican flags arch over Division St, marking the heart of Chicago's Puerto Rican community between Western and California avenues.",
+  now:"The flags still stand over Division St"}
+);
+const CAT={dusable:"growth",fortdearborn:"growth",wolfpoint:"growth",cemetery:"growth",canal:"growth",stockyards:"growth",crib:"growth",reversal:"growth",chinatown:"growth",union:"growth",midway:"growth",
+ fire:"dark",iroquois:"dark",eastland:"dark",valentine:"dark",biograph:"dark",campdouglas:"dark",flood:"dark",
+ wigwam:"rights",haymarket:"rights",hullhouse:"rights",riot1919:"rights",dnc68:"rights",pullman:"rights",till:"rights",mlk:"rights",
+ watertower:"building",homeins:"building",sears:"building",stpats:"building",graceland:"building",glessner:"building",auditorium:"building",conservatory:"building",robie:"building",tribune:"building",mart:"building",marina:"building",hancock:"building",
+ chess:"culture",picasso:"culture",millennium:"culture",artinst:"culture",defender:"culture",greenmill:"culture",essanay:"culture",maxwell:"culture",regal:"culture",secondcity:"culture",dusablemuseum:"culture",warehouse:"culture",harpo:"culture",paseo:"culture",
+ wrigley:"play",navypier:"play",disco:"play",cubs16:"play",zoo:"play",westside:"play",riverview:"play",soldier:"play",buckingham:"play",stadium:"play",
+ expo:"fairs",progress:"fairs",pile1:"fairs",adler:"fairs"};
+const CATS=[
+ {id:"growth",name:"Growth & industry"},{id:"dark",name:"Disasters & crime"},{id:"rights",name:"Politics & protest"},
+ {id:"building",name:"Architecture"},{id:"culture",name:"Arts & culture"},{id:"play",name:"Sports & fun"},{id:"fairs",name:"Fairs & science"}];
+SITES.forEach(s=>{s.c=CAT[s.id]||"growth";});
+/* ---------- geography: simplified, approximate ---------- */
+const GEO = (() => {
+const LAT1=41.985, LAT0=41.672, LNG0=-87.775, LNG1=-87.525, K=10000, C=Math.cos(41.85*Math.PI/180);
+const W=(LNG1-LNG0)*C*K, H=(LAT1-LAT0)*K;
+const X=lng=>+((lng-LNG0)*C*K).toFixed(1), Y=lat=>+((LAT1-lat)*K).toFixed(1);
+const P=pts=>pts.map((p,i)=>(i?"L":"M")+X(p[1])+" "+Y(p[0])).join("");
+const L=pts=>pts.map(p=>"L"+X(p[1])+" "+Y(p[0])).join("");
+const BIG=5000;
+
+const shore=[[42.10,-87.665],[41.990,-87.6535],[41.982,-87.6510],[41.976,-87.6465],[41.970,-87.6400],[41.965,-87.6330],[41.9620,-87.6290],[41.9590,-87.6330],[41.955,-87.6345],[41.948,-87.6345],[41.940,-87.6320],[41.932,-87.6290],[41.925,-87.6265],[41.917,-87.6250],[41.910,-87.6235],[41.903,-87.6228],[41.8995,-87.6212],[41.8960,-87.6155],[41.8925,-87.6110],[41.8888,-87.6100],[41.8855,-87.6130],[41.880,-87.6150],[41.874,-87.6160],[41.868,-87.6130],[41.8665,-87.6068],[41.8620,-87.6075],[41.856,-87.6085],[41.8525,-87.6115],[41.8505,-87.6135],[41.846,-87.6110],[41.838,-87.6070],[41.830,-87.6030],[41.822,-87.5985],[41.814,-87.5915],[41.806,-87.5860],[41.798,-87.5810],[41.794,-87.5755],[41.790,-87.5775],[41.786,-87.5745],[41.780,-87.5720],[41.776,-87.5700],[41.770,-87.5660],[41.765,-87.5620],[41.760,-87.5560],[41.755,-87.5480],[41.748,-87.5440],[41.740,-87.5380],[41.733,-87.5320],[41.729,-87.5250],[41.700,-87.500],[41.55,-87.40]];
+const oldShore=[[42.10,-87.670],[41.985,-87.6580],[41.975,-87.6545],[41.965,-87.6495],[41.960,-87.6460],[41.948,-87.6440],[41.940,-87.6410],[41.932,-87.6385],[41.925,-87.6355],[41.917,-87.6315],[41.910,-87.6290],[41.903,-87.6260],[41.8995,-87.6245],[41.894,-87.6222],[41.8888,-87.6205],[41.8855,-87.6236],[41.880,-87.6242],[41.874,-87.6243],[41.868,-87.6240],[41.862,-87.6225],[41.856,-87.6200],[41.850,-87.6170],[41.846,-87.6150],[41.838,-87.6110],[41.830,-87.6070],[41.822,-87.6015],[41.814,-87.5940],[41.806,-87.5880],[41.798,-87.5830],[41.792,-87.5790],[41.786,-87.5770],[41.780,-87.5740],[41.776,-87.5722],[41.770,-87.5680],[41.765,-87.5640],[41.760,-87.5580],[41.755,-87.5510],[41.748,-87.5460],[41.740,-87.5400],[41.733,-87.5340],[41.729,-87.5265],[41.700,-87.501],[41.55,-87.401]];
+const rivers=[
+ {w:10,pts:[[41.8888,-87.6100],[41.8887,-87.6150],[41.8886,-87.6200],[41.8885,-87.6245],[41.8879,-87.6280],[41.8869,-87.6312],[41.8866,-87.6330],[41.8866,-87.6350],[41.8868,-87.6378]]},
+ {w:8,pts:[[41.8868,-87.6378],[41.8885,-87.6385],[41.8900,-87.6395],[41.8925,-87.6412],[41.8960,-87.6438],[41.8985,-87.6540],[41.9030,-87.6578],[41.9090,-87.6562],[41.9120,-87.6575],[41.9160,-87.6590],[41.9200,-87.6602],[41.9250,-87.6630],[41.9300,-87.6670],[41.9350,-87.6720],[41.9420,-87.6810],[41.9500,-87.6900],[41.9600,-87.7000],[41.9690,-87.7065],[41.9800,-87.7150],[42.000,-87.730]]},
+ {w:5,pts:[[41.8960,-87.6438],[41.9010,-87.6460],[41.9060,-87.6500],[41.9090,-87.6562]]},
+ {w:8,pts:[[41.8868,-87.6378],[41.8840,-87.6384],[41.8800,-87.6382],[41.8760,-87.6378],[41.8720,-87.6378],[41.8680,-87.6372],[41.8640,-87.6362],[41.8590,-87.6345],[41.8560,-87.6355],[41.8535,-87.6385],[41.8510,-87.6420],[41.8490,-87.6460],[41.8465,-87.6500],[41.8445,-87.6545],[41.8430,-87.6600],[41.8420,-87.6650],[41.8410,-87.6720],[41.8395,-87.6800],[41.8380,-87.6900],[41.8360,-87.7000],[41.8340,-87.7150],[41.8300,-87.7300],[41.8250,-87.7500],[41.8200,-87.7700],[41.812,-87.800]]},
+ {w:4,pts:[[41.8423,-87.6655],[41.8360,-87.6642],[41.8280,-87.6650],[41.8230,-87.6662]]},
+ {w:9,pts:[[41.7310,-87.5280],[41.7250,-87.5330],[41.7150,-87.5420],[41.7050,-87.5520],[41.6990,-87.5600],[41.6950,-87.5700]]},
+ {w:7,pts:[[41.6700,-87.5800],[41.6600,-87.5880],[41.6400,-87.5950]]}
+];
+const lakeCalumet=[[41.7000,-87.5900],[41.7010,-87.5760],[41.6950,-87.5680],[41.6820,-87.5670],[41.6720,-87.5720],[41.6680,-87.5810],[41.6700,-87.5900],[41.6820,-87.5950],[41.6930,-87.5945]];
+const parks=[
+ {n:"Jackson Park",p:[[41.7915,-87.5850],[41.7915,-87.5770],[41.7800,-87.5725],[41.7660,-87.5650],[41.7660,-87.5800],[41.7790,-87.5850]]},
+ {n:"Washington Park",p:[[41.8022,-87.6181],[41.8022,-87.6084],[41.7855,-87.6084],[41.7855,-87.6181]]},
+ {n:"",p:[[41.7880,-87.6084],[41.7880,-87.5868],[41.7855,-87.5868],[41.7855,-87.6084]]},
+ {n:"Humboldt Park",p:[[41.9070,-87.7170],[41.9070,-87.6990],[41.8985,-87.6990],[41.8985,-87.7170]]},
+ {n:"Garfield Park",p:[[41.8870,-87.7230],[41.8870,-87.7140],[41.8770,-87.7140],[41.8770,-87.7230]]},
+ {n:"Douglas Park",p:[[41.8650,-87.7050],[41.8650,-87.6960],[41.8560,-87.6960],[41.8560,-87.7050]]},
+ {n:"Marquette Park",p:[[41.7745,-87.7060],[41.7745,-87.6930],[41.7660,-87.6930],[41.7660,-87.7060]]},
+ {n:"Graceland",p:[[41.9580,-87.6640],[41.9580,-87.6590],[41.9505,-87.6590],[41.9505,-87.6640]]}
+];
+const diagonals=[
+ [[41.9108,-87.6318],[41.9180,-87.6355],[41.9253,-87.6400],[41.9327,-87.6450],[41.9398,-87.6500],[41.9471,-87.6563],[41.9542,-87.6610],[41.9687,-87.6680],[41.9900,-87.6720]],
+ [[41.9108,-87.6340],[41.9180,-87.6400],[41.9253,-87.6488],[41.9320,-87.6600],[41.9398,-87.6687],[41.9470,-87.6790],[41.9542,-87.6880],[41.9687,-87.7060],[41.9800,-87.7200]],
+ [[41.8893,-87.6443],[41.8964,-87.6560],[41.9033,-87.6675],[41.9104,-87.6774],[41.9175,-87.6866],[41.9230,-87.6990],[41.9300,-87.7120],[41.9460,-87.7370],[41.9600,-87.7600]],
+ [[41.8540,-87.6280],[41.8505,-87.6360],[41.8470,-87.6430],[41.8435,-87.6500],[41.8400,-87.6580],[41.8360,-87.6670],[41.8320,-87.6760],[41.8270,-87.6866],[41.8230,-87.6960],[41.8100,-87.7250],[41.7950,-87.7600]],
+ [[41.8840,-87.6620],[41.8780,-87.6690],[41.8720,-87.6760],[41.8670,-87.6830],[41.8610,-87.6900],[41.8550,-87.6980],[41.8460,-87.7120],[41.8380,-87.7300]],
+ [[41.8890,-87.6105],[41.9030,-87.6215],[41.9250,-87.6290],[41.9460,-87.6380],[41.9620,-87.6350],[41.9800,-87.6560]],
+ [[41.8850,-87.6170],[41.8660,-87.6180],[41.8480,-87.6140],[41.8300,-87.6060],[41.8100,-87.5900],[41.7950,-87.5830],[41.7840,-87.5790]]
+];
+const burn=[[41.8690,-87.6422],[41.8722,-87.6392],[41.8760,-87.6383],[41.8800,-87.6386],[41.8840,-87.6388],[41.8868,-87.6382],[41.8900,-87.6400],[41.8960,-87.6443],[41.9030,-87.6478],[41.9090,-87.6532],[41.9150,-87.6520],[41.9253,-87.6500],[41.9253,-87.6355],[41.9180,-87.6320],[41.9100,-87.6290],[41.9030,-87.6260],[41.8960,-87.6235],[41.8888,-87.6205],[41.8855,-87.6236],[41.8800,-87.6242],[41.8740,-87.6244],[41.8720,-87.6290],[41.8700,-87.6350]];
+
+/* street grid: addresses count from State & Madison; south-side latitudes from real arterial anchors */
+const STATE=-87.6278, dX=0.002426;
+const ANCH=[[6400,41.9977],[0,41.8819],[-1200,41.8674],[-2200,41.8527],[-3100,41.8384],[-3900,41.8236],[-4700,41.8094],[-5500,41.7950],[-6300,41.7798],[-7100,41.7655],[-7900,41.7509],[-8700,41.7364],[-9500,41.7219],[-10300,41.7072],[-11100,41.6924],[-11900,41.6777],[-12700,41.6630]];
+function latOf(n){for(let i=0;i<ANCH.length-1;i++){const[a,la]=ANCH[i],[b,lb]=ANCH[i+1];if(n<=a&&n>=b)return la+(lb-la)*(a-n)/(a-b);}return null;}
+const SOUTH_MAJ=[-1200,-2200,-3100,-3900,-4700,-5500,-6300,-7100,-7900,-8700,-9500,-10300,-11100,-11900];
+const hLines=[]; for(let n=6400;n>=-12700;n-=100){const la=latOf(n);if(la!=null)hLines.push({lat:la,n,major:n>=0?n%800===0:SOUTH_MAJ.includes(n)});}
+const vLines=[]; for(let k=-64;k<=44;k++) vLines.push({lng:STATE+k*dX,major:k%8===0});
+
+const hNames={5600:"Bryn Mawr",4800:"Lawrence",4000:"Irving Park",3200:"Belmont",2400:"Fullerton",1600:"North",800:"Chicago",0:"Madison",
+ "-1200":"Roosevelt","-2200":"Cermak","-3100":"31st","-3900":"Pershing","-4700":"47th","-5500":"55th","-6300":"63rd","-7100":"71st","-7900":"79th","-8700":"87th","-9500":"95th","-10300":"103rd","-11100":"111th","-11900":"119th"};
+const hLabels=Object.entries(hNames).map(([n,name])=>({name,lat:latOf(+n)}));
+const vLabels=[[0,"State"],[-8,"Halsted"],[-16,"Ashland"],[-24,"Western"],[-32,"Kedzie"],[-40,"Pulaski"],[-48,"Cicero"],[-56,"Central"],[8,"Cottage Grove"],[16,"Stony Island"]].map(([k,name])=>({name,lng:STATE+k*dX}));
+const hoods=[["Loop",41.8800,-87.6305],["Lincoln Park",41.9185,-87.6490],["Lakeview",41.9430,-87.6500],["Uptown",41.9655,-87.6530],["West Loop",41.8810,-87.6560],["Wicker Park",41.9080,-87.6830],["Logan Square",41.9260,-87.7080],["Pilsen",41.8570,-87.6600],["Little Village",41.8440,-87.7120],["Bridgeport",41.8330,-87.6480],["Back of the Yards",41.8080,-87.6600],["Bronzeville",41.8160,-87.6170],["Englewood",41.7790,-87.6450],["Hyde Park",41.8000,-87.5960],["South Shore",41.7610,-87.5760],["Chatham",41.7410,-87.6120],["Streeterville",41.8935,-87.6185],["Austin",41.8930,-87.7650]];
+
+let s=`<defs>
+<clipPath id="oldland"><path d="${P(oldShore)}L${-BIG} ${H+BIG}L${-BIG} ${-BIG}Z"/></clipPath>
+<pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.6" height="7" style="fill:var(--red)" opacity=".42"/></pattern>
+</defs>
+<rect class="land" x="${-BIG}" y="${-BIG}" width="${W+2*BIG}" height="${H+2*BIG}"/>
+<g clip-path="url(#oldland)">`;
+for(const v of vLines) s+=`<line class="st${v.major?" major":""}" x1="${X(v.lng)}" y1="${-BIG}" x2="${X(v.lng)}" y2="${H+BIG}"/>`;
+for(const h of hLines) s+=`<line class="st${h.major?" major":""}" x1="${-BIG}" y1="${Y(h.lat)}" x2="${W+BIG}" y2="${Y(h.lat)}"/>`;
+s+=`</g>`;
+for(const d of diagonals) s+=`<path class="st major" d="${P(d)}"/>`;
+for(const p of parks) s+=`<path class="park" d="${P(p.p)}Z"/>`;
+s+=`<path class="lake" d="${P(shore)}L${W+BIG} ${H+BIG}L${W+BIG} ${-BIG}Z"/>
+<path class="made" id="made" d="${P(oldShore)}${L(shore.slice().reverse())}Z"/>
+<path class="lake" d="${P(lakeCalumet)}Z"/>
+<path class="oldshore" d="${P(oldShore.slice(1,-2))}"/>
+<rect class="pier" id="pier" x="${X(-87.6112)}" y="${Y(41.8922)}" width="${X(-87.5985)-X(-87.6112)}" height="9"/>`;
+for(const r of rivers) s+=`<path class="river" stroke-width="${r.w}" d="${P(r.pts)}"/>`;
+s+=`<path class="burn" id="burn" d="${P(burn)}Z"/>`;
+const parkLabels=parks.filter(p=>p.n).map(p=>{const la=p.p.reduce((a,q)=>a+q[0],0)/p.p.length, ln=p.p.reduce((a,q)=>a+q[1],0)/p.p.length;return [p.n,la,ln];});
+return {W,H,X,Y,svg:s,hLabels,vLabels,hoods,parkLabels,center:{lat:41.887,lng:-87.638}};
+})();
+const MAP = (() => {
+const {W,H,X,Y}=GEO, NS="http://www.w3.org/2000/svg";
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const isWide=()=>matchMedia("(min-width:1001px)").matches;
+function star(R,r=R*0.48){let d="";for(let i=0;i<12;i++){const a=-Math.PI/2+i*Math.PI/6,q=i%2?r:R;d+=(i?"L":"M")+(Math.cos(a)*q).toFixed(2)+" "+(Math.sin(a)*q).toFixed(2);}return d+"Z";}
+
+const svg=document.getElementById("map");
+svg.innerHTML=GEO.svg+`<g id="labels"></g><g id="edgeLabels"></g><g id="markers"></g>`;
+const labelsG=document.getElementById("labels"), edgeG=document.getElementById("edgeLabels"), mG=document.getElementById("markers");
+
+/* elements that keep a constant on-screen size */
+const fixed=[];
+function fix(g,x,y,kind){g._x=x;g._y=y;g._k=kind||"";fixed.push(g);return g;}
+function label(parent,x,y,text,cls,size,o={}){
+  const g=document.createElementNS(NS,"g");
+  g.innerHTML=`<text class="lbl ${cls}" font-size="${size}" text-anchor="${o.anchor||"middle"}" y="${o.dy||0}"${o.rot?` transform="rotate(${o.rot})"`:""}>${text}</text>`;
+  parent.appendChild(fix(g,x,y,o.kind)); return g;
+}
+GEO.hoods.forEach(([n,a,b])=>label(labelsG,X(b),Y(a),n,"hood",11));
+GEO.parkLabels.forEach(([n,a,b])=>label(labelsG,X(b),Y(a),n,"parkl",11,{dy:4}));
+label(labelsG,X(-87.586),Y(41.862),"Lake Michigan","lakel",14,{rot:90});
+label(labelsG,X(-87.5815),Y(41.6855),"Lake Calumet","lakel",9);
+GEO.hLabels.forEach(l=>label(edgeG,0,Y(l.lat),l.name,"edge",10,{anchor:"start",dy:-4,kind:"h"}));
+GEO.vLabels.forEach(l=>label(edgeG,X(l.lng),0,l.name,"edge",10,{anchor:"end",dy:-4,rot:-90,kind:"v"}));
+document.querySelectorAll(".lgstar").forEach(p=>p.setAttribute("d",star(7)));
+
+/* markers */
+const byId={};
+for(const site of SITES.slice().sort((a,b)=>a.y-b.y)){
+  const g=document.createElementNS(NS,"g");
+  g.setAttribute("class","mk"); g.dataset.id=site.id;
+  g.style.setProperty("--mc",`var(--c-${site.c})`);
+  g.setAttribute("role","button"); g.setAttribute("aria-label",`${site.title}, ${site.date}`);
+  const R=site.flag?9:8;
+  g.innerHTML=`<circle class="halo" r="17"/><circle class="ring" r="11"/>${site.flag?`<circle class="fr" r="13"/>`:""}<path class="s" d="${star(R)}"/><text x="${site.flag?17:14}" y="4.5">${site.short}</text>`;
+  mG.appendChild(fix(g,X(site.lng),Y(site.lat)));
+  byId[site.id]={site,g};
+}
+
+/* view */
+let vb={x:0,y:0,w:W,h:H}, onPick=()=>{};
+const cw=()=>svg.clientWidth||1, ch=()=>svg.clientHeight||1;
+function clampVB(){
+  const a=ch()/cw();
+  const maxW=Math.max(W+200,(H+200)/a)*1.05; vb.w=Math.min(Math.max(vb.w,60),maxW); vb.h=vb.w*a;
+  const cx=Math.min(Math.max(vb.x+vb.w/2,-80),W+80), cy=Math.min(Math.max(vb.y+vb.h/2,-80),H+80);
+  vb.x=cx-vb.w/2; vb.y=cy-vb.h/2;
+}
+function apply(){
+  clampVB();
+  svg.setAttribute("viewBox",`${vb.x.toFixed(1)} ${vb.y.toFixed(1)} ${vb.w.toFixed(1)} ${vb.h.toFixed(1)}`);
+  const inv=vb.w/cw(), sc=inv.toFixed(4), top=isWide()?44:52;
+  for(const g of fixed){
+    if(g._k==="h") g._x=vb.x+8*inv; else if(g._k==="v") g._y=vb.y+top*inv;
+    g.setAttribute("transform",`translate(${g._x.toFixed(1)} ${g._y.toFixed(1)}) scale(${sc})`);
+  }
+  const s=1/inv; svg.classList.toggle("z1",s>0.5); svg.classList.toggle("z2",s>0.95);
+  declutter(false);
+}
+/* hide marker labels that would overlap a star or another label */
+let lastS=0;
+function declutter(force){
+  const s=cw()/vb.w; if(!force&&Math.abs(s-lastS)<0.002) return; lastS=s;
+  if(s<=0.95) return;
+  const items=Object.values(byId).filter(r=>!r.g.classList.contains("hidden"));
+  const placed=items.map(r=>{const x=r.g._x*s,y=r.g._y*s;return[x-9,y-9,x+9,y+9];});
+  items.sort((a,b)=>(b.g.classList.contains("sel")-a.g.classList.contains("sel"))||((b.site.flag?1:0)-(a.site.flag?1:0))||(a.site.y-b.site.y));
+  for(const r of items){
+    const x=r.g._x*s,y=r.g._y*s,off=r.site.flag?17:14,w=r.site.short.length*7.2+4,bx=[x+off,y-9,x+off+w,y+8];
+    const hit=placed.some(b=>!(bx[2]<b[0]||bx[0]>b[2]||bx[3]<b[1]||bx[1]>b[3]));
+    r.g.classList.toggle("nolbl",hit); if(!hit) placed.push(bx);
+  }
+}
+function cardBox(){const c=document.getElementById("card");if(!c||c.classList.contains("min"))return{r:0,b:0};return isWide()?{r:c.offsetWidth+20,b:0}:{r:0,b:c.offsetHeight+16};}
+function fitVB(){const a=ch()/cw();let w=W+80,h=H+80;if(h/w>a)w=h/a;return{x:W/2-w/2,y:H/2-(w*a)/2,w,h:w*a};}
+function homeVB(){const a=ch()/cw(),w=Math.min(cw()/0.62,W),x=X(GEO.center.lng),y=Y(GEO.center.lat);return{x:x-w/2-(isWide()?190:0)*w/cw(),y:y-(w*a)/2,w,h:w*a};}
+function zoomAt(f,px,py){const ux=vb.x+px/cw()*vb.w,uy=vb.y+py/ch()*vb.h,nw=vb.w/f,r=nw/vb.w;vb.x=ux-(ux-vb.x)*r;vb.y=uy-(uy-vb.y)*r;vb.w=nw;apply();}
+let anim=0;
+function animateTo(t){
+  cancelAnimationFrame(anim);
+  if(reduce){vb={...t};apply();return;}
+  const f={...vb},t0=performance.now(),D=560;
+  const step=now=>{const k=Math.min(1,(now-t0)/D),e=k<.5?2*k*k:1-Math.pow(-2*k+2,2)/2;
+    vb={x:f.x+(t.x-f.x)*e,y:f.y+(t.y-f.y)*e,w:f.w+(t.w-f.w)*e,h:f.h};apply();if(k<1)anim=requestAnimationFrame(step);};
+  anim=requestAnimationFrame(step);
+}
+function centerOn(site){
+  const a=ch()/cw(),w=Math.min(vb.w,cw()/1.0),cb=cardBox(),u=w/cw();
+  const x=X(site.lng)+cb.r/2*u, y=Y(site.lat)+cb.b/2*u;
+  animateTo({x:x-w/2,y:y-(w*a)/2,w,h:w*a});
+}
+function inView(site){
+  const cb=cardBox(),px=(X(site.lng)-vb.x)/vb.w*cw(),py=(Y(site.lat)-vb.y)/vb.h*ch();
+  return px>40&&px<cw()-cb.r-40&&py>50&&py<ch()-cb.b-24;
+}
+
+/* pointer pan, pinch and wheel zoom */
+const ptrs=new Map(); let moved=false,downMk=null,prevPinch=null,total=0;
+svg.addEventListener("pointerdown",e=>{
+  cancelAnimationFrame(anim);
+  try{svg.setPointerCapture(e.pointerId);}catch(_){}
+  ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  if(ptrs.size===1){moved=false;total=0;const m=e.target.closest&&e.target.closest(".mk");downMk=m?m.dataset.id:null;}
+  else{downMk=null;prevPinch=null;}
+});
+svg.addEventListener("pointermove",e=>{
+  const p=ptrs.get(e.pointerId); if(!p) return;
+  const dx=e.clientX-p.x,dy=e.clientY-p.y; p.x=e.clientX; p.y=e.clientY;
+  if(ptrs.size===1){
+    total+=Math.abs(dx)+Math.abs(dy); if(total>6){moved=true;svg.classList.add("dragging");}
+    if(moved){vb.x-=dx*vb.w/cw();vb.y-=dy*vb.h/ch();apply();}
+  }else if(ptrs.size===2){
+    moved=true; const [a,b]=[...ptrs.values()],r=svg.getBoundingClientRect();
+    const d=Math.hypot(a.x-b.x,a.y-b.y),mx=(a.x+b.x)/2-r.left,my=(a.y+b.y)/2-r.top;
+    if(prevPinch){vb.x-=(mx-prevPinch.mx)*vb.w/cw();vb.y-=(my-prevPinch.my)*vb.h/ch();zoomAt(d/prevPinch.d,mx,my);}
+    prevPinch={d,mx,my};
+  }
+});
+function up(e){
+  if(!ptrs.has(e.pointerId)) return;
+  ptrs.delete(e.pointerId); prevPinch=null;
+  if(ptrs.size===0){svg.classList.remove("dragging");if(!moved&&downMk&&e.type==="pointerup")onPick(downMk);downMk=null;}
+}
+svg.addEventListener("pointerup",up); svg.addEventListener("pointercancel",up);
+svg.addEventListener("wheel",e=>{e.preventDefault();cancelAnimationFrame(anim);const r=svg.getBoundingClientRect();zoomAt(Math.exp(-e.deltaY*0.0016),e.clientX-r.left,e.clientY-r.top);},{passive:false});
+const zoomBy=f=>{const t={...vb},nw=vb.w/f,nh=nw*ch()/cw();t.x+=(vb.w-nw)/2;t.y+=(vb.h-nh)/2;t.w=nw;animateTo(t);};
+document.getElementById("zin").onclick=()=>zoomBy(1.7);
+document.getElementById("zout").onclick=()=>zoomBy(1/1.7);
+document.getElementById("zfit").onclick=()=>animateTo(fitVB());
+
+let ready=false;
+new ResizeObserver(()=>{
+  if(!ready){vb=homeVB();ready=true;}
+  else{const cx=vb.x+vb.w/2,cy=vb.y+vb.h/2;vb.h=vb.w*ch()/cw();vb.x=cx-vb.w/2;vb.y=cy-vb.h/2;}
+  apply();
+}).observe(svg);
+
+return {byId,mG,centerOn,inView,isWide,reduce,declutter:()=>declutter(true),setPick:f=>{onPick=f;}};
+})();
+(() => {
+const MINY=1780, MAXY=2026;
+const {byId,mG,centerOn,inView,isWide,reduce,declutter}=MAP;
+const $=id=>document.getElementById(id);
+const order=SITES.slice().sort((a,b)=>a.y-b.y||a.title.localeCompare(b.title));
+const catName=Object.fromEntries(CATS.map(c=>[c.id,c.name]));
+const allCats=()=>new Set(CATS.map(c=>c.id));
+const state={year:MAXY,sel:null,cats:allCats(),q:""};
+const pct=y=>(y-MINY)/(MAXY-MINY)*100;
+const eraOf=y=>ERAS.find(e=>y>=e.from&&y<=e.to)||ERAS[ERAS.length-1];
+const norm=s=>String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");
+SITES.forEach(s=>{s._txt=norm([s.title,s.short,s.addr,s.story,s.now,s.date,s.y,catName[s.c]].join(" "));});
+const matches=s=>state.cats.has(s.c)&&(!state.q||s._txt.includes(state.q));
+
+/* theme chips */
+const chipsEl=$("chips");
+chipsEl.innerHTML=`<button class="chip" type="button" data-cat="all" aria-pressed="true" style="--cc:var(--ink)"><span class="dot"></span>All themes</button>`+
+  CATS.map(c=>`<button class="chip" type="button" data-cat="${c.id}" aria-pressed="true" style="--cc:var(--c-${c.id})"><span class="dot"></span>${c.name}<span class="n">${SITES.filter(s=>s.c===c.id).length}</span></button>`).join("");
+chipsEl.addEventListener("click",e=>{
+  const b=e.target.closest(".chip"); if(!b) return;
+  const c=b.dataset.cat, all=state.cats.size===CATS.length;
+  if(c==="all") state.cats=allCats();
+  else if(all) state.cats=new Set([c]);
+  else if(state.cats.has(c)){state.cats.delete(c); if(!state.cats.size) state.cats=allCats();}
+  else state.cats.add(c);
+  refresh();
+});
+
+/* timeline strip */
+const slider=$("year");
+$("eras").innerHTML=ERAS.map((e,i)=>`<span title="${e.name}" style="width:${pct(Math.min(e.to+1,MAXY))-pct(e.from)}%;background:color-mix(in srgb,var(--red) ${12+i*14}%,var(--lake))"></span>`).join("");
+$("ticks").innerHTML=[1780,1850,1900,1950,2026].map(t=>`<span style="left:${pct(t)}%">${t}</span>`).join("");
+$("evts").innerHTML=order.map(s=>`<i data-id="${s.id}" style="left:${pct(s.y)}%;background:var(--c-${s.c})"></i>`).join("");
+const evtEls=[...$("evts").children];
+
+/* list, grouped by era */
+const listEl=$("list");
+listEl.innerHTML=ERAS.map(e=>{
+  const rows=order.filter(s=>s.y>=e.from&&s.y<=e.to);
+  return `<li class="eh" data-era="${e.from}">${e.name}<b>${e.from}–${Math.min(e.to,MAXY)}</b></li>`+rows.map(s=>`<li data-row="${s.id}"><button type="button" data-id="${s.id}" style="--cc:var(--c-${s.c})"><span class="y">${s.y}</span><span class="d"></span><span class="t">${s.title}<small>${s.date} · ${catName[s.c]}</small></span></button></li>`).join("");
+}).join("")+`<li class="empty" id="empty" hidden>No sites match. Try another search or turn more themes on.</li>`;
+listEl.addEventListener("click",e=>{
+  const b=e.target.closest("button[data-id]"); if(!b) return;
+  stopPlay(); select(b.dataset.id,{pan:true,open:true});
+  if(!isWide()) $("mapwrap").scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});
+});
+$("q").addEventListener("input",e=>{state.q=norm(e.target.value.trim());refresh();});
+
+function refresh(){
+  let shown=0, total=0;
+  for(const s of order){
+    const ok=matches(s), on=ok&&s.y<=state.year, {g}=byId[s.id];
+    if(ok) total++; if(on) shown++;
+    g.classList.toggle("hidden",!on);
+    g.classList.toggle("recent",on&&state.year<MAXY&&state.year-s.y<=10);
+  }
+  $("countOut").textContent=`${shown} of ${total} sites by ${state.year}`;
+  $("listCount").textContent=`${total} of ${SITES.length}`;
+  listEl.querySelectorAll("li[data-row]").forEach(li=>{
+    const s=byId[li.dataset.row].site; li.hidden=!matches(s);
+    const b=li.firstChild; b.classList.toggle("later",s.y>state.year); b.classList.toggle("sel",s.id===state.sel);
+  });
+  listEl.querySelectorAll("li.eh").forEach(h=>{
+    let n=h.nextElementSibling, any=false;
+    while(n&&n.dataset.row){if(!n.hidden)any=true;n=n.nextElementSibling;}
+    h.hidden=!any;
+  });
+  $("empty").hidden=total>0;
+  evtEls.forEach(i=>{const s=byId[i.dataset.id].site;i.classList.toggle("off",!matches(s));i.classList.toggle("later",s.y>state.year);i.classList.toggle("sel",s.id===state.sel);});
+  chipsEl.querySelectorAll(".chip").forEach(b=>b.setAttribute("aria-pressed",b.dataset.cat==="all"?String(state.cats.size===CATS.length):String(state.cats.has(b.dataset.cat))));
+  $("burn").classList.toggle("show",state.sel==="fire"||(state.year>=1871&&state.year<=1874));
+  declutter();
+}
+
+function setYear(y){
+  state.year=y; slider.value=y; $("yearOut").textContent=y; $("eraOut").textContent=eraOf(y).name;
+  const c=CENSUS.filter(c=>c[0]<=y).pop();
+  $("popOut").textContent=c?`${c[1].toLocaleString("en-US")} people · ${c[0]} census`:"Before the first census count";
+  $("made").classList.toggle("filled",y>=1885);
+  $("pier").style.opacity=y>=1916?1:0;
+  refresh();
+}
+slider.addEventListener("input",()=>{stopPlay();setYear(+slider.value);});
+
+/* story card */
+const card=$("card");
+function renderCard(site,open){
+  const vis=order.filter(s=>matches(s)||s.id===site.id), i=vis.indexOf(site), prev=vis[i-1], next=vis[i+1];
+  const sv=`https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${site.lat},${site.lng}`;
+  const gm=`https://www.google.com/maps/search/?api=1&query=${site.lat},${site.lng}`;
+  card.style.setProperty("--cc",`var(--c-${site.c})`);
+  card.innerHTML=`
+    <div class="head"><div class="kicker"><span class="yr">${site.y}</span><span>${catName[site.c]}</span>${site.flag?`<span class="flagchip">✶ City flag star</span>`:""}</div><button class="closecard" type="button" data-act="close" aria-label="Close story">✕</button></div>
+    <h2 data-act="toggle">${site.title}</h2>
+    <div class="date">${site.date} · ${eraOf(site.y).name}</div>
+    <div class="body"><p>${site.story}</p><dl><dt>Where</dt><dd>${site.addr}</dd><dt>Today</dt><dd>${site.now}</dd></dl></div>
+    <div class="actions"><a class="primary" href="${sv}" target="_blank" rel="noopener">Street View ↗</a><a href="${gm}" target="_blank" rel="noopener">Maps ↗</a><button class="more" type="button" data-act="toggle" aria-expanded="${open}">${open?"Less":"Read story"}</button></div>
+    <div class="nav">${prev?`<button type="button" data-go="${prev.id}">← ${prev.y} ${prev.short}</button>`:"<span></span>"}${next?`<button type="button" data-go="${next.id}">${next.y} ${next.short} →</button>`:""}</div>`;
+  card.classList.toggle("open",open); card.classList.remove("min"); card.scrollTop=0;
+}
+card.addEventListener("click",e=>{
+  const t=e.target.closest("[data-act],[data-go]"); if(!t) return;
+  if(t.dataset.go){stopPlay();select(t.dataset.go,{pan:true,open:card.classList.contains("open"),setYear:true});return;}
+  if(t.dataset.act==="close") card.classList.add("min");
+  if(t.dataset.act==="toggle"&&!isWide()){const o=!card.classList.contains("open");card.classList.toggle("open",o);const m=card.querySelector(".more");if(m){m.textContent=o?"Less":"Read story";m.setAttribute("aria-expanded",o);}}
+});
+
+function select(id,o={}){
+  const rec=byId[id]; if(!rec) return; const {site,g}=rec;
+  state.sel=id;
+  if(!state.cats.has(site.c)) state.cats.add(site.c);
+  if(o.setYear||site.y>state.year) setYear(site.y); else refresh();
+  for(const r of Object.values(byId)) r.g.classList.toggle("sel",r.site.id===id);
+  mG.appendChild(g);
+  renderCard(site,!!o.open);
+  declutter();
+  if(!o.noPan&&(o.pan||!inView(site))) centerOn(site);
+  try{history.replaceState(null,"","#"+id);}catch(_){}
+}
+MAP.setPick(id=>{stopPlay();select(id,{pan:false});});
+
+/* stepping and playback */
+function step(dir){
+  const vis=order.filter(matches); if(!vis.length) return;
+  let i=vis.findIndex(s=>s.id===state.sel);
+  if(i<0) i=dir>0?vis.findIndex(s=>s.y>state.year)-1:vis.findIndex(s=>s.y>=state.year);
+  const t=vis[Math.min(Math.max(i+dir,0),vis.length-1)];
+  if(t) select(t.id,{pan:true,setYear:true});
+}
+$("prevEv").onclick=()=>{stopPlay();step(-1);};
+$("nextEv").onclick=()=>{stopPlay();step(1);};
+const playBtn=$("play"); let timer=null;
+function stopPlay(){if(timer){clearTimeout(timer);timer=null;}playBtn.classList.remove("on");playBtn.setAttribute("aria-pressed","false");playBtn.innerHTML='▶<span class="lbltxt">Play</span>';}
+playBtn.onclick=()=>{
+  if(timer){stopPlay();return;}
+  let y=state.year>=MAXY?MINY:state.year; setYear(y);
+  playBtn.classList.add("on"); playBtn.setAttribute("aria-pressed","true"); playBtn.innerHTML='❚❚<span class="lbltxt">Pause</span>';
+  const tick=()=>{
+    y++; if(y>MAXY){stopPlay();return;}
+    setYear(y);
+    const hit=order.filter(s=>s.y===y&&matches(s)).pop();
+    if(hit) select(hit.id,{pan:false});
+    timer=setTimeout(tick,hit?520:55);
+  };
+  timer=setTimeout(tick,55);
+};
+document.addEventListener("keydown",e=>{
+  if(e.target.closest("input,textarea,select")||e.metaKey||e.ctrlKey||e.altKey) return;
+  if(e.key==="ArrowRight"){e.preventDefault();stopPlay();step(1);}
+  else if(e.key==="ArrowLeft"){e.preventDefault();stopPlay();step(-1);}
+  else if(e.key==="Escape"&&!isWide()) card.classList.add("min");
+});
+
+/* start */
+setYear(MAXY);
+const fromHash=()=>{const h=location.hash.slice(1);return byId[h]?h:null;};
+const start=fromHash();
+requestAnimationFrame(()=>requestAnimationFrame(()=>select(start||"fire",start?{pan:true,open:isWide()}:{noPan:true,open:isWide()})));
+addEventListener("hashchange",()=>{const h=fromHash();if(h&&h!==state.sel)select(h,{pan:true});});
+})();
+</script>

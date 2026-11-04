@@ -1,0 +1,44 @@
+[
+  {
+    "id": "growth",
+    "name": "Growth & industry",
+    "colorLight": "#9C7410",
+    "colorDark": "#E2B34C"
+  },
+  {
+    "id": "dark",
+    "name": "Disasters & crime",
+    "colorLight": "#D7172F",
+    "colorDark": "#FF5466"
+  },
+  {
+    "id": "rights",
+    "name": "Politics & protest",
+    "colorLight": "#7646C2",
+    "colorDark": "#AD8BF2"
+  },
+  {
+    "id": "building",
+    "name": "Architecture",
+    "colorLight": "#0F7F6E",
+    "colorDark": "#3CC4AE"
+  },
+  {
+    "id": "culture",
+    "name": "Arts & culture",
+    "colorLight": "#D9650A",
+    "colorDark": "#FF9C4A"
+  },
+  {
+    "id": "play",
+    "name": "Sports & fun",
+    "colorLight": "#2160C4",
+    "colorDark": "#72A4FF"
+  },
+  {
+    "id": "fairs",
+    "name": "Fairs & science",
+    "colorLight": "#4F8519",
+    "colorDark": "#9BCB5E"
+  }
+]
