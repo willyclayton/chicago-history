@@ -1,0 +1,75 @@
+{
+  "id": "hancock",
+  "moments": [
+    {
+      "year": 1968,
+      "date": "May 6, 1968",
+      "title": "Topped out",
+      "text": "The steel frame reached its full height, and the 100-story tower became the second-tallest building in the world after the Empire State Building.",
+      "kind": "built"
+    },
+    {
+      "year": 1969,
+      "title": "Opens, with an observatory on the 94th floor",
+      "text": "Apartments sat above floors of offices and shops, and the John Hancock Observatory opened about 1,000 feet up. Sources date the building's completion to 1969 or 1970.",
+      "kind": "built"
+    },
+    {
+      "year": 2014,
+      "title": "The observatory becomes 360 Chicago",
+      "text": "After a renovation the deck was renamed 360 Chicago and added TILT, a glass platform that tips visitors out over Michigan Ave.",
+      "kind": "changed"
+    },
+    {
+      "year": 2018,
+      "date": "Feb 12, 2018",
+      "title": "Renamed 875 North Michigan Avenue",
+      "text": "The John Hancock name came off the tower, which took its street address as its name.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: 875 North Michigan Avenue",
+      "text": "The tapering black tower, with its X-braces still showing on every face, holds homes, offices and the 360 Chicago deck.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Height",
+      "value": "about 1,128 feet",
+      "note": "Some sources give 1,127 feet."
+    },
+    {
+      "label": "Stories",
+      "value": "100"
+    },
+    {
+      "label": "Structure",
+      "value": "trussed tube",
+      "note": "Exterior X-braces carry wind loads, so it needed less steel."
+    }
+  ],
+  "sources": [
+    {
+      "title": "John Hancock Center (Britannica)",
+      "url": "https://www.britannica.com/topic/John-Hancock-Center"
+    },
+    {
+      "title": "875 North Michigan Avenue (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/875_North_Michigan_Avenue"
+    },
+    {
+      "title": "Fazlur Khan (Britannica)",
+      "url": "https://www.britannica.com/biography/Fazlur-R-Khan"
+    },
+    {
+      "title": "360 Chicago announces the debut of TILT (360 Chicago)",
+      "url": "https://360chicago.com/articles/news-and-press/360-chicago-announces-the-debut-of-tilt"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "100 stories, SOM design with Fazlur Khan's exterior X-braces (Britannica), topping out May 6, 1968 and renaming Feb 12, 2018 (Wikipedia) confirmed. Completion is dated 1969 (Wikipedia) or 1970 (Britannica, WTTW; dedication Mar 7, 1970 per Medill), so the site year stays 1969. Height 1,127 or 1,128 feet. Observatory renamed 360 Chicago with TILT in 2014. Bruce Graham's role was not named in the search results but is widely credited; left as written."
+  }
+}

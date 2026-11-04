@@ -1,0 +1,81 @@
+{
+  "id": "marina",
+  "moments": [
+    {
+      "year": 1959,
+      "date": "Sept 14, 1959",
+      "title": "A city within a city is announced",
+      "text": "Union leader William McFetridge announced plans for an apartment complex on the river to bring middle-class residents back downtown; architect Bertrand Goldberg signed on that November.",
+      "kind": "event"
+    },
+    {
+      "year": 1960,
+      "date": "Nov 22, 1960",
+      "title": "Groundbreaking",
+      "text": "Work began on the riverfront block between State and Dearborn streets.",
+      "kind": "built"
+    },
+    {
+      "year": 1962,
+      "title": "The corncobs rise",
+      "text": "The two round concrete towers went up, with apartments stacked above spiraling parking ramps.",
+      "kind": "built"
+    },
+    {
+      "year": 1967,
+      "title": "The complex is finished",
+      "text": "With the theater building done, the complex of two towers, an office building, a marina and a theater was complete.",
+      "kind": "built"
+    },
+    {
+      "year": 2016,
+      "date": "Feb 10, 2016",
+      "title": "Named a Chicago Landmark",
+      "text": "The City Council voted 48 to 0 to make the Marina City complex a Chicago Landmark, protecting it from major changes or demolition.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: still apartments over parking",
+      "text": "The towers still hold condos above their parking spirals, with a hotel, a House of Blues and a boat marina at the base.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Stories",
+      "value": "65 per tower",
+      "note": "Most sources say 65; the city's 2016 announcement says 60."
+    },
+    {
+      "label": "Built",
+      "value": "1960 to 1967"
+    },
+    {
+      "label": "Landmark",
+      "value": "Feb 10, 2016"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Landmark Designation Approved for Marina City Complex (City of Chicago)",
+      "url": "https://www.chicago.gov/city/en/depts/dcd/provdrs/hist/news/2016/january/landmark-designation-proposed-for-marina-city-complex.html"
+    },
+    {
+      "title": "The Biography of Chicago's Marina City: Timeline (marinacity.org)",
+      "url": "https://marinacity.org/history/date.htm"
+    },
+    {
+      "title": "Chicago Names Marina City an Official Landmark (Architect Magazine)",
+      "url": "https://www.architectmagazine.com/design/chicago-names-marina-city-an-official-landmark_o/"
+    },
+    {
+      "title": "Marina City (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Marina_City"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Announcement Sept 14, 1959, Goldberg's contract Nov 1959, groundbreaking Nov 22, 1960 (marinacity.org timeline); landmark Feb 10, 2016, 48 to 0 (City of Chicago, Architect Magazine). The city's landmark list dates the complex 1960 to 1967; the site's year 1964 (when the towers were finished, per common accounts) was not directly confirmed but is left as is. Story counts vary (60 per the city, 65 per most sources). The hotel and House of Blues opening dates were not confirmed."
+  }
+}

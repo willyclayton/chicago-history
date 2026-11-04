@@ -1,0 +1,76 @@
+{
+  "id": "millennium",
+  "moments": [
+    {
+      "year": 1997,
+      "title": "A rail yard and parking lot",
+      "text": "The northwest corner of Grant Park was still an Illinois Central rail yard and a parking lot. After a city lawsuit, the railroad offered the land as a donation, and Mayor Richard M. Daley planned a park on top.",
+      "kind": "event"
+    },
+    {
+      "year": 1998,
+      "date": "Oct 1998",
+      "title": "Construction begins",
+      "text": "Work began on a park built over a new parking garage and the commuter rail lines, which stayed in use below.",
+      "kind": "built"
+    },
+    {
+      "year": 2004,
+      "date": "July 16, 2004",
+      "title": "The park opens, four years late",
+      "text": "Millennium Park opened with Frank Gehry's Pritzker Pavilion and Jaume Plensa's Crown Fountain. Its cost had grown from a first estimate of about $150 million to roughly $475 million.",
+      "kind": "built"
+    },
+    {
+      "year": 2006,
+      "date": "May 15, 2006",
+      "title": "Cloud Gate is finished",
+      "text": "Anish Kapoor's stainless-steel sculpture, shown unfinished at the 2004 opening, was dedicated after months of polishing hid its seams.",
+      "kind": "built"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Bean and the lawn",
+      "text": "Millennium Park is one of the city's busiest public spaces, with summer concerts at the Pritzker Pavilion and crowds photographing their reflections in Cloud Gate.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "July 16, 2004",
+      "note": "Four years behind schedule"
+    },
+    {
+      "label": "Cost",
+      "value": "about $475 million (estimated)",
+      "note": "The Encyclopedia of Chicago gives about $475 million; other sources say $490 to $500 million."
+    },
+    {
+      "label": "Cloud Gate dedicated",
+      "value": "May 15, 2006"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Millennium Park (Encyclopedia of Chicago)",
+      "url": "https://www.encyclopedia.chicagohistory.org/pages/6404.html"
+    },
+    {
+      "title": "Our History (Millennium Park Foundation)",
+      "url": "https://www.millenniumparkfoundation.org/our-history"
+    },
+    {
+      "title": "How Millennium Park Became \"America's Most Dazzling Urban Park\" (WTTW)",
+      "url": "https://www.wttw.com/playlist/2019/07/16/millennium-park-15"
+    },
+    {
+      "title": "Cloud Gate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cloud_Gate"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Built over the Illinois Central rail yard and a parking lot at Grant Park's northwest corner (Encyclopedia of Chicago, Millennium Park Foundation, WTTW). Construction from Oct 1998; opened July 16, 2004, four years late (Wikipedia). Cost: about $475 million (Encyclopedia of Chicago), roughly $490 million (Millennium Park Foundation) or about $500 million (ABC7), from a $150 million first estimate; the conservative figure is used. Cloud Gate dedicated May 15, 2006."
+  }
+}

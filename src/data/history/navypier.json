@@ -1,0 +1,88 @@
+{
+  "id": "navypier",
+  "moments": [
+    {
+      "year": 1916,
+      "date": "July 15, 1916",
+      "title": "Municipal Pier opens",
+      "text": "Built for about $4.5 million following Daniel Burnham's 1909 Plan of Chicago, the long pier handled freight and lake passenger ships and offered a place for public recreation.",
+      "kind": "built"
+    },
+    {
+      "year": 1927,
+      "title": "Renamed Navy Pier",
+      "text": "The pier was renamed to honor Navy veterans of World War I.",
+      "kind": "changed"
+    },
+    {
+      "year": 1941,
+      "title": "A wartime Navy training center",
+      "text": "The Navy turned the pier into a training base that more than 60,000 service members passed through. Pilots, including future President George H.W. Bush, trained on two lake steamers converted into aircraft carriers.",
+      "kind": "event"
+    },
+    {
+      "year": 1946,
+      "title": "A college on the pier",
+      "text": "After the military left, the University of Illinois ran a branch campus on the pier, mostly for veterans on the GI Bill, until its new Chicago campus opened in 1965.",
+      "kind": "changed"
+    },
+    {
+      "year": 1995,
+      "date": "July 1995",
+      "title": "Reborn as an attraction",
+      "text": "After a redevelopment, the pier reopened with shops, restaurants, a Ferris wheel and year-round entertainment.",
+      "kind": "changed"
+    },
+    {
+      "year": 2016,
+      "date": "May 2016",
+      "title": "The Centennial Wheel",
+      "text": "For the pier's 100th year, a new, taller Ferris wheel replaced the 1995 wheel.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Navy Pier",
+      "text": "The pier draws visitors year-round to the Centennial Wheel, restaurants, shows and lake cruises.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "July 15, 1916",
+      "note": "As Municipal Pier"
+    },
+    {
+      "label": "WWII trainees",
+      "value": "more than 60,000"
+    },
+    {
+      "label": "Centennial Wheel",
+      "value": "about 196 feet tall",
+      "note": "The Chicago Architecture Center gives 200 feet."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Navy Pier (Chicago Architecture Center)",
+      "url": "https://www.architecture.org/online-resources/buildings-of-chicago/navy-pier"
+    },
+    {
+      "title": "Navy Pier Timeline (WTTW)",
+      "url": "https://www.wttw.com/navypier/timeline"
+    },
+    {
+      "title": "Navy Pier Through the Years (Navy Pier)",
+      "url": "https://navypier.org/support-the-pier/articles/navy-pier-through-the-years/"
+    },
+    {
+      "title": "Navy Pier (Encyclopedia of Chicago)",
+      "url": "https://www.encyclopedia.chicagohistory.org/pages/875.html"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Opened July 15, 1916 as Municipal Pier for about $4.5 million (Wikipedia, WTTW). Renamed 1927 per Navy Pier and CBS (WTTW's timeline says 1926). Navy training from 1941 with more than 60,000 service members (Chicago Architecture Center). University of Illinois campus 1946 to 1965. Reopened July 1995; Centennial Wheel May 2016."
+  }
+}

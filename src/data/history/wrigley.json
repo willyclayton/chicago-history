@@ -1,0 +1,88 @@
+{
+  "id": "wrigley",
+  "moments": [
+    {
+      "year": 1914,
+      "date": "Apr 23, 1914",
+      "title": "Weeghman Park opens",
+      "text": "Restaurant owner Charles Weeghman's new ballpark at Clark and Addison opened for the Chicago Whales of the Federal League, who beat Kansas City in the first game.",
+      "kind": "built"
+    },
+    {
+      "year": 1916,
+      "date": "Apr 20, 1916",
+      "title": "The Cubs move in",
+      "text": "After the Federal League folded, Weeghman bought the Cubs and moved them to his park. They won their first game there 7 to 6 over Cincinnati in 11 innings.",
+      "kind": "changed"
+    },
+    {
+      "year": 1926,
+      "title": "Renamed Wrigley Field",
+      "text": "Under owner William Wrigley Jr., the park, called Cubs Park for several years, took the Wrigley name. Some sources date the change to 1927.",
+      "kind": "changed"
+    },
+    {
+      "year": 1937,
+      "title": "Ivy on the outfield walls",
+      "text": "Ivy was planted on the brick outfield walls in 1937, giving the park its best-known look.",
+      "kind": "changed"
+    },
+    {
+      "year": 1988,
+      "date": "Aug 8, 1988",
+      "title": "The lights go on",
+      "text": "The Cubs played their first night game at home, the last major league team to do so. Rain stopped it after three and a half innings, so the first official night game came the next day.",
+      "kind": "changed"
+    },
+    {
+      "year": 2020,
+      "title": "A National Historic Landmark",
+      "text": "The National Park Service named Wrigley Field a National Historic Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Friendly Confines",
+      "text": "The Cubs still play at Clark and Addison in the second-oldest ballpark in the major leagues, after Boston's Fenway Park.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "Apr 23, 1914"
+    },
+    {
+      "label": "First night game",
+      "value": "Aug 8, 1988",
+      "note": "Rained out; first official night game Aug 9, 1988."
+    },
+    {
+      "label": "Rank by age",
+      "value": "2nd-oldest MLB ballpark",
+      "note": "Only Fenway Park (1912) is older."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wrigley Field (National Park Service)",
+      "url": "https://www.nps.gov/places/wrigley-field.htm"
+    },
+    {
+      "title": "Wrigley Field History (MLB.com, Chicago Cubs)",
+      "url": "https://www.mlb.com/cubs/ballpark/information/history"
+    },
+    {
+      "title": "Wrigley Field (Chicago) (SABR)",
+      "url": "https://sabr.org/bioproj/park/wrigley-field-chicago"
+    },
+    {
+      "title": "Lights go on at Wrigley (History.com)",
+      "url": "https://www.history.com/this-day-in-history/august-8/lights-go-on-at-wrigley"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Opening Apr 23, 1914 for the Federal League Whales and the Cubs' first game Apr 20, 1916 confirmed (Wikipedia, NPS, SABR). Renaming: 1926 per Wikipedia and Britannica, 1927 per SABR; the story keeps 1926. First night game Aug 8, 1988 (rained out), first official Aug 9 (MLB, History.com). Ivy: often credited to Bill Veeck in 1937, but MLB.com notes a photo shows ivy earlier that season and credits the planting differently, so no planter is named. NHL 2020 and 'second-oldest' (NPS) confirmed."
+  }
+}

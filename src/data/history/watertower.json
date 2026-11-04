@@ -1,0 +1,78 @@
+{
+  "id": "watertower",
+  "moments": [
+    {
+      "year": 1869,
+      "title": "A castle for the waterworks",
+      "text": "Architect William W. Boyington's Gothic-style limestone tower was finished to hide a 138-foot standpipe for the pumping station across the street, part of a new system that drew water from the Two-Mile Crib.",
+      "kind": "built"
+    },
+    {
+      "year": 1871,
+      "date": "Oct 1871",
+      "title": "It survives the Great Fire",
+      "text": "The stone tower and the pumping station were among the few structures in the burned district to come through the fire.",
+      "kind": "event"
+    },
+    {
+      "year": 1906,
+      "title": "The standpipe goes out of use",
+      "text": "Changes to the water system made the tower's standpipe obsolete, but the city kept the building.",
+      "kind": "changed"
+    },
+    {
+      "year": 1971,
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated the Water Tower a Chicago Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 1999,
+      "title": "A city art gallery opens inside",
+      "text": "The city began using the tower as the City Gallery, with free art and photography exhibitions.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: a landmark on the Magnificent Mile",
+      "text": "The tower still stands at Michigan and Chicago avenues, surrounded by shops and high-rises. The city lists its gallery as closed.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Architect",
+      "value": "William W. Boyington"
+    },
+    {
+      "label": "Standpipe",
+      "value": "138 feet tall"
+    },
+    {
+      "label": "Built from",
+      "value": "Joliet-area limestone"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chicago Water Tower (Britannica)",
+      "url": "https://www.britannica.com/place/Chicago-Water-Tower"
+    },
+    {
+      "title": "Chicago Water Tower, Historic American Buildings Survey (Library of Congress)",
+      "url": "https://www.loc.gov/item/il0097"
+    },
+    {
+      "title": "City Gallery in the Historic Water Tower (City of Chicago)",
+      "url": "https://chicago.gov/city/en/depts/dca/supp_info/city_gallery_in_thehistoricwatertower.html"
+    },
+    {
+      "title": "William W. Boyington (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/William_W._Boyington"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Completed 1869 by W. W. Boyington; limestone; 138-foot standpipe for the pumping station; survived the 1871 fire; obsolete by 1906 (Britannica, Library of Congress HABS, Wikipedia). Chicago Landmark 1971 per one source. The 1999 start of the City Gallery comes from a blog and is weakly sourced. The city's gallery page now says the gallery is closed, so the 'today' line was changed from 'now a free city art gallery'."
+  }
+}

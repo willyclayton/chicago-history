@@ -1,0 +1,62 @@
+{
+  "id": "cubs16",
+  "moments": [
+    {
+      "year": 2016,
+      "date": "Nov 4, 2016, morning",
+      "title": "The parade leaves Wrigley Field",
+      "text": "Two days after the Cubs won their first World Series since 1908, the team's parade left Wrigley Field for downtown on a route of several miles lined with fans.",
+      "kind": "event"
+    },
+    {
+      "year": 2016,
+      "date": "Nov 4, 2016",
+      "title": "The rally in Grant Park",
+      "text": "The parade ended at a rally in Grant Park, where the team celebrated the title with fans.",
+      "kind": "event"
+    },
+    {
+      "year": 2016,
+      "date": "Nov 4, 2016",
+      "title": "An estimated 5 million",
+      "text": "City officials put the total crowd along the route and at the rally at about 5 million. No independent count was made, and parade crowd estimates are hard to verify.",
+      "kind": "event"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Hutchinson Field",
+      "text": "Hutchinson Field is an open lawn in Grant Park again.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Crowd",
+      "value": "5 million (city estimate, disputed)",
+      "note": "The figure came from city officials; it was never independently counted."
+    },
+    {
+      "label": "Title drought ended",
+      "value": "108 years",
+      "note": "The Cubs' previous title was in 1908."
+    }
+  ],
+  "sources": [
+    {
+      "title": "City estimates 5 million people attend Cubs World Series parade (CBS Sports)",
+      "url": "https://www.cbssports.com/mlb/news/look-city-estimates-5-million-people-attend-cubs-world-series-parade/"
+    },
+    {
+      "title": "Cubs fans celebrate World Series crown with parade, rally (Associated Press via ABC7)",
+      "url": "https://abc7.com/post/cubs-fans-celebrate-world-series-crown-with-parade-rally/1589471/"
+    },
+    {
+      "title": "Cubs parade (Sports Business Daily)",
+      "url": "https://www.sportsbusinessdaily.com/Daily/Closing-Bell/2016/11/04/Cubs.aspx"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Date Nov 4, 2016 and the city's 5 million estimate confirmed (CBS Sports, AP). Route length is reported as 6 or 7 miles, so it is given as 'several miles'. No source found with a specific alternative count; Sports Business Daily quotes a producer saying parade estimates are 'always dicey'. The story's 'a number crowd experts have questioned' was reworded to say the figure was never independently counted. Game 7 details (Nov 2 in Cleveland) and the Hutchinson Field location were not separately confirmed (search budget ran out); both are left as written. The 108-year drought (last title 1908) comes from the existing story and was not separately confirmed."
+  }
+}

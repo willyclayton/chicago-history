@@ -26,6 +26,42 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
+
+      # Photos: check licenses with Commons and the Library of Congress, download and
+      # resize into public/media, write src/data/media.generated.json. The cache keeps
+      # API answers and downloads between runs; the script never fails the build.
+      - name: Restore photo cache
+        id: media-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            .media-cache
+            public/media
+          key: media-${{ hashFiles('src/data/media-manifest/**', 'scripts/media/**') }}-${{ github.run_id }}
+          restore-keys: |
+            media-${{ hashFiles('src/data/media-manifest/**', 'scripts/media/**') }}-
+            media-
+      - name: Build photos
+        id: media
+        timeout-minutes: 25
+        run: node scripts/media/build-media.mjs
+      - name: Save photo cache
+        if: always() && steps.media.outputs.changed == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            .media-cache
+            public/media
+          key: media-${{ hashFiles('src/data/media-manifest/**', 'scripts/media/**') }}-${{ github.run_id }}
+      - name: Upload photo report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: media-report
+          path: .media-cache/report.json
+          if-no-files-found: ignore
+          retention-days: 30
+
       - run: npm run build
         env:
           # Optional: add this repository secret to embed Street View in the story card.

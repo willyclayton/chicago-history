@@ -1,0 +1,90 @@
+{
+  "id": "soldier",
+  "moments": [
+    {
+      "year": 1924,
+      "title": "Grant Park Stadium opens",
+      "text": "The colonnaded lakefront stadium opened as Municipal Grant Park Stadium. It was renamed Soldier Field in 1925 as a memorial to American soldiers of World War I.",
+      "kind": "built"
+    },
+    {
+      "year": 1926,
+      "date": "Nov 27, 1926",
+      "title": "Dedicated at the Army-Navy game",
+      "text": "The stadium was formally dedicated during an Army-Navy football game that ended in a 21 to 21 tie before a huge crowd.",
+      "kind": "event"
+    },
+    {
+      "year": 1927,
+      "date": "Sept 22, 1927",
+      "title": "The \"long count\" fight",
+      "text": "More than 100,000 people watched Gene Tunney beat Jack Dempsey. Tunney was knocked down in the seventh round, but the count was delayed while Dempsey went to a neutral corner.",
+      "kind": "event"
+    },
+    {
+      "year": 1966,
+      "date": "July 10, 1966",
+      "title": "King's Chicago Freedom Movement rally",
+      "text": "Martin Luther King Jr. spoke to a crowd estimated at 30,000 to 65,000, then led a march to City Hall, where he posted demands for an open city.",
+      "kind": "event"
+    },
+    {
+      "year": 1971,
+      "title": "The Bears move in",
+      "text": "After about 50 years at Wrigley Field, the Chicago Bears made Soldier Field their home.",
+      "kind": "changed"
+    },
+    {
+      "year": 2003,
+      "date": "Sept 29, 2003",
+      "title": "A new stadium inside the old one",
+      "text": "A rebuilt stadium opened with a modern glass-and-steel seating bowl set inside the 1920s colonnades. In 2006 the change cost the stadium its National Historic Landmark status.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: home of the Bears",
+      "text": "The Bears still play at Soldier Field, and the original colonnades still line the lakefront.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Long count crowd",
+      "value": "more than 100,000 (estimated)",
+      "note": "Counts range from 104,943 to well over 120,000."
+    },
+    {
+      "label": "King rally crowd",
+      "value": "30,000 to 65,000 (estimated)",
+      "note": "Press reports at the time differed widely."
+    },
+    {
+      "label": "Landmark status",
+      "value": "1987 to 2006",
+      "note": "National Historic Landmark designation was withdrawn on Feb 17, 2006."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Grant Park Stadium (Soldier Field) (National Park Service)",
+      "url": "https://www.nps.gov/subjects/nationalhistoriclandmarks/grant-park-stadium-soldier-field.htm"
+    },
+    {
+      "title": "Soldier Field (Britannica)",
+      "url": "https://www.britannica.com/print/article/2102869"
+    },
+    {
+      "title": "The Long Count Fight (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Long_Count_Fight"
+    },
+    {
+      "title": "Passing the torch (The Chicago Reporter)",
+      "url": "https://www.chicagoreporter.com/passing-torch/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Built 1924, renamed Soldier Field 1925, dedicated Nov 27, 1926 (Britannica). Long count Sept 22, 1927; attendance is disputed (104,943 to over 120,000), so the story now says 'more than 100,000' instead of 'about 100,000'. King's July 10, 1966 rally confirmed; crowd estimates range from 30,000 to 65,000. Bears from 1971 (Britannica). Rebuilt stadium opened Sept 29, 2003; NHL designation withdrawn Feb 17, 2006 (NPS). The original name Municipal Grant Park Stadium follows the NPS listing name and general accounts."
+  }
+}

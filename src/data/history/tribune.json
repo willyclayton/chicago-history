@@ -1,0 +1,81 @@
+{
+  "id": "tribune",
+  "moments": [
+    {
+      "year": 1922,
+      "date": "June 10, 1922",
+      "title": "Howells and Hood win the design contest",
+      "text": "The Chicago Tribune's $100,000 design competition drew more than 260 entries. New York architects John Mead Howells and Raymond Hood won with a neo-Gothic tower.",
+      "kind": "event"
+    },
+    {
+      "year": 1925,
+      "title": "The tower is finished",
+      "text": "The 36-story neo-Gothic tower opened as the newspaper's home on Michigan Ave, just north of the river.",
+      "kind": "built"
+    },
+    {
+      "year": 1989,
+      "date": "Feb 1, 1989",
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated Tribune Tower a Chicago Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2018,
+      "title": "The Tribune moves out",
+      "text": "The newspaper left its tower of more than 90 years, and new owners began turning it into condominiums.",
+      "kind": "changed"
+    },
+    {
+      "year": 2021,
+      "title": "Condo residents move in",
+      "text": "The conversion created 162 homes, with shops at the base.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: condos, with the stones in the walls",
+      "text": "About 150 fragments from famous places, from the Great Wall of China to Westminster Abbey and the Taj Mahal, are still set into the walls at street level.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Height",
+      "value": "463 feet",
+      "note": "36 floors"
+    },
+    {
+      "label": "Contest entries",
+      "value": "more than 260"
+    },
+    {
+      "label": "Stones in the walls",
+      "value": "about 150",
+      "note": "Counts range from about 145 to 150."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tribune Tower (City of Chicago landmark report)",
+      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Historic_Preservation/Publications/Tribune_Tower.pdf"
+    },
+    {
+      "title": "Tribune Tower (Chicago Architecture Center)",
+      "url": "https://www.architecture.org/learn/resources/buildings-of-chicago/building/tribune-tower/"
+    },
+    {
+      "title": "Tribune Tower Conversion (Solomon Cordwell Buenz)",
+      "url": "https://scb.com/project/tribune-tower-conversion/"
+    },
+    {
+      "title": "Tribune Tower (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tribune_Tower"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Competition result announced June 10, 1922 with more than 260 entries; completed 1925; Chicago Landmark Feb 1, 1989 (City of Chicago, Wikipedia). The Tribune left in 2018; 162-unit condo conversion completed around 2021 (SCB, Urbanize Chicago). Stone count about 145 to 150 (Daily Herald, CNBC); correspondents collected the first fragments."
+  }
+}

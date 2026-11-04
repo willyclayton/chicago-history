@@ -5,3 +5,6 @@ dist
 test-results
 playwright-report
 *.tsbuildinfo
+# photo pipeline: cache and generated images (CI builds them; see scripts/media)
+.media-cache/
+public/media/

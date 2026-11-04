@@ -1,0 +1,86 @@
+{
+  "id": "robie",
+  "moments": [
+    {
+      "year": 1910,
+      "title": "Wright finishes the Robie House",
+      "text": "Frank Lloyd Wright designed the long, low brick house for businessman Frederick C. Robie in 1908 and 1909, and it was finished in 1910. It became the best-known example of his Prairie style.",
+      "kind": "built"
+    },
+    {
+      "year": 1941,
+      "title": "First demolition threat",
+      "text": "The Chicago Theological Seminary, which owned the house, announced plans to tear it down for a dormitory. A letter-writing campaign, joined by Wright, stopped it.",
+      "kind": "event"
+    },
+    {
+      "year": 1957,
+      "date": "Mar 1957",
+      "title": "Wright, at 90, fights to save it",
+      "text": "When the seminary again planned to raze the house, Wright visited to draw attention to the threat. A development firm then bought the house as part of Hyde Park urban renewal.",
+      "kind": "event"
+    },
+    {
+      "year": 1963,
+      "title": "The university takes over",
+      "text": "The University of Chicago took on the house and promised to preserve it, and it was designated a National Historic Landmark the same year.",
+      "kind": "changed"
+    },
+    {
+      "year": 2019,
+      "date": "Mar 2019",
+      "title": "Restoration finished",
+      "text": "An $11 million restoration, begun on the exterior in 2002, was completed.",
+      "kind": "changed"
+    },
+    {
+      "year": 2019,
+      "title": "A UNESCO World Heritage Site",
+      "text": "The Robie House and seven other Wright buildings were listed together as The 20th-Century Architecture of Frank Lloyd Wright.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Frederick C. Robie House museum",
+      "text": "The Frank Lloyd Wright Trust runs tours of the house on the University of Chicago campus.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Built",
+      "value": "1909 to 1910"
+    },
+    {
+      "label": "Style",
+      "value": "Prairie School"
+    },
+    {
+      "label": "World Heritage listing",
+      "value": "2019",
+      "note": "With seven other Wright works."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Robie House (University of Chicago campus architecture)",
+      "url": "https://architecture.uchicago.edu/locations/robie_house/"
+    },
+    {
+      "title": "Robie House National Historic Landmark nomination (National Park Service)",
+      "url": "https://npgallery.nps.gov/pdfhost/docs/NHLS/Text/71000143.pdf"
+    },
+    {
+      "title": "Robie House (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Robie_House"
+    },
+    {
+      "title": "Inside a Restored Frank Lloyd Wright Masterpiece (Monte Cristo Magazine)",
+      "url": "https://montecristomagazine.com/magazine/volume-13/inside-restored-frank-lloyd-wright-masterpiece"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Completed 1910 (designed 1908 to 1909); demolition threats in 1941 and 1957 by the Chicago Theological Seminary; bought by Webb & Knapp as part of Hyde Park urban renewal; University of Chicago took responsibility in Feb 1963; NHL 1963 (University of Chicago, NPS, Wikipedia). $11 million restoration finished Mar 2019; UNESCO listing 2019 with seven other Wright works."
+  }
+}

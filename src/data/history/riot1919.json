@@ -1,0 +1,85 @@
+{
+  "id": "riot1919",
+  "moments": [
+    {
+      "year": 1919,
+      "date": "July 27, 1919",
+      "title": "Eugene Williams drowns off 29th St",
+      "text": "During a heat wave, 17-year-old Eugene Williams drifted on a raft across an unofficial color line between the beaches used by Black and white swimmers. A white man threw rocks at him, and he drowned.",
+      "kind": "event"
+    },
+    {
+      "year": 1919,
+      "date": "July 27 to Aug 3, 1919",
+      "title": "A week of violence",
+      "text": "When police would not arrest the man Black witnesses named, fighting spread from the beach into the South Side. The state militia helped end the riot on Aug 3.",
+      "kind": "event"
+    },
+    {
+      "year": 1922,
+      "date": "Jan 1922",
+      "title": "The Negro in Chicago report",
+      "text": "A state commission of six Black and six white members published a 672-page study of the riot and of discrimination in housing, jobs and policing. Few of its 59 recommendations were carried out.",
+      "kind": "event"
+    },
+    {
+      "year": 2009,
+      "title": "A memorial plaque near the beach",
+      "text": "Students from York High School in Elmhurst and the Chicago Park District placed a marker for Eugene Williams and all the riot's victims near 29th St beach.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2019,
+      "date": "July 2019",
+      "title": "The centennial",
+      "text": "On the riot's 100th anniversary, Chicago groups held commemorations; it was the first time the City of Chicago officially marked the riot.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "date": "July 2026",
+      "title": "Today: markers for all 38 victims",
+      "text": "The Chicago Race Riot of 1919 Commemoration Project has installed markers at or near the places where each of the 38 people killed lost their lives.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Killed",
+      "value": "38",
+      "note": "23 Black and 15 white people. Some accounts at the time claimed more."
+    },
+    {
+      "label": "Injured",
+      "value": "more than 500",
+      "note": "Britannica and Wikipedia give 537; the NEH cites about 520."
+    },
+    {
+      "label": "Duration",
+      "value": "8 days",
+      "note": "July 27 to Aug 3, 1919."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Negro in Chicago, 1922 (Newberry Library, Chicago 1919: Confronting the Race Riots)",
+      "url": "https://digital.newberry.org/scalar/chicago-1919/the-negro-in-chicago"
+    },
+    {
+      "title": "The Race Riot of 1919 (Chicago Race Riot of 1919 Commemoration Project)",
+      "url": "https://chicagoraceriot.org/history/the-riot/"
+    },
+    {
+      "title": "Chicago race riot of 1919 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chicago_race_riot_of_1919"
+    },
+    {
+      "title": "Chicago Race Riot of 1919 (Britannica)",
+      "url": "https://www.britannica.com/eb/article-9023985/Chicago-Race-Riot-of-1919"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Dates (July 27 to Aug 3, 1919), 38 killed (23 Black, 15 white) and more than 500 injured confirmed (Newberry Library, Britannica, Wikipedia). Injury counts range from about 520 to 537, so 'more than 500' stays. Sources disagree on the exact beaches (25th, 26th, 27th or 29th St); the pin stays near the 29th St beach. The 2009 plaque is listed on HMDB; the 2019 centennial was covered by WTTW; the project's 38 markers were reported complete in July 2026 (Axios, Chicago Sun-Times)."
+  }
+}

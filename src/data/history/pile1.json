@@ -1,0 +1,89 @@
+{
+  "id": "pile1",
+  "moments": [
+    {
+      "year": 1942,
+      "date": "Nov 16, 1942",
+      "title": "Building the pile",
+      "text": "In a squash court under the west stands of the unused Stagg Field, Enrico Fermi's team began stacking graphite blocks and uranium in round-the-clock shifts.",
+      "kind": "built"
+    },
+    {
+      "year": 1942,
+      "date": "Dec 2, 1942",
+      "title": "The first chain reaction",
+      "text": "That afternoon the pile achieved the first controlled, self-sustaining nuclear chain reaction, a key step for the Manhattan Project.",
+      "kind": "event"
+    },
+    {
+      "year": 1943,
+      "date": "Early 1943",
+      "title": "Moved to the Argonne Forest",
+      "text": "The pile was taken apart and rebuilt with shielding as Chicago Pile-2 in the Argonne Forest near Palos Park, where it reached criticality on Mar 20, 1943.",
+      "kind": "changed"
+    },
+    {
+      "year": 1957,
+      "title": "Stagg Field's stands come down",
+      "text": "The old stadium's stands, where the reactor had been, were demolished. The university later built its Regenstein Library on the Stagg Field site.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1965,
+      "date": "Feb 18, 1965",
+      "title": "A National Historic Landmark",
+      "text": "The site of the first self-sustaining nuclear reaction was designated a National Historic Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 1967,
+      "date": "Dec 2, 1967",
+      "title": "Henry Moore's Nuclear Energy",
+      "text": "Exactly 25 years after the experiment, the university unveiled Henry Moore's 12-foot bronze sculpture on the spot.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: a sculpture by the library",
+      "text": "Nuclear Energy stands on a small plaza on Ellis Ave, near the Regenstein Library, marking where the reactor stood.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Team",
+      "value": "led by Enrico Fermi",
+      "note": "About four dozen scientists and staff."
+    },
+    {
+      "label": "First chain reaction",
+      "value": "Dec 2, 1942"
+    },
+    {
+      "label": "Landmark",
+      "value": "National Historic Landmark, 1965"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chicago Pile-1 (Atomic Heritage Foundation)",
+      "url": "https://ahf.nuclearmuseum.org/ahf/history/chicago-pile-1/"
+    },
+    {
+      "title": "CP-1 (Chicago Pile #1) (U.S. Department of Energy, OSTI)",
+      "url": "https://www.osti.gov/opennet/manhattan-project-history/Places/MetLab/cp1.html"
+    },
+    {
+      "title": "Early Exploration: Reactors designed/built by Argonne (Argonne National Laboratory)",
+      "url": "https://www.ne.anl.gov/About/reactors/early-reactors.shtml"
+    },
+    {
+      "title": "Nuclear Energy (University of Chicago Public Art)",
+      "url": "https://publicart.uchicago.edu/art/nuclear-energy"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Squash court under Stagg Field's west stands; construction from Nov 16, 1942; first self-sustaining chain reaction Dec 2, 1942 (Wikipedia, Atomic Heritage Foundation, OSTI). Dismantled early 1943 (sources say February or March) and rebuilt as CP-2 in the Argonne Forest; CP-2 critical Mar 20, 1943 (Argonne). Stands demolished 1957. NHL Feb 18, 1965 per Wikipedia. Moore's Nuclear Energy unveiled Dec 2, 1967 (University of Chicago, Renaissance Society)."
+  }
+}

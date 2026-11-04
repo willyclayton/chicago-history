@@ -1,0 +1,84 @@
+{
+  "id": "dnc68",
+  "moments": [
+    {
+      "year": 1968,
+      "date": "Aug 26 to 29, 1968",
+      "title": "Democrats meet; protesters gather",
+      "text": "The Democratic National Convention met at the International Amphitheatre near the Stock Yards, while thousands of antiwar protesters camped and rallied in Lincoln Park and Grant Park.",
+      "kind": "event"
+    },
+    {
+      "year": 1968,
+      "date": "Aug 28, 1968",
+      "title": "The clash on Michigan Ave",
+      "text": "Police blocked marchers heading for the convention, and the largest clash came in front of the Conrad Hilton at Michigan and Balbo, where many delegates stayed. Protesters, reporters and bystanders were beaten in front of TV cameras, and hundreds were arrested.",
+      "kind": "event"
+    },
+    {
+      "year": 1968,
+      "title": "The Walker Report: a \"police riot\"",
+      "text": "A study team led by Daniel Walker for the National Commission on the Causes and Prevention of Violence called much of the police response a \"police riot,\" while noting that some demonstrators provoked police.",
+      "kind": "event"
+    },
+    {
+      "year": 1969,
+      "date": "Sept 1969 to Feb 1970",
+      "title": "The Chicago Seven trial",
+      "text": "Eight protest leaders were tried on federal conspiracy and riot charges; Bobby Seale's case was split off. All were acquitted of conspiracy, and the five riot convictions were overturned on appeal in 1972.",
+      "kind": "event"
+    },
+    {
+      "year": 2024,
+      "date": "Aug 2024",
+      "title": "The Democrats return to Chicago",
+      "text": "Fifty-six years later the party held its convention in Chicago again. Protests over the war in Gaza were far smaller than in 1968.",
+      "kind": "event"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Hilton Chicago",
+      "text": "The former Conrad Hilton still stands at 720 S. Michigan Ave, facing Grant Park across the intersection where the clash took place.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Where delegates met",
+      "value": "International Amphitheatre",
+      "note": "Next to the Union Stock Yards on the South Side, far from the downtown protests."
+    },
+    {
+      "label": "Official finding",
+      "value": "\"police riot\"",
+      "note": "From the 1968 Walker Report, Rights in Conflict."
+    },
+    {
+      "label": "Chicago Seven verdict",
+      "value": "acquitted of conspiracy",
+      "note": "Riot convictions for five were overturned in 1972."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Democratic National Convention of 1968 (Britannica)",
+      "url": "https://www.britannica.com/event/Democratic-National-Convention-of-1968"
+    },
+    {
+      "title": "50th Anniversary of the 1968 Democratic National Convention (Chicago Public Library)",
+      "url": "https://www.chipublib.org/blogs/post/50th-anniversary-of-the-1968-democratic-national-convention/"
+    },
+    {
+      "title": "Chicago Seven (Britannica)",
+      "url": "https://www.britannica.com/event/Chicago-Seven-law-case"
+    },
+    {
+      "title": "The Chicago 7 Trial (Chicago History Museum)",
+      "url": "https://www.chicagohistory.org/chicagoseven/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Convention dates, International Amphitheatre, Aug 28 clash at Michigan and Balbo in front of the Conrad Hilton, and the Walker Report's 'police riot' finding confirmed (Britannica, Chicago Public Library, ABC7 timeline). The story now says the clash happened 'in front of TV cameras' rather than 'on live TV', since the sources found do not say the footage was live. Chicago Seven trial dates and outcome per Britannica. 2024 protest size per AP and Washington Post reports. Exact injury and arrest counts vary and are not given."
+  }
+}
