@@ -30,6 +30,8 @@ export interface State {
   /** Site previewed by hovering a marker, list row or timeline tick. */
   hoverId: string | null;
   helpOpen: boolean;
+  /** Full-screen photo viewer: which site's media, and which image. */
+  viewer: { siteId: string; index: number } | null;
   theme: ThemeMode;
   toast: { text: string; seq: number } | null;
   showShoreline: boolean;
@@ -49,6 +51,7 @@ let state: State = {
   sheet: "peek",
   hoverId: null,
   helpOpen: false,
+  viewer: null,
   theme: "auto",
   toast: null,
   showShoreline: true,
@@ -133,6 +136,15 @@ export const actions = {
   },
   hover(id: string | null) {
     if (state.hoverId !== id) set({ hoverId: id });
+  },
+  openViewer(siteId: string, index = 0) {
+    set({ viewer: { siteId, index } });
+  },
+  setViewerIndex(index: number) {
+    if (state.viewer) set({ viewer: { ...state.viewer, index } });
+  },
+  closeViewer() {
+    if (state.viewer) set({ viewer: null });
   },
   setHelp(helpOpen: boolean) {
     set({ helpOpen });

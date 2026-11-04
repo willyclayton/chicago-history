@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { SITE_BY_ID } from "./data";
 import { readHash } from "./lib/hash";
 import { MapView } from "./map/MapView";
-import { actions, getState, subscribe } from "./state/store";
+import { actions, getState, subscribe, useStore } from "./state/store";
 import { Legend } from "./ui/Legend";
 import { MarkerList } from "./ui/MarkerList";
 import { Help, Toast } from "./ui/Overlays";
@@ -11,6 +11,8 @@ import { Timeline } from "./ui/Timeline";
 import { isWide } from "./ui/media";
 
 const valid = (id: string) => id in SITE_BY_ID;
+// The photo viewer is its own chunk, loaded the first time it is needed.
+const Viewer = lazy(() => import("./ui/media/Viewer"));
 const THEME_KEY = "ctm-theme";
 
 function applyTheme() {
@@ -119,6 +121,17 @@ export function App() {
       </div>
       <Toast />
       <Help />
+      <ViewerMount />
     </div>
+  );
+}
+
+function ViewerMount() {
+  const open = useStore((s) => s.viewer !== null);
+  if (!open) return null;
+  return (
+    <Suspense fallback={null}>
+      <Viewer />
+    </Suspense>
   );
 }
