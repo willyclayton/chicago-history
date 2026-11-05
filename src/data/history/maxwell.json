@@ -1,0 +1,68 @@
+{
+  "id": "maxwell",
+  "moments": [
+    {
+      "year": 1912,
+      "date": "Oct 1912",
+      "title": "An official city market",
+      "text": "Eastern European Jewish immigrants had started an open-air market on Maxwell St near Halsted in the late 1800s, and a city ordinance made it an official marketplace. Over the decades it served Jewish, then Black and Mexican families, and the blues heard on its sidewalks earned the street the name birthplace of Chicago blues.",
+      "kind": "built"
+    },
+    {
+      "year": 1994,
+      "title": "Moved for the university",
+      "text": "The city moved the market a few blocks east to Canal St, as the New Maxwell Street Market, to make room for the University of Illinois at Chicago. Much of the old area became UIC campus and university-backed housing.",
+      "kind": "changed"
+    },
+    {
+      "year": 2008,
+      "title": "On to Desplaines St",
+      "text": "The market moved again, to S. Desplaines St.",
+      "kind": "changed"
+    },
+    {
+      "year": 2024,
+      "title": "Back where it started",
+      "text": "The city moved a smaller market back to Maxwell and Halsted streets, held one Sunday a month from May through October.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Maxwell and Halsted",
+      "text": "The corner sits amid UIC's campus and newer housing, and the market returns on six Sundays a year.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Official market",
+      "value": "Oct 1912"
+    },
+    {
+      "label": "Moved for UIC",
+      "value": "1994"
+    }
+  ],
+  "sources": [
+    {
+      "title": "History of the Maxwell Street Market (City of Chicago)",
+      "url": "https://chicago.gov/city/en/depts/dca/supp_info/maxwellstreetmarket0.html"
+    },
+    {
+      "title": "The Market (Maxwell Street Foundation)",
+      "url": "https://maxwellstreetfoundation.org/history/the-market/"
+    },
+    {
+      "title": "Maxwell Street (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Maxwell_Street"
+    },
+    {
+      "title": "Chicago's shrinking Maxwell Street Market (Axios Chicago)",
+      "url": "https://www.axios.com/local/chicago/2025/05/16/chicago-shrinking-maxwell-street-market"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Official recognition Oct 1912 by ordinance (City of Chicago, Maxwell Street Foundation). Blues: Wikipedia calls it the birthplace of Chicago blues; no single date, so it is folded into the 1912 moment. 1994 move to Canal St (Wikipedia); 2008 move to Desplaines; 2024 return to Maxwell and Halsted, six Sundays a year (Axios, Choose Chicago). 'Today' updated: the market is no longer only on Desplaines. The Maxwell Street Polish line was not separately checked."
+  }
+}

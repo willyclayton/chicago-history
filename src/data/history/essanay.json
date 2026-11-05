@@ -1,0 +1,75 @@
+{
+  "id": "essanay",
+  "moments": [
+    {
+      "year": 1907,
+      "title": "Essanay is founded",
+      "text": "George K. Spoor and Broncho Billy Anderson founded the Essanay Film Manufacturing Company in Chicago.",
+      "kind": "event"
+    },
+    {
+      "year": 1908,
+      "title": "A studio on Argyle St",
+      "text": "The company built its studio on Argyle St in Uptown, adding to it through 1915. A white terra cotta entrance carries the Essanay name and the studio's Indian head trademark.",
+      "kind": "built"
+    },
+    {
+      "year": 1915,
+      "date": "Jan 1915",
+      "title": "Chaplin's one Chicago film",
+      "text": "Charlie Chaplin, newly signed by Essanay, made His New Job at the Argyle St studio, then left for California. Gloria Swanson also worked here early in her career.",
+      "kind": "event"
+    },
+    {
+      "year": 1918,
+      "title": "The cameras stop",
+      "text": "After more than 1,400 films over about ten years, the Chicago studio stopped making movies.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1996,
+      "date": "Mar 26, 1996",
+      "title": "Named a Chicago Landmark",
+      "text": "The city called the studio the most important building tied to Chicago's early movie history.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: St. Augustine College",
+      "text": "The building at 1333 to 1345 W. Argyle St is part of St. Augustine College, which has announced plans to restore the studio for film use.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Films made in Chicago",
+      "value": "more than 1,400 (estimated)"
+    },
+    {
+      "label": "Landmark designation",
+      "value": "Mar 26, 1996"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Essanay Studios (Chicago Landmarks)",
+      "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1297"
+    },
+    {
+      "title": "Essanay Studios (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Essanay_Studios"
+    },
+    {
+      "title": "The Tramp in Chicago (Chicago magazine)",
+      "url": "https://www.chicagomag.com/chicago-magazine/october-2023/the-tramp-in-chicago/"
+    },
+    {
+      "title": "Historical Background (Essanay Studios and Lighting Company)",
+      "url": "https://essanaystudios.org/history/our-history/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Founded 1907 by Spoor and Anderson; studio built 1908 to 1915; Chaplin made only His New Job here before leaving in Jan 1915; Swanson named in the landmark listing; Chicago production ended 1918 with over 1,400 films (Chicago Landmarks, Wikipedia, Chicago magazine). Date string changed from '1907 to 1917' to '1907 to 1918'. Landmark Mar 26, 1996. Terra cotta Indian head entrance confirmed. Restoration plan per one source."
+  }
+}

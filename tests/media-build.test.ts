@@ -131,6 +131,8 @@ describe("license allowlist", () => {
     "No known restrictions on publication.",
     "No known restrictions",
     "No known copyright restrictions",
+    "Attribution",
+    "Copyrighted free use",
     "No copyright restriction known. Staff photographer reproduction rights transferred to Library of Congress through Instrument of Gift.",
   ];
   const rejected = [
@@ -140,8 +142,6 @@ describe("license allowlist", () => {
     "CC BY-NC-ND 3.0",
     "CC BY-NC",
     "GFDL",
-    "Attribution",
-    "Copyrighted free use",
     "Fair use",
     "All rights reserved",
     "Publication may be restricted. For information see \"New York World-Telegram & Sun...\"",

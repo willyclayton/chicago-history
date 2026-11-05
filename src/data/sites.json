@@ -735,7 +735,7 @@
   {
     "id": "essanay",
     "year": 1907,
-    "date": "1907 to 1917",
+    "date": "1907 to 1918",
     "title": "Essanay Studios",
     "short": "Essanay",
     "category": "culture",
@@ -744,7 +744,20 @@
     "address": "1345 W. Argyle St",
     "story": "Before Hollywood, Chicago was a movie capital. Essanay cranked out silent films here, gave Gloria Swanson an early start, and signed Charlie Chaplin, who made His New Job at the studio in 1915.",
     "today": "St. Augustine College; the studio's terra cotta logo is still over the door",
-    "sources": []
+    "sources": [
+      {
+        "title": "Essanay Studios (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1297"
+      },
+      {
+        "title": "Essanay Studios (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Essanay_Studios"
+      },
+      {
+        "title": "The Tramp in Chicago (Chicago magazine)",
+        "url": "https://www.chicagomag.com/chicago-magazine/october-2023/the-tramp-in-chicago/"
+      }
+    ]
   },
   {
     "id": "greenmill",
@@ -785,7 +798,20 @@
     "address": "300 N. Central Park Ave",
     "story": "Landscape architect Jens Jensen designed the glass houses to look like a haystack rising from the prairie. It is one of the largest conservatories in the country.",
     "today": "Garfield Park Conservatory, free",
-    "sources": []
+    "sources": [
+      {
+        "title": "Garfield Park Conservatory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Garfield_Park_Conservatory"
+      },
+      {
+        "title": "Garfield Park Conservatory (The Cultural Landscape Foundation)",
+        "url": "https://www.tclf.org/garfield-park-conservatory"
+      },
+      {
+        "title": "Garfield (James) Park (Chicago Park District)",
+        "url": "https://www.chicagoparkdistrict.com/parks-facilities/garfield-james-park"
+      }
+    ]
   },
   {
     "id": "robie",
@@ -826,7 +852,20 @@
     "address": "Wentworth Ave and Cermak Rd",
     "story": "Rising rents pushed Chicago's Chinese community out of the Loop around Clark and Van Buren, and many businesses relocated to Wentworth Ave. The On Leong building went up in 1928, and the Chinatown Gate in 1975.",
     "today": "Chinatown, with its gate over Wentworth Ave",
-    "sources": []
+    "sources": [
+      {
+        "title": "Question answered: When did Chicago's Chinatown develop as a neighborhood? (WBEZ Curious City)",
+        "url": "https://www.wbez.org/curious-city/2012/11/29/question-answered-when-did-chicagos-chinatown-develop-as-a-neighborhood"
+      },
+      {
+        "title": "Chinatown, Chicago (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chinatown,_Chicago"
+      },
+      {
+        "title": "What's That Building? Chicago Icons: Chinatown Gate (WBEZ)",
+        "url": "https://www.wbez.org/stories/chinatown-gate-chicago-history/613f2e80-f903-45ff-87ea-be534ea0ec1a"
+      }
+    ]
   },
   {
     "id": "maxwell",
@@ -839,8 +878,21 @@
     "lng": -87.647,
     "address": "Maxwell St and Halsted St",
     "story": "The open-air market served waves of immigrants, first Jewish, then Black and Mexican families. Blues players plugged in on the sidewalk, which helped shape the electric Chicago blues sound. It is also home of the Maxwell Street Polish.",
-    "today": "UIC housing; the market moved to Desplaines St",
-    "sources": []
+    "today": "UIC campus and housing; since 2024 the market returns to Maxwell and Halsted six Sundays a year",
+    "sources": [
+      {
+        "title": "History of the Maxwell Street Market (City of Chicago)",
+        "url": "https://chicago.gov/city/en/depts/dca/supp_info/maxwellstreetmarket0.html"
+      },
+      {
+        "title": "The Market (Maxwell Street Foundation)",
+        "url": "https://maxwellstreetfoundation.org/history/the-market/"
+      },
+      {
+        "title": "Maxwell Street (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Maxwell_Street"
+      }
+    ]
   },
   {
     "id": "wrigley",

@@ -1,0 +1,75 @@
+{
+  "id": "conservatory",
+  "moments": [
+    {
+      "year": 1908,
+      "title": "Jensen's glass haystack opens",
+      "text": "Landscape architect Jens Jensen replaced three small Victorian greenhouses in Garfield, Douglas and Humboldt parks with one big conservatory, shaped to suggest a Midwestern haystack. Inside, plants grew in naturalistic landscapes, with stone walls hiding the machinery.",
+      "kind": "built"
+    },
+    {
+      "year": 2011,
+      "date": "June 30, 2011",
+      "title": "A hailstorm shatters the roof",
+      "text": "Hail broke an estimated half or more of the glass, from about 23,000 to 31,000 panes by different counts. Rooms with newer laminated glass held up and reopened within days.",
+      "kind": "event"
+    },
+    {
+      "year": 2011,
+      "date": "Dec 2011",
+      "title": "The Fern Room reopens",
+      "text": "The conservatory's historic Fern Room reopened after repairs, while other houses stayed closed.",
+      "kind": "changed"
+    },
+    {
+      "year": 2015,
+      "date": "Apr 2015",
+      "title": "Fully reopened",
+      "text": "With about 31,000 hand-cut panes of stronger laminated glass replaced, the whole conservatory reopened. Reported costs range from $5.4 million to $15 million.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Garfield Park Conservatory",
+      "text": "The conservatory at 300 N. Central Park Ave covers about 4.5 acres and is one of the largest in the country.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "1908",
+      "note": "Built 1906 to 1907 per one source."
+    },
+    {
+      "label": "Size",
+      "value": "about 4.5 acres"
+    },
+    {
+      "label": "Panes replaced after the 2011 hail",
+      "value": "about 31,000"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Garfield Park Conservatory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Garfield_Park_Conservatory"
+    },
+    {
+      "title": "Garfield Park Conservatory (The Cultural Landscape Foundation)",
+      "url": "https://www.tclf.org/garfield-park-conservatory"
+    },
+    {
+      "title": "Garfield (James) Park (Chicago Park District)",
+      "url": "https://www.chicagoparkdistrict.com/parks-facilities/garfield-james-park"
+    },
+    {
+      "title": "Hail-Damaged Greenhouse in Chicago Set For Reopening (Associated Press via Washington Times)",
+      "url": "https://www.washingtontimes.com/news/2015/apr/21/hail-damaged-greenhouse-in-chicago-set-for-reopeni/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Opened 1908 (Chicago Park District, Archipedia), Jensen design consolidating three greenhouses, haystack form (Park District, TCLF). 4.5 acres (Wikipedia). June 30, 2011 hailstorm; broken-glass estimates 50 to 70 percent; Fern Room reopened Dec 2011; full reopening Apr 2015 with 31,000 panes; cost $5.4 million (AP) or $15 million (Hartley). Story confirmed; no changes."
+  }
+}
