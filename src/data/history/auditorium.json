@@ -1,0 +1,80 @@
+{
+  "id": "auditorium",
+  "moments": [
+    {
+      "year": 1889,
+      "date": "Dec 9, 1889",
+      "title": "President Harrison dedicates it",
+      "text": "Adler and Sullivan's theater, hotel and office block was dedicated by President Benjamin Harrison, and opera star Adelina Patti sang \"Home Sweet Home.\" It was the largest and tallest building in the city at the time.",
+      "kind": "built"
+    },
+    {
+      "year": 1889,
+      "title": "Adler and Sullivan move into the tower",
+      "text": "The architects opened their own offices on the 16th and 17th floors of the tower. Dankmar Adler, the engineer of the pair, was known for the theater's acoustics.",
+      "kind": "event"
+    },
+    {
+      "year": 1946,
+      "title": "Roosevelt University takes over",
+      "text": "The new Roosevelt College bought the building and turned the hotel and offices into classrooms; some sources date the sale to 1947. Lacking money to restore the theater, the school kept it dark for about two decades.",
+      "kind": "changed"
+    },
+    {
+      "year": 1967,
+      "date": "Oct 31, 1967",
+      "title": "The theater reopens",
+      "text": "After a restoration paid for by a fundraising council, the Auditorium Theatre reopened with the New York City Ballet performing A Midsummer Night's Dream.",
+      "kind": "changed"
+    },
+    {
+      "year": 1975,
+      "date": "May 15, 1975",
+      "title": "National Historic Landmark",
+      "text": "The U.S. Department of the Interior named the Auditorium Building a National Historic Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Roosevelt University and the Auditorium Theatre",
+      "text": "The building at 50 E. Ida B. Wells Dr holds Roosevelt University, and the Auditorium Theatre is still a working performance hall.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Dedicated",
+      "value": "Dec 9, 1889"
+    },
+    {
+      "label": "Hotel rooms",
+      "value": "400"
+    },
+    {
+      "label": "Theater reopened",
+      "value": "Oct 31, 1967"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Auditorium Building (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Auditorium_Building"
+    },
+    {
+      "title": "National Historic Landmark (Auditorium Theatre)",
+      "url": "https://www.auditoriumtheatre.org/about/national-historic-landmark"
+    },
+    {
+      "title": "Auditorium Building (Encyclopedia of Chicago)",
+      "url": "https://www.encyclopedia.chicagohistory.org/pages/89.html"
+    },
+    {
+      "title": "Auditorium Theatre (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Auditorium_Theatre"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Dedicated Dec 9, 1889 by President Harrison; Adler and Sullivan offices on floors 16 and 17; 400 hotel rooms (Wikipedia, Archiseek). Roosevelt purchase 1946 per Wikipedia, 1947 per other sources. Theater reopened Oct 31, 1967 (Auditorium Theatre). NHL May 15, 1975 (one source says 1976). The story's line that Adler 'tuned' the acoustics himself was reworded to say he engineered the theater known for its acoustics."
+  }
+}

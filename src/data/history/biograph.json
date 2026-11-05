@@ -1,0 +1,77 @@
+{
+  "id": "biograph",
+  "moments": [
+    {
+      "year": 1914,
+      "title": "The Biograph opens",
+      "text": "The movie theater on Lincoln Ave, designed by Samuel N. Crowen, opened in 1914.",
+      "kind": "built"
+    },
+    {
+      "year": 1934,
+      "date": "July 22, 1934",
+      "title": "Dillinger is shot outside",
+      "text": "Bank robber John Dillinger, then \"Public Enemy No. 1,\" saw the crime drama Manhattan Melodrama with two women. As he left, FBI agents closed in, and he was shot dead in the alley beside the theater as he tried to flee.",
+      "kind": "event"
+    },
+    {
+      "year": 1934,
+      "title": "The \"woman in red\"",
+      "text": "Anna Sage, a Romanian-born brothel keeper facing deportation, had tipped off the FBI in hopes of leniency. Newspapers called her the woman in red, though she wore an orange skirt and white blouse.",
+      "kind": "event"
+    },
+    {
+      "year": 2001,
+      "date": "Mar 28, 2001",
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated the Biograph a landmark; it is also on the National Register of Historic Places.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2004,
+      "date": "July 2004",
+      "title": "From movies to live theater",
+      "text": "After about 90 years showing films, the building was bought by Victory Gardens Theater, which rebuilt the inside as a live theater with two stages, reopening in 2006.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Biograph building",
+      "text": "The theater building still stands at 2433 N. Lincoln Ave in Lincoln Park.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Film that night",
+      "value": "Manhattan Melodrama",
+      "note": "A 1934 crime drama starring Clark Gable."
+    },
+    {
+      "label": "Landmark designation",
+      "value": "Mar 28, 2001"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Biograph Theater (Chicago Landmarks)",
+      "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1251"
+    },
+    {
+      "title": "Dillinger gunned down (HISTORY)",
+      "url": "https://www.history.com/this-day-in-history/july-22/dillinger-gunned-down"
+    },
+    {
+      "title": "Year of the Gangster, Part 3 (FBI)",
+      "url": "https://www.fbi.gov/news/stories/2009/july/dillinger_072209"
+    },
+    {
+      "title": "Biograph Theater (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Biograph_Theater"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Date, film and Anna Sage's tip confirmed (HISTORY, FBI, Britannica). Sage wore orange, not red (FBI). Built 1914 by Samuel N. Crowen; Chicago Landmark Mar 28, 2001 (Chicago Landmarks). Victory Gardens bought it in July 2004 and reopened it as a live venue in 2006 with two auditoriums (Wikipedia, UPI). Its current use after 2017 was not confirmed, so 'today' only says the building stands. Story confirmed; no changes."
+  }
+}

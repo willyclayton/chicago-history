@@ -1,0 +1,76 @@
+{
+  "id": "cemetery",
+  "moments": [
+    {
+      "year": 1843,
+      "title": "The City Cemetery opens",
+      "text": "The city began burying its dead on low ground by the lake north of town. At its peak the cemetery held an estimated 20,000 burials, including victims of cholera outbreaks.",
+      "kind": "built"
+    },
+    {
+      "year": 1858,
+      "title": "A doctor sounds the alarm",
+      "text": "Physician John Rauch, later the city's sanitary superintendent, argued that graves dug below the water table could taint the lake and the city's drinking water. The Couch family tomb went up the same year.",
+      "kind": "event"
+    },
+    {
+      "year": 1864,
+      "date": "Oct 1864",
+      "title": "From cemetery to park",
+      "text": "The unused north part had become Cemetery Park in 1863. In 1864 it was renamed Lake Park, the council voted to move the graves and add the cemetery lands to the park, and the park was soon renamed for Abraham Lincoln.",
+      "kind": "changed"
+    },
+    {
+      "year": 1871,
+      "date": "Oct 1871",
+      "title": "Graves moved, but not all",
+      "text": "Most bodies were moved to Graceland, Rosehill, Oakwood and other new cemeteries, but the work was unfinished when the Great Fire swept through the grounds. In 1874 the park commission condemned 712 lots that still held graves.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1998,
+      "title": "Remains still turn up",
+      "text": "Digs in the park over the years have uncovered human remains, one as recently as 1998.",
+      "kind": "event"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Couch tomb",
+      "text": "The 1858 Couch family tomb, left in place for reasons that are still unclear, stands in Lincoln Park behind the Chicago History Museum.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Burials",
+      "value": "about 20,000 (estimated)"
+    },
+    {
+      "label": "First burials",
+      "value": "1843",
+      "note": "One 1892 newspaper account dated the cemetery to 1847."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hidden Truths: The Chicago City Cemetery and Lincoln Park (Northwestern University)",
+      "url": "https://hiddentruths.northwestern.edu/factors.html"
+    },
+    {
+      "title": "Lincoln Park (Encyclopedia of Chicago)",
+      "url": "https://encyclopedia.chicagohistory.org/pages/955.html"
+    },
+    {
+      "title": "What's That Building? The Couch Tomb in Chicago's Lincoln Park (WBEZ)",
+      "url": "https://wbez.org/morning-shift/2018/10/25/whats-that-building-the-couch-tomb-in-chicagos-lincoln-park"
+    },
+    {
+      "title": "Lincoln Park (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lincoln_Park"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "First burials 1843, about 20,000 at peak (Wikipedia); Rauch's 1858 call to abandon the cemetery over the water supply, Cemetery Park 1863, Lake Park Oct 1864, graves moved to Graceland, Rosehill and Oakwood (Northwestern Hidden Truths, Encyclopedia of Chicago). Removals ran past the 1871 fire; 712 lots condemned in 1874. Remains found as recently as 1998. Couch tomb erected 1858; why it stayed is unclear (Chicago Park District). Story confirmed; no changes."
+  }
+}

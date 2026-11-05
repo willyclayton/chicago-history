@@ -1,0 +1,60 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2007660405/",
+    "year": 1905,
+    "approx": true,
+    "caption": "A panoramic view of the National League park on Chicago's West Side.",
+    "kind": "place",
+    "note": "LOC panoramic photo '[National League Park, Chicago]'; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:West Side Park 1906 World Series.JPG",
+    "year": 1906,
+    "caption": "Cubs pitcher Jack Pfiester throws in Game 3 of the 1906 World Series against the White Sox, Oct. 11, 1906.",
+    "kind": "event",
+    "note": "Commons; small (580x380). Batter unidentified."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2007663703/",
+    "year": 1906,
+    "caption": "Game 5 of the 1906 World Series, Cubs vs. White Sox, at the West Side grounds, Oct. 13, 1906.",
+    "kind": "event",
+    "note": "LOC panoramic photograph."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2007663791/",
+    "year": 1908,
+    "caption": "A packed West Side Park for Giants vs. Cubs on Aug. 30, 1908, in the pennant race the Cubs won.",
+    "kind": "event",
+    "note": "LOC panoramic photograph. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago West Side Park (II) Postcard (Front).png",
+    "year": 1908,
+    "approx": true,
+    "caption": "A postcard of West Side Park, home of the 1907 and 1908 champion Cubs.",
+    "kind": "place",
+    "note": "Commons; postcard date not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2007663790/",
+    "year": 1909,
+    "caption": "White Sox vs. Cubs in the 1909 City Championship series at West Side Park, Oct. 10, 1909.",
+    "kind": "event",
+    "note": "LOC panoramic photograph, 12.5 x 30 in. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Cook County Hospital.jpg",
+    "year": 2008,
+    "caption": "The old Cook County Hospital, just north of where the Cubs' ballpark stood until 1920.",
+    "kind": "today",
+    "note": "Commons, 2008. The hospital faces Harrison St.; the ballpark block (Polk/Wood/Taylor/Wolcott) is now medical campus."
+  }
+]

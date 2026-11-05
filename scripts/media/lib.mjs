@@ -120,6 +120,9 @@ const ALLOWED = [
   // LOC's statement for New York World-Telegram & Sun staff photos. Same meaning as
   // "no known restrictions"; remove this line to drop that collection.
   /^no copyright restriction known\b/,
+  // Commons {{Copyrighted free use}} and {{Attribution}}: reuse allowed, credit given
+  /^copyrighted free use\b/,
+  /^attribution$/,
 ];
 
 /** Whether a license or rights statement is in the allowlist. */

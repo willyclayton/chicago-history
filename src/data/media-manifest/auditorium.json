@@ -1,10 +1,35 @@
 [
   {
+    "source": "commons",
+    "ref": "File:Dining Room, Auditorium Hotel (3678121839).jpg",
+    "year": 1890,
+    "caption": "The Auditorium Hotel's dining room in 1890, a year after the building opened.",
+    "kind": "place",
+    "note": "Commons; Cornell University Library Flickr, albumen print 1890."
+  },
+  {
     "source": "loc",
     "ref": "https://www.loc.gov/item/2007663611/",
     "year": 1905,
     "caption": "The Iroquois Club's banquet for President Theodore Roosevelt inside the Auditorium, May 10, 1905.",
     "kind": "event",
     "note": "LOC panoramic photograph, 1905."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0091/",
+    "year": 1963,
+    "caption": "The Auditorium photographed by Cervin Robinson for the Historic American Buildings Survey in 1963.",
+    "kind": "place",
+    "note": "LOC HABS IL-1007; survey also has 1890 J.W. Taylor photocopies, so the image picked may differ."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Auditorium Building, Roosevelt University (7179209157).jpg",
+    "year": 2012,
+    "approx": true,
+    "caption": "The Auditorium Building today, home of Roosevelt University and the restored Auditorium Theatre.",
+    "kind": "today",
+    "note": "Commons Flickr import (Teemu008); Flickr id suggests 2012."
   }
 ]

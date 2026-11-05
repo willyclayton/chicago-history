@@ -1,0 +1,59 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Great migration.jpg",
+    "year": 1920,
+    "caption": "An image from the Chicago Defender of Sept. 4, 1920, which became a symbol of the Great Migration.",
+    "kind": "newspaper",
+    "note": "Commons; PD-US-expired; uploaded from a Chicago Tribune column. Content not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017788818/",
+    "year": 1941,
+    "caption": "The Defender's publisher and editor in 1941, a year after founder Robert S. Abbott died.",
+    "kind": "people",
+    "note": "LOC FSA/OWI, Russell Lee, 1941: 'Publisher and editor of Chicago Defender, Negro newspaper'. Summary says it shows Edna Abbott; unconfirmed."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017788930/",
+    "year": 1941,
+    "caption": "Linotype operators setting type at the Chicago Defender, April 1941.",
+    "kind": "people",
+    "note": "LOC FSA/OWI, Russell Lee. Commons copy 'Linotype operators of the Chicago Defender.png' not used."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Part owner and general manager of the Chicago Defender.png",
+    "year": 1942,
+    "caption": "John Sengstacke, Abbott's nephew and heir, who ran the Defender for decades, in 1942.",
+    "kind": "people",
+    "note": "Commons copy of an LOC FSA/OWI photo, 1942."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017829266/",
+    "year": 1942,
+    "approx": true,
+    "caption": "A newsboy selling the Chicago Defender on a South Side street.",
+    "kind": "people",
+    "note": "LOC FSA/OWI '[Untitled photo, possibly related to: ... Newsboy selling the Chicago Defender]'; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:20070601 Chicago Defender Building.JPG",
+    "year": 2007,
+    "caption": "The doorway of the Defender's former building at 3435 S. Indiana Ave. in 2007.",
+    "kind": "today",
+    "note": "Commons; TonyTheTiger, 1 Jun 2007."
+  },
+  {
+    "source": "commons",
+    "ref": "File:20070601 Chicago Defender Building (3).JPG",
+    "year": 2007,
+    "caption": "The Defender's former home, now a Chicago Landmark, in 2007.",
+    "kind": "today",
+    "note": "Commons; TonyTheTiger, 1 Jun 2007."
+  }
+]

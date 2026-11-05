@@ -1,0 +1,62 @@
+{
+  "id": "chinatown",
+  "moments": [
+    {
+      "year": 1912,
+      "title": "The move south",
+      "text": "Chicago's first Chinese enclave had grown up in the late 1800s along Clark St between Van Buren and Harrison in the Loop. Facing rising rents, a planned federal building on those blocks, and prejudice, businesses tied to the On Leong Merchants Association moved south in 1912 to Wentworth Ave and 22nd St, now Cermak Rd.",
+      "kind": "changed"
+    },
+    {
+      "year": 1928,
+      "title": "The On Leong building",
+      "text": "The On Leong Merchants Association's ornate headquarters opened on Wentworth Ave; some sources say it was built in 1927. It became a Chicago Landmark on Dec 1, 1993, and is now the Pui Tak Center.",
+      "kind": "built"
+    },
+    {
+      "year": 1975,
+      "title": "The Chinatown Gate",
+      "text": "A gate was built over Wentworth Ave near Cermak Rd as the neighborhood's formal entrance.",
+      "kind": "built"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Chinatown",
+      "text": "Chinatown, centered on Wentworth Ave and Cermak Rd, is still home to Chicago's Chinese community, with its gate over Wentworth.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Move from the Loop",
+      "value": "1912",
+      "note": "Sources give February or April 1912."
+    },
+    {
+      "label": "On Leong building landmark",
+      "value": "Dec 1, 1993"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Question answered: When did Chicago's Chinatown develop as a neighborhood? (WBEZ Curious City)",
+      "url": "https://www.wbez.org/curious-city/2012/11/29/question-answered-when-did-chicagos-chinatown-develop-as-a-neighborhood"
+    },
+    {
+      "title": "Chinatown, Chicago (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chinatown,_Chicago"
+    },
+    {
+      "title": "What's That Building? Chicago Icons: Chinatown Gate (WBEZ)",
+      "url": "https://www.wbez.org/stories/chinatown-gate-chicago-history/613f2e80-f903-45ff-87ea-be534ea0ec1a"
+    },
+    {
+      "title": "The history of Chicago's thriving Chinatown neighborhood (WBEZ)",
+      "url": "https://wbez.org/stories/the-history-of-chicagos-thriving-chinatown-neighborhood/06ccc832-76af-4293-ac7c-02cc358b5879"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Original Chinatown on Clark between Van Buren and Harrison; 1912 move south (February or April by source) driven by rising rents, a planned federal building and prejudice (WBEZ, Wikipedia). On Leong building 1928 (or 1927), Chicago Landmark Dec 1, 1993, now Pui Tak Center. Gate built 1975 per a single source (WBEZ). Story confirmed; minor wording kept."
+  }
+}

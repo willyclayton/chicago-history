@@ -1,0 +1,80 @@
+{
+  "id": "canal",
+  "moments": [
+    {
+      "year": 1836,
+      "date": "July 4, 1836",
+      "title": "Digging begins",
+      "text": "Ground was broken for the Illinois & Michigan Canal at Bridgeport, at what is now Canal Origins Park, and at Lockport. Money troubles kept delaying the work.",
+      "kind": "built"
+    },
+    {
+      "year": 1848,
+      "date": "April 1848",
+      "title": "The canal opens",
+      "text": "The 96-mile canal opened from the South Branch at Bridgeport to the Illinois River at LaSalle, linking the Great Lakes to the Mississippi. It was 60 feet wide and six feet deep, with 15 locks.",
+      "kind": "built"
+    },
+    {
+      "year": 1848,
+      "title": "Built by Irish laborers",
+      "text": "Most of the men who dug the canal by hand were Irish immigrants working 12-hour days for about a dollar a day, and many settled in Bridgeport.",
+      "kind": "event"
+    },
+    {
+      "year": 1900,
+      "title": "Overtaken by a bigger canal",
+      "text": "After the Chicago Sanitary and Ship Canal opened, the I&M carried little cargo, though pleasure boats still used it. It closed in 1933.",
+      "kind": "changed"
+    },
+    {
+      "year": 1984,
+      "title": "A National Heritage Corridor",
+      "text": "Congress designated the canal region the Illinois & Michigan Canal National Heritage Corridor. The canal origin site became a Chicago Landmark in 1996.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Canal Origins Park",
+      "text": "A small park at 2701 S. Ashland Ave in Bridgeport marks where the canal began; farther southwest, parts of the canal survive along the I&M Canal State Trail.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Length",
+      "value": "96 miles"
+    },
+    {
+      "label": "Opened",
+      "value": "April 1848",
+      "note": "Sources give April 10 or April 20 for the first boats."
+    },
+    {
+      "label": "Closed",
+      "value": "1933"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Illinois and Michigan Canal (Encyclopedia of Chicago)",
+      "url": "https://encyclopedia.chicagohistory.org/pages/626.html"
+    },
+    {
+      "title": "Canal Origins Park (Chicago Park District)",
+      "url": "https://www.chicagoparkdistrict.com/parks-facilities/canal-origins-park"
+    },
+    {
+      "title": "Illinois and Michigan Canal Origin site (Chicago Landmarks)",
+      "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1332"
+    },
+    {
+      "title": "Irish built I & M canal that made Chicago a boomtown (ABC7 Chicago)",
+      "url": "https://abc7chicago.com/post/irish-built-canal-that-made-chicago-a-boomtown/561815/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Opened April 1848 (April 10 or 20 by source), 96 miles from Bridgeport to LaSalle, 60 ft wide, 6 ft deep, 15 locks, mostly Irish labor (Encyclopedia of Chicago, ABC7, Illinois sources). Ground broken July 4, 1836; little cargo after the Sanitary and Ship Canal opened in 1900; closed 1933; National Heritage Corridor 1984; Chicago Landmark 1996 (Chicago Park District, HMdb marker). Address now names Canal Origins Park, 2701 S. Ashland; the pin is within about 150 m of it, so it was not moved. 'The country's shipping hub' was softened."
+  }
+}

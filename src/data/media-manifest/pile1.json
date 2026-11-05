@@ -1,0 +1,70 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Stagg Field reactor.jpg",
+    "year": 1942,
+    "approx": true,
+    "caption": "Chicago Pile-1, the stack of graphite blocks and uranium built in a squash court under Stagg Field's west stands.",
+    "kind": "event",
+    "note": "Commons; may be Argonne's artist's drawing of CP-1 rather than a photo (no photos of the finished pile are known). Check."
+  },
+  {
+    "source": "commons",
+    "ref": "File:HD.5A.020 (10692800196).jpg",
+    "year": 1942,
+    "approx": true,
+    "caption": "A U.S. Department of Energy sketch of the CP-1 pile under construction.",
+    "kind": "construction",
+    "note": "Commons; DOE Flickr import, public domain. Content not seen beyond 'sketch of CP-1'."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Pile 2.jpg",
+    "year": 1943,
+    "caption": "The pile rebuilt with shielding as Chicago Pile-2 in the Argonne Forest, March 1943.",
+    "kind": "aftermath",
+    "note": "Commons; Argonne National Laboratory photo of CP-2, March 1943."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2024687358/",
+    "year": 1951,
+    "caption": "Stagg Field in 1951, six years before the stands that hid the first reactor came down.",
+    "kind": "place",
+    "note": "LOC 'Stagg Field, University of Chicago', 1951; content and rights not seen (may be a magazine photo). Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Szilard and Hilberry.jpg",
+    "year": 1957,
+    "caption": "Leo Szilard and Norman Hilberry beside the 1952 plaque at the site, in August 1957.",
+    "kind": "people",
+    "note": "Commons; plaque reads 'Controlled release of nuclear energy'."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Henry Moore Nuclear Energy.jpg",
+    "year": 2008,
+    "approx": true,
+    "caption": "Henry Moore's bronze Nuclear Energy, unveiled in 1967 on the spot where the reactor stood.",
+    "kind": "today",
+    "note": "Commons; date not seen. Moore's 1967 sculpture: Commons treats it as PD in the US (no notice); confirm."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Pile 1 Monument.JPG",
+    "year": 2019,
+    "caption": "The Nuclear Energy sculpture on Ellis Avenue in 2019, on the old Stagg Field site.",
+    "kind": "today",
+    "note": "Commons; 2019 photo, page says PD in the US."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Historical Marker, Site of Chicago Pile-1, University of Chicago, Ellis Avenue, Hyde Park, Chicago, IL (54514265147).jpg",
+    "year": 2025,
+    "approx": true,
+    "caption": "The historical marker at the site of Chicago Pile-1 on Ellis Avenue.",
+    "kind": "today",
+    "note": "Commons Flickr import; Flickr id suggests 2025."
+  }
+]

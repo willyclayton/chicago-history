@@ -1,0 +1,78 @@
+{
+  "id": "wolfpoint",
+  "moments": [
+    {
+      "year": 1828,
+      "title": "The first taverns",
+      "text": "James Kinzie built a tavern on the west bank at Wolf Point, where the river's branches meet. It and its neighbors, including the Miller House and Mark Beaubien's tavern, later the Sauganash Hotel, are counted as Chicago's first three taverns.",
+      "kind": "built"
+    },
+    {
+      "year": 1830,
+      "title": "A crossroads settlement",
+      "text": "The point also held some of the town's firsts: its first ferry, drug store and church, and the first bridges across the river. Where the name came from is uncertain.",
+      "kind": "event"
+    },
+    {
+      "year": 1833,
+      "date": "Aug 12, 1833",
+      "title": "Chicago becomes a town",
+      "text": "The Town of Chicago was incorporated with about 350 residents.",
+      "kind": "event"
+    },
+    {
+      "year": 1837,
+      "date": "Mar 4, 1837",
+      "title": "Chicago becomes a city",
+      "text": "Four years later, with about 4,170 residents, Chicago was chartered as a city.",
+      "kind": "event"
+    },
+    {
+      "year": 2016,
+      "date": "Jan 2016",
+      "title": "Towers rise on the point",
+      "text": "The land, owned by the Kennedy family, began filling with towers: Wolf Point West opened in 2016, followed by Wolf Point East and the taller Wolf Point South.",
+      "kind": "built"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Wolf Point towers",
+      "text": "The Wolf Point towers, a riverwalk and a small park now cover the point at the fork of the river.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Town incorporated",
+      "value": "Aug 12, 1833",
+      "note": "Population about 350; some sources say 200 to 300."
+    },
+    {
+      "label": "City chartered",
+      "value": "Mar 4, 1837",
+      "note": "Population about 4,170."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wolf Point, Chicago (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wolf_Point,_Chicago"
+    },
+    {
+      "title": "History in River North (Domu)",
+      "url": "https://www.domu.com/chicago/neighborhoods/river-north/history-in-river-north?page=1"
+    },
+    {
+      "title": "Timeline of Chicago history (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Timeline_of_Chicago_history"
+    },
+    {
+      "title": "Wolf Point East Tower (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Wolf_Point_East_Tower"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "First three taverns (Kinzie's, the Miller House, Beaubien's Sauganash) and Wolf Point's other firsts per Wikipedia and the Encyclopedia of Chicago as quoted by Domu; Kinzie's tavern dated 1828 (one chronology says 1823). Town Aug 12, 1833 with about 350 residents (some sources say 200 to 300); city Mar 4, 1837 with about 4,170. Wolf Point West opened Jan 2016 (Wikipedia). The 1830 moment year is approximate. Story confirmed; no changes."
+  }
+}

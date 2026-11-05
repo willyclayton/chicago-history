@@ -1,5 +1,13 @@
 [
   {
+    "source": "commons",
+    "ref": "File:Washington Park 1915.jpg",
+    "year": 1915,
+    "caption": "Washington Park in 1915; its park administration building became the DuSable Museum's home in 1973.",
+    "kind": "place",
+    "note": "Commons; dated 1915, view not seen."
+  },
+  {
     "source": "loc",
     "ref": "https://www.loc.gov/item/2018649031/",
     "year": 1930,
@@ -7,5 +15,21 @@
     "caption": "Lorado Taft's Fountain of Time in Washington Park, a short walk from the museum's later home.",
     "kind": "place",
     "note": "LOC Keystone View Co. stereograph, ca. 1930. Shows the park, not the museum. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:The DuSable Museum.jpg",
+    "year": 2007,
+    "caption": "The DuSable Museum of African American History in Washington Park in 2007.",
+    "kind": "today",
+    "note": "Commons; uploader own work, 2007, CC BY-SA 2.5."
+  },
+  {
+    "source": "commons",
+    "ref": "File:20070325 DuSable Museum Harold Washington Wing.JPG",
+    "year": 2007,
+    "caption": "The museum's Harold Washington Wing, added in the 1990s.",
+    "kind": "today",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. 25 Mar 2007."
   }
 ]

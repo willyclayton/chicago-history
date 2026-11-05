@@ -1,0 +1,28 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Essanay building in Chicago.jpg",
+    "year": 1915,
+    "approx": true,
+    "caption": "The Essanay studio building on Argyle Street.",
+    "kind": "place",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Small (332x350); date and source unknown, re-date once seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Arthur Berthelet directing scene for Essanay Studios, 1917.jpg",
+    "year": 1917,
+    "caption": "Director Arthur Berthelet shooting a scene for Essanay in 1917.",
+    "kind": "event",
+    "note": "Commons; dated 1917. Studio location in frame not confirmed."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Essanay (2726357385).jpg",
+    "year": 2008,
+    "approx": true,
+    "caption": "The former Essanay studio at 1345 W. Argyle St., now St. Augustine College.",
+    "kind": "today",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Flickr id suggests 2008; content not seen."
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "id": "westside",
+  "moments": [
+    {
+      "year": 1893,
+      "title": "A new West Side ballpark",
+      "text": "Chicago's National League club, the future Cubs, moved to a park on the block bounded by Polk, Lincoln (now Wolcott), Taylor and Wood streets. It held about 16,000 seats.",
+      "kind": "built"
+    },
+    {
+      "year": 1907,
+      "title": "World champions",
+      "text": "The Cubs won the World Series.",
+      "kind": "event"
+    },
+    {
+      "year": 1908,
+      "title": "Champions again",
+      "text": "The Cubs repeated as World Series champions. They would not win another title until 2016, 108 years later.",
+      "kind": "event"
+    },
+    {
+      "year": 1915,
+      "date": "Oct 3, 1915",
+      "title": "The last game",
+      "text": "The Cubs beat St. Louis 7 to 2 in their final game at West Side Grounds, then moved to the North Side park now called Wrigley Field.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1919,
+      "title": "Sold for a hospital",
+      "text": "The State of Illinois bought the site for $40,000 to build a research and teaching hospital, the start of today's Illinois Medical District.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the University of Illinois medical campus",
+      "text": "Nothing of the ballpark remains, but part of the old outfield is a park inside the medical complex. A historical marker stands at 912 S. Wood St, in front of the University of Illinois Hospital.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Cubs home",
+      "value": "1893 to 1915"
+    },
+    {
+      "label": "Seats",
+      "value": "about 16,000"
+    },
+    {
+      "label": "World Series titles here",
+      "value": "1907, 1908"
+    }
+  ],
+  "sources": [
+    {
+      "title": "West Side Grounds marker (Illinois State Historical Society)",
+      "url": "https://historyillinois.org/west-side-grounds-home-field-of-the-chicago-national-league-ball-club-from-1893-to-1915"
+    },
+    {
+      "title": "Chicago's West Side Grounds: Where the Cubs Last Won the World Series (Deadball Baseball)",
+      "url": "https://deadballbaseball.com/2021/05/chicagos-west-side-grounds-where-the-cubs-last-won-the-world-series"
+    },
+    {
+      "title": "List of baseball parks in Chicago (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Chicago"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Block bounds, 1893 to 1915, about 16,000 seats, 1907 and 1908 titles, marker at 912 S. Wood St (Illinois State Historical Society, HMdb). Last game Oct 3, 1915 per most sources (one listing says Oct 13). State bought the site in 1919 for $40,000 (Deadball Baseball). Story confirmed; no changes. Address could be sharpened to Polk and Wood; the pin is within the old block."
+  }
+}

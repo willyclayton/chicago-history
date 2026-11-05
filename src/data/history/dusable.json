@@ -1,0 +1,79 @@
+{
+  "id": "dusable",
+  "moments": [
+    {
+      "year": 1784,
+      "date": "c. 1780s",
+      "title": "A trading post at the river mouth",
+      "text": "Jean Baptiste Point du Sable, a Black trader, built a home, farm and trading post on the north bank of the Chicago River near its mouth. He lived there with his Potawatomi wife, Kitihawa, and their children.",
+      "kind": "built"
+    },
+    {
+      "year": 1800,
+      "date": "May 1800",
+      "title": "Sold, and a move to St. Charles",
+      "text": "Point du Sable sold the property and moved to the river port of St. Charles, in today's Missouri. Accounts give the price as $1,200 or 6,000 livres and name either trader John Kinzie or Jean La Lime as the buyer.",
+      "kind": "changed"
+    },
+    {
+      "year": 1976,
+      "date": "May 11, 1976",
+      "title": "A National Historic Landmark",
+      "text": "The site of his homestead was named a National Historic Landmark, with a plaque in Pioneer Court.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2010,
+      "date": "Oct 2010",
+      "title": "The DuSable Bridge",
+      "text": "The Michigan Ave bridge, whose north end covers part of the homesite, was renamed for Point du Sable.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2021,
+      "title": "DuSable Lake Shore Drive",
+      "text": "The City Council voted in June to rename the outer drive Jean-Baptiste Pointe DuSable Lake Shore Drive, and new signs went up that October.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Pioneer Court",
+      "text": "The homesite lies under Pioneer Court and the north end of the DuSable Bridge, near 401 N. Michigan Ave. The city recognizes Point du Sable as its first permanent non-Native settler and founder.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Settled",
+      "value": "c. 1780s",
+      "note": "Some sources say as early as 1779."
+    },
+    {
+      "label": "Sale price",
+      "value": "$1,200 or 6,000 livres",
+      "note": "Sources disagree on the price, the buyer and the exact date."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jean Baptiste Point Du Sable Homesite (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jean_Baptiste_Point_Du_Sable_Homesite"
+    },
+    {
+      "title": "DuSable, Jean Baptiste Point (1745-1818) (BlackPast)",
+      "url": "https://new.blackpast.org/african-american-history/dusable-jean-baptiste-point-1745-1818"
+    },
+    {
+      "title": "Jean Baptiste Point du Sable (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jean_Baptiste_Point_du_Sable"
+    },
+    {
+      "title": "Lake Shore Drive signs now have its new name (Block Club Chicago)",
+      "url": "https://blockclubchicago.org/2021/10/21/lake-shore-drive-signs-now-have-its-new-name-dusable-lake-shore-drive-honoring-citys-black-founder/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Homesite on the north bank near the river mouth, 1780s, with wife Kitihawa (Wikipedia). Sold 1800 and moved to St. Charles; BlackPast says May 7, 1800 for $1,200 to John Kinzie, other sources say Jean La Lime bought it for 6,000 livres with Kinzie as witness, so the buyer is given as disputed. NHL May 11, 1976. Michigan Ave bridge renamed DuSable Bridge Oct 2010; Lake Shore Drive renamed June 2021, signs Oct 2021. Story confirmed; no changes."
+  }
+}

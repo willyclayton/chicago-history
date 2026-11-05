@@ -1,0 +1,47 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2012646159/",
+    "year": 1862,
+    "approx": true,
+    "caption": "Five Confederate prisoners in front of their barracks at Camp Douglas, in a hand-colored tintype.",
+    "kind": "people",
+    "note": "LOC Liljenquist Family Collection, 1862-1865. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2022632993/",
+    "year": 1863,
+    "approx": true,
+    "caption": "Two Confederate soldiers photographed by D.F. Brandon, the camp's photographer, probably while imprisoned there.",
+    "kind": "people",
+    "note": "LOC Liljenquist; D.F. Brandon, Camp Douglas. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2022630363/",
+    "year": 1863,
+    "approx": true,
+    "caption": "A Union soldier with a sword, possibly one of the camp's prison guards.",
+    "kind": "people",
+    "note": "LOC Liljenquist; D.F. Brandon, Camp Douglas."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Confederate prisoners at Camp Douglas, Chicago.jpg",
+    "year": 1863,
+    "approx": true,
+    "caption": "Confederate prisoners at Camp Douglas, where about 18,000 men were held during the war.",
+    "kind": "people",
+    "note": "Commons; circa 1863, original at Chicago History Museum (PD by age)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Confederate Mound at Oak Woods Cemetery, Chicago, Illinois.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "Confederate Mound at Oak Woods Cemetery, the mass grave of about 4,000 men who died at Camp Douglas.",
+    "kind": "today",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Small image (400x407). Death toll estimates vary (4,000-6,000)."
+  }
+]

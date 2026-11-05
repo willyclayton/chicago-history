@@ -1,0 +1,87 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Yak. Lincoln Park Zoo. 1900. (3405476336).jpg",
+    "year": 1900,
+    "caption": "A yak at the Lincoln Park Zoo in 1900.",
+    "kind": "place",
+    "note": "Commons; Field Museum Library Flickr set, 1900."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016794637/",
+    "year": 1901,
+    "approx": true,
+    "caption": "Lions and tigers in their cages at the Lincoln Park Zoo around 1901.",
+    "kind": "place",
+    "note": "LOC Detroit Publishing Co. glass negative, ca. 1901. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016799499/",
+    "year": 1901,
+    "approx": true,
+    "caption": "The bear pit at Lincoln Park around 1901.",
+    "kind": "place",
+    "note": "LOC Detroit Publishing Co., LC-D4-12416, ca. 1901."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018649275/",
+    "year": 1907,
+    "caption": "A polar bear at the Lincoln Park Zoo, from a 1907 stereograph.",
+    "kind": "place",
+    "note": "LOC H.C. White Co. stereograph, 1907. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016814104/",
+    "year": 1915,
+    "approx": true,
+    "caption": "The sea lions' cave at Lincoln Park.",
+    "kind": "place",
+    "note": "LOC Detroit Publishing Co., 1910-1920. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2002736742/",
+    "year": 1928,
+    "caption": "Nero the bear at the Lincoln Park Zoo, August 1928.",
+    "kind": "place",
+    "note": "LOC 'Nero at Lincoln Park zoo, Chicago, Aug., 1928'; content not seen. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2011634195/",
+    "year": 1990,
+    "approx": true,
+    "caption": "A giraffe at the Lincoln Park Zoo, photographed by Carol M. Highsmith.",
+    "kind": "place",
+    "note": "LOC Highsmith archive; date range likely 1980-2006. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Gorilla at the Lincoln Park Zoo -01- (50827592042).png",
+    "year": 2012,
+    "caption": "A gorilla at the Lincoln Park Zoo in July 2012.",
+    "kind": "today",
+    "note": "Commons Flickr import, July 2012."
+  },
+  {
+    "source": "commons",
+    "ref": "File:View at Lincoln Park Zoo Nature Boardwalk (15384872352).jpg",
+    "year": 2014,
+    "approx": true,
+    "caption": "The Nature Boardwalk at the Lincoln Park Zoo, a restored pond and prairie.",
+    "kind": "today",
+    "note": "Commons Flickr import; date not seen (Flickr id ~2014)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Lion - Lincoln Park (53742615315).png",
+    "year": 2024,
+    "caption": "A lion on a rock at the Lincoln Park Zoo in May 2024.",
+    "kind": "today",
+    "note": "Commons Flickr import, May 2024."
+  }
+]

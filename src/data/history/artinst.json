@@ -1,0 +1,81 @@
+{
+  "id": "artinst",
+  "moments": [
+    {
+      "year": 1879,
+      "title": "Founded as a museum and school",
+      "text": "The institution began as the Chicago Academy of Fine Arts, a museum and art school, and took the name Art Institute of Chicago in 1882.",
+      "kind": "event"
+    },
+    {
+      "year": 1893,
+      "title": "A building shared with the world's fair",
+      "text": "Boston architects Shepley, Rutan and Coolidge designed the Beaux-Arts building on the lakefront, which hosted the World's Congress Auxiliary meetings during the 1893 fair. The Art Institute moved in afterward, as planned.",
+      "kind": "built"
+    },
+    {
+      "year": 1894,
+      "date": "May 10, 1894",
+      "title": "The lions are unveiled",
+      "text": "Edward Kemeys's two bronze lions, each weighing more than two tons, were unveiled on either side of the Michigan Ave entrance, a gift of Mrs. Henry Field.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 1910,
+      "title": "The lions move back",
+      "text": "When Michigan Ave was widened in 1909 and 1910, the lions were moved closer to the building and a terrace and balustrade were added.",
+      "kind": "changed"
+    },
+    {
+      "year": 2009,
+      "date": "May 16, 2009",
+      "title": "The Modern Wing opens",
+      "text": "Renzo Piano's addition, about 264,000 square feet facing Millennium Park, made the Art Institute one of the largest art museums in the country.",
+      "kind": "built"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Art Institute of Chicago",
+      "text": "The museum still uses the 1893 building on Michigan Ave, with the lions out front, joined by later wings including the Modern Wing.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Founded",
+      "value": "1879",
+      "note": "As the Chicago Academy of Fine Arts."
+    },
+    {
+      "label": "Lions",
+      "value": "2, by Edward Kemeys",
+      "note": "Unveiled May 10, 1894."
+    },
+    {
+      "label": "Modern Wing",
+      "value": "about 264,000 sq ft (2009)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "History (Art Institute of Chicago)",
+      "url": "https://www.artic.edu/about-us/mission-and-history/history"
+    },
+    {
+      "title": "The Lions of Michigan Avenue (Art Institute of Chicago)",
+      "url": "https://www.artic.edu/articles/720/the-lions-of-michigan-avenue"
+    },
+    {
+      "title": "Art Institute of Chicago (Britannica)",
+      "url": "https://britannica.com/topic/Art-Institute-of-Chicago"
+    },
+    {
+      "title": "Lions (Kemeys) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lions_(Kemeys)"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Founded 1879, renamed 1882 (artic.edu). Building by Shepley, Rutan and Coolidge for the World's Congress Auxiliary of the 1893 fair, then the museum (Wikipedia, Britannica). Lions unveiled May 10, 1894, more than two tons each, moved back in 1909 to 1910 (Wikipedia; some sources date them 1893). Modern Wing opened May 16, 2009, about 264,000 sq ft. Story confirmed; no changes."
+  }
+}

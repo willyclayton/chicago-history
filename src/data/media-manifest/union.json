@@ -1,0 +1,94 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:New Union Station Chicago 1924.jpg",
+    "year": 1924,
+    "caption": "The new Union Station nearly finished in 1924, its concourse building standing in front of the Great Hall headhouse.",
+    "kind": "construction",
+    "note": "Commons; description says the concourse (demolished 1969) stands in front of the Great Hall building."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Union Station, Canal and Adams Street (NBY 8451).jpg",
+    "year": 1926,
+    "approx": true,
+    "caption": "A postcard of the new Union Station at Canal and Adams streets.",
+    "kind": "place",
+    "note": "Commons; Newberry Library postcard NBY 8451, date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Main Waiting Room, Chicago Union Station, Chicago, Illinois (NBY 417115).jpg",
+    "year": 1930,
+    "approx": true,
+    "caption": "A postcard of the Great Hall, the station's skylit main waiting room.",
+    "kind": "place",
+    "note": "Commons; Newberry Library Curt Teich postcard NBY 417115, date not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017720278/",
+    "year": 1940,
+    "caption": "Union Station in July 1940, photographed by John Vachon for the Farm Security Administration.",
+    "kind": "place",
+    "note": "LOC FSA/OWI, John Vachon, July 1940 per search summary; view not seen. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2017843836/",
+    "year": 1943,
+    "caption": "Passengers in the train concourse in January 1943, at the height of wartime rail travel.",
+    "kind": "people",
+    "note": "LOC FSA/OWI, Jack Delano, Jan 1943: 'In the train concourse at the Union Station'."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2017843898/",
+    "year": 1943,
+    "caption": "A Pullman porter at Union Station in January 1943.",
+    "kind": "people",
+    "note": "LOC FSA/OWI, Jack Delano, 1943: 'Pullman porter at the Union Station'."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Model airplanes, Union Station 00253u.jpg",
+    "year": 1943,
+    "caption": "Model warplanes hung from the ceiling of the train concourse in February 1943.",
+    "kind": "place",
+    "note": "Commons copy of an LOC FSA/OWI photo (00253u), Feb 1943. The concourse was demolished in 1969."
+  },
+  {
+    "source": "commons",
+    "ref": "File:19980321 01 Metra @ Chicago Union Station (6355692041).jpg",
+    "year": 1998,
+    "caption": "A Metra commuter train at Union Station's platforms in March 1998.",
+    "kind": "place",
+    "note": "Commons Flickr import; date from the title (21 Mar 1998)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Union Station.jpg",
+    "year": 2008,
+    "approx": true,
+    "caption": "The Union Station headhouse on Canal Street, which holds the Great Hall.",
+    "kind": "today",
+    "note": "Commons; Canon EOS 400D, date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago (ILL) Union Station, great Hall, 1925 \" the benches \" (4789018472).jpg",
+    "year": 2010,
+    "caption": "The Great Hall's wooden benches under its barrel-vaulted skylight.",
+    "kind": "today",
+    "note": "Commons Flickr import (vincent desjardins, 2010); 1925 in the title is the opening year, not the photo date."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Union Station Facade.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "The columned Canal Street facade of Union Station.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

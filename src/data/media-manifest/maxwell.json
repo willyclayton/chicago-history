@@ -1,0 +1,51 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017743575/",
+    "year": 1941,
+    "caption": "The corner of Maxwell and Halsted streets in April 1941, photographed by Russell Lee.",
+    "kind": "place",
+    "note": "LOC FSA/OWI, Russell Lee."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2017743572/",
+    "year": 1941,
+    "caption": "Shoppers at a shop on Maxwell Street in 1941.",
+    "kind": "people",
+    "note": "LOC FSA/OWI, Russell Lee, 'Shop on Maxwell Street'. A related 'People shopping for shoes' copy neg (cph.3c31236) not used."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Sunday on Maxwell St. Chicago.jpg",
+    "year": 1958,
+    "approx": true,
+    "caption": "A Sunday crowd on Maxwell Street, photographed in color by Charles Cushman.",
+    "kind": "people",
+    "note": "Commons; IMLS DCC Flickr, CC BY 2.0, circa 1958."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/afc1981004.b42184/",
+    "year": 1977,
+    "caption": "Peddlers at the Sunday market on Maxwell Street, May 1977.",
+    "kind": "people",
+    "note": "LOC American Folklife Center, Jonas Dovydenas, 1 May 1977."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Maxwell Street, Chicago, November 1987; photographer, Jeff Wassmann.jpg",
+    "year": 1987,
+    "caption": "Maxwell Street in November 1987, a few years before the old market was cleared.",
+    "kind": "place",
+    "note": "Commons; Jeff Wassmann own work ('Chicago in the Reagan Era')."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Maxwell street polish stand 2010.JPG",
+    "year": 2010,
+    "caption": "Jim's Original, the Maxwell Street Polish sausage stand, in 2010.",
+    "kind": "today",
+    "note": "Commons; Victor Grigas, 2010."
+  }
+]

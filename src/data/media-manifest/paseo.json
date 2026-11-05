@@ -1,0 +1,36 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018649006/",
+    "year": 1930,
+    "approx": true,
+    "caption": "Humboldt Park around 1930, decades before Puerto Rican families made the neighborhood their own.",
+    "kind": "place",
+    "note": "LOC Keystone stereograph 'Humboldt statue in Humboldt Park, Chicago', 1930. Context only. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Puerto Rican metal flag at Division Street, Humboldt Park, Chicago, US.jpg",
+    "year": 2010,
+    "caption": "One of the two steel Puerto Rican flags that arch over Division Street to mark Paseo Boricua.",
+    "kind": "today",
+    "note": "Commons; Flickr (puroticorico), 23 May 2010, CC BY-SA 2.0."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Flag for Paseo Boricua at Humboldt Park in Chicago, Illinois, US.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "A Paseo Boricua flag gateway on Division Street.",
+    "kind": "today",
+    "note": "Commons; Plij1 own work, 2010."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Puerto Rican metal flag at Humboldt Park, Chicago, US.jpg",
+    "year": 2012,
+    "caption": "The steel flag at the Humboldt Park end of Paseo Boricua, October 2012.",
+    "kind": "today",
+    "note": "Commons; Flickr (puroticorico), 18 Oct 2012."
+  }
+]

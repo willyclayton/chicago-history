@@ -1,0 +1,53 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/afc1981004.143/",
+    "year": 1977,
+    "caption": "Chinatown near Wentworth Avenue in 1977, photographed for the Chicago Ethnic Arts Project.",
+    "kind": "place",
+    "note": "LOC American Folklife Center; a set of frames, the pipeline will pick one. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2011634683/",
+    "year": 1990,
+    "approx": true,
+    "caption": "A street in Chicago's Chinatown, photographed by Carol M. Highsmith.",
+    "kind": "place",
+    "note": "LOC Highsmith; date range likely 1980-2006. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chinatown, Wentworth Ave.jpg",
+    "year": 2005,
+    "caption": "Looking northeast up Wentworth Avenue past the Chinatown Gate and the Pui Tak building.",
+    "kind": "today",
+    "note": "Commons; 2005."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/il0981/",
+    "year": 2010,
+    "approx": true,
+    "caption": "The 1928 On Leong Merchants Association building at 2216 S. Wentworth, now the Pui Tak Center.",
+    "kind": "place",
+    "note": "LOC HABS IL-325; photo date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chinatown Chicago Gate.jpg",
+    "year": 2021,
+    "caption": "The Chinatown Gate over Wentworth Avenue in August 2021.",
+    "kind": "today",
+    "note": "Commons; Flickr (Han Zheng), 30 Aug 2021."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Won Kow Building, Wentworth Avenue, Chinatown, Chicago, IL (54839705275).jpg",
+    "year": 2025,
+    "approx": true,
+    "caption": "The Won Kow building on Wentworth Avenue, long home to one of Chinatown's oldest restaurants.",
+    "kind": "today",
+    "note": "Commons Flickr import; Flickr id suggests 2025."
+  }
+]

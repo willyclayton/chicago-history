@@ -40,7 +40,7 @@ const defaults = () => ({
   apiTimeoutMs: 30_000,
   downloadTimeoutMs: 90_000,
   /** Minimum spacing between requests to one host (loc.gov blocks fast crawlers for an hour). */
-  hostIntervalMs: { "www.loc.gov": 1100, "tile.loc.gov": 300, "commons.wikimedia.org": 250, "upload.wikimedia.org": 150 },
+  hostIntervalMs: { "www.loc.gov": 4000, "tile.loc.gov": 1500, "commons.wikimedia.org": 250, "upload.wikimedia.org": 150 },
   sleep: (ms) => new Promise((r) => setTimeout(r, ms)),
   now: () => Date.now(),
   /** Only these site ids (for quick local runs). */
@@ -215,10 +215,13 @@ async function run(o) {
         } catch {
           /* already consumed */
         }
-        if (Number(ra) > 120) {
+        // loc.gov answers 429 to crawlers and then blocks for up to an hour; stop asking it
+        // for this run (successes are cached, so the next run picks up where this one stopped)
+        if (Number(ra) > 120 || (res.status === 429 && /(^|\.)loc\.gov$/.test(host))) {
           // a long block (loc.gov's is an hour): stop asking this host for this run
-          unreachable[host] = `HTTP ${res.status}, retry after ${ra}s`;
-          warnings.push(`${host} asked us to wait ${ra}s; used the cache`);
+          unreachable[host] = `HTTP ${res.status}${ra ? `, retry after ${ra}s` : ""}`;
+          warnings.push(`${host} rate-limited us (HTTP ${res.status}${ra ? `, wait ${ra}s` : ""}); used the cache for the rest`);
+          o.log(`media: ${host} rate-limited us; using the cache for it for the rest of this run`);
           throw new L.HttpError(res.status, url);
         }
         await o.sleep(L.retryDelayMs(attempt, ra, o.now()));
