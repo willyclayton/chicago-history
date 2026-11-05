@@ -1,0 +1,68 @@
+{
+  "id": "campdouglas",
+  "moments": [
+    {
+      "year": 1862,
+      "title": "From training camp to prison camp",
+      "text": "Camp Douglas, a Union training camp on the South Side around today's 31st St and Cottage Grove Ave, began holding captured Confederate soldiers. By the war's end an estimated 25,000 to 26,000 prisoners had passed through it.",
+      "kind": "event"
+    },
+    {
+      "year": 1865,
+      "title": "Thousands of deaths",
+      "text": "Disease, including scurvy, dysentery and smallpox, and exposure to the cold killed thousands of prisoners; some were shot as punishment. A federal record counts 4,039 Confederate dead, and monuments give 6,000.",
+      "kind": "event"
+    },
+    {
+      "year": 1867,
+      "title": "Reburied at Oak Woods",
+      "text": "The dead, first buried in the City Cemetery on the lakefront, were moved to a mass grave at Oak Woods Cemetery, now called Confederate Mound; sources give 1866 or 1867.",
+      "kind": "changed"
+    },
+    {
+      "year": 1911,
+      "title": "The mound is raised",
+      "text": "Work at Confederate Mound raised the grave and added plaques around its granite monument, which stands about 30 feet tall.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: a neighborhood over the camp",
+      "text": "Homes and a park cover the old camp in Bronzeville, where a historical marker tells its story, and archaeologists have dug test pits on the grounds.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Prisoners held",
+      "value": "25,000 to 26,000 (estimated)"
+    },
+    {
+      "label": "Prisoners who died",
+      "value": "at least 4,039",
+      "note": "The federal count; monuments and some accounts say as many as 6,000."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Confederate Mound, Oak Woods Cemetery (National Park Service)",
+      "url": "https://www.nps.gov/nr/travel/national_cemeteries/Illinois/Confederate_Mound_Oak_Woods_Cemetery.html"
+    },
+    {
+      "title": "Chicago's Confederate Mound: Tribute To 4,000 Rebel Soldiers (CBS Chicago)",
+      "url": "https://www.cbsnews.com/chicago/news/chicagos-confederate-mound"
+    },
+    {
+      "title": "A Confederate burial ground in Chicago? Yes, and it's getting a makeover (WBEZ)",
+      "url": "https://www.wbez.org/2010/09/23/a-confederate-burial-ground-in-chicago-yes-and-its-getting-a-makeover"
+    },
+    {
+      "title": "Test excavations at Camp Douglas (Dead Confederates)",
+      "url": "https://deadconfederates.com/2012/07/02/test-excavations-at-camp-douglas/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Location near 31st and Cottage Grove; a training camp that held prisoners 1862 to 1865 (NPS, Clio, monument inscription). Deaths: a U.S. government record gives 4,039; monuments and CBS say up to 6,000, so the story now says 'at least 4,000', with 6,000 as the high estimate. Prisoners 25,000 to 26,000 by source. Reinterment at Oak Woods dated 1866 (VA) or 1867 (federal report); mound raised and plaques added 1911."
+  }
+}

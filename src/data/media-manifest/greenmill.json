@@ -1,0 +1,35 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2020695695/",
+    "year": 2000,
+    "caption": "A detail of the Uptown Broadway Building at 4707 Broadway, a block from the Green Mill, in 2000.",
+    "kind": "place",
+    "note": "LOC Camilo J. Vergara collection; publication may be restricted, pipeline will check."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Greenmill2.jpg",
+    "year": 2007,
+    "caption": "The Green Mill's neon sign at Broadway and Lawrence in 2007.",
+    "kind": "today",
+    "note": "Commons; 2007 photo moved to Commons 2012."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Green Mill Cocktail Lounge exterior.jpg",
+    "year": 2015,
+    "approx": true,
+    "caption": "The Green Mill Cocktail Lounge on North Broadway.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Uptown Chicago - Broadway and Lawrence.jpg",
+    "year": 2021,
+    "caption": "Broadway and Lawrence in 2021, with the Riviera Theatre and the Green Mill down the block.",
+    "kind": "today",
+    "note": "Commons; Chicagoshim, Nov 2021."
+  }
+]

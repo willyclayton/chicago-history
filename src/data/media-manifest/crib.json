@@ -1,0 +1,27 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:The Great Chicago Lake Tunnel Diagram 1867.jpg",
+    "year": 1867,
+    "caption": "An 1867 cross-section of the lake tunnel running two miles out from shore to the intake crib.",
+    "kind": "construction",
+    "note": "Commons; title page of John M. Wing's 1867 book on the lake tunnel."
+  },
+  {
+    "source": "commons",
+    "ref": "File:US-IL(1891) p204 CHICAGO, THE CRIB, LAKE MICHIGAN.jpg",
+    "year": 1891,
+    "caption": "The crib out on Lake Michigan, from King's Handbook of the United States, 1891.",
+    "kind": "place",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. British Library Flickr scan; sibling file 'US-IL(1891) p219 ...' confirms the naming pattern."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Harrison-Dever Cribs.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "The Carter Harrison and William Dever intake cribs off North Avenue Beach, joined by a footbridge.",
+    "kind": "today",
+    "note": "Commons; date not seen. The 1900 Harrison crib replaced the original 1867 two-mile crib nearby."
+  }
+]

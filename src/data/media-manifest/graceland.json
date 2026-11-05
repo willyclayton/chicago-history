@@ -1,0 +1,63 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/il0120/",
+    "year": 1964,
+    "approx": true,
+    "caption": "Louis Sullivan's 1890 Getty Tomb, documented by the Historic American Buildings Survey.",
+    "kind": "place",
+    "note": "LOC HABS Getty Tomb; photo date not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0972/",
+    "year": 2005,
+    "approx": true,
+    "caption": "The Pullman monument, a Corinthian column over the grave of railroad-car maker George Pullman.",
+    "kind": "place",
+    "note": "LOC HABS IL-323-E (Graceland Cemetery, Pullman Monument); photo date not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0942/",
+    "year": 2005,
+    "approx": true,
+    "caption": "The Egyptian Revival Ryerson tomb, designed by Louis Sullivan.",
+    "kind": "place",
+    "note": "LOC HABS Ryerson Tomb; photo date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Palmer mausoleum 051202.jpg",
+    "year": 2005,
+    "caption": "The columned tomb of Potter and Bertha Palmer, December 2005.",
+    "kind": "today",
+    "note": "Commons; Jeremy Atherton, uploaded 2006; page carries a copyright notice with a free license - check."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Graceland Cemetery.jpg",
+    "year": 2008,
+    "approx": true,
+    "caption": "The landscaped grounds of Graceland Cemetery on North Clark Street.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Jack Johnson tomb at Graceland, Chicago.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "The grave of Jack Johnson, the first Black heavyweight boxing champion.",
+    "kind": "today",
+    "note": "Commons; Flickr CC BY-SA 2.0, date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago, Illinois Eternal Silence1.jpg",
+    "year": 2011,
+    "caption": "Lorado Taft's 1909 Eternal Silence, the hooded figure over the grave of early settler Dexter Graves.",
+    "kind": "today",
+    "note": "Commons; IvoShandor, 21 Aug 2011."
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "id": "zoo",
+  "moments": [
+    {
+      "year": 1868,
+      "title": "Two pairs of swans",
+      "text": "The commissioners of New York's Central Park gave Lincoln Park two pairs of mute swans, the start of the zoo. The park commissioners soon began acquiring other animals and building a bear cage, a bison enclosure, a sea lion pool and an animal house.",
+      "kind": "built"
+    },
+    {
+      "year": 1995,
+      "title": "A private nonprofit takes over",
+      "text": "The zoo became a private institution, run separately from the Chicago Park District, which still pays part of its costs.",
+      "kind": "changed"
+    },
+    {
+      "year": 2018,
+      "title": "150 years",
+      "text": "The zoo marked its 150th anniversary with a special exhibit on its history.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Lincoln Park Zoo",
+      "text": "The zoo at 2001 N. Clark St is one of the oldest in the country and is still free to visit. Members, donors and visitors pay about 80% of its operating costs.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Founded",
+      "value": "1868"
+    },
+    {
+      "label": "First animals",
+      "value": "two pairs of swans",
+      "note": "A gift from the Central Park commissioners in New York."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lincoln Park Zoo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Lincoln_Park_Zoo"
+    },
+    {
+      "title": "Lincoln Park Zoo (The Cultural Landscape Foundation)",
+      "url": "https://www.tclf.org/lincoln-park-zoo"
+    },
+    {
+      "title": "Special Exhibit Showcases 150 Years of Lincoln Park Zoo (WTTW)",
+      "url": "https://news.wttw.com/2018/05/17/special-exhibit-showcases-150-years-lincoln-park-zoo"
+    },
+    {
+      "title": "Lincoln Park Zoo (Encyclopedia of Chicago)",
+      "url": "https://encyclopedia.chicagohistory.org/pages/745.html"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Founded 1868 with two pairs of swans from Central Park (Wikipedia, TCLF). Rankings conflict (second oldest in the U.S. or fourth in North America), so the story keeps 'one of the oldest'. Free admission since opening per a secondary source; private nonprofit since 1995 with a Park District subsidy (zoo's own site). Story confirmed; no changes."
+  }
+}

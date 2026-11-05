@@ -1,0 +1,62 @@
+{
+  "id": "riverview",
+  "moments": [
+    {
+      "year": 1904,
+      "title": "Riverview opens",
+      "text": "An amusement park opened at Western and Belmont avenues on the North Branch of the Chicago River. Its slogan promised visitors they could \"laugh your troubles away.\"",
+      "kind": "built"
+    },
+    {
+      "year": 1924,
+      "title": "The Bobs",
+      "text": "The park opened the Bobs, a wooden roller coaster that some still call one of the greatest ever built.",
+      "kind": "built"
+    },
+    {
+      "year": 1967,
+      "date": "Oct 3, 1967",
+      "title": "It will not reopen",
+      "text": "Shortly after the season ended, the park announced it was closing for good, and its rides were torn down; only the Riverview Carousel was saved, and it now runs at Six Flags Over Georgia. Rumors blamed crime and racial tension, but the Encyclopedia of Chicago ties the closing to the middle class moving to the suburbs.",
+      "kind": "demolished"
+    },
+    {
+      "year": 2026,
+      "title": "Today: a shopping center",
+      "text": "The site at Belmont and Western holds the Riverview Plaza shopping center and other newer buildings.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Open",
+      "value": "1904 to 1967"
+    },
+    {
+      "label": "Closing announced",
+      "value": "Oct 3, 1967"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Riverview Park (Chicago) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Riverview_Park_(Chicago)"
+    },
+    {
+      "title": "Laugh your troubles away (WBEZ Curious City)",
+      "url": "https://www.wbez.org/curious-city/2013/02/19/laugh-your-troubles-away"
+    },
+    {
+      "title": "Dolores Haugh Riverview Amusement Park collection (Newberry Library)",
+      "url": "https://archives.newberry.org/repositories/2/resources/1222"
+    },
+    {
+      "title": "The Bobs (roller coaster) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Bobs_(roller_coaster)"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Open 1904 to 1967 at Western and Belmont; closure announced Oct 3, 1967; slogan 'Laugh your troubles away'; Bobs opened 1924; carousel now at Six Flags Over Georgia (Wikipedia, WBEZ). Site is a strip mall (Newberry). Story confirmed; no changes."
+  }
+}

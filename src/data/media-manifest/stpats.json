@@ -1,0 +1,27 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Old Saint Patrick's Church, Chicago, 1913 (NBY 795).jpg",
+    "year": 1913,
+    "caption": "Old St. Patrick's at Adams and Des Plaines streets in 1913, one of the few buildings older than the 1871 fire.",
+    "kind": "place",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Newberry Library photo, 1913."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0035/",
+    "year": 1934,
+    "approx": true,
+    "caption": "Old St. Patrick's photographed for the Historic American Buildings Survey in the 1930s.",
+    "kind": "place",
+    "note": "LOC HABS ILL-1033 (7 photos), survey 1933-34; 1963 addendum exists, so photo date may differ."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Old St Patrick's Church.jpg",
+    "year": 2010,
+    "caption": "Old St. Patrick's in 2010, with its two different towers, one with an onion dome and one with a spire.",
+    "kind": "today",
+    "note": "Commons; Flickr CC BY 2.0, 2010."
+  }
+]

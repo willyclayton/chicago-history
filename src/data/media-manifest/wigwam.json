@@ -1,0 +1,44 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2021652429/",
+    "year": 1860,
+    "caption": "A newspaper engraving of the Republican Wigwam at Lake and Market streets, ready for the May 16, 1860 convention.",
+    "kind": "newspaper",
+    "note": "LOC; '\"The Republican Wigwam at Chicago...\" [exterior]'."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Wigwam.png",
+    "year": 1860,
+    "approx": true,
+    "caption": "The wooden Wigwam hall where Abraham Lincoln was nominated, photographed by Alexander Hesler.",
+    "kind": "place",
+    "note": "Commons; reproduced in McClure's Magazine, Feb 1907; photo 1860-61."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2003652565/",
+    "year": 1860,
+    "caption": "Inside the Wigwam as Republicans nominate Abraham Lincoln, May 1860.",
+    "kind": "event",
+    "note": "LOC print 'The Republicans in nominating convention in their wigwam at Chicago, May 1860'. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/92522162/",
+    "year": 1860,
+    "caption": "A view of Chicago published in 1860 for the city hosting the Republican convention.",
+    "kind": "map",
+    "note": "LOC 'The City of Chicago, Illinois, where the Republican Nominating Convention will meet on May 16, 1860'; format not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Lincoln Wigwam plaque.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "The plaque marking where the Wigwam stood, at what is now Lake Street and Wacker Drive.",
+    "kind": "today",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Date and location not seen."
+  }
+]

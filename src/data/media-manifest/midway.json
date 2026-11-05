@@ -1,0 +1,56 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Chicago Municipal Airport, Chicago (63168).jpg",
+    "year": 1935,
+    "approx": true,
+    "caption": "A postcard of Chicago Municipal Airport, renamed Midway in 1949.",
+    "kind": "place",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Probably a Tichnor/Boston Public Library postcard; date not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2001696858/",
+    "year": 1951,
+    "caption": "Striking United Air Lines pilots picket at the entrance to Midway in 1951.",
+    "kind": "event",
+    "note": "LOC NYWT&S, Wide World photo 'Striking pilots picket airline'."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/95502062/",
+    "year": 1955,
+    "approx": true,
+    "caption": "Rescuers lift a sailor from the wreck of a Braniff airliner that crashed while landing at Midway.",
+    "kind": "aftermath",
+    "sensitive": true,
+    "note": "LOC; date not seen - probably Braniff Flight 560, 17 Jul 1955. Check before showing."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0380/",
+    "year": 2000,
+    "approx": true,
+    "caption": "Midway's 1931 South Terminal, one of the oldest airport buildings in the country, documented by HABS.",
+    "kind": "place",
+    "note": "LOC HABS (Midway Airport, South Terminal); photo date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago - Midway International (MDW - KMDW) AN0556761.jpg",
+    "year": 2004,
+    "approx": true,
+    "caption": "Planes at Midway International Airport.",
+    "kind": "today",
+    "note": "Commons; airliners.net import, date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Midway Airport Airfield.jpg",
+    "year": 2008,
+    "approx": true,
+    "caption": "Midway's airfield, still hemmed in by the city's square-mile street grid.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

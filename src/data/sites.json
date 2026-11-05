@@ -201,7 +201,20 @@
     "address": "Lake St and Wacker Dr (then Market St)",
     "story": "Republicans held their national convention in a temporary wooden hall called the Wigwam and nominated Abraham Lincoln for president on the third ballot. Chicago has hosted more major party conventions than any other city.",
     "today": "An office building; a plaque marks the site",
-    "sources": []
+    "sources": [
+      {
+        "title": "1860 Republican National Convention (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/1860_Republican_National_Convention"
+      },
+      {
+        "title": "Dirty tricks at the Wigwam: Chicago's first convention (WBEZ)",
+        "url": "https://www.wbez.org/stories/dirty-tricks-at-the-wigwam-chicagos-first-convention/2e16abdf-0290-48b3-aab8-ce970d297ade"
+      },
+      {
+        "title": "City officials rededicate historic plaque lost in City Hall storage (CBS Chicago)",
+        "url": "https://www.cbsnews.com/chicago/news/city-officials-rededicate-historic-plaque-lost-in-city-hall-storage"
+      }
+    ]
   },
   {
     "id": "campdouglas",
@@ -213,9 +226,22 @@
     "lat": 41.836,
     "lng": -87.614,
     "address": "31st St to 33rd St at Cottage Grove Ave",
-    "story": "Opened as a Union training camp, it became one of the largest prison camps for captured Confederate soldiers. Crowding, disease and cold winters killed thousands of prisoners before the war ended.",
+    "story": "Opened as a Union training camp, it became one of the largest prison camps for captured Confederate soldiers. Crowding, disease and cold winters killed at least 4,000 prisoners before the war ended; some estimates run as high as 6,000. Most of the dead now lie in a mass grave at Oak Woods Cemetery.",
     "today": "Homes and a park in Bronzeville; a historical marker",
-    "sources": []
+    "sources": [
+      {
+        "title": "Confederate Mound, Oak Woods Cemetery (National Park Service)",
+        "url": "https://www.nps.gov/nr/travel/national_cemeteries/Illinois/Confederate_Mound_Oak_Woods_Cemetery.html"
+      },
+      {
+        "title": "Chicago's Confederate Mound: Tribute To 4,000 Rebel Soldiers (CBS Chicago)",
+        "url": "https://www.cbsnews.com/chicago/news/chicagos-confederate-mound"
+      },
+      {
+        "title": "A Confederate burial ground in Chicago? Yes, and it's getting a makeover (WBEZ)",
+        "url": "https://www.wbez.org/2010/09/23/a-confederate-burial-ground-in-chicago-yes-and-its-getting-a-makeover"
+      }
+    ]
   },
   {
     "id": "stockyards",
@@ -254,10 +280,23 @@
     "lat": 41.8975,
     "lng": -87.5835,
     "address": "Lake Michigan, about 2 miles off Chicago Ave",
-    "story": "Engineer Ellis Chesbrough ran a tunnel two miles under the lake bed to an intake crib, so the city could draw clean water far from the sewage flowing out of the river. The Water Tower on Michigan Ave was built to go with it.",
-    "today": "The crib still stands offshore, visible from the lakefront (location approximate)",
+    "story": "Engineer Ellis Chesbrough ran a tunnel two miles under the lake bed to an intake crib, so the city could draw clean water far from the sewage flowing out of the river. The first water flowed in March 1867, and the Water Tower and pumping station on Chicago Ave were built to go with it. The crib was replaced in 1900 and torn down in 1936.",
+    "today": "Later water cribs stand offshore; the 1867 crib was demolished in 1936 (location approximate)",
     "streetView": false,
-    "sources": []
+    "sources": [
+      {
+        "title": "Chicago Lake Tunnel (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chicago_Lake_Tunnel"
+      },
+      {
+        "title": "Water cribs in Chicago (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Water_cribs_in_Chicago"
+      },
+      {
+        "title": "Ellis Chesbrough, Scientist of the Day (Linda Hall Library)",
+        "url": "https://www.lindahall.org/about/news/scientist-of-the-day/ellis-chesbrough/"
+      }
+    ]
   },
   {
     "id": "zoo",
@@ -271,7 +310,20 @@
     "address": "2001 N. Clark St",
     "story": "The zoo started with a gift of two pairs of swans from New York's Central Park. It is one of the oldest zoos in North America and has always been free.",
     "today": "Lincoln Park Zoo, still free",
-    "sources": []
+    "sources": [
+      {
+        "title": "Lincoln Park Zoo (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Lincoln_Park_Zoo"
+      },
+      {
+        "title": "Lincoln Park Zoo (The Cultural Landscape Foundation)",
+        "url": "https://www.tclf.org/lincoln-park-zoo"
+      },
+      {
+        "title": "Special Exhibit Showcases 150 Years of Lincoln Park Zoo (WTTW)",
+        "url": "https://news.wttw.com/2018/05/17/special-exhibit-showcases-150-years-lincoln-park-zoo"
+      }
+    ]
   },
   {
     "id": "watertower",
@@ -529,7 +581,20 @@
     "address": "Polk St and Wood St",
     "story": "Before Wrigley Field, the Cubs played here. It was their home when they won the World Series in 1907 and 1908, their last title for 108 years.",
     "today": "The University of Illinois medical campus; a plaque marks the site",
-    "sources": []
+    "sources": [
+      {
+        "title": "West Side Grounds marker (Illinois State Historical Society)",
+        "url": "https://historyillinois.org/west-side-grounds-home-field-of-the-chicago-national-league-ball-club-from-1893-to-1915"
+      },
+      {
+        "title": "Chicago's West Side Grounds: Where the Cubs Last Won the World Series (Deadball Baseball)",
+        "url": "https://deadballbaseball.com/2021/05/chicagos-west-side-grounds-where-the-cubs-last-won-the-world-series"
+      },
+      {
+        "title": "List of baseball parks in Chicago (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/List_of_baseball_parks_in_Chicago"
+      }
+    ]
   },
   {
     "id": "expo",
@@ -625,21 +690,47 @@
     "address": "Western Ave and Belmont Ave",
     "story": "For six decades this amusement park on the North Branch promised Chicagoans they could laugh their troubles away. It was famous for wooden coasters like the Bobs. It closed for good after the 1967 season.",
     "today": "Shopping center, offices and a small park",
-    "sources": []
+    "sources": [
+      {
+        "title": "Riverview Park (Chicago) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Riverview_Park_(Chicago)"
+      },
+      {
+        "title": "Laugh your troubles away (WBEZ Curious City)",
+        "url": "https://www.wbez.org/curious-city/2013/02/19/laugh-your-troubles-away"
+      },
+      {
+        "title": "Dolores Haugh Riverview Amusement Park collection (Newberry Library)",
+        "url": "https://archives.newberry.org/repositories/2/resources/1222"
+      }
+    ]
   },
   {
     "id": "defender",
     "year": 1905,
-    "date": "1905",
+    "date": "May 5, 1905",
     "title": "Chicago Defender",
     "short": "Defender",
     "category": "culture",
     "lat": 41.8298,
     "lng": -87.6229,
-    "address": "3435 S. Indiana Ave (offices from 1920s)",
-    "story": "Robert S. Abbott started the Defender in his landlady's kitchen. It became the most influential Black newspaper in the country, and Pullman porters carried copies south. Its calls to leave the Jim Crow South helped drive the Great Migration to Chicago.",
+    "address": "3435 S. Indiana Ave (offices 1920 to 1960)",
+    "story": "Robert S. Abbott started the Defender in a small kitchen in his landlord's apartment. It became the most influential Black newspaper in the country, and Pullman porters carried copies south. Its calls to leave the Jim Crow South helped drive the Great Migration to Chicago.",
     "today": "The former Defender building, a city landmark",
-    "sources": []
+    "sources": [
+      {
+        "title": "Chicago Defender Building (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1271"
+      },
+      {
+        "title": "Robert Sengstacke Abbott (Britannica)",
+        "url": "https://britannica.com/biography/Robert-Sengstacke-Abbott"
+      },
+      {
+        "title": "Remembering the Chicago Defender print edition, 1905 to 2019 (National Museum of African American History and Culture)",
+        "url": "https://nmaahc.si.edu/blog-post/remembering-chicago-defender-print-edition-1905-2019"
+      }
+    ]
   },
   {
     "id": "essanay",

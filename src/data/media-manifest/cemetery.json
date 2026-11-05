@@ -1,5 +1,13 @@
 [
   {
+    "source": "commons",
+    "ref": "File:\"PLAT OF CEMETERY PARK 1863\" map from Report of the Commissioners and the History of Lincoln Park complied by I. J. Bryan, Chicago, 1899 (page 16 crop).jpg",
+    "year": 1863,
+    "caption": "An 1863 plat of Cemetery Park, the City Cemetery grounds Chicago was turning into Lincoln Park.",
+    "kind": "map",
+    "note": "Commons; map dated 1863, printed in the 1899 Lincoln Park history."
+  },
+  {
     "source": "loc",
     "ref": "https://www.loc.gov/item/2018649361/",
     "year": 1930,
@@ -7,5 +15,30 @@
     "caption": "The Kennison Boulder in Lincoln Park, marking a grave left behind when the City Cemetery became a park.",
     "kind": "place",
     "note": "LOC Keystone View Co. stereograph, ca. 1930. The boulder honors David Kennison (d. 1852), buried in the old City Cemetery."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018649362/",
+    "year": 1930,
+    "approx": true,
+    "caption": "The Couch family tomb in Lincoln Park, a vault left standing when the cemetery's graves were moved.",
+    "kind": "place",
+    "note": "LOC Keystone View Co. stereograph, ca. 1930 (LC-DIG-stereo-1s12520)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Couch Mausoleum Lincoln Park.jpg",
+    "year": 2008,
+    "caption": "The 1858 Couch Tomb behind the Chicago History Museum, the last structure left from the City Cemetery.",
+    "kind": "today",
+    "note": "Commons; Jmp2web, 2008, CC BY-SA 3.0."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Couch Moseleum in Lincoln Park, Chicago October 2013-5076.jpg",
+    "year": 2013,
+    "caption": "The Couch Tomb in October 2013.",
+    "kind": "today",
+    "note": "Commons; Victorgrigas, Oct 2013 (title misspelling is real)."
   }
 ]

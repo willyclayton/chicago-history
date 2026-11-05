@@ -1,0 +1,71 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Shoot the Chutes ride Riverview Park Chicago 1909.JPG",
+    "year": 1909,
+    "caption": "Boats splash down the Shoot the Chutes at Riverview in 1909.",
+    "kind": "place",
+    "note": "Commons; postcard sourced from eBay by uploader."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Riverview Park, Hell Gate scene, Chicago, Illinois, circa 1907-1914.jpg",
+    "year": 1910,
+    "approx": true,
+    "caption": "The Hell Gate boat ride at Riverview.",
+    "kind": "place",
+    "note": "Commons; circa 1907-1914."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/cph.3a41916/",
+    "year": 1911,
+    "caption": "Harry L. Curran in a Staver car on the autodrome race track at Riverview, August 1911.",
+    "kind": "event",
+    "note": "LOC b&w copy negative; ca. Aug 21, 1911."
+  },
+  {
+    "source": "commons",
+    "ref": "File:The Bobs roller coaster Riverview Park 1942.JPG",
+    "year": 1942,
+    "caption": "The Bobs, Riverview's fierce roller coaster, on a postcard dated 1942.",
+    "kind": "place",
+    "note": "Commons; postcard hand-dated 3 Aug 1942, PD (no notice)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:The Comet roller coaster at Riverview Park Chicago.JPG",
+    "year": 1945,
+    "approx": true,
+    "caption": "The entrance to the Comet roller coaster.",
+    "kind": "place",
+    "note": "Commons; undated postcard, uploader estimates 1920s-1967."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Pair O Chutes at night Riverview Park Chicago.JPG",
+    "year": 1950,
+    "approx": true,
+    "caption": "The Pair-O-Chutes parachute tower lit up at night.",
+    "kind": "place",
+    "note": "Commons; postcard, date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Silver Flash roller coaster Riverview Park Chicago.JPG",
+    "year": 1960,
+    "approx": true,
+    "caption": "The Silver Flash roller coaster, in Riverview's later years.",
+    "kind": "place",
+    "note": "Commons; uploader dates it before 1968."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Flying Turns roller coaster Riverview Park Chicago.JPG",
+    "year": 1962,
+    "approx": true,
+    "caption": "The Flying Turns, a bobsled-style coaster, before the park closed in 1967.",
+    "kind": "place",
+    "note": "Commons; page gives 12 Apr 1968, after the closing, so probably a postmark/scan date."
+  }
+]

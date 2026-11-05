@@ -1,6 +1,24 @@
 [
   {
     "source": "commons",
+    "ref": "File:Adler Planetarium (NBY 417065).jpg",
+    "year": 1935,
+    "approx": true,
+    "caption": "A postcard of the Adler Planetarium, America's first planetarium, opened in 1930.",
+    "kind": "place",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Newberry Curt Teich postcard."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/98508993/",
+    "year": 1938,
+    "approx": true,
+    "caption": "A WPA poster inviting Chicagoans to 'the drama of the heavens' at the Adler.",
+    "kind": "event",
+    "note": "LOC WPA Poster Collection, 1936-1941."
+  },
+  {
+    "source": "commons",
     "ref": "File:Northerly Island Beach - Chicago, Illinois (Adler Planetarium).JPG",
     "year": 2010,
     "approx": true,

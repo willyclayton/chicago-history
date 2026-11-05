@@ -1,0 +1,79 @@
+{
+  "id": "wigwam",
+  "moments": [
+    {
+      "year": 1860,
+      "title": "A hall built in a hurry",
+      "text": "Chicago business leaders put up a two-story pine-plank hall at Lake and Market streets near the river for the Republican National Convention. Temporary political halls like it were called wigwams.",
+      "kind": "built"
+    },
+    {
+      "year": 1860,
+      "date": "May 18, 1860",
+      "title": "Lincoln wins on the third ballot",
+      "text": "At the convention, held May 16 to 18, New York senator William Seward led the first ballot. Abraham Lincoln gained on the second and won the nomination on the third.",
+      "kind": "event"
+    },
+    {
+      "year": 1869,
+      "title": "Destroyed by fire",
+      "text": "The Wigwam was later destroyed by fire; accounts date the fire to 1867 or November 1869.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1909,
+      "title": "A centennial plaque",
+      "text": "For the 100th anniversary of Lincoln's birth, the Daughters of the American Revolution put up a plaque marking the Wigwam site, with the earlier Sauganash Hotel on its other side.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2017,
+      "title": "The lost plaque returns",
+      "text": "The DAR plaque, which had ended up in city storage, was rededicated.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: an office building at Lake and Wacker",
+      "text": "An office building stands on the site at Lake St and Wacker Dr. Chicago has hosted more major party conventions than any other city, 26 through 2024.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Convention",
+      "value": "May 16 to 18, 1860"
+    },
+    {
+      "label": "Ballots to nominate Lincoln",
+      "value": "3"
+    },
+    {
+      "label": "Chicago conventions",
+      "value": "26 (through 2024)",
+      "note": "The most of any city; counts vary slightly by how conventions are tallied."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1860 Republican National Convention (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/1860_Republican_National_Convention"
+    },
+    {
+      "title": "Dirty tricks at the Wigwam: Chicago's first convention (WBEZ)",
+      "url": "https://www.wbez.org/stories/dirty-tricks-at-the-wigwam-chicagos-first-convention/2e16abdf-0290-48b3-aab8-ce970d297ade"
+    },
+    {
+      "title": "City officials rededicate historic plaque lost in City Hall storage (CBS Chicago)",
+      "url": "https://www.cbsnews.com/chicago/news/city-officials-rededicate-historic-plaque-lost-in-city-hall-storage"
+    },
+    {
+      "title": "Smoke-filled rooms and pigs for president: Chicago has hosted decades of conventions (NPR)",
+      "url": "https://www.npr.org/2024/08/13/nx-s1-5036519/democrats-republicans-dnc-chicago-convention-2024-election"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Nomination May 18, 1860 on the third ballot; convention May 16 to 18 (Wikipedia, WBEZ). Site at Lake and Market (now Wacker), pine-plank hall built by local business leaders (Chicago magazine, Classic Chicago). Fire dated 1867 or Nov 1869 by different sources. DAR plaque 1909, rededicated 2017 (CBS). Chicago's 26 conventions through 2024 (NPR, Fox 32). Story confirmed; no changes."
+  }
+}

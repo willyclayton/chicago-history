@@ -1,0 +1,70 @@
+{
+  "id": "defender",
+  "moments": [
+    {
+      "year": 1905,
+      "date": "May 5, 1905",
+      "title": "A paper started in a kitchen",
+      "text": "Robert S. Abbott printed the first Chicago Defender, a run of about 300 copies, working out of a small kitchen in his landlord's apartment. Abbott later struck a deal with Pullman porters to carry the paper across the South, where copies were passed hand to hand and read in barbershops; its calls to come north helped drive the Great Migration.",
+      "kind": "event"
+    },
+    {
+      "year": 1920,
+      "title": "A home on Indiana Ave",
+      "text": "The Defender moved its offices and presses into a former synagogue at 3435 S. Indiana Ave, built in 1899 to a design by Henry L. Newhouse. It stayed until 1960.",
+      "kind": "changed"
+    },
+    {
+      "year": 1998,
+      "date": "Sept 9, 1998",
+      "title": "Named a Chicago Landmark",
+      "text": "The building was designated as part of the Black Metropolis-Bronzeville District.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2019,
+      "title": "The print edition ends",
+      "text": "The Defender ended its print edition after 114 years.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the former Defender building",
+      "text": "The landmark building on Indiana Ave in Bronzeville, sold in 2021, still stands.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Founded",
+      "value": "May 5, 1905",
+      "note": "Some sources say May 6."
+    },
+    {
+      "label": "At 3435 S. Indiana",
+      "value": "1920 to 1960"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chicago Defender Building (Chicago Landmarks)",
+      "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1271"
+    },
+    {
+      "title": "Robert Sengstacke Abbott (Britannica)",
+      "url": "https://britannica.com/biography/Robert-Sengstacke-Abbott"
+    },
+    {
+      "title": "Remembering the Chicago Defender print edition, 1905 to 2019 (National Museum of African American History and Culture)",
+      "url": "https://nmaahc.si.edu/blog-post/remembering-chicago-defender-print-edition-1905-2019"
+    },
+    {
+      "title": "Chicago newspaper sparked the Great Migration (MLB.com)",
+      "url": "https://www.mlb.com/news/chicago-newspaper-sparked-the-great-migration/c-57092178"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Founded May 5, 1905 (PBS, Wikipedia; BlackPast says May 6, 300 copies). The story's 'landlady's kitchen' was changed: MLB.com says a small kitchen in his landlord's apartment. Pullman porter distribution and the Great Migration role per Britannica; no single date is given, so it is folded into the founding moment. 3435 S. Indiana: 1899 synagogue by Henry L. Newhouse, Defender home 1920 to 1960, Chicago Landmark Sept 9, 1998 (Chicago Landmarks, Wikipedia). Print edition ended 2019 (NMAAHC). Sold 2021 for $2.48 million."
+  }
+}

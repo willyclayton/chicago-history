@@ -1,10 +1,43 @@
 [
   {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2021683963/",
+    "year": 1959,
+    "caption": "Bill Veeck, who also owned the Sox on Disco Demolition Night, with bleacher fans at Comiskey in 1959.",
+    "kind": "people",
+    "note": "LOC LOOK Magazine collection, Job 59-8314, Jim Hansen. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Old comiskey park.jpg",
+    "year": 1990,
+    "approx": true,
+    "caption": "Old Comiskey Park around 1990, its last season.",
+    "kind": "place",
+    "note": "Commons; Rick Dikeman, circa 1990."
+  },
+  {
+    "source": "commons",
+    "ref": "File:New Comiskey Park 1990.jpg",
+    "year": 1990,
+    "caption": "The new ballpark rising across 35th Street in September 1990, as old Comiskey played its final games.",
+    "kind": "construction",
+    "note": "Commons; Sept 1990."
+  },
+  {
     "source": "commons",
     "ref": "File:Dan Ryan Expressway Near Illinois Institute of Technology and Comiskey Park, Chicago, Illinois (11051918586).jpg",
     "year": 2013,
     "caption": "The Dan Ryan passing the White Sox's current park; old Comiskey stood just north of it.",
     "kind": "today",
     "note": "Commons; Ken Lund 2013. Shows the 1991 park, not the demolished 1910 one."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Location of Old Comiskey Park Home Plate, U.S. Cellular Field, Chicago, Illinois (9179565989).jpg",
+    "year": 2013,
+    "caption": "A marker in the parking lot shows where old Comiskey's home plate was.",
+    "kind": "today",
+    "note": "Commons; Ken Lund, 2013."
   }
 ]

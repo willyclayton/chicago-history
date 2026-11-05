@@ -1,0 +1,71 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Garfield Park Conservatory, Chicago circa 1907 postcard (front).tiff",
+    "year": 1907,
+    "approx": true,
+    "caption": "A postcard of the Garfield Park Conservatory from around the time it opened.",
+    "kind": "place",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Dated circa 1907, but the conservatory opened in 1908; may show the older one."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018648985/",
+    "year": 1908,
+    "caption": "Floral gardens of Garfield Park in 1908, the year the new conservatory opened.",
+    "kind": "place",
+    "note": "LOC stereograph, 1908; shows the gardens, not necessarily the glass house. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:A Corner In The Conservatory, Garfield Park, Chicago (NBY 416762).jpg",
+    "year": 1930,
+    "approx": true,
+    "caption": "A postcard of a planted corner inside the conservatory.",
+    "kind": "place",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. Newberry Curt Teich postcard."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/98518256/",
+    "year": 1938,
+    "approx": true,
+    "caption": "A WPA poster for the chrysanthemum show at the Garfield Park Conservatory.",
+    "kind": "event",
+    "note": "LOC WPA Poster Collection, Kenneth Whitley, 1936-1941."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2011636231/",
+    "year": 1990,
+    "approx": true,
+    "caption": "The Garfield Park Conservatory, one of the world's largest greenhouses, photographed by Carol M. Highsmith.",
+    "kind": "place",
+    "note": "LOC Highsmith; date range 1980-2006. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Garfield Park Conservatory Structure.jpg",
+    "year": 2008,
+    "approx": true,
+    "caption": "The conservatory's glass and steel structure, designed by Jens Jensen to look like a haystack.",
+    "kind": "today",
+    "note": "Commons; Flickr (puroticorico) CC BY 2.0, moved 2008."
+  },
+  {
+    "source": "commons",
+    "ref": "File:020908 - Chocolate Fest - Garfield Park Conservatory - Chicago-100 (2254405072).jpg",
+    "year": 2008,
+    "caption": "Visitors at a February 2008 festival inside the conservatory.",
+    "kind": "today",
+    "note": "Commons; Flickr (southie3); date from title (02/09/08)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Garfield Park Conservatory, Palm House, Chicago, IL.JPG",
+    "year": 2014,
+    "caption": "The Palm House in February 2014.",
+    "kind": "today",
+    "note": "Commons; 8 Feb 2014."
+  }
+]

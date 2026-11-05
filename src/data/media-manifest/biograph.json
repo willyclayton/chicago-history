@@ -1,0 +1,59 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Crowd at Biograph Theater after Dillinger death.jpg",
+    "year": 1934,
+    "caption": "Crowds outside the Biograph on July 22, 1934, after FBI agents shot John Dillinger in the alley nearby.",
+    "kind": "aftermath",
+    "note": "Commons; 'no evidence of current copyright' per page."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2009633874/",
+    "year": 1949,
+    "caption": "A 1949 newspaper drawing of FBI agents shooting Dillinger as he left the Biograph.",
+    "kind": "newspaper",
+    "sensitive": true,
+    "note": "LOC photo of a drawing, 1949; clipping on back. Depicts a shooting."
+  },
+  {
+    "source": "commons",
+    "ref": "File:19970905 14 Biograph Theater. (6027355433).jpg",
+    "year": 1997,
+    "caption": "The Biograph's marquee on Lincoln Avenue in September 1997, still a movie house.",
+    "kind": "place",
+    "note": "Commons Flickr import, CC BY 2.0; date from title."
+  },
+  {
+    "source": "commons",
+    "ref": "File:BiographTheater.jpg",
+    "year": 2007,
+    "caption": "The Biograph in June 2007.",
+    "kind": "today",
+    "note": "Commons; JoeyBLS, June 2007."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Victory Gardens Theatre.JPG",
+    "year": 2008,
+    "caption": "The Biograph in 2008, after the Victory Gardens Theater turned it into a playhouse.",
+    "kind": "today",
+    "note": "Commons; Amerique, 2008."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Biograph Theater where John Dillinger was shot and killed (3692017974).jpg",
+    "year": 2009,
+    "caption": "The Biograph Theater at 2433 N. Lincoln Ave. in 2009.",
+    "kind": "today",
+    "note": "Commons; Stephen Hogan, 2009."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Alley where John Dillinger was shot and killed (3692005432).jpg",
+    "year": 2009,
+    "caption": "The alley beside the Biograph where Dillinger fell.",
+    "kind": "today",
+    "note": "Commons; Stephen Hogan, 2009."
+  }
+]

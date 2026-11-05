@@ -1,10 +1,44 @@
 [
   {
     "source": "loc",
+    "ref": "https://www.loc.gov/item/2016801822/",
+    "year": 1900,
+    "approx": true,
+    "caption": "The Art Institute's Michigan Avenue building around 1900, a few years after it opened.",
+    "kind": "place",
+    "note": "LOC Detroit Publishing Co. 'Art Institute, Chicago, Ill.' (det.4a07938 may be the same image)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016818097/",
+    "year": 1905,
+    "approx": true,
+    "caption": "One of Edward Kemeys's bronze lions guarding the Art Institute's entrance.",
+    "kind": "place",
+    "note": "LOC Detroit Publishing Co., 1900-1915; once miscaptioned as the New York Public Library."
+  },
+  {
+    "source": "loc",
     "ref": "https://www.loc.gov/item/2018648650/",
     "year": 1909,
     "caption": "Michigan Avenue in 1909, looking north from the Art Institute along the lakefront.",
     "kind": "place",
     "note": "LOC stereograph, Kelley & Chadwick, 1909: 'Michigan Avenue, the Great Lake front thoroughfare, north from Art Institue'. View is from the museum, not of it. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:20070622 Art Institute of Chicago Front View.JPG",
+    "year": 2007,
+    "caption": "The Art Institute's front steps and lions on Michigan Avenue in June 2007.",
+    "kind": "today",
+    "note": "Commons; 22 Jun 2007."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Art Institute of Chicago Michigan Avenue.jpg",
+    "year": 2010,
+    "caption": "The Art Institute from across Michigan Avenue in 2010.",
+    "kind": "today",
+    "note": "Commons; Alanscottwalker, 2010."
   }
 ]

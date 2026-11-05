@@ -1,0 +1,78 @@
+{
+  "id": "crib",
+  "moments": [
+    {
+      "year": 1865,
+      "title": "Building the tunnel and crib",
+      "text": "To draw clean water far from the sewage flowing out of the river, city engineer Ellis Chesbrough designed a tunnel under the lake bed reaching two miles out into Lake Michigan, ending at an intake called the Two-Mile Crib.",
+      "kind": "built"
+    },
+    {
+      "year": 1867,
+      "date": "Mar 25, 1867",
+      "title": "Lake water reaches the city",
+      "text": "With the tunnel and crib finished, the first water from the new intake flowed into Chicago.",
+      "kind": "built"
+    },
+    {
+      "year": 1869,
+      "title": "A pumping station on shore",
+      "text": "The tunnel's shore end connected to a new pumping station on Chicago Ave, completed in 1869 along with the Water Tower.",
+      "kind": "built"
+    },
+    {
+      "year": 1900,
+      "title": "A new crib takes over",
+      "text": "The Carter H. Harrison Crib replaced the Two-Mile Crib, and in 1935 the William E. Dever Crib was built beside it.",
+      "kind": "changed"
+    },
+    {
+      "year": 1936,
+      "title": "The original crib is torn down",
+      "text": "The old Two-Mile Tunnel and Two-Mile Crib were closed and demolished.",
+      "kind": "demolished"
+    },
+    {
+      "year": 2026,
+      "title": "Today: later cribs offshore",
+      "text": "The 1867 crib is gone, but later water cribs still stand offshore and can be seen from the lakefront. Location approximate.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Tunnel length",
+      "value": "about 2 miles"
+    },
+    {
+      "label": "First water",
+      "value": "Mar 25, 1867"
+    },
+    {
+      "label": "Demolished",
+      "value": "1936"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chicago Lake Tunnel (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chicago_Lake_Tunnel"
+    },
+    {
+      "title": "Water cribs in Chicago (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Water_cribs_in_Chicago"
+    },
+    {
+      "title": "Ellis Chesbrough, Scientist of the Day (Linda Hall Library)",
+      "url": "https://www.lindahall.org/about/news/scientist-of-the-day/ellis-chesbrough/"
+    },
+    {
+      "title": "WTTW News Explains: How Do Chicago's Lake Michigan Water Cribs Work? (WTTW)",
+      "url": "https://news.wttw.com/2023/09/28/wttw-news-explains-how-do-chicago-s-lake-michigan-water-cribs-work"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Chesbrough's two-mile tunnel and crib; first water Mar 25, 1867 (Wikipedia, Linda Hall Library). Correction: the Two-Mile Crib no longer stands. Wikipedia says the tunnel and crib were closed and demolished in 1936, after the Carter H. Harrison Crib replaced it in 1900; the Dever Crib was built beside Harrison in 1935. 'Today' was changed accordingly. Crib built 1865 (Wikipedia) or 1866 (Lighthouse Friends). Pumping station completed 1869 per a Chicago history blog."
+  }
+}

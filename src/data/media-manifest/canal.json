@@ -1,0 +1,44 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/00652797/",
+    "year": 1859,
+    "caption": "An 1859 engraving of the Illinois and Michigan Canal, Chicago's link to the Mississippi.",
+    "kind": "newspaper",
+    "note": "LOC; periodical wood engraving, 1859 (artist 'Copcutt(?)'). Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/stereo.1s12312/",
+    "year": 1886,
+    "approx": true,
+    "caption": "A drawbridge over the canal at Chicago, from a stereograph.",
+    "kind": "place",
+    "note": "LOC stereograph 'Draw Bridge, Chicago Canal'; record gives 1886-12-18 but citation says 1905. May show the Sanitary canal instead."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Illinois and Michigan Canal parkways system (NBY 1324).jpg",
+    "year": 1938,
+    "caption": "A 1938 state planning map proposing parkways along the old canal, which had closed to traffic five years before.",
+    "kind": "map",
+    "note": "Commons; Newberry Library, Illinois State Planning Commission 1938. Canal shipping ended 1933."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0709/",
+    "year": 1980,
+    "approx": true,
+    "caption": "Guard locks on the canal at Joliet, documented by the Historic American Engineering Record.",
+    "kind": "place",
+    "note": "LOC HAER IL-115, Des Plaines River guard locks below Lift Lock No. 5, Joliet; not Bridgeport. Photo date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Illinois and Michigan Canal (5978670984).jpg",
+    "year": 2010,
+    "caption": "A surviving stretch of the Illinois and Michigan Canal in 2010, now part of a national heritage corridor.",
+    "kind": "today",
+    "note": "Commons Flickr import, 2010; not Bridgeport."
+  }
+]

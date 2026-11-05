@@ -1,0 +1,53 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Emmett Till's funeral - mourners (restored).jpg",
+    "year": 1955,
+    "caption": "Mourners lined up outside Roberts Temple; tens of thousands filed past the open casket.",
+    "kind": "event",
+    "note": "Commons; restored version (original 'Emmett Till's funeral - mourners.jpg' not used). Check license."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/94505605/",
+    "year": 1955,
+    "caption": "Mamie Till Bradley in 1955, the mother who turned her son's murder into a national cause.",
+    "kind": "people",
+    "note": "LOC '[Mrs. Mamie Bradley, mother of Emmett Till, head-and-shoulders portrait]'."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2005676933/",
+    "year": 1955,
+    "caption": "News photo of Emmett's mother on her way to testify at the murder trial in Mississippi, September 1955.",
+    "kind": "newspaper",
+    "note": "LOC 'Mother of slain boy to testify'; content not seen. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Emmett Till's Chicago home 6427 S. St. Lawrence Avenue.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "Emmett Till's family home at 6427 S. St. Lawrence Ave.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Roberts Temple Church of God in Christ.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "Roberts Temple Church of God in Christ at 4021 S. State St., where the funeral was held.",
+    "kind": "today",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. 3264x2448; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Grave of Emmett Louis Till (1941–1955) at Burr Oak Cemetery.jpg",
+    "year": 2020,
+    "approx": true,
+    "caption": "Emmett Till's grave at Burr Oak Cemetery in Alsip.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

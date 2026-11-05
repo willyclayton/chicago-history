@@ -1,0 +1,88 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Hull House Coffee Room.jpg",
+    "year": 1900,
+    "approx": true,
+    "caption": "The Hull House coffee room, where neighbors could buy cheap, wholesome meals.",
+    "kind": "place",
+    "note": "Commons; date and source not seen. Re-date once viewed."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Hull House Women's Club building.jpg",
+    "year": 1905,
+    "caption": "The Hull House Woman's Club building on Polk Street in 1905.",
+    "kind": "place",
+    "note": "Commons; credited to Chicago Daily News, 1905, source info thin."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Hull House, Smith Hall.jpg",
+    "year": 1910,
+    "caption": "Smith Hall on South Halsted Street, looking north, in 1910.",
+    "kind": "place",
+    "note": "Commons; dated 1910."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/98504827/",
+    "year": 1910,
+    "approx": true,
+    "caption": "Children of the Elizabeth McCormick Open Air School on the roof of the Hull House boys' club.",
+    "kind": "people",
+    "note": "LOC; Burke-Atwell (F. P. Burke) print, 1900-1920. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Twenty years at Hull-house, with autobiographical notes (1911) (14775164464).jpg",
+    "year": 1911,
+    "caption": "An illustration from Jane Addams's memoir Twenty Years at Hull-House.",
+    "kind": "place",
+    "note": "Commons; Internet Archive book image (1911 printing). Content not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018676451/",
+    "year": 1913,
+    "approx": true,
+    "caption": "Jane Addams, who opened Hull House with Ellen Gates Starr in 1889, photographed by Lewis Hine.",
+    "kind": "people",
+    "note": "LOC NCLC, Lewis Hine, ca. 1913: 'Jane Addams of Hull House, Chicago, Ill.'"
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2013651553/",
+    "year": 1929,
+    "caption": "A news photo marking Hull House's 40th birthday in 1929.",
+    "kind": "event",
+    "note": "LOC 'Hull House has 40th birthday'; content not seen. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/il0411/",
+    "year": 1967,
+    "approx": true,
+    "caption": "The Hull mansion, one of two buildings saved when the rest of the complex was cleared for the UIC campus.",
+    "kind": "place",
+    "note": "LOC HABS IL-1110 (Charles J. Hull House); photo date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:UIC Hull House.JPG",
+    "year": 2008,
+    "approx": true,
+    "caption": "The Hull mansion today, a museum on the University of Illinois Chicago campus.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Jane Addams Hull House.JPG",
+    "year": 2010,
+    "approx": true,
+    "caption": "The Jane Addams Hull-House Museum on Halsted Street.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

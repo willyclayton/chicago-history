@@ -1,10 +1,42 @@
 [
   {
     "source": "commons",
+    "ref": "File:1943 Illinois Centrail Rail Yard.jpg",
+    "year": 1943,
+    "caption": "Illinois Central rail yards along the lakefront in 1943, on land that became Millennium Park.",
+    "kind": "place",
+    "note": "Commons; title only seen (typo 'Centrail' is in the title). Confirm it shows the Randolph-Monroe yard."
+  },
+  {
+    "source": "commons",
     "ref": "File:Millennium Park from Sears Tower.jpg",
     "year": 2007,
     "caption": "Millennium Park in 2007, three years after it opened over the old rail yards, seen from Sears Tower.",
     "kind": "today",
     "note": "Commons, 2007 (before Legacy Tower was built)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2010630358/",
+    "year": 2007,
+    "caption": "Frank Gehry's Jay Pritzker Pavilion with the Michigan Avenue skyline, photographed by Carol M. Highsmith.",
+    "kind": "today",
+    "note": "LOC Highsmith, 2007 per summary. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago (ILL) Millennium Park, pavilion Jay Pritzker, Frank Gehry. 2004 (4826511524).jpg",
+    "year": 2010,
+    "caption": "The Pritzker Pavilion's steel ribbons over the lawn.",
+    "kind": "today",
+    "note": "Commons Flickr import (vincent desjardins, 2010); 2004 in title is the opening year."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Millennium Park, Chicago, Illinois (9181711234).jpg",
+    "year": 2013,
+    "caption": "Millennium Park in 2013.",
+    "kind": "today",
+    "note": "Commons; Ken Lund, 2013."
   }
 ]

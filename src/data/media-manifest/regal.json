@@ -1,0 +1,35 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017788750/",
+    "year": 1941,
+    "caption": "The Regal Theater and Savoy Ballroom on 47th Street, photographed by Russell Lee in April 1941.",
+    "kind": "place",
+    "note": "LOC FSA/OWI 'Movie theater. Southside, Chicago, Illinois'; summary says it shows the Regal and the Savoy."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/fsa.8c00662/",
+    "year": 1941,
+    "caption": "A crowd coming out of the Regal Theater on the South Side, April 1941.",
+    "kind": "people",
+    "note": "LOC FSA/OWI, Russell Lee; intermediary roll film."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017788995/",
+    "year": 1941,
+    "caption": "The band at the Savoy Ballroom, the Regal's next-door neighbor, in 1941.",
+    "kind": "people",
+    "note": "LOC FSA/OWI, Russell Lee. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Regal Theater.jpg",
+    "year": 1950,
+    "approx": true,
+    "caption": "The Regal Theater, Bronzeville's grand movie and stage palace, which closed in 1968.",
+    "kind": "place",
+    "note": "Title seen only in a Commons category listing, not in a File: URL; verify exact title. 952x696; date not seen."
+  }
+]
