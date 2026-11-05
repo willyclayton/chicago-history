@@ -1,0 +1,84 @@
+{
+  "id": "regal",
+  "moments": [
+    {
+      "year": 1927,
+      "date": "Nov 1927",
+      "title": "The Savoy complex opens",
+      "text": "The Savoy Ballroom opened on Thanksgiving night 1927 on South Parkway at 47th St, part of a block that would include the Regal.",
+      "kind": "built"
+    },
+    {
+      "year": 1928,
+      "date": "Feb 4, 1928",
+      "title": "The Regal opens",
+      "text": "The ornate movie palace at 4719 S. South Parkway, designed by Edward Eichenbaum, opened in the heart of Bronzeville, a stretch called the \"Harlem of Chicago.\"",
+      "kind": "built"
+    },
+    {
+      "year": 1952,
+      "title": "A top stop for Black stars",
+      "text": "Ella Fitzgerald, Lena Horne and Duke Ellington were among the stars who played the Regal; Fitzgerald had an engagement in February 1952. Nat King Cole is said to have gotten his start at one of its amateur nights.",
+      "kind": "event"
+    },
+    {
+      "year": 1968,
+      "date": "Aug 1968",
+      "title": "The Jackson 5 open for Motown",
+      "text": "The young Jackson 5 opened for Gladys Knight & the Pips and Bobby Taylor & the Vancouvers. The theater closed around 1968, though some sources say 1971.",
+      "kind": "event"
+    },
+    {
+      "year": 1973,
+      "title": "Torn down",
+      "text": "The Regal was demolished.",
+      "kind": "demolished"
+    },
+    {
+      "year": 2004,
+      "date": "Aug 2004",
+      "title": "A new cultural center",
+      "text": "The Harold Washington Cultural Center, named for Chicago's first Black mayor, opened at 4701 S. King Dr, on what it describes as the Regal's ground.",
+      "kind": "built"
+    },
+    {
+      "year": 2026,
+      "title": "Today: 47th St and King Dr",
+      "text": "The Harold Washington Cultural Center stands at the corner, near the Regal's old address.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "Feb 4, 1928"
+    },
+    {
+      "label": "Closed",
+      "value": "about 1968",
+      "note": "One source says 1971."
+    },
+    {
+      "label": "Demolished",
+      "value": "1973"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Regal Theater, Chicago (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Regal_Theater,_Chicago"
+    },
+    {
+      "title": "Regal Theater (Cinema Treasures)",
+      "url": "https://www.cinematreasures.org/theaters/992"
+    },
+    {
+      "title": "Harold Washington Cultural Center (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Harold_Washington_Cultural_Center"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Opened Feb 4, 1928 at 4719 S. South Parkway (now King Dr), designed by Edward Eichenbaum (Wikipedia, Cinema Treasures; one source says Levy and Klein, one says 4710). Closed about 1968 (or 1971), demolished 1973. Jackson 5 dates Aug 12 to 27, 1968; Fitzgerald Feb 10, 1952 (Chicago Public Library index); Ellington's appearances are lightly supported (WTTW). Nat King Cole's amateur-night start is a single-source claim. Harold Washington Cultural Center opened Aug 2004 on the Regal site per the center and Wikipedia; a Cinema Treasures commenter disputes the exact site. Address made specific. The story's 'Jackson 5 played its stage' kept."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "buckingham",
+  "moments": [
+    {
+      "year": 1924,
+      "title": "A sister's memorial",
+      "text": "Philanthropist Kate Buckingham, inspired by the fountains of Versailles, commissioned a fountain in Grant Park in memory of her brother, Clarence F. Buckingham, who had died in 1913.",
+      "kind": "event"
+    },
+    {
+      "year": 1927,
+      "date": "Aug 26, 1927",
+      "title": "The fountain is dedicated",
+      "text": "Architect Edward H. Bennett designed the tiered fountain, modeled on the Latona Fountain at Versailles, with sea horse sculptures by Marcel Loyau. It opened to the public in May and was dedicated in August.",
+      "kind": "built"
+    },
+    {
+      "year": 1927,
+      "title": "A fountain that stands for the lake",
+      "text": "The basin stands for Lake Michigan, and four pairs of bronze sea horses stand for the states around it: Illinois, Wisconsin, Michigan and Indiana.",
+      "kind": "event"
+    },
+    {
+      "year": 2017,
+      "date": "Aug 2017",
+      "title": "90 years",
+      "text": "The fountain marked its 90th anniversary.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Buckingham Fountain",
+      "text": "The fountain runs from spring to fall in Grant Park, with regular water shows.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Dedicated",
+      "value": "Aug 26, 1927"
+    },
+    {
+      "label": "Cost",
+      "value": "disputed",
+      "note": "Sources give $500,000, $750,000 or $1 million."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Buckingham Fountain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Buckingham_Fountain"
+    },
+    {
+      "title": "Clarence F. Buckingham Memorial Fountain (The Cultural Landscape Foundation)",
+      "url": "https://www.tclf.org/clarence-f-buckingham-memorial-fountain"
+    },
+    {
+      "title": "Kate Sturges Buckingham (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kate_Sturges_Buckingham"
+    },
+    {
+      "title": "Celebrating The 90th Anniversary Of Buckingham Memorial Fountain (WBEZ)",
+      "url": "https://www.wbez.org/shows/morning-shift/celebrating-the-90th-anniversary-of-buckingham-memorial-fountain/2ace2f24-dd8b-4a3d-856a-14fe0fe5267b"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Dedicated Aug 26, 1927, opened May 26, 1927; Kate Buckingham in memory of Clarence (1854 to 1913); designed by Edward H. Bennett with Marcel Loyau (Wikipedia, TCLF). Latona model and four pairs of sea horses for Illinois, Wisconsin, Michigan and Indiana (Wikipedia, HMdb). 'Twice as large' appears only in weak sources, so it was dropped from the story. Cost disputed."
+  }
+}

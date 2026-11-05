@@ -1093,9 +1093,22 @@
     "lat": 41.8758,
     "lng": -87.6189,
     "address": "Grant Park at Congress Plaza",
-    "story": "Kate Buckingham gave the fountain in memory of her brother Clarence. It was modeled on the Latona Fountain at Versailles but built about twice as large, and its four sea horses stand for the states that border Lake Michigan.",
+    "story": "Kate Buckingham gave the fountain in memory of her brother Clarence. It was modeled on the Latona Fountain at Versailles, and its four pairs of bronze sea horses stand for the states that border Lake Michigan.",
     "today": "Runs from spring to fall, with water shows every hour",
-    "sources": []
+    "sources": [
+      {
+        "title": "Buckingham Fountain (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Buckingham_Fountain"
+      },
+      {
+        "title": "Clarence F. Buckingham Memorial Fountain (The Cultural Landscape Foundation)",
+        "url": "https://www.tclf.org/clarence-f-buckingham-memorial-fountain"
+      },
+      {
+        "title": "Kate Sturges Buckingham (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Kate_Sturges_Buckingham"
+      }
+    ]
   },
   {
     "id": "midway",
@@ -1109,7 +1122,20 @@
     "address": "5700 S. Cicero Ave",
     "story": "Opened as Chicago Municipal Airport, it was among the busiest airports in the world through the 1930s, 40s and 50s. It was renamed in 1949 for the Battle of Midway, and lost most of its traffic once O'Hare opened for jets.",
     "today": "Chicago Midway International Airport",
-    "sources": []
+    "sources": [
+      {
+        "title": "Midway Airport (Encyclopedia of Chicago)",
+        "url": "https://encyclopedia.chicagohistory.org/pages/828.html"
+      },
+      {
+        "title": "Chicago Midway International Airport history (Chicago Department of Aviation)",
+        "url": "https://www.flychicago.com/business/CDA/pages/midway.aspx"
+      },
+      {
+        "title": "Midway International Airport (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Midway_International_Airport"
+      }
+    ]
   },
   {
     "id": "regal",
@@ -1120,10 +1146,23 @@
     "category": "culture",
     "lat": 41.8094,
     "lng": -87.6166,
-    "address": "47th St and King Dr (then South Parkway)",
-    "story": "The ornate Bronzeville movie palace was a top stop for Black performers: Duke Ellington, Ella Fitzgerald, Nat King Cole and later the Jackson 5 played its stage. It was torn down in 1973.",
-    "today": "Shops and a cultural center on 47th St",
-    "sources": []
+    "address": "4719 S. King Dr at 47th St (then South Parkway)",
+    "story": "The ornate Bronzeville movie palace was a top stop for Black performers: Duke Ellington, Ella Fitzgerald and Lena Horne played there, and the young Jackson 5 opened for Motown acts on its stage in 1968. It closed around 1968 and was torn down in 1973.",
+    "today": "The Harold Washington Cultural Center, on 47th St",
+    "sources": [
+      {
+        "title": "Regal Theater, Chicago (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Regal_Theater,_Chicago"
+      },
+      {
+        "title": "Regal Theater (Cinema Treasures)",
+        "url": "https://www.cinematreasures.org/theaters/992"
+      },
+      {
+        "title": "Harold Washington Cultural Center (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Harold_Washington_Cultural_Center"
+      }
+    ]
   },
   {
     "id": "stadium",
