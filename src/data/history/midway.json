@@ -1,0 +1,75 @@
+{
+  "id": "midway",
+  "moments": [
+    {
+      "year": 1927,
+      "date": "Dec 12, 1927",
+      "title": "Chicago Municipal Airport",
+      "text": "The city named its new Southwest Side airfield, between 55th and 63rd streets and Cicero and Central avenues, Chicago Municipal Airport. An earlier air park on the site had handled mostly airmail.",
+      "kind": "built"
+    },
+    {
+      "year": 1932,
+      "title": "World's busiest airport",
+      "text": "From 1932 to 1961 the airport held the title of the world's busiest.",
+      "kind": "event"
+    },
+    {
+      "year": 1949,
+      "title": "Renamed for the Battle of Midway",
+      "text": "The City Council renamed it Chicago Midway Airport to honor the heroes of the Battle of Midway and World War II veterans.",
+      "kind": "changed"
+    },
+    {
+      "year": 1962,
+      "date": "July 1962",
+      "title": "The jets go to O'Hare",
+      "text": "As airlines moved jet service to the larger O'Hare, which passed Midway in traffic by 1961, Midway nearly emptied; until July 1964 its only scheduled airline was Chicago Helicopter.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Chicago Midway International Airport",
+      "text": "Midway is Chicago's second-busiest airport, and Southwest Airlines carries most of its passengers.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Named Chicago Municipal",
+      "value": "Dec 12, 1927",
+      "note": "Some sources date the opening to 1926."
+    },
+    {
+      "label": "World's busiest",
+      "value": "1932 to 1961"
+    },
+    {
+      "label": "Renamed Midway",
+      "value": "1949",
+      "note": "June or July 1949, by source."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Midway Airport (Encyclopedia of Chicago)",
+      "url": "https://encyclopedia.chicagohistory.org/pages/828.html"
+    },
+    {
+      "title": "Chicago Midway International Airport history (Chicago Department of Aviation)",
+      "url": "https://www.flychicago.com/business/CDA/pages/midway.aspx"
+    },
+    {
+      "title": "Midway International Airport (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Midway_International_Airport"
+    },
+    {
+      "title": "Looking Back At 'The World's Busiest Airport' (WTTW)",
+      "url": "https://interactive.wttw.com/playlist/2019/09/24/midway-airport"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Named Chicago Municipal Airport Dec 12, 1927 (Wikipedia citing the Encyclopedia of Chicago; WTTW says 1926). World's busiest 1932 to 1961 (Encyclopedia of Chicago). Renamed Midway in 1949 (Chicago Department of Aviation; June 23 or July 1949 by source). Jet traffic moved to O'Hare; only Chicago Helicopter flew scheduled service July 1962 to July 1964 (Wikipedia). Story confirmed; no changes."
+  }
+}

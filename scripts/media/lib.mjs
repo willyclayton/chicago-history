@@ -117,6 +117,7 @@ const ALLOWED = [
   /^cc by( sa)?( \d(\.\d+)?( [a-z]{2,3})?)?$/,
   /^no known restrictions\b/, // LOC "No known restrictions on publication."
   /^no known copyright restrictions\b/, // Flickr Commons wording
+  /^no restrictions$/, // Commons' short label for Flickr Commons "no known copyright restrictions"
   // LOC's statement for New York World-Telegram & Sun staff photos. Same meaning as
   // "no known restrictions"; remove this line to drop that collection.
   /^no copyright restriction known\b/,

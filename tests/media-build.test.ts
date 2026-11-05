@@ -131,6 +131,7 @@ describe("license allowlist", () => {
     "No known restrictions on publication.",
     "No known restrictions",
     "No known copyright restrictions",
+    "No restrictions",
     "Attribution",
     "Copyrighted free use",
     "No copyright restriction known. Staff photographer reproduction rights transferred to Library of Congress through Instrument of Gift.",
