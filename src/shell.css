@@ -1,0 +1,29 @@
+/* App-shell polish: how the page behaves as an app on phones and when installed.
+   Loaded after every other stylesheet. Colors come from the tokens in theme.css. */
+
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{-webkit-tap-highlight-color:transparent}
+#root{height:100%}
+
+/* In landscape on notched phones, keep every layer clear of the notch and home bar. */
+.app{left:env(safe-area-inset-left,0px);right:env(safe-area-inset-right,0px)}
+
+/* No double-tap zoom or 300ms tap delay on the app chrome. Pinch-zoom still works on
+   the panel's text (the map handles its own pinch, see App.tsx for iOS). */
+.app{touch-action:manipulation}
+/* Long-pressing the map or the timeline shouldn't open the system's callout or select text. */
+#map,.dock{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+
+/* "Updated" prompt after a new version installs */
+.ctm-update{position:absolute;z-index:12;top:calc(16px + env(safe-area-inset-top,0px));left:calc(50% + var(--panel-w) / 2 + 6px);transform:translateX(-50%);
+  display:flex;align-items:center;gap:6px;padding:6px 6px 6px 16px;border-radius:999px;background:var(--ink);color:var(--bg);
+  font-weight:600;font-size:13.5px;white-space:nowrap;box-shadow:var(--shadow);animation:ctmUp .32s var(--ease)}
+.ctm-update button{border:0;border-radius:999px;height:30px;font-weight:700;font-size:13px}
+.ctm-update .go{background:var(--red);color:var(--bg);padding:0 14px}
+.ctm-update .x{background:transparent;color:inherit;width:30px;opacity:.7}
+.ctm-update .x:hover{opacity:1}
+@keyframes ctmUp{from{opacity:0;transform:translate(-50%,-6px)}to{opacity:1;transform:translateX(-50%)}}
+@media (max-width:760px){
+  .ctm-update{top:auto;left:50%;bottom:calc(var(--sheet-h,40dvh) + 16px)}
+}
+@media (prefers-reduced-motion:reduce){.ctm-update{animation:none}}

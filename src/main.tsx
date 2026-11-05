@@ -4,9 +4,15 @@ import { createRoot } from "react-dom/client";
 // component) loads after it and can override at equal specificity.
 import "./theme.css";
 import { App } from "./App";
+// App-shell polish (safe areas, touch behavior, update prompt), last.
+import "./shell.css";
+import { registerServiceWorker } from "./lib/sw";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <App />
   </StrictMode>,
 );
+
+// Offline support and instant repeat visits (production builds only).
+registerServiceWorker();

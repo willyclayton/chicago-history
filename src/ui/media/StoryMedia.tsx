@@ -101,7 +101,7 @@ function trackLabels(stops: Stop[], P: number[]): number[] {
   const out: number[] = [0];
   for (let k = 1; k < n - 1; k++) {
     const last = out[out.length - 1];
-    if (stops[k].year !== stops[last].year && P[k] - P[last] >= 0.14 && P[n - 1] - P[k] >= 0.14) out.push(k);
+    if (stops[k].year !== stops[last].year && P[k] - P[last] >= 0.17 && P[n - 1] - P[k] >= 0.17) out.push(k);
   }
   if (n > 1) out.push(n - 1);
   return out;
@@ -709,7 +709,7 @@ export function Facts({ facts }: { facts: Fact[] }) {
   const marks = facts.map((f) => (f.note ? ++note : 0));
   return (
     <section className="stats" aria-label="Key facts">
-      <dl>
+      <dl data-n={facts.length}>
         {facts.map((f, i) => (
           <div key={i} className={f.value.length > 16 ? "long" : ""}>
             <dt>{f.label}</dt>
@@ -780,6 +780,8 @@ function matchPhotos(moments: Moment[], items: MediaImage[]): (number | null)[] 
         if (score < bestScore) [best, bestScore] = [i, score];
         return;
       }
+      // front pages, portraits and maps are about the event, not what came later
+      if (m.kind !== "event" && (img.kind === "newspaper" || img.kind === "people" || img.kind === "map")) return;
       const dy = Math.abs(img.year - m.year);
       if (dy > 2) return;
       const score = dy * 2 + (fits ? 0 : 1.5);

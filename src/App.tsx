@@ -1,6 +1,6 @@
-import { lazy, Suspense, useEffect } from "react";
-import { SITE_BY_ID } from "./data";
-import { readHash } from "./lib/hash";
+import { lazy, Suspense, useEffect, useState } from "react";
+import { startRouter } from "./lib/router";
+import { useUpdateReady } from "./lib/sw";
 import { MapView } from "./map/MapView";
 import { actions, getState, subscribe, useStore } from "./state/store";
 import { Legend } from "./ui/Legend";
@@ -10,16 +10,36 @@ import { Panel } from "./ui/Panel";
 import { Timeline } from "./ui/Timeline";
 import { isWide } from "./ui/media";
 
-const valid = (id: string) => id in SITE_BY_ID;
 // The photo viewer is its own chunk, loaded the first time it is needed.
 const Viewer = lazy(() => import("./ui/media/Viewer"));
 const THEME_KEY = "ctm-theme";
+
+/** The theme-color metas as index.html wrote them (light and dark, by media query). */
+let themeMetas: { el: HTMLMetaElement; content: string }[] | null = null;
 
 function applyTheme() {
   const t = getState().theme;
   const root = document.documentElement;
   if (t === "auto") delete root.dataset.theme;
   else root.dataset.theme = t;
+  // the browser bar and the installed app's title bar follow a forced theme too
+  themeMetas ??= [...document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')].map((el) => ({ el, content: el.content }));
+  const bg = t === "auto" ? "" : getComputedStyle(root).getPropertyValue("--bg").trim();
+  for (const m of themeMetas) m.el.content = bg || m.content;
+}
+
+/** Remove a one-shot query flag (?random from the app shortcut) so a reload doesn't repeat it. */
+function takeFlag(name: string): boolean {
+  try {
+    const q = new URLSearchParams(location.search);
+    if (!q.has(name)) return false;
+    q.delete(name);
+    const s = q.toString();
+    history.replaceState(history.state, "", location.pathname + (s ? "?" + s : "") + location.hash);
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 export function App() {
@@ -45,19 +65,22 @@ export function App() {
       }
     });
 
-    // deep link (#fire)
-    const start = readHash(valid);
-    if (start) actions.select(start, { pan: true, sheet: isWide() ? undefined : "half" });
+    // deep links (#fire, #fire/photo/2) and the Back button
+    const random = takeFlag("random");
+    const stopRouter = startRouter();
+    if (random && !getState().selectedId) actions.random();
 
-    const onHash = () => {
-      const id = readHash(valid);
-      if (id && id !== getState().selectedId) actions.select(id, { pan: true });
-      else if (!id) actions.clear();
+    // The photo viewer handles its own keys (Escape closes it, not the story). Note whether
+    // it was open when the key went down, before any handler could close it.
+    let viewerAtKey = false;
+    const noteViewer = () => {
+      viewerAtKey = getState().viewer !== null;
     };
     const onKey = (e: KeyboardEvent) => {
       const t = e.target as HTMLElement | null;
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const s = getState();
+      if (viewerAtKey || s.viewer || e.defaultPrevented) return;
       if (e.key === "Escape") {
         if (s.helpOpen) actions.setHelp(false);
         else if (s.selectedId) actions.clear();
@@ -92,12 +115,21 @@ export function App() {
         actions.step(e.key === "ArrowRight" ? 1 : -1);
       }
     };
-    addEventListener("hashchange", onHash);
+    // iOS: a pinch on the map or the timeline zooms the map, never the page
+    const noPageZoom = (e: Event) => {
+      if ((e.target as Element | null)?.closest?.("#map,.dock")) e.preventDefault();
+    };
+    addEventListener("keydown", noteViewer, true);
     document.addEventListener("keydown", onKey);
+    document.addEventListener("gesturestart", noPageZoom);
+    // a handle for tests and debugging
+    (window as unknown as { __ctm?: unknown }).__ctm = { getState, actions };
     return () => {
       unsubTheme();
-      removeEventListener("hashchange", onHash);
+      stopRouter();
+      removeEventListener("keydown", noteViewer, true);
       document.removeEventListener("keydown", onKey);
+      document.removeEventListener("gesturestart", noPageZoom);
     };
   }, []);
 
@@ -122,6 +154,25 @@ export function App() {
       <Toast />
       <Help />
       <ViewerMount />
+      <UpdatePrompt />
+    </div>
+  );
+}
+
+/** A new version took over (service worker update): offer a reload, once. */
+function UpdatePrompt() {
+  const ready = useUpdateReady();
+  const [gone, setGone] = useState(false);
+  if (!ready || gone) return null;
+  return (
+    <div className="ctm-update" role="status">
+      <span>Time Map was updated</span>
+      <button type="button" className="go" onClick={() => location.reload()}>
+        Reload
+      </button>
+      <button type="button" className="x" aria-label="Dismiss" onClick={() => setGone(true)}>
+        ✕
+      </button>
     </div>
   );
 }
