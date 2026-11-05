@@ -5,10 +5,10 @@ on:
     branches: [main, "claude/build-deploy-interactive-page-57c45d"]
   pull_request:
   workflow_dispatch:
-  # Daily: archives sometimes rate-limit a run; the photo cache keeps what was fetched,
-  # so each scheduled run adds photos that were missed before.
+  # Every 6 hours: the Library of Congress rate-limits a run (then blocks for ~20 min);
+  # the photo cache keeps what was fetched, so each scheduled run adds photos missed before.
   schedule:
-    - cron: "41 9 * * *"
+    - cron: "41 3,9,15,21 * * *"
 
 permissions:
   contents: read
