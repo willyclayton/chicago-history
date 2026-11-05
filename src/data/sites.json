@@ -355,9 +355,22 @@
     "lat": 41.876,
     "lng": -87.6253,
     "address": "50 E. Ida B. Wells Dr",
-    "story": "Adler and Sullivan's combined theater, hotel and office block was the tallest building in Chicago when it opened. Its theater was praised for its acoustics, which engineer Dankmar Adler tuned himself.",
+    "story": "Adler and Sullivan's combined theater, hotel and office block was the tallest building in Chicago when President Benjamin Harrison dedicated it. Its theater became known worldwide for its acoustics, the work of engineer Dankmar Adler. Roosevelt University took over the building in the 1940s, and the theater reopened in 1967 after two dark decades.",
     "today": "Roosevelt University and the Auditorium Theatre",
-    "sources": []
+    "sources": [
+      {
+        "title": "Auditorium Building (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Auditorium_Building"
+      },
+      {
+        "title": "National Historic Landmark (Auditorium Theatre)",
+        "url": "https://www.auditoriumtheatre.org/about/national-historic-landmark"
+      },
+      {
+        "title": "Auditorium Building (Encyclopedia of Chicago)",
+        "url": "https://www.encyclopedia.chicagohistory.org/pages/89.html"
+      }
+    ]
   },
   {
     "id": "hullhouse",
@@ -398,7 +411,20 @@
     "address": "111 S. Michigan Ave",
     "story": "The building went up on the lakefront for meetings tied to the 1893 world's fair, and the Art Institute moved in when the fair ended. The bronze lions out front arrived in 1894.",
     "today": "Art Institute of Chicago, with the Modern Wing added in 2009",
-    "sources": []
+    "sources": [
+      {
+        "title": "History (Art Institute of Chicago)",
+        "url": "https://www.artic.edu/about-us/mission-and-history/history"
+      },
+      {
+        "title": "The Lions of Michigan Avenue (Art Institute of Chicago)",
+        "url": "https://www.artic.edu/articles/720/the-lions-of-michigan-avenue"
+      },
+      {
+        "title": "Art Institute of Chicago (Britannica)",
+        "url": "https://britannica.com/topic/Art-Institute-of-Chicago"
+      }
+    ]
   },
   {
     "id": "westside",
