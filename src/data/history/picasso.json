@@ -1,0 +1,68 @@
+{
+  "id": "picasso",
+  "moments": [
+    {
+      "year": 1963,
+      "title": "The architects ask Picasso",
+      "text": "The architects of the new Civic Center commissioned a sculpture for its plaza. Richard Bennett, one of them, wrote Picasso a poem asking him to take it on.",
+      "kind": "event"
+    },
+    {
+      "year": 1967,
+      "date": "Aug 15, 1967",
+      "title": "Unveiled to a crowd of about 50,000",
+      "text": "U.S. Steel's American Bridge Company built the 50-foot sculpture in Gary, Indiana, from Picasso's model, and it was unveiled on the plaza. Picasso turned down a $100,000 fee, saying he wanted it to be a gift to the city; some in the crowd carried signs mocking it.",
+      "kind": "event"
+    },
+    {
+      "year": 2017,
+      "date": "Aug 2017",
+      "title": "Fifty years on",
+      "text": "The city marked the sculpture's 50th birthday with events including a reenactment of the unveiling.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Daley Plaza",
+      "text": "The untitled sculpture still stands in Daley Plaza in front of the Richard J. Daley Center, formerly the Civic Center.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Height",
+      "value": "50 feet"
+    },
+    {
+      "label": "Weight",
+      "value": "162 short tons"
+    },
+    {
+      "label": "Fee",
+      "value": "none",
+      "note": "Picasso refused a $100,000 payment."
+    }
+  ],
+  "sources": [
+    {
+      "title": "\"The Picasso\" (Untitled sculpture) (City of Chicago)",
+      "url": "https://chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartthepicassountitledsculpture.html"
+    },
+    {
+      "title": "Chicago Picasso (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chicago_Picasso"
+    },
+    {
+      "title": "Pablo's gift (WBEZ)",
+      "url": "https://www.wbez.org/arts/2011/08/15/pablos-gift"
+    },
+    {
+      "title": "Picasso at 50 (Chicago History Museum)",
+      "url": "https://www.chicagohistory.org/picasso50/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Unveiled Aug 15, 1967; 50 ft, 162 short tons, Cor-Ten steel, fabricated by American Bridge in Gary (Wikipedia, Chicago Landmarks). Crowd of about 50,000 (WBEZ). Picasso refused $100,000 (Wikipedia). The Afghan hound reading in the old story was not found in the sources checked; they list a woman, a horse or a baboon, so the story was changed. 2017 reenactment per Chicagoist and The Architect's Newspaper coverage. The fabrication year was not confirmed, so it is folded into the unveiling."
+  }
+}

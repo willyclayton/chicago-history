@@ -1,0 +1,83 @@
+{
+  "id": "expo",
+  "moments": [
+    {
+      "year": 1893,
+      "date": "May 1, 1893",
+      "title": "The fair opens in Jackson Park",
+      "text": "The World's Columbian Exposition opened on the South Side lakefront to mark 400 years since Columbus's voyage. Its main halls, in white plaster over steel frames, earned it the name the White City.",
+      "kind": "event"
+    },
+    {
+      "year": 1893,
+      "title": "The first Ferris wheel",
+      "text": "The fair introduced a giant steel wheel with 36 cars, the first Ferris wheel.",
+      "kind": "built"
+    },
+    {
+      "year": 1893,
+      "date": "Oct 1893",
+      "title": "The fair closes",
+      "text": "After six months the fair closed, with about 21.5 million paid admissions.",
+      "kind": "event"
+    },
+    {
+      "year": 1894,
+      "title": "Fires sweep the fairgrounds",
+      "text": "Most of the temporary buildings, never meant to last, were destroyed by fires in 1894.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1933,
+      "date": "June 1933",
+      "title": "The Palace of Fine Arts reborn",
+      "text": "The fair's fireproof art palace, the only major building left, was rebuilt in limestone and opened as the Museum of Science and Industry.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Jackson Park and the museum",
+      "text": "Jackson Park surrounds the Museum of Science and Industry, the fair's Palace of Fine Arts rebuilt in stone.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Paid admissions",
+      "value": "about 21.5 million",
+      "note": "Britannica gives total attendance, with free passes, of more than 25.8 million; totals of 27 to 28 million count some visitors twice."
+    },
+    {
+      "label": "Ran",
+      "value": "May 1 to Oct 1893",
+      "note": "Sources give Oct 30 or Oct 31 as the closing day."
+    },
+    {
+      "label": "Surviving building",
+      "value": "Palace of Fine Arts",
+      "note": "Now the Museum of Science and Industry"
+    }
+  ],
+  "sources": [
+    {
+      "title": "World's Columbian Exposition (Britannica)",
+      "url": "https://www.britannica.com/event/Worlds-Columbian-Exposition"
+    },
+    {
+      "title": "World's Columbian Exposition (Encyclopedia of Chicago)",
+      "url": "https://encyclopedia.chicagohistory.org/pages/1386.html"
+    },
+    {
+      "title": "119 Years since 1893: A Visit to Jackson Park (Driehaus Museum)",
+      "url": "https://driehausmuseum.org/blog/view/119-years-since-1893-a-visit-to-jackson-park"
+    },
+    {
+      "title": "World's Columbian Exposition Ephemera Collection (Chicago Public Library)",
+      "url": "https://www.chipublib.org/fa-worlds-columbian-exposition-ephemera-collection/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Attendance corrected: Britannica gives about 21.5 million paid admissions and more than 25.8 million total; the 27 to 28 million figure double-counts, so the story now says about 21.5 million paid admissions. Opening May 1, 1893; closing Oct 30 or 31. Palace of Fine Arts rebuilt in limestone and opened as MSI in June 1933 (Driehaus Museum). Fires in 1894 destroyed most buildings (Driehaus; the exact dates of the two fires were not confirmed). 'Chicago beat New York' in the story was not separately confirmed (search budget ran out) and is left as written."
+  }
+}

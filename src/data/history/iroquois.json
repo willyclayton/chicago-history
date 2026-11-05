@@ -1,0 +1,89 @@
+{
+  "id": "iroquois",
+  "moments": [
+    {
+      "year": 1903,
+      "date": "Nov 23, 1903",
+      "title": "The \"absolutely fireproof\" Iroquois opens",
+      "text": "The ornate new theater on Randolph St opened with the musical Mr. Bluebeard, starring comedian Eddie Foy. It was advertised as absolutely fireproof.",
+      "kind": "built"
+    },
+    {
+      "year": 1903,
+      "date": "Dec 30, 1903",
+      "title": "Fire during a holiday matinee",
+      "text": "At about 3:15 p.m., during a packed matinee of Mr. Bluebeard, a stage light set a curtain on fire. Blocked, locked and hidden exits trapped the audience, and at least 602 people died.",
+      "kind": "event"
+    },
+    {
+      "year": 1904,
+      "date": "Sept 19, 1904",
+      "title": "Reopened as Hyde & Behman's Music Hall",
+      "text": "The building's shell had survived, and it was rebuilt and reopened as a vaudeville house less than a year after the fire. It was renamed the Colonial Theatre by 1905.",
+      "kind": "changed"
+    },
+    {
+      "year": 1925,
+      "title": "Colonial Theatre torn down",
+      "text": "The old Iroquois building was demolished to make way for a new movie palace on the same site.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1926,
+      "title": "The Oriental Theatre opens",
+      "text": "The Oriental Theatre, a lavish movie and stage palace, opened on the site at 24 W. Randolph St.",
+      "kind": "built"
+    },
+    {
+      "year": 1998,
+      "title": "Restored for Broadway shows",
+      "text": "After a restoration, the Oriental reopened as the Ford Center for the Performing Arts Oriental Theatre, a home for touring Broadway musicals.",
+      "kind": "changed"
+    },
+    {
+      "year": 2019,
+      "date": "Feb 2019",
+      "title": "Today: the James M. Nederlander Theatre",
+      "text": "The theater was renamed for Broadway producer James M. Nederlander and still stages touring shows on the site of the 1903 fire.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Deaths",
+      "value": "at least 602",
+      "note": "Some bodies were removed from the scene before they were counted, so the true toll may be higher."
+    },
+    {
+      "label": "Open before the fire",
+      "value": "about five weeks"
+    },
+    {
+      "label": "Lasting change",
+      "value": "Outward-opening exit doors",
+      "note": "The fire led to rules nationwide that public exit doors open outward, and spread the use of panic bars."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Tragedy of the Iroquois Theater Fire (WTTW Chicago Stories)",
+      "url": "https://www.wttw.com/chicago-stories/downtown-disasters/the-tragedy-of-the-iroquois-theater-fire"
+    },
+    {
+      "title": "A 1903 Fire at a Chicago Theater Killed 602 People, Prompting Enduring Safety Reforms (Smithsonian)",
+      "url": "https://www.smithsonianmag.com/smart-news/a-1903-fire-at-a-chicago-theater-killed-602-people-prompting-enduring-safety-reforms-180985661/"
+    },
+    {
+      "title": "Nederlander Theatre (Chicago) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nederlander_Theatre_(Chicago)"
+    },
+    {
+      "title": "Colonial Theatre (Cinema Treasures)",
+      "url": "https://cinematreasures.org/theaters/3696"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Date and 'at least 602' confirmed (Smithsonian, Wikipedia). Opening Nov 23, 1903 per most sources (one says Nov 27). Sources disagree on whether the doors opened inward, so the story now says exits were blocked, locked and hidden; the reform wording now says the fire led to outward-opening exit doors nationwide and spread panic bars (WTTW notes panic bars existed before 1903). Reopening Sept 19, 1904 and the Colonial name (1904 or 1905) come from Cinema Treasures and its reader comments, a weaker source. Demolition 1925 per Wikipedia (one source says 1926). Renamed Nederlander in Feb 2019."
+  }
+}

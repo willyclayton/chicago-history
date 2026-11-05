@@ -1,16 +1,25 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { CATEGORY_NAME, ERAS, MAX_YEAR, ORDERED, SITE_BY_ID } from "../data";
 import { eraOf } from "../lib/eras";
 import { mapsLink, streetViewEmbed, streetViewLink } from "../lib/links";
 import { actions, getState, matches, useStore } from "../state/store";
-import type { Site } from "../types";
-import { ArrowUpRight, ChevronLeft, ChevronRight, CloseIcon, PinIcon, ShareIcon, ShuffleIcon, StarIcon, StreetIcon } from "./Icons";
-import { isTouch } from "./media";
+import type { Site, Source } from "../types";
+import { ArrowUpRight, ChevronLeft, ChevronRight, CloseIcon, PhotoIcon, PinIcon, ShareIcon, ShuffleIcon, StarIcon, StreetIcon } from "./Icons";
+import { isTouch, prefersReducedMotion } from "./media";
+import { prefetchMedia, useSiteHistory, useSiteMedia } from "./media/source";
 import { bumpCount, fmtMiles, miles, plural, pushRecent, relYears } from "./panelUtil";
 import { rememberSelection } from "./SiteList";
 import { useWide } from "./useMedia";
 
 const KEY = import.meta.env.VITE_GOOGLE_MAPS_EMBED_KEY;
+
+// The photo stage, strip and chronology are one lazy chunk, loaded only for sites that have them.
+const loadMediaUI = () => import("./media/StoryMedia");
+const ThenNow = lazy(() => loadMediaUI().then((m) => ({ default: m.ThenNow })));
+const PhotoStrip = lazy(() => loadMediaUI().then((m) => ({ default: m.PhotoStrip })));
+const Facts = lazy(() => loadMediaUI().then((m) => ({ default: m.Facts })));
+const Moments = lazy(() => loadMediaUI().then((m) => ({ default: m.Moments })));
+prefetchMedia();
 
 type DragProps = Record<string, (e: React.PointerEvent) => void>;
 
@@ -48,6 +57,11 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
   const barRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLElement>(null);
   const [hint, setHint] = useState(false);
+  const media = useSiteMedia(selectedId);
+  const history = useSiteHistory(selectedId);
+  // the photo the header stage rests on (index into media), and requests to jump it to Street View
+  const [active, setActive] = useState(-1);
+  const [liveReq, setLiveReq] = useState(0);
 
   useEffect(() => {
     rememberSelection(selectedId);
@@ -71,6 +85,9 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
       const max = el.scrollHeight - el.clientHeight;
       bar.style.setProperty("--read", String(max > 4 ? Math.min(1, el.scrollTop / max) : 0));
       bar.classList.toggle("scrolled", el.scrollTop > 8);
+      // once the header has scrolled away, the bar names the site
+      const h = heroRef.current;
+      bar.classList.toggle("titled", !!h && el.scrollTop > h.offsetTop + h.offsetHeight - bar.offsetHeight - 8);
     };
     on();
     el.addEventListener("scroll", on, { passive: true });
@@ -85,7 +102,17 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
   const ago = MAX_YEAR - site.year;
   // Street View loads only once the story is actually open (desktop, or the sheet raised)
   const open = wide || sheet !== "peek";
-  const embed = open ? streetViewEmbed(site, KEY) : null;
+  const svUrl = streetViewEmbed(site, KEY);
+  const hasMedia = !!media && media.length > 0;
+  // with photos, Street View is the last stop of the header's time scrubber instead of a second embed
+  const liveInHero = hasMedia && !!svUrl;
+  const embed = open && !liveInHero ? svUrl : null;
+  const svShown = !!embed || liveInHero;
+  const lookAround = () => {
+    setLiveReq((n) => n + 1);
+    ref.current?.scrollTo({ top: 0, behavior: prefersReducedMotion() ? "auto" : "smooth" });
+  };
+  const sources = mergeSources(site.sources, history?.sources);
   const rel = related(site);
   const go = (id: string) => {
     actions.stop();
@@ -101,7 +128,7 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
     h.style.setProperty("--sx", `${x}px`);
   };
   const onSwipeStart = (e: React.PointerEvent) => {
-    if ((e.target as HTMLElement).closest("button,a")) return;
+    if ((e.target as HTMLElement).closest("button,a,[data-noswipe]")) return;
     swipe.current = { x: e.clientX, y: e.clientY, id: e.pointerId, on: false };
   };
   const onSwipeMove = (e: React.PointerEvent) => {
@@ -163,6 +190,9 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
           <ChevronLeft className="i" width={20} height={20} />
           <span>All sites</span>
         </button>
+        <span className="bar-title" aria-hidden="true">
+          <b>{site.year}</b> {site.short}
+        </span>
         <div className="acts">
           <span className="pos" aria-label={`Site ${i + 1} of ${vis.length}`}>
             <b>{i + 1}</b> / {vis.length}
@@ -182,7 +212,7 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
 
       <header
         ref={heroRef}
-        className="hero"
+        className={"hero" + (hasMedia ? " has-media" : "")}
         onPointerDown={onSwipeStart}
         onPointerMove={onSwipeMove}
         onPointerUp={onSwipeEnd}
@@ -191,6 +221,11 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
           setX(0, true);
         }}
       >
+        {hasMedia && (
+          <Suspense fallback={<div className="tn-skel" aria-hidden="true" />}>
+            <ThenNow site={site} items={media} open={open} embed={svUrl} liveReq={liveReq} onActive={setActive} />
+          </Suspense>
+        )}
         <div className="hero-in">
           <div className="kicker">
             <span className="kyear">{site.year}</span>
@@ -201,6 +236,12 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
             {site.flagStar && (
               <span className="flagchip" title="One of the four events behind the stars on the Chicago flag">
                 <StarIcon /> City flag star
+              </span>
+            )}
+            {hasMedia && (
+              <span className="kphotos">
+                <PhotoIcon /> {media.length}
+                <span className="sr-only"> photos</span>
               </span>
             )}
           </div>
@@ -233,13 +274,33 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
       </header>
 
       <div className="story-body">
+        {hasMedia && media.length > 1 && (
+          <Suspense fallback={null}>
+            <PhotoStrip site={site} items={media} active={active} />
+          </Suspense>
+        )}
         <p className="lede">{site.story}</p>
+
+        {history && (history.facts?.length || history.moments.length) ? (
+          <Suspense fallback={null}>
+            {history.facts && history.facts.length > 0 && <Facts facts={history.facts} />}
+            <Moments site={site} moments={history.moments} items={media ?? []} />
+          </Suspense>
+        ) : null}
 
         <section className="today" aria-labelledby="todayH">
           <h3 id="todayH" className="sec">
             On this spot today
           </h3>
-          {embed ? (
+          {liveInHero ? (
+            <button type="button" className="sv svlink svjump" onClick={lookAround}>
+              <span className="svbadge">
+                <StreetIcon className="i" />
+              </span>
+              <b>Look around this spot today</b>
+              <span>Street View, at the end of the photo timeline above</span>
+            </button>
+          ) : embed ? (
             <div className="sv">
               <iframe
                 title={`Street View of ${site.title} today`}
@@ -271,30 +332,37 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
             </div>
           </dl>
           {site.streetView === false && <p className="svnote">No Street View here: this spot is out in the lake.</p>}
-          <div className={"actions" + (embed || site.streetView === false ? "" : " one")}>
-            {(embed || site.streetView === false) && (
+          <div className={"actions" + (svShown || site.streetView === false ? "" : " one")}>
+            {(svShown || site.streetView === false) && (
               <a className="primary" href={streetViewLink(site)} target="_blank" rel="noopener">
-                {embed ? "Open in Street View" : "Street View"} <ArrowUpRight className="i" />
+                {svShown ? "Open in Street View" : "Street View"} <ArrowUpRight className="i" />
               </a>
             )}
             <a href={mapsLink(site)} target="_blank" rel="noopener">
-              {embed || site.streetView === false ? "Maps" : "Open in Google Maps"} <ArrowUpRight className="i" />
+              {svShown || site.streetView === false ? "Maps" : "Open in Google Maps"} <ArrowUpRight className="i" />
             </a>
           </div>
         </section>
 
-        {site.sources.length > 0 && (
+        {sources.length > 0 && (
           <section className="sources">
             <h3 className="sec">Sources</h3>
             <ul>
-              {site.sources.map((src) => (
+              {sources.map((src) => (
                 <li key={src.url}>
                   <a href={src.url} target="_blank" rel="noopener">
                     {src.title}
                   </a>
+                  <small>{host(src.url)}</small>
                 </li>
               ))}
             </ul>
+            {history?.checked && (
+              <details className="checked">
+                <summary>Fact-checked {fmtDate(history.checked.date)}</summary>
+                {history.checked.notes && <p>{history.checked.notes}</p>}
+              </details>
+            )}
           </section>
         )}
 
@@ -339,6 +407,25 @@ export function StoryView({ anim, dragProps }: { anim: string; dragProps: DragPr
       </nav>
     </div>
   );
+}
+
+/** The site's own sources plus the research pass's, without repeats. */
+function mergeSources(a: Source[], b: Source[] | undefined): Source[] {
+  const seen = new Set<string>();
+  return [...a, ...(b ?? [])].filter((s) => s.url && !seen.has(s.url) && seen.add(s.url));
+}
+
+function host(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
+function fmtDate(iso: string): string {
+  const d = new Date(`${iso}T12:00:00`);
+  return isNaN(d.getTime()) ? iso : d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
 function RelatedGroup({ title, items, go }: { title: string; items: Related[]; go: (id: string) => void }) {

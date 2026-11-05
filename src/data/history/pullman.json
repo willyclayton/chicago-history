@@ -1,0 +1,88 @@
+{
+  "id": "pullman",
+  "moments": [
+    {
+      "year": 1880,
+      "title": "George Pullman builds a company town",
+      "text": "Between 1880 and 1884, the Pullman Palace Car Company built a model town for its workers beside its factory south of the city, with brick row houses, shops and churches the company owned.",
+      "kind": "built"
+    },
+    {
+      "year": 1881,
+      "date": "Nov 1, 1881",
+      "title": "The Hotel Florence opens",
+      "text": "The company's hotel, named for Pullman's daughter, opened to house visitors and business guests.",
+      "kind": "built"
+    },
+    {
+      "year": 1894,
+      "date": "May 11, 1894",
+      "title": "The Pullman Strike begins",
+      "text": "After the company cut wages without lowering rents, workers walked out. Eugene V. Debs's American Railway Union then refused to handle Pullman cars, and the boycott spread across the nation's railroads.",
+      "kind": "event"
+    },
+    {
+      "year": 1894,
+      "date": "July 1894",
+      "title": "Federal troops break the strike",
+      "text": "President Grover Cleveland sent U.S. Army troops and thousands of U.S. Marshals, and a federal injunction jailed the union's leaders, ending the strike.",
+      "kind": "event"
+    },
+    {
+      "year": 1998,
+      "date": "Dec 1, 1998",
+      "title": "Arson at the clock tower",
+      "text": "An arsonist badly damaged the factory's Administration and Clock Tower Building. The state stabilized it, and the tower and clock were rebuilt by late 2005.",
+      "kind": "changed"
+    },
+    {
+      "year": 2015,
+      "date": "Feb 19, 2015",
+      "title": "A national monument",
+      "text": "President Barack Obama proclaimed Pullman a National Monument, the first National Park Service site in Chicago. Congress made it a National Historical Park in Dec 2022.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Pullman National Historical Park",
+      "text": "The restored clock tower building is the park's visitor center, opened Labor Day weekend 2021, and many of the original row houses are still homes.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Town built",
+      "value": "1880 to 1884"
+    },
+    {
+      "label": "Strike began",
+      "value": "May 11, 1894"
+    },
+    {
+      "label": "National park status",
+      "value": "2015 monument; 2022 historical park"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Strike of 1894 (National Park Service, Pullman National Historical Park)",
+      "url": "https://www.nps.gov/pull/learn/historyculture/the-strike-of-1894.htm"
+    },
+    {
+      "title": "Illinois: Pullman National Historical Park (National Park Service)",
+      "url": "https://www.nps.gov/places/pullman-national-monument.htm"
+    },
+    {
+      "title": "Hotel Florence (National Park Service)",
+      "url": "https://www.nps.gov/places/hotel-florence.htm"
+    },
+    {
+      "title": "Administration Clock Tower Building (National Park Service)",
+      "url": "https://www.nps.gov/places/administration-clock-tower-building.htm"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Town built 1880 to 1884; strike began May 11, 1894; ARU boycott led by Debs; federal troops and marshals; injunction jailed leaders (NPS). Hotel Florence opened Nov 1, 1881 (NPS). National Monument Feb 19, 2015; redesignated National Historical Park by the Consolidated Appropriations Act signed Dec 29, 2022 (NPS, U.S. Code). Clock tower arson Dec 1, 1998; visitor center opened Labor Day weekend 2021 (NPS). The 'today' line was updated from 'Pullman National Monument (designated 2015)' to the park's current name. Year 1880 unchanged."
+  }
+}

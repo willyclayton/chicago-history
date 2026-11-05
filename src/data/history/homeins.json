@@ -1,0 +1,78 @@
+{
+  "id": "homeins",
+  "moments": [
+    {
+      "year": 1884,
+      "title": "Jenney designs a new kind of tower",
+      "text": "William Le Baron Jenney designed an office building for the Home Insurance Company that carried its weight on an iron and steel frame instead of thick load-bearing walls.",
+      "kind": "built"
+    },
+    {
+      "year": 1885,
+      "title": "Ten stories at LaSalle and Adams",
+      "text": "The building was finished at 10 stories and about 138 feet tall. It is widely called the first skyscraper, though historians still debate the title.",
+      "kind": "built"
+    },
+    {
+      "year": 1891,
+      "title": "Two more stories",
+      "text": "Two stories were added to the top of the building.",
+      "kind": "changed"
+    },
+    {
+      "year": 1931,
+      "title": "Torn down",
+      "text": "The building was demolished to make way for a much larger tower on the same corner.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1934,
+      "title": "The Field Building rises",
+      "text": "The 45-story Field Building, by Graham, Anderson, Probst & White, was finished on the site. It was named a Chicago Landmark in 1994.",
+      "kind": "built"
+    },
+    {
+      "year": 2026,
+      "title": "Today: 135 S. LaSalle St",
+      "text": "The Field Building, also known as the LaSalle Bank Building, still stands. A city landmark plaque notes that the Home Insurance Building once stood here.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Original height",
+      "value": "10 stories, about 138 feet"
+    },
+    {
+      "label": "Frame",
+      "value": "iron and steel",
+      "note": "Among the first buildings to use structural steel in its frame."
+    },
+    {
+      "label": "Stood",
+      "value": "1885 to 1931"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Field Building (City of Chicago Landmarks)",
+      "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1299"
+    },
+    {
+      "title": "Home Insurance Building (History.com)",
+      "url": "https://www.history.com/topics/early-20th-century-us/home-insurance-building"
+    },
+    {
+      "title": "Lost Legends #12: The Home Insurance Building (Preservation Chicago / Chicago YIMBY)",
+      "url": "https://www.preservationchicago.org/chicago-yimby-lost-legends-12-the-home-insurance-building/"
+    },
+    {
+      "title": "Home Insurance Building (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Home_Insurance_Building"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Jenney design, built 1884 to 1885, 10 stories and 138 feet, two stories added 1891, demolished 1931 for the Field Building (completed 1934; Chicago Landmark Feb 9, 1994) confirmed (Wikipedia, City of Chicago Landmarks). The 'first skyscraper' title is a common view rather than a settled fact; the story already says 'often called'. One source gives 1932 for the demolition; 1931 is kept."
+  }
+}

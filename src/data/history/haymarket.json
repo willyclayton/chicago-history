@@ -1,0 +1,93 @@
+{
+  "id": "haymarket",
+  "moments": [
+    {
+      "year": 1886,
+      "date": "May 4, 1886",
+      "title": "A rally for the eight-hour day",
+      "text": "Workers and anarchist speakers gathered near Haymarket Square on Randolph St the day after police killed strikers at the McCormick Reaper Works. Speakers addressed the crowd from a wagon on Desplaines St.",
+      "kind": "event"
+    },
+    {
+      "year": 1886,
+      "date": "May 4, 1886",
+      "title": "A bomb and gunfire",
+      "text": "As police moved in to break up the rally, someone threw a bomb into their ranks; the bomber was never identified. Seven officers and an estimated four to eight civilians died from the blast and the gunfire that followed.",
+      "kind": "event"
+    },
+    {
+      "year": 1886,
+      "date": "Aug 1886",
+      "title": "Eight anarchists convicted",
+      "text": "Eight men were convicted in a trial widely seen as unfair; seven were sentenced to death and one to 15 years in prison.",
+      "kind": "event"
+    },
+    {
+      "year": 1887,
+      "date": "Nov 11, 1887",
+      "title": "Four men hanged",
+      "text": "August Spies, Albert Parsons, Adolph Fischer and George Engel were hanged. Louis Lingg had died in his cell the day before.",
+      "kind": "event"
+    },
+    {
+      "year": 1893,
+      "date": "June 26, 1893",
+      "title": "Governor Altgeld pardons the survivors",
+      "text": "Illinois Gov. John Peter Altgeld pardoned the three imprisoned men, saying the judge was biased and the jury packed against them.",
+      "kind": "event"
+    },
+    {
+      "year": 1992,
+      "date": "Mar 25, 1992",
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated the site of the Haymarket tragedy a Chicago Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2004,
+      "date": "Sept 2004",
+      "title": "Today: the Haymarket Memorial",
+      "text": "Mary Brogger's bronze sculpture of a speakers' wagon was unveiled on the spot where the wagon stood, at 175 N. Desplaines St.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Police killed",
+      "value": "7",
+      "note": "Only one is known to have died from the bomb itself; others were hit by gunfire, some likely from fellow officers."
+    },
+    {
+      "label": "Civilians killed",
+      "value": "4 to 8 (estimated)",
+      "note": "Britannica estimates four to eight dead and 30 to 40 injured."
+    },
+    {
+      "label": "Convicted",
+      "value": "8",
+      "note": "Four hanged; three later pardoned."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Haymarket Affair (Britannica)",
+      "url": "https://www.britannica.com/event/Haymarket-Affair"
+    },
+    {
+      "title": "The Haymarket Memorial (City of Chicago)",
+      "url": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartthehaymarketmemorial.html"
+    },
+    {
+      "title": "The Haymarket Affair (Illinois Labor History Society)",
+      "url": "https://www.illinoislaborhistory.org/the-haymarket-affair"
+    },
+    {
+      "title": "Monuments relating to the Haymarket affair (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Monuments_relating_to_the_Haymarket_affair"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Date confirmed. Casualties: Britannica gives seven police killed and civilian deaths estimated at four to eight; the City of Chicago says at least four civilians. The story's 'at least four civilians' stays. NPS and the Illinois Labor History Society say only one officer died directly from the bomb. Convictions Aug 1886, hangings Nov 11, 1887 and Altgeld pardons June 26, 1893 confirmed. Landmark designation Mar 25, 1992 and the 2004 Brogger memorial per Wikipedia and the City of Chicago."
+  }
+}

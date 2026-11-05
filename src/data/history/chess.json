@@ -1,0 +1,84 @@
+{
+  "id": "chess",
+  "moments": [
+    {
+      "year": 1950,
+      "title": "Aristocrat becomes Chess",
+      "text": "Leonard Chess had taken a stake in Aristocrat Records in 1947. In 1950 his brother Phil joined him and they renamed the label Chess Records.",
+      "kind": "event"
+    },
+    {
+      "year": 1957,
+      "date": "May 1957",
+      "title": "The move to 2120 S. Michigan",
+      "text": "The brothers moved their offices and studio to a building on Record Row, the stretch of South Michigan Ave lined with record labels and distributors. Blues, R&B and rock 'n' roll artists such as Muddy Waters, Howlin' Wolf, Chuck Berry and Etta James recorded here.",
+      "kind": "changed"
+    },
+    {
+      "year": 1964,
+      "date": "June 1964",
+      "title": "The Rolling Stones' pilgrimage",
+      "text": "On their first U.S. tour, the Rolling Stones recorded at the studio, including an instrumental they named \"2120 South Michigan Avenue.\"",
+      "kind": "event"
+    },
+    {
+      "year": 1967,
+      "title": "Chess moves on",
+      "text": "The label moved to a larger building at 320 E. 21st St. The brothers sold the company shortly before Leonard died in 1969.",
+      "kind": "changed"
+    },
+    {
+      "year": 1990,
+      "date": "May 16, 1990",
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated the Chess Records Office and Studio a landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 1997,
+      "date": "Sept 1997",
+      "title": "Blues Heaven opens",
+      "text": "Marie Dixon, widow of Chess songwriter and bassist Willie Dixon, bought the building in 1993, and it reopened as the home of his Blues Heaven Foundation.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Willie Dixon's Blues Heaven Foundation",
+      "text": "The restored studio is a museum and the home of the foundation Dixon set up in 1982 to help young blues musicians.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "At this address",
+      "value": "1957 to 1967",
+      "note": "Some sources say 1956 to 1967."
+    },
+    {
+      "label": "Landmark designation",
+      "value": "May 16, 1990"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chess Records Office and Studio (Chicago Landmarks)",
+      "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1267"
+    },
+    {
+      "title": "Chess Records (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chess_Records"
+    },
+    {
+      "title": "Historic Chess Studio (Willie Dixon's Blues Heaven Foundation)",
+      "url": "https://www.bluesheaven.com/historic-chess-studio.html"
+    },
+    {
+      "title": "Chess Records Office and Studio landmark report (City of Chicago)",
+      "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Historic_Preservation/Publications/Chess_Records_Office_and_Studio.pdf"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Aristocrat 1947, renamed Chess 1950 (Wikipedia). Move to 2120 S. Michigan in May 1957 per Wikipedia; Blues Heaven says about 1956. Move to 320 E. 21st St in 1967 (one source says 1968). Rolling Stones session June 1964 (Blues Heaven). Landmark May 16, 1990 (Chicago Landmarks). Marie Dixon bought the building in 1993; museum opened Sept 1997. Story confirmed; no changes."
+  }
+}

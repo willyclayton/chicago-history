@@ -1,0 +1,70 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2007662240/",
+    "year": 1903,
+    "caption": "Inside the gutted Iroquois the day after the fire, looking from the stage at the burned seats and balconies.",
+    "kind": "aftermath",
+    "note": "LOC panorama, Henry Albert Ericson, Dec. 31 1903 (Commons copy: 'Panorama of the Iroquois Theatre, after the fire.jpg' - not used to avoid a duplicate)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Iroquois Theatre fire - DPLA - c9e2f3b69954059bcfebf35bf12d84b9.jpg",
+    "year": 1903,
+    "approx": true,
+    "caption": "A photograph from the Iroquois Theatre fire of December 30, 1903.",
+    "kind": "aftermath",
+    "note": "Commons DPLA import; content not described in results. Re-caption once the image is seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Escapees from the Iroquois Theatre fire.jpg",
+    "year": 1904,
+    "caption": "Newspaper drawing of theatergoers crawling across planks laid over the alley to Northwestern's building.",
+    "kind": "newspaper",
+    "note": "Commons; drawing printed in the Tacoma Times, between 30 Dec 1903 and 5 Jan 1904 (signature mirror-reversed)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Incendie du théatre Iroquois (Chicago, 1904).jpg",
+    "year": 1904,
+    "caption": "A French illustrated paper's picture of the Iroquois fire, as the news went around the world.",
+    "kind": "newspaper",
+    "note": "Commons; French-language title dated 1904. Exact publication not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2006679954/",
+    "year": 1905,
+    "caption": "Randolph Street with the rebuilt Iroquois, reopened under a new name, about 1905.",
+    "kind": "place",
+    "sameView": "iroquois-randolph-st",
+    "note": "LOC stereograph, Globe Stereograph Co., c1905. The theater reopened as Hyde & Behman's Music Hall in 1904, then the Colonial; caption kept general."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago (ILL), downtown, W.Randolph St. \" Delaware building \" 1871 \" Oriental Theatre \" 1926 (4824817488).jpg",
+    "year": 2010,
+    "caption": "The same block of Randolph Street today: the Oriental Theatre stands on the Iroquois site.",
+    "kind": "today",
+    "sameView": "iroquois-randolph-st",
+    "note": "Commons Flickr import (vincent desjardins, 2010); years in the title are build dates. sameView pairing with the 1905 stereo is approximate."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Oriental Theatre, Chicago, Illinois (11004487066).jpg",
+    "year": 2013,
+    "caption": "The Oriental Theatre's marquee at 24 W. Randolph St., built in 1926 where the Iroquois stood.",
+    "kind": "today",
+    "note": "Commons; Ken Lund 2013."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Iroquois Theatre Fire Memorial at Montrose Cemetery, Chicago.jpg",
+    "year": 2015,
+    "approx": true,
+    "caption": "The memorial to the fire's victims at Montrose Cemetery.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

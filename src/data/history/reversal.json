@@ -1,0 +1,71 @@
+{
+  "id": "reversal",
+  "moments": [
+    {
+      "year": 1889,
+      "title": "The Sanitary District is created",
+      "text": "The Illinois legislature created the Sanitary District of Chicago to stop sewage in the river from fouling the lake the city drank from.",
+      "kind": "event"
+    },
+    {
+      "year": 1900,
+      "date": "Jan 2, 1900",
+      "title": "The river flows backward",
+      "text": "With the 28-mile Sanitary and Ship Canal finished from the South Branch at Robey St to Lockport, the gates were opened and the river began flowing away from the lake, toward the Mississippi.",
+      "kind": "event"
+    },
+    {
+      "year": 1900,
+      "date": "Jan 1900",
+      "title": "Missouri sues",
+      "text": "Missouri went to the U.S. Supreme Court, arguing that Chicago's sewage was polluting the Mississippi and St. Louis's water.",
+      "kind": "event"
+    },
+    {
+      "year": 1906,
+      "title": "Chicago wins in court",
+      "text": "The Supreme Court ruled for Illinois, finding no proof that Chicago's sewage had harmed the water downstream.",
+      "kind": "event"
+    },
+    {
+      "year": 2026,
+      "title": "Today: a river that runs backward",
+      "text": "The main stem of the Chicago River still flows west, away from Lake Michigan, at the river mouth near DuSable Lake Shore Dr.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Canal length",
+      "value": "28 miles",
+      "note": "From Robey St on the South Branch to Lockport"
+    },
+    {
+      "label": "Reversed",
+      "value": "Jan 1900",
+      "note": "Sources give Jan 1 or Jan 2 for the final cut and the opening of the gates."
+    },
+    {
+      "label": "Court case",
+      "value": "Missouri v. Illinois, decided 1906"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Reversal of the Chicago River (WTTW)",
+      "url": "https://interactive.wttw.com/node/7085"
+    },
+    {
+      "title": "Reversing a River: How Chicago Flushed its Human Waste Downstream (We're History)",
+      "url": "https://werehistory.org/reversing-a-river-how-chicago-flushed-its-human-waste-downstream/"
+    },
+    {
+      "title": "How the Chicago River Was Reversed (Culture Trip)",
+      "url": "https://theculturetrip.com/north-america/usa/illinois/articles/how-the-chicago-river-was-reversed"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Sanitary District created 1889; 28-mile canal from Robey St to Lockport; reversal Jan 1 or 2, 1900; Missouri sued Jan 1900; Supreme Court ruled for Illinois in 1906. These come from popular histories (We're History, Culture Trip, WTTW), not primary records, and should be rechecked against the Metropolitan Water Reclamation District or the Encyclopedia of Chicago. The story's 'St. Louis sued' was corrected to Missouri. The 1938 date for the Chicago Harbor Lock in the 'today' line was not confirmed (search budget ran out) and is left as written in sites.json."
+  }
+}

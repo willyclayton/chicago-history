@@ -6,6 +6,17 @@
     <title>Chicago Time Map</title>
     <meta name="description" content="Chicago history on a real map of the city. Drag the timeline from 1780 to today and tap a star to read what happened there." />
     <meta name="color-scheme" content="light dark" />
+    <!-- browser chrome and the installed app's title bar follow the page (App.tsx updates these when the theme is forced) -->
+    <meta name="theme-color" content="#F2F5F7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0C1217" media="(prefers-color-scheme: dark)" />
+    <!-- installable app -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="application-name" content="Time Map" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Time Map" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-10 -10 20 20'%3E%3Cpath fill='%23D7172F' d='M0 -9L2.16 -3.74L8.28 -4.5L4.32 0L8.28 4.5L2.16 3.74L0 9L-2.16 3.74L-8.28 4.5L-4.32 0L-8.28 -4.5L-2.16 -3.74Z'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,9 +25,17 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
     />
+    <script>
+      // Apply a remembered light/dark choice before the first paint (no flash of the other theme).
+      try {
+        var t = localStorage.getItem("ctm-theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript><p style="padding: 24px; font: 16px/1.5 sans-serif">Chicago Time Map needs JavaScript to draw the map and timeline.</p></noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

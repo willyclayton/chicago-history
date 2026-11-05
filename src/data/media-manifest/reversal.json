@@ -1,0 +1,28 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016818010/",
+    "year": 1905,
+    "approx": true,
+    "caption": "A steamer passes the State Street bridge a few years after the river was turned around.",
+    "kind": "place",
+    "note": "LOC Detroit Publishing Co. '[Steamer passing State Street bridge, Chicago River]'; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago River watercraft from Michigan Ave 2005.jpg",
+    "year": 2005,
+    "caption": "Boats on the main stem in 2005, the river now flowing away from the lake.",
+    "kind": "today",
+    "note": "Commons, 2005."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago River from Michigan Avenue.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "The Chicago River from the Michigan Avenue bridge, looking west from near its mouth.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Weeghman Park Panorama 1914.jpg",
+    "year": 1914,
+    "caption": "Brand-new Weeghman Park, home of the Federal League's Chicago team, in April 1914.",
+    "kind": "place",
+    "note": "Commons; from a postcard image taken April 1914."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Weeghman Park 1914 (2).jpg",
+    "year": 1914,
+    "caption": "Flats and storefronts beyond the left-field fence at Weeghman Park, 1914.",
+    "kind": "place",
+    "note": "Commons; described as LOC-sourced view of buildings beyond the left field fence, 1914. Match of this file to that description is likely but not certain."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2007663725/",
+    "year": 1929,
+    "caption": "Panorama of Wrigley Field in the Cubs' pennant year, ringed by portraits of the players.",
+    "kind": "place",
+    "note": "LOC panoramic photographs; Kaufmann & Fabry Co., copyright deposit 14 Aug 1929 (LC-DIG-ds-06747)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/92508756/",
+    "year": 1929,
+    "caption": "Cubs players wait in the dugout before a World Series game, October 1929.",
+    "kind": "people",
+    "note": "LOC; 'Players of the Cubs in dugout before calling of a game of World Series, October, 1929'."
+  },
+  {
+    "source": "commons",
+    "ref": "File:A BLACK FATHER AND SON PICTURED AT AN OUTDOOR WORSHIP SERVICE AT CHICAGO'S WRIGLEY FIELD DURING THE JEHOVAH'S WITNESS... - NARA - 556146.jpg",
+    "year": 1973,
+    "approx": true,
+    "caption": "A father and son at a Jehovah's Witness convention service held in Wrigley Field's stands.",
+    "kind": "people",
+    "note": "Commons; NARA DOCUMERICA 556146 (public domain), probably John H. White 1973."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2011630442/",
+    "year": 2000,
+    "approx": true,
+    "caption": "Wrigley Field's ivy, scoreboard and rooftop seats, photographed by Carol Highsmith.",
+    "kind": "place",
+    "note": "LOC Carol M. Highsmith (public domain); exact date not seen, Highsmith range 1980-2006."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Wrigley Field Marquee as of mid-2015.JPG",
+    "year": 2015,
+    "caption": "The red marquee at Clark and Addison, mid-2015.",
+    "kind": "today",
+    "note": "Commons."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Wrigley Field, Chicago, Illinois (43392049691).jpg",
+    "year": 2018,
+    "approx": true,
+    "caption": "Wrigley Field today after its 2010s renovation.",
+    "kind": "today",
+    "note": "Commons Flickr import, ~2018."
+  }
+]

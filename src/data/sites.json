@@ -23,10 +23,23 @@
     "lat": 41.8874,
     "lng": -87.6243,
     "address": "Michigan Ave and Wacker Dr, south bank of the river",
-    "story": "The U.S. Army built Fort Dearborn here in 1803. In August 1812, during the War of 1812, the garrison and settlers evacuated and were attacked by Potawatomi warriors along the lakeshore near today's 18th St and Prairie Ave, and the fort was burned. It was rebuilt in 1816 and taken apart over the following decades; the last building was gone by 1857.",
+    "story": "The U.S. Army built Fort Dearborn here in 1803. In August 1812, during the War of 1812, the garrison and settlers evacuated and were attacked by Potawatomi warriors along the lakeshore near today's 18th St; an estimated 52 to 86 of them were killed, and the fort was burned. It was rebuilt in 1816 and taken apart in stages, and most of it was gone by 1857.",
     "today": "Brass markers in the sidewalk outline the fort's footprint",
     "flagStar": true,
-    "sources": []
+    "sources": [
+      {
+        "title": "Fort Dearborn (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Fort_Dearborn"
+      },
+      {
+        "title": "Battle of Fort Dearborn (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Fort_Dearborn"
+      },
+      {
+        "title": "Battle of Fort Dearborn marker (Illinois State Historical Society)",
+        "url": "https://www.historyillinois.org/historical-markers/battle-of-fort-dearborn"
+      }
+    ]
   },
   {
     "id": "wolfpoint",
@@ -138,7 +151,20 @@
     "address": "Exchange Ave and Peoria St",
     "story": "The Union Stock Yards opened on Christmas Day 1865 and made Chicago the meatpacking capital of the world, the city Carl Sandburg called \"Hog Butcher for the World.\" Upton Sinclair's 1906 novel The Jungle exposed conditions in the packinghouses. The yards closed in 1971.",
     "today": "The limestone Union Stock Yard Gate still stands",
-    "sources": []
+    "sources": [
+      {
+        "title": "Meatpacking (Encyclopedia of Chicago)",
+        "url": "https://www.encyclopedia.chicagohistory.org/pages/804.html"
+      },
+      {
+        "title": "Jungle, The (Encyclopedia of Chicago)",
+        "url": "https://www.encyclopedia.chicagohistory.org/pages/679.html"
+      },
+      {
+        "title": "Union Stock Yard Gate National Historic Landmark nomination (National Park Service)",
+        "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/72000451_text"
+      }
+    ]
   },
   {
     "id": "crib",
@@ -180,8 +206,21 @@
     "lng": -87.6243,
     "address": "806 N. Michigan Ave",
     "story": "The limestone tower hid a standpipe for the city's new waterworks, which drew water from an intake crib two miles out in the lake. Two years later it was one of the few structures in the burned district to survive the Great Fire.",
-    "today": "Water Tower, now a free city art gallery",
-    "sources": []
+    "today": "Water Tower; the city gallery inside is listed as closed",
+    "sources": [
+      {
+        "title": "Chicago Water Tower (Britannica)",
+        "url": "https://www.britannica.com/place/Chicago-Water-Tower"
+      },
+      {
+        "title": "Chicago Water Tower, Historic American Buildings Survey (Library of Congress)",
+        "url": "https://www.loc.gov/item/il0097"
+      },
+      {
+        "title": "City Gallery in the Historic Water Tower (City of Chicago)",
+        "url": "https://chicago.gov/city/en/depts/dca/supp_info/city_gallery_in_thehistoricwatertower.html"
+      }
+    ]
   },
   {
     "id": "fire",
@@ -193,10 +232,23 @@
     "lat": 41.869,
     "lng": -87.6418,
     "address": "O'Leary barn, 137 DeKoven St (now 558 W.)",
-    "story": "The fire started in or near the O'Leary family barn on the night of Oct 8. A dry summer and a strong southwest wind pushed it across the river twice. It burned about 3.3 square miles and roughly 17,500 buildings; about 300 people died and some 100,000 lost their homes. The story of Mrs. O'Leary's cow was made up by a reporter, who later admitted it.",
+    "story": "The fire started in or near the O'Leary family barn on the night of Oct 8. A dry summer and a strong southwest wind pushed it across the river twice. It burned about 3.3 square miles and more than 17,000 buildings; an estimated 300 people died and roughly 90,000 to 100,000 lost their homes. The story of Mrs. O'Leary's cow was made up by a reporter, who later admitted it.",
     "today": "The Chicago Fire Academy, with a bronze Pillar of Fire sculpture",
     "flagStar": true,
-    "sources": []
+    "sources": [
+      {
+        "title": "Great Chicago Fire (Britannica)",
+        "url": "https://www.britannica.com/event/Chicago-fire-of-1871"
+      },
+      {
+        "title": "Today in History: October 8 (Library of Congress)",
+        "url": "https://www.loc.gov/item/today-in-history/october-08/"
+      },
+      {
+        "title": "Great Chicago Fire (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Great_Chicago_Fire"
+      }
+    ]
   },
   {
     "id": "pullman",
@@ -209,8 +261,21 @@
     "lng": -87.6094,
     "address": "Hotel Florence, 111th St and Forrestville Ave",
     "story": "Railroad car maker George Pullman built a company town for his workers starting in 1880, with housing, shops and churches he controlled. When he cut wages in 1894 without lowering rents, workers struck. The boycott spread to railroads across the country until federal troops broke it.",
-    "today": "Pullman National Monument (designated 2015)",
-    "sources": []
+    "today": "Pullman National Historical Park (a national monument from 2015)",
+    "sources": [
+      {
+        "title": "The Strike of 1894 (National Park Service, Pullman National Historical Park)",
+        "url": "https://www.nps.gov/pull/learn/historyculture/the-strike-of-1894.htm"
+      },
+      {
+        "title": "Illinois: Pullman National Historical Park (National Park Service)",
+        "url": "https://www.nps.gov/places/pullman-national-monument.htm"
+      },
+      {
+        "title": "Hotel Florence (National Park Service)",
+        "url": "https://www.nps.gov/places/hotel-florence.htm"
+      }
+    ]
   },
   {
     "id": "homeins",
@@ -224,7 +289,20 @@
     "address": "LaSalle St and Adams St",
     "story": "William Le Baron Jenney's 10-story office building carried its weight on a metal frame instead of thick masonry walls, and it is often called the first skyscraper. It was torn down in 1931.",
     "today": "The Field Building (135 S. LaSalle)",
-    "sources": []
+    "sources": [
+      {
+        "title": "Field Building (City of Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1299"
+      },
+      {
+        "title": "Home Insurance Building (History.com)",
+        "url": "https://www.history.com/topics/early-20th-century-us/home-insurance-building"
+      },
+      {
+        "title": "Lost Legends #12: The Home Insurance Building (Preservation Chicago / Chicago YIMBY)",
+        "url": "https://www.preservationchicago.org/chicago-yimby-lost-legends-12-the-home-insurance-building/"
+      }
+    ]
   },
   {
     "id": "haymarket",
@@ -238,7 +316,20 @@
     "address": "Desplaines St near Randolph St",
     "story": "At a rally for the eight-hour workday, someone threw a bomb as police moved in to break up the crowd. Seven officers and at least four civilians died from the blast and the gunfire that followed. Eight anarchists were convicted in a trial widely seen as unfair, and four were hanged. The event is why much of the world marks May Day as a workers' holiday.",
     "today": "The Haymarket Memorial sculpture",
-    "sources": []
+    "sources": [
+      {
+        "title": "Haymarket Affair (Britannica)",
+        "url": "https://www.britannica.com/event/Haymarket-Affair"
+      },
+      {
+        "title": "The Haymarket Memorial (City of Chicago)",
+        "url": "https://www.chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartthehaymarketmemorial.html"
+      },
+      {
+        "title": "The Haymarket Affair (Illinois Labor History Society)",
+        "url": "https://www.illinoislaborhistory.org/the-haymarket-affair"
+      }
+    ]
   },
   {
     "id": "glessner",
@@ -278,9 +369,22 @@
     "lat": 41.8717,
     "lng": -87.6476,
     "address": "800 S. Halsted St",
-    "story": "Jane Addams and Ellen Gates Starr opened a settlement house in an old mansion to serve the neighborhood's immigrant families, with classes, a kindergarten, a gym and public baths. Addams won the Nobel Peace Prize in 1931.",
+    "story": "Jane Addams and Ellen Gates Starr opened a settlement house in the 1856 Hull mansion to serve the neighborhood's immigrant families, with a kindergarten, clubs, classes and later a gym and a public bath. By 1907 it had grown to 13 buildings, and Addams won the Nobel Peace Prize in 1931.",
     "today": "Jane Addams Hull-House Museum, on the UIC campus",
-    "sources": []
+    "sources": [
+      {
+        "title": "Hull House (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1329"
+      },
+      {
+        "title": "Hull-House (Britannica)",
+        "url": "https://www.britannica.com/topic/Hull-House"
+      },
+      {
+        "title": "Hull House (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hull_House"
+      }
+    ]
   },
   {
     "id": "artinst",
@@ -320,10 +424,23 @@
     "lat": 41.788,
     "lng": -87.581,
     "address": "Jackson Park",
-    "story": "Chicago beat New York to host the world's fair for the 400th anniversary of Columbus's voyage. Daniel Burnham's \"White City\" of plaster palaces drew about 27 million visits and introduced the Ferris wheel.",
+    "story": "Chicago beat New York to host the world's fair for the 400th anniversary of Columbus's voyage. Daniel Burnham's \"White City\" of plaster palaces drew about 21.5 million paid admissions and introduced the Ferris wheel.",
     "today": "Jackson Park; the Palace of Fine Arts is now the Museum of Science and Industry",
     "flagStar": true,
-    "sources": []
+    "sources": [
+      {
+        "title": "World's Columbian Exposition (Britannica)",
+        "url": "https://www.britannica.com/event/Worlds-Columbian-Exposition"
+      },
+      {
+        "title": "World's Columbian Exposition (Encyclopedia of Chicago)",
+        "url": "https://encyclopedia.chicagohistory.org/pages/1386.html"
+      },
+      {
+        "title": "119 Years since 1893: A Visit to Jackson Park (Driehaus Museum)",
+        "url": "https://driehausmuseum.org/blog/view/119-years-since-1893-a-visit-to-jackson-park"
+      }
+    ]
   },
   {
     "id": "reversal",
@@ -335,9 +452,22 @@
     "lat": 41.8888,
     "lng": -87.611,
     "address": "Mouth of the Chicago River",
-    "story": "Sewage from the river was fouling the lake the city drank from. Engineers dug the Sanitary and Ship Canal and made the river flow backward, away from the lake and toward the Mississippi. St. Louis sued; Chicago won.",
+    "story": "Sewage from the river was fouling the lake the city drank from. Engineers dug the Sanitary and Ship Canal and made the river flow backward, away from the lake and toward the Mississippi. Missouri sued, and in 1906 the U.S. Supreme Court ruled for Illinois.",
     "today": "The Chicago Harbor Lock, built in 1938, controls flow at the mouth",
-    "sources": []
+    "sources": [
+      {
+        "title": "Reversal of the Chicago River (WTTW)",
+        "url": "https://interactive.wttw.com/node/7085"
+      },
+      {
+        "title": "Reversing a River: How Chicago Flushed its Human Waste Downstream (We're History)",
+        "url": "https://werehistory.org/reversing-a-river-how-chicago-flushed-its-human-waste-downstream/"
+      },
+      {
+        "title": "How the Chicago River Was Reversed (Culture Trip)",
+        "url": "https://theculturetrip.com/north-america/usa/illinois/articles/how-the-chicago-river-was-reversed"
+      }
+    ]
   },
   {
     "id": "iroquois",
@@ -349,9 +479,22 @@
     "lat": 41.8847,
     "lng": -87.6288,
     "address": "24 W. Randolph St",
-    "story": "During a packed holiday matinee, a stage light set a curtain on fire. Locked, hidden and inward-opening exits trapped the audience, and at least 602 people died, many of them children. It remains the deadliest single-building fire in U.S. history and led to panic bars and outward-opening exit doors.",
+    "story": "During a packed holiday matinee, a stage light set a curtain on fire. Locked, hidden and blocked exits trapped the audience, and at least 602 people died, many of them children. It remains the deadliest single-building fire in U.S. history and led to rules nationwide that exit doors open outward.",
     "today": "The James M. Nederlander Theatre",
-    "sources": []
+    "sources": [
+      {
+        "title": "The Tragedy of the Iroquois Theater Fire (WTTW Chicago Stories)",
+        "url": "https://www.wttw.com/chicago-stories/downtown-disasters/the-tragedy-of-the-iroquois-theater-fire"
+      },
+      {
+        "title": "A 1903 Fire at a Chicago Theater Killed 602 People, Prompting Enduring Safety Reforms (Smithsonian)",
+        "url": "https://www.smithsonianmag.com/smart-news/a-1903-fire-at-a-chicago-theater-killed-602-people-prompting-enduring-safety-reforms-180985661/"
+      },
+      {
+        "title": "Nederlander Theatre (Chicago) (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Nederlander_Theatre_(Chicago)"
+      }
+    ]
   },
   {
     "id": "riverview",
@@ -435,7 +578,20 @@
     "address": "5757 S. Woodlawn Ave",
     "story": "Frank Lloyd Wright's long, low brick house with its cantilevered roofs is the classic example of his Prairie style. It is part of a UNESCO World Heritage listing of his buildings.",
     "today": "Frederick C. Robie House museum",
-    "sources": []
+    "sources": [
+      {
+        "title": "Robie House (University of Chicago campus architecture)",
+        "url": "https://architecture.uchicago.edu/locations/robie_house/"
+      },
+      {
+        "title": "Robie House National Historic Landmark nomination (National Park Service)",
+        "url": "https://npgallery.nps.gov/pdfhost/docs/NHLS/Text/71000143.pdf"
+      },
+      {
+        "title": "Robie House (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Robie_House"
+      }
+    ]
   },
   {
     "id": "chinatown",
@@ -477,7 +633,20 @@
     "address": "1060 W. Addison St",
     "story": "The park opened as Weeghman Park for the Chicago Whales of the short-lived Federal League. The Cubs moved in for 1916, and it took the Wrigley name in 1926. Lights arrived in 1988.",
     "today": "Home of the Cubs, MLB's second-oldest ballpark",
-    "sources": []
+    "sources": [
+      {
+        "title": "Wrigley Field (National Park Service)",
+        "url": "https://www.nps.gov/places/wrigley-field.htm"
+      },
+      {
+        "title": "Wrigley Field History (MLB.com, Chicago Cubs)",
+        "url": "https://www.mlb.com/cubs/ballpark/information/history"
+      },
+      {
+        "title": "Wrigley Field (Chicago) (SABR)",
+        "url": "https://sabr.org/bioproj/park/wrigley-field-chicago"
+      }
+    ]
   },
   {
     "id": "eastland",
@@ -489,9 +658,22 @@
     "lat": 41.8871,
     "lng": -87.6319,
     "address": "South bank between Clark and LaSalle",
-    "story": "The excursion steamer Eastland, packed with Western Electric workers and their families heading to a company picnic, rolled onto its side while still tied to the dock. 844 passengers and crew died, only feet from shore.",
+    "story": "The excursion steamer Eastland, packed with Western Electric workers and their families heading to a company picnic, rolled onto its side at the dock. 844 passengers and crew died, only feet from shore.",
     "today": "A marker on the Riverwalk by the Clark St bridge",
-    "sources": []
+    "sources": [
+      {
+        "title": "Eastland disaster (Britannica)",
+        "url": "https://www.britannica.com/event/Eastland-disaster"
+      },
+      {
+        "title": "Location (Eastland Disaster Historical Society)",
+        "url": "https://eastlanddisaster.org/history/location"
+      },
+      {
+        "title": "Eastland Disaster (WTTW Chicago Time Machine)",
+        "url": "https://www.wttw.com/timemachine/eastland-disaster"
+      }
+    ]
   },
   {
     "id": "navypier",
@@ -505,7 +687,20 @@
     "address": "600 E. Grand Ave",
     "story": "Opened as Municipal Pier, built from Burnham's 1909 Plan of Chicago for freight, passenger ships and public recreation. It was renamed in 1927 for Navy veterans of World War I, trained sailors in World War II, and later held a university campus.",
     "today": "Navy Pier",
-    "sources": []
+    "sources": [
+      {
+        "title": "Navy Pier (Chicago Architecture Center)",
+        "url": "https://www.architecture.org/online-resources/buildings-of-chicago/navy-pier"
+      },
+      {
+        "title": "Navy Pier Timeline (WTTW)",
+        "url": "https://www.wttw.com/navypier/timeline"
+      },
+      {
+        "title": "Navy Pier Through the Years (Navy Pier)",
+        "url": "https://navypier.org/support-the-pier/articles/navy-pier-through-the-years/"
+      }
+    ]
   },
   {
     "id": "riot1919",
@@ -519,7 +714,20 @@
     "address": "29th Street beach",
     "story": "Eugene Williams, a Black teenager, drifted on a raft across an unofficial color line at the 29th Street beach. White men threw rocks, and he drowned. When police would not arrest the man witnesses named, a week of violence followed: 38 people were killed and more than 500 injured.",
     "today": "A historical marker near the beach",
-    "sources": []
+    "sources": [
+      {
+        "title": "The Negro in Chicago, 1922 (Newberry Library, Chicago 1919: Confronting the Race Riots)",
+        "url": "https://digital.newberry.org/scalar/chicago-1919/the-negro-in-chicago"
+      },
+      {
+        "title": "The Race Riot of 1919 (Chicago Race Riot of 1919 Commemoration Project)",
+        "url": "https://chicagoraceriot.org/history/the-riot/"
+      },
+      {
+        "title": "Chicago race riot of 1919 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chicago_race_riot_of_1919"
+      }
+    ]
   },
   {
     "id": "soldier",
@@ -531,9 +739,22 @@
     "lat": 41.8623,
     "lng": -87.6167,
     "address": "1410 Museum Campus Dr",
-    "story": "The colonnaded stadium opened in 1924 as a memorial to World War I soldiers. About 100,000 people watched the 1927 Dempsey and Tunney \"long count\" fight here, and Martin Luther King Jr. led a Chicago Freedom Movement rally on its field in July 1966. The Bears moved in in 1971.",
+    "story": "The colonnaded stadium opened in 1924 and was named Soldier Field in 1925 as a memorial to World War I soldiers. More than 100,000 people watched the 1927 Dempsey and Tunney \"long count\" fight here, and Martin Luther King Jr. led a Chicago Freedom Movement rally on its field in July 1966. The Bears moved in in 1971.",
     "today": "Home of the Bears",
-    "sources": []
+    "sources": [
+      {
+        "title": "Grant Park Stadium (Soldier Field) (National Park Service)",
+        "url": "https://www.nps.gov/subjects/nationalhistoriclandmarks/grant-park-stadium-soldier-field.htm"
+      },
+      {
+        "title": "Soldier Field (Britannica)",
+        "url": "https://www.britannica.com/print/article/2102869"
+      },
+      {
+        "title": "The Long Count Fight (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/The_Long_Count_Fight"
+      }
+    ]
   },
   {
     "id": "tribune",
@@ -547,7 +768,20 @@
     "address": "435 N. Michigan Ave",
     "story": "The neo-Gothic tower won a famous 1922 design contest. Tribune correspondents brought back fragments of famous buildings and sites, from the Great Wall to Westminster Abbey, which are set into its walls at street level.",
     "today": "Condos; the stones are still in the walls",
-    "sources": []
+    "sources": [
+      {
+        "title": "Tribune Tower (City of Chicago landmark report)",
+        "url": "https://www.chicago.gov/content/dam/city/depts/zlup/Historic_Preservation/Publications/Tribune_Tower.pdf"
+      },
+      {
+        "title": "Tribune Tower (Chicago Architecture Center)",
+        "url": "https://www.architecture.org/learn/resources/buildings-of-chicago/building/tribune-tower/"
+      },
+      {
+        "title": "Tribune Tower Conversion (Solomon Cordwell Buenz)",
+        "url": "https://scb.com/project/tribune-tower-conversion/"
+      }
+    ]
   },
   {
     "id": "union",
@@ -559,9 +793,22 @@
     "lat": 41.8787,
     "lng": -87.6403,
     "address": "225 S. Canal St",
-    "story": "Ten years in the making, the station opened in 1925 with a skylit Great Hall. Chicago was the country's rail hub, and most long-distance trips across the U.S. changed trains here. The baby carriage shootout in The Untouchables was filmed on its stairs.",
+    "story": "Begun in 1913, the station opened in 1925 with a skylit Great Hall. Chicago was the country's rail hub, and today Union Station is the city's busiest passenger rail terminal. The baby carriage shootout in The Untouchables was filmed on its stairs.",
     "today": "Amtrak and Metra's main Chicago station",
-    "sources": []
+    "sources": [
+      {
+        "title": "Chicago Union Station: Our Past (Chicago Union Station)",
+        "url": "https://chicagounionstation.com/about/past"
+      },
+      {
+        "title": "Chicago Union Station (Historic American Buildings Survey IL-1249, Illinois DNR)",
+        "url": "https://dnrhistoric.illinois.gov/content/dam/soi/en/web/dnrhistoric/preserve/recordation/habs-il-1249.pdf"
+      },
+      {
+        "title": "Chicago, IL: Union Station (CHI) (Amtrak Great American Stations)",
+        "url": "https://www.greatamericanstations.com/stations/CHI"
+      }
+    ]
   },
   {
     "id": "buckingham",
@@ -631,7 +878,20 @@
     "address": "2122 N. Clark St",
     "story": "Seven men tied to Bugs Moran's North Side gang were lined up against the wall of a garage and shot by gunmen dressed as police. Al Capone's outfit was widely blamed, but no one was convicted. The garage was torn down in 1967.",
     "today": "A fenced lawn next to a senior residence; no marker",
-    "sources": []
+    "sources": [
+      {
+        "title": "St. Valentine's Day Massacre (Encyclopedia of Chicago)",
+        "url": "https://www.encyclopedia.chicagohistory.org/pages/1191.html"
+      },
+      {
+        "title": "See the St. Valentine's Day Massacre of 1929, in Color (History.com)",
+        "url": "https://www.history.com/articles/valentines-day-massacre-capone"
+      },
+      {
+        "title": "St. Valentine's Day Massacre Wall (The Mob Museum)",
+        "url": "https://themobmuseum.org/exhibits/massacre-wall/"
+      }
+    ]
   },
   {
     "id": "adler",
@@ -659,7 +919,20 @@
     "address": "222 W. Merchandise Mart Plaza",
     "story": "Built by Marshall Field & Co. as a wholesale market, it had more floor space than any building in the world until the Pentagon. Joseph Kennedy bought it in 1945, and his family owned it for half a century.",
     "today": "Offices and showrooms; Art on the Mart lights up its river wall at night",
-    "sources": []
+    "sources": [
+      {
+        "title": "Merchandise Mart (Encyclopedia of Chicago)",
+        "url": "https://www.encyclopedia.chicagohistory.org/pages/812.html"
+      },
+      {
+        "title": "Merchandise Mart (Chicago Architecture Center)",
+        "url": "https://www.architecture.org/learn/resources/buildings-of-chicago/building/merchandise-mart/"
+      },
+      {
+        "title": "Art On theMART to Launch September 29, 2018 (City of Chicago)",
+        "url": "https://chicago.gov/city/en/depts/mayor/press_room/press_releases/2018/august/081618_ArtOntheMart.html"
+      }
+    ]
   },
   {
     "id": "progress",
@@ -674,7 +947,20 @@
     "story": "Chicago's second world's fair marked 100 years since the town's founding. It was built on new lakefront fill, including Northerly Island, in the depths of the Depression, and was popular enough to reopen for a second summer.",
     "today": "Northerly Island park",
     "flagStar": true,
-    "sources": []
+    "sources": [
+      {
+        "title": "Century of Progress (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Century_of_Progress"
+      },
+      {
+        "title": "Century of Progress records, finding aid (Hagley Museum and Library)",
+        "url": "https://findingaids.hagley.org/repositories/2/resources/291"
+      },
+      {
+        "title": "Remembering Meigs Field: It's Been 20 Years Since the Airport Was Ordered Bulldozed Overnight (WTTW)",
+        "url": "https://news.wttw.com/2023/03/31/remembering-meigs-field-it-s-been-20-years-airport-was-ordered-bulldozed-overnight"
+      }
+    ]
   },
   {
     "id": "biograph",
@@ -702,7 +988,20 @@
     "address": "Ellis Ave near 57th St, University of Chicago",
     "story": "Under the stands of the old Stagg Field, Enrico Fermi's team ran the first controlled, self-sustaining nuclear chain reaction in a stack of graphite blocks and uranium. It was a key step for the Manhattan Project.",
     "today": "Henry Moore's Nuclear Energy sculpture",
-    "sources": []
+    "sources": [
+      {
+        "title": "Chicago Pile-1 (Atomic Heritage Foundation)",
+        "url": "https://ahf.nuclearmuseum.org/ahf/history/chicago-pile-1/"
+      },
+      {
+        "title": "CP-1 (Chicago Pile #1) (U.S. Department of Energy, OSTI)",
+        "url": "https://www.osti.gov/opennet/manhattan-project-history/Places/MetLab/cp1.html"
+      },
+      {
+        "title": "Early Exploration: Reactors designed/built by Argonne (Argonne National Laboratory)",
+        "url": "https://www.ne.anl.gov/About/reactors/early-reactors.shtml"
+      }
+    ]
   },
   {
     "id": "till",
@@ -730,7 +1029,20 @@
     "address": "2120 S. Michigan Ave",
     "story": "Leonard and Phil Chess ran their label here on what was called Record Row. Muddy Waters, Howlin' Wolf, Chuck Berry and Etta James recorded in the building, and the Rolling Stones cut a session here in 1964.",
     "today": "Willie Dixon's Blues Heaven Foundation",
-    "sources": []
+    "sources": [
+      {
+        "title": "Chess Records Office and Studio (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1267"
+      },
+      {
+        "title": "Chess Records (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chess_Records"
+      },
+      {
+        "title": "Historic Chess Studio (Willie Dixon's Blues Heaven Foundation)",
+        "url": "https://www.bluesheaven.com/historic-chess-studio.html"
+      }
+    ]
   },
   {
     "id": "secondcity",
@@ -772,7 +1084,20 @@
     "address": "300 N. State St",
     "story": "Bertrand Goldberg's twin round towers, nicknamed the corncobs, put apartments over spiral parking ramps and a boat marina. It was a bet that people would live downtown again.",
     "today": "Apartments, a hotel and House of Blues",
-    "sources": []
+    "sources": [
+      {
+        "title": "Landmark Designation Approved for Marina City Complex (City of Chicago)",
+        "url": "https://www.chicago.gov/city/en/depts/dcd/provdrs/hist/news/2016/january/landmark-designation-proposed-for-marina-city-complex.html"
+      },
+      {
+        "title": "The Biography of Chicago's Marina City: Timeline (marinacity.org)",
+        "url": "https://marinacity.org/history/date.htm"
+      },
+      {
+        "title": "Chicago Names Marina City an Official Landmark (Architect Magazine)",
+        "url": "https://www.architectmagazine.com/design/chicago-names-marina-city-an-official-landmark_o/"
+      }
+    ]
   },
   {
     "id": "mlk",
@@ -798,9 +1123,22 @@
     "lat": 41.8839,
     "lng": -87.6299,
     "address": "Daley Plaza, 50 W. Washington St",
-    "story": "Pablo Picasso designed the 50-foot Cor-Ten steel sculpture for the new Civic Center plaza and gave the design to the city. Chicagoans have argued ever since about whether it's a woman, a baboon or an Afghan hound.",
+    "story": "Pablo Picasso designed the 50-foot Cor-Ten steel sculpture for the new Civic Center plaza and turned down a $100,000 fee, calling it a gift to the city. Picasso never explained it, and Chicagoans have argued ever since about whether it is a woman, a horse or a baboon.",
     "today": "Daley Plaza",
-    "sources": []
+    "sources": [
+      {
+        "title": "\"The Picasso\" (Untitled sculpture) (City of Chicago)",
+        "url": "https://chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartthepicassountitledsculpture.html"
+      },
+      {
+        "title": "Chicago Picasso (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chicago_Picasso"
+      },
+      {
+        "title": "Pablo's gift (WBEZ)",
+        "url": "https://www.wbez.org/arts/2011/08/15/pablos-gift"
+      }
+    ]
   },
   {
     "id": "dnc68",
@@ -812,9 +1150,22 @@
     "lat": 41.8726,
     "lng": -87.6243,
     "address": "Michigan Ave at Balbo, by the Conrad Hilton",
-    "story": "While the Democratic National Convention met at the International Amphitheatre, thousands of antiwar protesters gathered in Grant Park. On Aug 28, police and demonstrators clashed in front of the Conrad Hilton on live TV. A federal study commission later described the police response as a \"police riot.\"",
+    "story": "While the Democratic National Convention met at the International Amphitheatre, thousands of antiwar protesters gathered in Grant Park. On Aug 28, police and demonstrators clashed in front of the Conrad Hilton as TV cameras filmed. A federal study commission later described the police response as a \"police riot.\"",
     "today": "Hilton Chicago, 720 S. Michigan Ave",
-    "sources": []
+    "sources": [
+      {
+        "title": "Democratic National Convention of 1968 (Britannica)",
+        "url": "https://www.britannica.com/event/Democratic-National-Convention-of-1968"
+      },
+      {
+        "title": "50th Anniversary of the 1968 Democratic National Convention (Chicago Public Library)",
+        "url": "https://www.chipublib.org/blogs/post/50th-anniversary-of-the-1968-democratic-national-convention/"
+      },
+      {
+        "title": "Chicago Seven (Britannica)",
+        "url": "https://www.britannica.com/event/Chicago-Seven-law-case"
+      }
+    ]
   },
   {
     "id": "hancock",
@@ -828,7 +1179,20 @@
     "address": "875 N. Michigan Ave",
     "story": "The same SOM team behind Sears Tower, Bruce Graham and Fazlur Khan, gave this 100-story tower its exterior X-braces, which let it use far less steel. It mixed apartments, offices and shops in one building.",
     "today": "875 North Michigan Avenue and the 360 Chicago observation deck",
-    "sources": []
+    "sources": [
+      {
+        "title": "John Hancock Center (Britannica)",
+        "url": "https://www.britannica.com/topic/John-Hancock-Center"
+      },
+      {
+        "title": "875 North Michigan Avenue (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/875_North_Michigan_Avenue"
+      },
+      {
+        "title": "Fazlur Khan (Britannica)",
+        "url": "https://www.britannica.com/biography/Fazlur-R-Khan"
+      }
+    ]
   },
   {
     "id": "sears",
@@ -842,7 +1206,20 @@
     "address": "233 S. Wacker Dr",
     "story": "At 1,450 feet and 108 stories, Sears Tower became the world's tallest building and kept the title until 1998. Bruce Graham and engineer Fazlur Khan of SOM designed its bundled-tube frame. It was renamed Willis Tower in 2009.",
     "today": "Willis Tower and the Skydeck",
-    "sources": []
+    "sources": [
+      {
+        "title": "Willis Tower History and Facts (Skydeck Chicago)",
+        "url": "https://theskydeck.com/the-experience/tower-history/"
+      },
+      {
+        "title": "Willis Tower (Chicago Architecture Center)",
+        "url": "https://www.architecture.org/learn/resources/buildings-of-chicago/building/willis-tower/"
+      },
+      {
+        "title": "The Forgotten History of Chicago Supertalls: Willis Tower (SOM)",
+        "url": "https://www.som.com/news/the-forgotten-history-of-chicago-supertalls-everything-you-need-to-know-about-willis-tower/"
+      }
+    ]
   },
   {
     "id": "warehouse",
@@ -926,7 +1303,20 @@
     "address": "Michigan Ave between Randolph and Monroe",
     "story": "Built over Illinois Central rail yards and parking lots, Millennium Park opened four years late and far over budget. Anish Kapoor's Cloud Gate, known as the Bean, was finished in 2006.",
     "today": "Millennium Park",
-    "sources": []
+    "sources": [
+      {
+        "title": "Millennium Park (Encyclopedia of Chicago)",
+        "url": "https://www.encyclopedia.chicagohistory.org/pages/6404.html"
+      },
+      {
+        "title": "Our History (Millennium Park Foundation)",
+        "url": "https://www.millenniumparkfoundation.org/our-history"
+      },
+      {
+        "title": "How Millennium Park Became \"America's Most Dazzling Urban Park\" (WTTW)",
+        "url": "https://www.wttw.com/playlist/2019/07/16/millennium-park-15"
+      }
+    ]
   },
   {
     "id": "cubs16",
@@ -938,8 +1328,21 @@
     "lat": 41.8716,
     "lng": -87.6207,
     "address": "Hutchinson Field, Grant Park",
-    "story": "Two days after the Cubs won Game 7 in Cleveland and ended a 108-year title drought, the parade ran from Wrigley Field to a rally in Grant Park. The city estimated the crowd at 5 million, a number crowd experts have questioned.",
+    "story": "Two days after the Cubs won Game 7 in Cleveland and ended a 108-year title drought, the parade ran from Wrigley Field to a rally in Grant Park. The city estimated the crowd at 5 million, a figure that was never independently counted.",
     "today": "Hutchinson Field, Grant Park",
-    "sources": []
+    "sources": [
+      {
+        "title": "City estimates 5 million people attend Cubs World Series parade (CBS Sports)",
+        "url": "https://www.cbssports.com/mlb/news/look-city-estimates-5-million-people-attend-cubs-world-series-parade/"
+      },
+      {
+        "title": "Cubs fans celebrate World Series crown with parade, rally (Associated Press via ABC7)",
+        "url": "https://abc7.com/post/cubs-fans-celebrate-world-series-crown-with-parade-rally/1589471/"
+      },
+      {
+        "title": "Cubs parade (Sports Business Daily)",
+        "url": "https://www.sportsbusinessdaily.com/Daily/Closing-Bell/2016/11/04/Cubs.aspx"
+      }
+    ]
   }
 ]

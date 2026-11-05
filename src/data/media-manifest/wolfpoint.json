@@ -1,0 +1,19 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:1833 Chicago map by Conley & Stelzer.jpg",
+    "year": 1833,
+    "approx": true,
+    "caption": "Map of Chicago at its 1833 incorporation, with the river forks at Wolf Point.",
+    "kind": "map",
+    "note": "Commons; depicts 1833 (shows John Kinzie's house); when it was drawn is not confirmed."
+  },
+  {
+    "source": "commons",
+    "ref": "File:1834 Map of Chicago by Hathaway.jpg",
+    "year": 1834,
+    "caption": "Hathaway's 1834 map of the young town clustered around the river's branches.",
+    "kind": "map",
+    "note": "Commons."
+  }
+]

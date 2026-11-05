@@ -1,0 +1,92 @@
+{
+  "id": "sears",
+  "moments": [
+    {
+      "year": 1970,
+      "date": "Aug 1970",
+      "title": "Construction begins",
+      "text": "Sears, Roebuck and Co. broke ground for a new headquarters on Wacker Dr. SOM's Bruce Graham and engineer Fazlur Khan designed it as nine steel tubes bundled together.",
+      "kind": "built"
+    },
+    {
+      "year": 1973,
+      "date": "May 3, 1973",
+      "title": "Topped out",
+      "text": "The last steel went up, and at about 1,450 feet and 108 stories it became the tallest building in the world.",
+      "kind": "built"
+    },
+    {
+      "year": 1974,
+      "title": "The Skydeck opens",
+      "text": "An observation deck opened on the 103rd floor, about 1,353 feet above the street.",
+      "kind": "built"
+    },
+    {
+      "year": 1998,
+      "title": "No longer the world's tallest",
+      "text": "The Petronas Towers in Kuala Lumpur took the world height title, which Sears Tower had held for about 25 years.",
+      "kind": "changed"
+    },
+    {
+      "year": 2009,
+      "date": "July 2009",
+      "title": "Renamed Willis Tower; the Ledge opens",
+      "text": "The tower took the name of insurance broker Willis Group. The same month, glass boxes called the Ledge opened, jutting out from the Skydeck over Wacker Dr.",
+      "kind": "changed"
+    },
+    {
+      "year": 2020,
+      "title": "A new base: Catalog",
+      "text": "A renovation added Catalog, a shopping and dining space at the base whose name nods to the Sears catalog. The Skydeck was redesigned and reopened in 2021.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Willis Tower and the Skydeck",
+      "text": "It is still the tallest building in Chicago and one of the tallest in the U.S., with offices and the Skydeck on the 103rd floor.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Height",
+      "value": "about 1,450 feet",
+      "note": "Sources give 1,450 or 1,451 feet to the roof."
+    },
+    {
+      "label": "Stories",
+      "value": "108",
+      "note": "Some counts give 110, including mechanical floors."
+    },
+    {
+      "label": "World's tallest",
+      "value": "1973 to 1998"
+    },
+    {
+      "label": "Skydeck",
+      "value": "103rd floor, about 1,353 feet up"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Willis Tower History and Facts (Skydeck Chicago)",
+      "url": "https://theskydeck.com/the-experience/tower-history/"
+    },
+    {
+      "title": "Willis Tower (Chicago Architecture Center)",
+      "url": "https://www.architecture.org/learn/resources/buildings-of-chicago/building/willis-tower/"
+    },
+    {
+      "title": "The Forgotten History of Chicago Supertalls: Willis Tower (SOM)",
+      "url": "https://www.som.com/news/the-forgotten-history-of-chicago-supertalls-everything-you-need-to-know-about-willis-tower/"
+    },
+    {
+      "title": "Fazlur Khan (Britannica)",
+      "url": "https://www.britannica.com/biography/Fazlur-R-Khan"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Groundbreaking Aug 1970, topping out May 3, 1973, 108 stories, world's tallest until 1998, renamed July 2009, Ledge July 2009 and Skydeck on the 103rd floor confirmed (Skydeck Chicago, SOM, Britannica). Height is 1,450 or 1,451 feet depending on source; the story keeps 1,450. Catalog renovation scheduled for mid-2020; Skydeck reopened spring 2021. Skydeck Chicago bills it as the tallest building in Chicago."
+  }
+}

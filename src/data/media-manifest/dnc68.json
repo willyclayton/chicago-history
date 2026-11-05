@@ -1,0 +1,67 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018648991/",
+    "year": 1930,
+    "approx": true,
+    "caption": "The General Logan statue in Grant Park around 1930, the monument protesters climbed in 1968.",
+    "kind": "place",
+    "note": "LOC Keystone View Co. stereograph 'John A. Logan statue in Grant Park, Chicago', ca. 1930."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Grant Park, at the Democratic National Convention in Chicago, August 26, 1968 A.jpg",
+    "year": 1968,
+    "caption": "Demonstrators gather in Grant Park across from the convention hotels, August 26, 1968.",
+    "kind": "event",
+    "note": "Commons; from LOC U.S. News & World Report collection (Warren K. Leffler), no known restrictions."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/ppmsca.40810/",
+    "year": 1968,
+    "caption": "A young protester faces a row of National Guard soldiers across Michigan Avenue from the Hilton.",
+    "kind": "event",
+    "note": "LOC U.S. News & World Report, Warren K. Leffler; record says Aug 26 1968, contact sheet says 8/29/68."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2016646568/",
+    "year": 1968,
+    "caption": "General views of the convention and the streets outside, from a news photographer's contact sheet.",
+    "kind": "event",
+    "note": "LOC U.S. News & World Report 'Demo[cratic] Nat[iona]l Conv[ention]. General views'. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2016718513/",
+    "year": 1968,
+    "caption": "Police and National Guard troops try to control the crowds during convention week.",
+    "kind": "event",
+    "note": "LOC 'Democratic convention' - likely LOOK magazine collection (Lieberman/Tretick); content not confirmed, re-caption when seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2010645829/",
+    "year": 1968,
+    "caption": "Protesters climb and crowd around the General Logan statue in Grant Park.",
+    "kind": "event",
+    "note": "LOC '[Protests at 1968 Democratic National Convention, Chicago, crowd at Logan statue]', print by Michael Vollan. Rights may be restricted; result showed the /marc/ view of this record."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/ds.02133/",
+    "year": 1968,
+    "caption": "Inside the hall, Illinois delegates react as Sen. Ribicoff condemns the police tactics outside.",
+    "kind": "people",
+    "note": "LOC U.S. News & World Report, Warren K. Leffler."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Hilton Hotel.jpg",
+    "year": 2008,
+    "caption": "The Hilton on Michigan Avenue today, where police and protesters clashed out front in 1968.",
+    "kind": "today",
+    "note": "Commons; 2008 Flickr-sourced photo."
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2016801921/",
+    "year": 1900,
+    "approx": true,
+    "caption": "George Pullman's mansion on Prairie Avenue, the Glessners' neighbor across 18th Street.",
+    "kind": "place",
+    "note": "LOC Detroit Publishing Co., 'The Pullman residence, Chicago' (1890-1901 series). Result URL was loc.gov without www. Mansion demolished 1922."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Fort Dearborn Massacre Monument at edge of Pullman Residence.jpg",
+    "year": 1900,
+    "approx": true,
+    "caption": "The Fort Dearborn massacre statue beside the Pullman house, a block from Glessner House.",
+    "kind": "place",
+    "note": "Commons; date not seen (before the 1922 demolition)."
+  }
+]

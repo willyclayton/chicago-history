@@ -1,0 +1,89 @@
+{
+  "id": "fire",
+  "moments": [
+    {
+      "year": 1871,
+      "date": "Oct 8, 1871",
+      "title": "Fire starts in the O'Leary barn",
+      "text": "On a Sunday night after a dry summer, fire broke out in or near the O'Leary family barn on DeKoven St on the Near West Side. Its exact cause has never been determined.",
+      "kind": "event"
+    },
+    {
+      "year": 1871,
+      "date": "Oct 8 to 9, 1871",
+      "title": "The fire jumps the river twice",
+      "text": "Strong winds carried burning debris across the South Branch into the business district, then across the main river onto the North Side early Monday morning.",
+      "kind": "event"
+    },
+    {
+      "year": 1871,
+      "date": "Oct 10, 1871",
+      "title": "Rain helps end the fire",
+      "text": "Rain early Tuesday helped stop the fire on the city's far North Side. Downtown, the harbor and much of the North Side lay in ruins.",
+      "kind": "event"
+    },
+    {
+      "year": 1961,
+      "date": "May 15, 1961",
+      "title": "Fire Academy opens on the O'Leary site",
+      "text": "The Chicago Fire Academy was dedicated on the former O'Leary property, with Egon Weiner's bronze Pillar of Fire sculpture outside.",
+      "kind": "built"
+    },
+    {
+      "year": 1997,
+      "title": "Mrs. O'Leary cleared",
+      "text": "The City Council passed a resolution clearing Catherine O'Leary and her cow of blame. A reporter had made up the cow story and later admitted it.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Robert J. Quinn Fire Academy",
+      "text": "Firefighters still train at the academy at 558 W. DeKoven St, where the Pillar of Fire marks the spot where the fire began.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Deaths",
+      "value": "about 300 (estimated)",
+      "note": "Most estimates fall between 200 and 300; the true count is unknown."
+    },
+    {
+      "label": "Buildings destroyed",
+      "value": "more than 17,000 (estimated)",
+      "note": "Britannica gives about 17,450; other counts run to 17,500 or more."
+    },
+    {
+      "label": "Area burned",
+      "value": "about 3.3 square miles",
+      "note": "About 2,112 acres; Britannica gives almost 3.5 square miles."
+    },
+    {
+      "label": "Left homeless",
+      "value": "90,000 to 100,000 (estimated)",
+      "note": "The Library of Congress gives 90,000; Britannica about 100,000."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Great Chicago Fire (Britannica)",
+      "url": "https://www.britannica.com/event/Chicago-fire-of-1871"
+    },
+    {
+      "title": "Today in History: October 8 (Library of Congress)",
+      "url": "https://www.loc.gov/item/today-in-history/october-08/"
+    },
+    {
+      "title": "Great Chicago Fire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Chicago_Fire"
+    },
+    {
+      "title": "O'Leary Home (Chicago Historical Society, The Great Chicago Fire and the Web of Memory)",
+      "url": "https://greatchicagofire.org/landmarks/oleary-home"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Dates confirmed (Oct 8 to 10, 1871). Deaths about 300 (Britannica; the Chicago Historical Society says estimates mostly run 200 to 300). Buildings: Britannica about 17,450, Wikipedia 17,500, Chicago History Museum over 18,000, so the story now says 'more than 17,000' (estimated). Area 3.3 sq mi (2,112 acres) is the conservative figure; Britannica says almost 3.5. Homeless: Library of Congress 90,000, Britannica 100,000, so the story gives a range. Both river crossings confirmed. Fire Academy dedication May 15, 1961 per greatchicagofire.org. The year of the reporter's admission (often given as 1893) varies by source, so no year is stated. The story's 'strong southwest wind' is left as written: sources found say strong winds but did not give the direction."
+  }
+}

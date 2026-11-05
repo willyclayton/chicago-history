@@ -15,6 +15,13 @@ Built from [`docs/SPEC.md`](docs/SPEC.md) (v1 scope) and the reference [`docs/pr
 - **List extras:** match highlighting with excerpts, "did you mean" suggestions, recently viewed sites, era progress and a line marking the slider year, plus nearby and same-theme cards at the end of each story.
 - A one-time tip points new visitors to Play (skip it with `?nocoach`). The light/dark choice is remembered.
 
+## History and photos
+
+- **Then & Now:** each story with photos opens on a year scrubber that blends the site's photos from the event to today (a side-by-side wipe is available when two photos share a view). Tap a photo for the full-screen viewer (swipe, pinch/zoom, credits and archive links). Graphic photos are blurred behind a "tap to view".
+- **Chronology:** `src/data/history/<id>.json` holds each site's moments from the event to today, key facts, and sources (fact-checked from search results; see `checked.notes`).
+- **Photo pipeline:** curated archive records live in `src/data/media-manifest/<id>.json`. `npm run media` asks Wikimedia Commons and the Library of Congress for each record's license, keeps only public-domain or openly licensed images, resizes them into `public/media/`, and writes `src/data/media.generated.json`. CI runs it on every deploy with a cache; the "Photos" annotation and the `media-report` artifact list what was kept and dropped. Add `?mediaDemo` to the URL to try the photo UI with generated placeholder images.
+- **App:** installable (manifest + service worker; works offline after a visit), and Back closes the photo viewer, then the story. Links: `#<site-id>` and `#<site-id>/photo/<n>`.
+
 ## Run it
 
 ```sh
@@ -23,6 +30,8 @@ npm run dev          # local dev server
 npm test             # Vitest: data validation + filter/timeline/store logic
 npm run test:smoke   # Playwright smoke test (builds and serves dist/)
 npm run build        # static site in dist/
+npm run media        # fetch and verify archive photos (needs network access to Commons and LOC)
+npm run icons        # regenerate app icons
 ```
 
 Copy `.env.example` to `.env` and set `VITE_GOOGLE_MAPS_EMBED_KEY` to embed Street View in the story card. Without a key the card shows the "Street View ↗" link instead of the panorama. Restrict the key by HTTP referrer to the production domain.

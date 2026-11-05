@@ -1,0 +1,53 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Navy pier, Chicago (60794).jpg",
+    "year": 1940,
+    "approx": true,
+    "caption": "A linen-finish postcard of Navy Pier stretching into Lake Michigan, with its towers and long sheds.",
+    "kind": "place",
+    "note": "Commons; Boston Public Library Tichnor Brothers postcard collection, undated (linen cards are ~1930-1945)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:USS Wolverine (IX-64) and USS Sable (IX-81) moored at Chicago, Illinois (USA), circa in 1944.jpg",
+    "year": 1944,
+    "approx": true,
+    "caption": "The Navy's two Great Lakes training carriers moored beside the pier during World War II.",
+    "kind": "place",
+    "note": "Commons; U.S. Navy photo via NavSource, 1943-1945."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Navy Pier in 1950 (3552774518).jpg",
+    "year": 1950,
+    "caption": "Navy Pier in 1950, when it housed the University of Illinois's Chicago campus.",
+    "kind": "place",
+    "note": "Commons Flickr import; description only gives the year. UIC 'Harvard on the Rocks' ran there 1946-1965."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago - Navy Pier from Prudential Building (4284002104).jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "Looking down on Navy Pier and its Ferris wheel from a downtown tower.",
+    "kind": "today",
+    "note": "Commons Flickr import (~2010)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/highsm.62960/",
+    "year": 2020,
+    "caption": "Aerial view of downtown and Navy Pier, with its Ferris wheel and the water-filtration plant beside it.",
+    "kind": "today",
+    "note": "LOC Carol M. Highsmith (public domain), caption says 'as of 2020'. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Navy Pier Summer.jpg",
+    "year": 2021,
+    "caption": "Drone view of Navy Pier on a summer day in 2021.",
+    "kind": "today",
+    "note": "Commons, own work, taken 18 June 2021."
+  }
+]

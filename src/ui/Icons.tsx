@@ -72,3 +72,40 @@ export const TargetIcon = (p: P) => (
 export const LayersIcon = (p: P) => (
   <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="m12 3 9 5-9 5-9-5 9-5Z" /><path d="m3 13 9 5 9-5" /></svg>
 );
+/* photos and history (media UI) */
+export const PhotoIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><rect x="3" y="5" width="18" height="14" rx="2" /><circle cx="9" cy="10" r="1.6" /><path d="m21 16-5-5-8 8" /></svg>
+);
+export const ExpandIcon = (p: P) => <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7" /></svg>;
+/** Two halves of a frame with a divider: the then-and-now wipe. */
+export const CompareIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M12 3v18" /><path d="M3 15l4-4 5 5" /></svg>
+);
+export const ZoomInIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5M11 8v6M8 11h6" /></svg>
+);
+export const ZoomOutIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5M8 11h6" /></svg>
+);
+/** A burst: the moment something happened. */
+export const SparkIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M12 3v5M12 16v5M3 12h5M16 12h5M5.6 5.6l3 3M15.4 15.4l3 3M5.6 18.4l3-3M15.4 8.6l3-3" /></svg>
+);
+/** A crane: built, opened, completed. */
+export const CraneIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M6 21V4M3 21h7M6 4h14M6 4 3 8h3M17 4v5M15.5 9h3v3h-3z" /></svg>
+);
+/** Circling arrows: renamed, rebuilt, reopened. */
+export const ChangeIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M20 11a8 8 0 0 0-14.5-4.6L4 8M4 4v4h4M4 13a8 8 0 0 0 14.5 4.6L20 16M20 20v-4h-4" /></svg>
+);
+/** A broken wall: torn down, burned, closed. */
+export const RubbleIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M4 21V9l4-2v5l4-3v4l3-2 1 4 4-1v7H4Z" /><path d="M9 3l1.5 2M15 4l-1 2.5M19 6l-2 1.5" /></svg>
+);
+/** A pennant on a pole: marker, landmark, memorial. */
+export const FlagIcon = (p: P) => <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M5 21V4M5 4h12l-2.5 4L17 12H5" /></svg>;
+/** An eye: what is there now. */
+export const EyeIcon = (p: P) => (
+  <svg viewBox="0 0 24 24" aria-hidden="true" {...p} {...s}><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" /><circle cx="12" cy="12" r="2.8" /></svg>
+);

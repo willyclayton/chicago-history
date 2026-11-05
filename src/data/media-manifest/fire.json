@@ -1,0 +1,100 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/94501513/",
+    "year": 1871,
+    "caption": "Harper's Weekly bird's-eye view of Chicago as it looked just before the fire.",
+    "kind": "map",
+    "note": "LOC; Theodore R. Davis, Harper's Weekly Oct 21 1871, pp. 984-5 (wood engraving)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2001704271/",
+    "year": 1871,
+    "caption": "Currier & Ives print of the city burning on the night of October 8, 1871.",
+    "kind": "event",
+    "note": "LOC; Currier & Ives lithograph, c1871 (also resource pga.00762)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/pga.06789/",
+    "year": 1871,
+    "caption": "A color print of the fire seen from the West Side, with the river and the burning skyline.",
+    "kind": "event",
+    "note": "LOC; Gibson & Co., Cincinnati, c1871."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/94501371/",
+    "year": 1871,
+    "caption": "Harper's Weekly: crowds flee down Wells Street as the Briggs House catches fire.",
+    "kind": "newspaper",
+    "note": "LOC; Harper's Weekly 28 Oct 1871 p. 97, from a sketch by its artist."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/94501373/",
+    "year": 1871,
+    "caption": "Frank Leslie's paper shows the courthouse and public buildings in flames.",
+    "kind": "newspaper",
+    "note": "LOC; Frank Leslie's Illustrated Newspaper 28 Oct 1871 p. 101."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2004682849/",
+    "year": 1871,
+    "caption": "The O'Leary cottage on DeKoven Street, where the fire began, still standing afterward.",
+    "kind": "aftermath",
+    "note": "LOC stereograph, 'Ruins after the great fire... Mrs. O'Leary's residence' (also cph.3b04891)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/cph.3b04890/",
+    "year": 1871,
+    "caption": "The burned-out shell of the Cook County Courthouse after the fire.",
+    "kind": "aftermath",
+    "note": "LOC stereograph lot 1871 fire, courthouse ruins."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2004682758/",
+    "year": 1871,
+    "caption": "Ruins of the Sherman House hotel, with people and a carriage in the rubble-filled street.",
+    "kind": "aftermath",
+    "note": "LOC; stereo by Lovejoy & Foster, Chicago."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/cph.3c37823/",
+    "year": 1871,
+    "caption": "Columns and arches of the Fifth National Bank stand alone at Clark and Washington.",
+    "kind": "aftermath",
+    "note": "LOC; G.N. Barnard, 'Among the ruins in Chicago, no. 18'."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/75693037/",
+    "year": 1871,
+    "caption": "Map of the city with the burnt district marked, about four miles long.",
+    "kind": "map",
+    "note": "LOC map 'The City of Chicago, showing the burnt district'."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/90715935/",
+    "year": 1872,
+    "approx": true,
+    "caption": "Currier & Ives: crowds escape over the Randolph Street bridge as the city burns.",
+    "kind": "event",
+    "note": "LOC; Currier & Ives 'Chicago in flames: Scene at Randolph Street Bridge', dated 1872-1874."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Fire Academy.jpg",
+    "year": 2008,
+    "approx": true,
+    "caption": "The Chicago Fire Academy, built on the site of the O'Leary barn on DeKoven Street.",
+    "kind": "today",
+    "note": "Title seen only in the listing of Category:Great Chicago Fire of 1871 (640x480); no File: URL shown and no date/license seen. Year is a guess."
+  }
+]

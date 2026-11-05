@@ -183,11 +183,25 @@
 .story-bar .pos{font-size:12px;margin-right:6px}
 .story-bar .pos b{color:var(--ink);font-weight:700}
 .story-bar .read{position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--cc);transform-origin:left;transform:scaleX(var(--read,0));pointer-events:none}
+/* once the header scrolls away, the bar names the site */
+.story-bar .bar-title{flex:1;min-width:0;display:block;text-align:center;font-family:var(--display);font-weight:800;font-size:16px;line-height:1.1;letter-spacing:.03em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:0;transform:translateY(5px);transition:opacity .2s,transform .25s var(--spring);pointer-events:none}
+.story-bar .bar-title b{color:var(--cc);font-weight:900;margin-right:3px}
+.story-bar.titled .bar-title{opacity:1;transform:none}
+.story-bar.titled .pos{display:none}
 
 .hero{margin:2px 12px 0;padding:18px 18px 16px;border-radius:18px;border:1px solid color-mix(in srgb,var(--cc) 22%,var(--line));background:
   radial-gradient(120% 90% at 100% 0%,color-mix(in srgb,var(--cc) 20%,transparent),transparent 60%),
   linear-gradient(180deg,color-mix(in srgb,var(--cc) 9%,var(--panel)),var(--panel));overflow:hidden;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 .hero-in{position:relative;transform:translateX(var(--sx,0));will-change:transform}
+/* with photos, the header opens on the Then & Now stage (src/ui/media/StoryMedia.tsx) */
+.hero.has-media{padding-top:0}
+.hero .tn,.hero .tn-skel{margin:0 -18px 14px}
+.tn-skel{aspect-ratio:3/2;background:linear-gradient(100deg,color-mix(in srgb,var(--ink) 8%,var(--panel)) 30%,color-mix(in srgb,var(--ink) 14%,var(--panel)) 50%,color-mix(in srgb,var(--ink) 8%,var(--panel)) 70%) 0 0/300% 100%;animation:pnl-shimmer 1.2s linear infinite}
+@keyframes pnl-shimmer{to{background-position:-150% 0}}
+.hero.has-media .bigyear{display:none}
+.hero.has-media .kicker .kyear{display:inline}
+.kphotos{display:none;align-items:center;gap:4px;color:var(--muted);letter-spacing:.04em}
+.kphotos svg{width:13px;height:13px}
 .hero.settle .hero-in{transition:transform .32s var(--spring)}
 .kicker{gap:8px;font-size:11px;letter-spacing:.1em;color:var(--cc)}
 .kicker .kyear{display:none;color:var(--ink);font-family:var(--display);font-weight:900;font-size:15px;letter-spacing:0}
@@ -238,8 +252,17 @@
 .actions a.primary{color:var(--panel)}
 .actions a.primary:hover{border-color:var(--red);background:color-mix(in srgb,var(--red) 88%,var(--ink))}
 
-.sources ul{margin:0;padding:0 0 0 18px;font-size:13.5px;display:grid;gap:4px}
+.sources ul{margin:0;padding:0 0 0 18px;font-size:13.5px;display:grid;gap:6px}
 .sources a{color:var(--ink)}
+.sources li small{margin-left:6px;font-size:11.5px;color:var(--muted)}
+.sources .checked{margin-top:12px;font-size:12.5px;color:var(--muted)}
+.sources .checked summary{display:inline-flex;align-items:center;gap:7px;min-height:32px;cursor:pointer;font-weight:600;list-style:none}
+.sources .checked summary::-webkit-details-marker{display:none}
+.sources .checked summary::before{content:"";width:14px;height:14px;border-radius:50%;flex:none;background:var(--c-building) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12.5 4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/10px no-repeat}
+.sources .checked summary::after{content:"How";font-weight:500;text-decoration:underline;text-underline-offset:2px}
+.sources .checked[open] summary::after{content:"Hide"}
+.story-body .sources .checked p{margin:4px 0 0;font-size:12.5px;line-height:1.55;color:var(--muted)}
+.svjump{width:100%;font:inherit;cursor:pointer}
 
 .related ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 .related button{display:grid;grid-template-columns:50px minmax(0,1fr) auto;align-items:center;gap:10px;width:100%;text-align:left;padding:10px 10px 10px 12px;min-height:56px;border-radius:14px;border:1px solid var(--line);background:var(--panel);transition:border-color .15s,transform .18s var(--spring),background .15s}
@@ -290,6 +313,11 @@
   .panel.peek .kicker .kyear{display:inline}
   .panel.peek .hero h2{margin:6px 0 4px;font-size:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .panel.peek .eraline,.panel.peek .swipehint{display:none}
+  .hero .tn,.hero .tn-skel{margin:0 -16px 12px}
+  .panel.peek .hero .tn,.panel.peek .hero .tn-skel{display:none}
+  .panel.peek .hero.has-media{padding-top:14px}
+  .panel.peek .kphotos{display:inline-flex}
+  .story-bar .bar-title{font-size:15px}
   .story-body{padding:16px 16px 8px}
   .actions a{height:48px}
   .pager{padding:10px 14px calc(18px + env(safe-area-inset-bottom,0px))}
@@ -297,5 +325,5 @@
 }
 
 @media (prefers-reduced-motion:reduce){
-  .panel,.view,.view *,.hero-in,.chip,.chipnav{animation:none!important;transition:none!important}
+  .panel,.view,.view *,.hero-in,.chip,.chipnav,.tn-skel{animation:none!important;transition:none!important}
 }

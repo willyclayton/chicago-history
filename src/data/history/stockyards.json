@@ -1,0 +1,82 @@
+{
+  "id": "stockyards",
+  "moments": [
+    {
+      "year": 1865,
+      "date": "Dec 25, 1865",
+      "title": "The Union Stock Yards open",
+      "text": "A company formed by the leading meatpackers and railroads opened a huge livestock market just south of the city limits, served by rail lines from across the West.",
+      "kind": "built"
+    },
+    {
+      "year": 1877,
+      "title": "The Stock Yard Gate goes up",
+      "text": "The limestone entrance gate, attributed to the architects Burnham and Root, was built at Exchange Ave. Sources date it to 1875 or 1877.",
+      "kind": "built"
+    },
+    {
+      "year": 1906,
+      "title": "The Jungle",
+      "text": "Upton Sinclair's novel, based on seven weeks undercover in Packingtown, shocked readers with conditions in the packinghouses. Congress passed the Meat Inspection Act and the Pure Food and Drug Act that year.",
+      "kind": "event"
+    },
+    {
+      "year": 1971,
+      "date": "July 30, 1971",
+      "title": "The yards close",
+      "text": "After decades of decline, the stockyards closed after more than a century of business.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1972,
+      "date": "Feb 24, 1972",
+      "title": "The gate becomes a landmark",
+      "text": "The city named the Stock Yard Gate a Chicago Landmark; it was later also named a National Historic Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the gate",
+      "text": "The gate, the only remaining historic structure of the stockyards, still stands at Exchange Ave and Peoria St.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "Dec 25, 1865"
+    },
+    {
+      "label": "Closed",
+      "value": "July 30, 1971",
+      "note": "Some sources give Aug 1, 1971, when the last operations stopped."
+    },
+    {
+      "label": "Chicago's rank",
+      "value": "largest U.S. meatpacking center",
+      "note": "From the Civil War until the 1920s."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Meatpacking (Encyclopedia of Chicago)",
+      "url": "https://www.encyclopedia.chicagohistory.org/pages/804.html"
+    },
+    {
+      "title": "Jungle, The (Encyclopedia of Chicago)",
+      "url": "https://www.encyclopedia.chicagohistory.org/pages/679.html"
+    },
+    {
+      "title": "Union Stock Yard Gate National Historic Landmark nomination (National Park Service)",
+      "url": "https://npgallery.nps.gov/NRHP/GetAsset/NHLS/72000451_text"
+    },
+    {
+      "title": "Union Stock Yards (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Union_Stock_Yards"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Opening Dec 25, 1865 and closing July 30, 1971 confirmed (Wikipedia; Encyclopedia of Chicago on the founding company). One NPS document says 1970 and another source Aug 1, 1971; the story keeps 1971. Gate date is 1875 or 1877 (no source found for 1879); Chicago Landmark Feb 24, 1972; NHL 1981. The Jungle: serialized 1905, book 1906, followed by the 1906 food laws (Encyclopedia of Chicago)."
+  }
+}

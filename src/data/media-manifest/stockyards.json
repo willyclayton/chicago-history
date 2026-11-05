@@ -1,0 +1,72 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/93500567/",
+    "year": 1890,
+    "approx": true,
+    "caption": "Bird's-eye view of the Union Stock Yards, a city of pens, rail sidings and packing houses.",
+    "kind": "map",
+    "note": "LOC 'Bird's-eye view of Union Stock Yards, Chicago, Ill., U.S.A.'; date not seen in results (year is a guess)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2006679972/",
+    "year": 1903,
+    "caption": "Cattle fill the pens of 'the greatest live stock market in the world' in 1903.",
+    "kind": "place",
+    "note": "LOC stereograph, Underwood & Underwood, 1903."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/89711602/",
+    "year": 1909,
+    "approx": true,
+    "caption": "In the heart of the stockyards around 1909, with walkways over the crowded pens.",
+    "kind": "place",
+    "note": "LOC stereograph, c. 1909."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/93502183/",
+    "year": 1910,
+    "approx": true,
+    "caption": "Women packing sliced bacon in glass jars at Armour's plant in the yards.",
+    "kind": "people",
+    "note": "LOC stereograph, Armour's, Union Stock Yards; date not seen (series c. 1905-1915)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017812563/",
+    "year": 1941,
+    "caption": "The yards in July 1941, with the employees' parking lot in front of the pens.",
+    "kind": "place",
+    "note": "LOC FSA/OWI, John Vachon, July 1941 (public domain)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017853539/",
+    "year": 1943,
+    "caption": "Wartime view of the Union Stockyards by Jack Delano, 1943.",
+    "kind": "place",
+    "note": "LOC FSA/OWI, Jack Delano, 1943 (public domain). Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2011630451/",
+    "year": 1995,
+    "approx": true,
+    "caption": "The limestone Union Stock Yard Gate, one of the few pieces left after the yards closed in 1971.",
+    "kind": "place",
+    "sameView": "stockyards-gate",
+    "note": "LOC Carol M. Highsmith, 1980-2006 (public domain)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Union Stockyard Gate.jpg",
+    "year": 2008,
+    "caption": "The gate on Exchange Avenue in 2008, with its carved steer's head over the arch.",
+    "kind": "today",
+    "sameView": "stockyards-gate",
+    "note": "Commons, Sept 2008, CC BY-SA 2.0. sameView pairing with Highsmith is approximate."
+  }
+]

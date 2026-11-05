@@ -1,0 +1,97 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Chicago from the Air (1974) (6011095887).jpg",
+    "year": 1974,
+    "caption": "The brand-new Sears Tower towers over the Loop in an aerial view from September 1974.",
+    "kind": "place",
+    "note": "Commons Flickr import; print dated Sept 1974 on its back. Closest find to the build years; no free construction photo turned up (CHM/Hedrich-Blessing and Sun-Times ones are all rights reserved)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2021636616/",
+    "year": 1974,
+    "approx": true,
+    "caption": "The black tower newly risen behind the low riverfront buildings, seen across the Chicago River.",
+    "kind": "place",
+    "sameView": "sears-from-river",
+    "note": "LOC Balthazar Korab collection, 'View from across the Chicago River'; Korab set dated 1974 (some 1975-89). Check rights line in CI. sameView pairing with Schwen 2008 is approximate."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2021636625/",
+    "year": 1974,
+    "caption": "Sun glints off the bronze-tinted glass of the just-finished Sears Tower.",
+    "kind": "place",
+    "note": "LOC Balthazar Korab collection, record dated 1974. Search showed URL without trailing slash."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2021636626/",
+    "year": 1974,
+    "approx": true,
+    "caption": "The Sears Tower seen from the expressway as it opened in the mid-1970s.",
+    "kind": "place",
+    "note": "LOC Balthazar Korab collection, 'View from highway'. Date inferred from the Korab Sears series."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2021636630/",
+    "year": 1980,
+    "approx": true,
+    "caption": "The lit tower at night, with an elevated 'L' station in the foreground.",
+    "kind": "place",
+    "note": "LOC Balthazar Korab collection, dated between 1975 and 1989."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2011632316/",
+    "year": 1995,
+    "approx": true,
+    "caption": "Aerial view of the 1990s skyline, with the Sears Tower still the tallest building in America.",
+    "kind": "place",
+    "note": "LOC Carol M. Highsmith Archive (public domain), 'photograph taken during the 1990s'."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2011630449/",
+    "year": 2000,
+    "approx": true,
+    "caption": "Looking up at the Sears Tower's stepped black tubes and twin antennas.",
+    "kind": "place",
+    "note": "LOC Carol M. Highsmith, 'America's tallest building, the Sears Tower', dated 1980-2006 (same title as resource highsm.12252)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago - View of Sears Tower Willis Tower from John Hancock Center.jpg",
+    "year": 2007,
+    "caption": "The Sears Tower seen across the Loop from the John Hancock Center in 2007.",
+    "kind": "place",
+    "note": "Commons, dated 30 Nov 2007."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Sears Tower.jpg",
+    "year": 2008,
+    "caption": "The tower rising above the river, the year before it was renamed Willis Tower.",
+    "kind": "today",
+    "sameView": "sears-from-river",
+    "note": "Commons, Daniel Schwen 2008, from the Chicago River."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Willis Tower, Chicago.jpg",
+    "year": 2021,
+    "caption": "Willis Tower today, still the tallest building in Chicago.",
+    "kind": "today",
+    "note": "Commons, Ajay Suresh, CC BY 2.0, 30 Sep 2021."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Skyline in April 2024.jpg",
+    "year": 2024,
+    "caption": "The skyline in April 2024, with Willis Tower among the neo-Gothic and modern towers.",
+    "kind": "today",
+    "note": "Commons, CC BY 2.0, taken 13 Apr 2024."
+  }
+]

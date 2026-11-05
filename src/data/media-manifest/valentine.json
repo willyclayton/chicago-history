@@ -1,0 +1,69 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:St Valentine's Day Massacre, corpses of North Side Gang Members, 1929-02-14.jpg",
+    "year": 1929,
+    "caption": "Police and onlookers over the bodies of Moran's North Side gang on the garage floor at 2122 N. Clark St.",
+    "kind": "event",
+    "sensitive": true,
+    "note": "Commons; Chicago Tribune (Tower bureau) press print via RR Auction, marked PD-US. Exact framing not seen."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/99404755/",
+    "year": 1929,
+    "caption": "Bodies of the seven victims lie along the brick wall of the S.M.C. Cartage garage.",
+    "kind": "event",
+    "sensitive": true,
+    "note": "LOC NYWT&S collection, LC-USZ62-123251; UPI print of a 1929 photo (published 1929, so PD-US). Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:St Valentine's Day Massacre - view from above.jpg",
+    "year": 1929,
+    "caption": "A press photographer's view from above of the murder scene inside the garage, February 1929.",
+    "kind": "newspaper",
+    "sensitive": true,
+    "note": "Commons; credited to Chicago Herald and Examiner, 15 Feb 1929, PD."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Diagram showing the St Valentine's Day Massacre.jpg",
+    "year": 1929,
+    "caption": "The Chicago Tribune's diagram of where the killers parked, entered and lined the men up, Feb. 15, 1929.",
+    "kind": "newspaper",
+    "note": "Commons; Chicago Tribune 15 Feb 1929 p.3."
+  },
+  {
+    "source": "commons",
+    "ref": "File:19290215 Valentine's Day Massacre - Seven Chicago Gangsters Slain - NY Times.jpg",
+    "year": 1929,
+    "caption": "The New York Times front page of Feb. 15, 1929: seven Chicago gangsters slain.",
+    "kind": "newspaper",
+    "note": "Title seen in the Commons category listing for the massacre and in Category:Newspaper headlines; no direct File: URL in results, so the apostrophe form is unverified."
+  },
+  {
+    "source": "commons",
+    "ref": "File:George 'Bugs' Moran.jpg",
+    "year": 1929,
+    "caption": "George \"Bugs\" Moran, the North Side boss the gunmen came for, who arrived late and escaped.",
+    "kind": "people",
+    "note": "Commons; described as a Chicago Tribune photo dated 15 Feb 1929."
+  },
+  {
+    "source": "commons",
+    "ref": "File:St. Valentine's Day Massacre (3708547522).jpg",
+    "year": 2009,
+    "caption": "The empty lot at 2122 N. Clark St. where the garage stood until it was torn down in 1967.",
+    "kind": "today",
+    "note": "Commons Flickr import, photo dated 31 May 2009."
+  },
+  {
+    "source": "commons",
+    "ref": "File:St. Valentine's Day Massacre (52337893269).jpg",
+    "year": 2022,
+    "caption": "The garage site on Clark Street in 2022, briefly open after its fence was knocked down.",
+    "kind": "today",
+    "note": "Commons Flickr import dated 5 Sep 2022 (rare view after the fence was knocked down)."
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Aerial View of Chicago, South, 1925 (NBY 5323).jpg",
+    "year": 1925,
+    "caption": "The lakefront in 1925, with the new stadium under construction south of the Field Museum.",
+    "kind": "construction",
+    "note": "Title seen in the listing of Commons Category:Northerly Island (3600x2920, Newberry NBY 5323), described as showing Soldier Field under construction; no File: URL shown."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Gene Tunney y Jack Dempsey - El Gráfico 429.jpg",
+    "year": 1927,
+    "caption": "An Argentine sports magazine's cover of Tunney and Dempsey, who fought the 'long count' bout here in 1927.",
+    "kind": "newspaper",
+    "note": "Commons; El Grafico no. 429 (Sept 1927). Argentine PD; US status rests on Commons' tag."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/89709558/",
+    "year": 1929,
+    "caption": "New York's Mayor Jimmy Walker in the stands for the 1929 Notre Dame-USC football game.",
+    "kind": "people",
+    "note": "LOC; Walker with E.J. Kelly of the South Park Board at Soldier Field, 1929."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/94505456/",
+    "year": 1951,
+    "approx": true,
+    "caption": "Gen. Douglas MacArthur speaks to a huge crowd at Soldier Field after his recall from Korea.",
+    "kind": "event",
+    "note": "LOC '[Douglas MacArthur... speaking at Soldiers Field, Chicago]', likely NYWT&S; date not in results (MacArthur's Soldier Field rally was April 1951)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:2010-02-19 3000x2000 chicago soldier field.jpg",
+    "year": 2010,
+    "caption": "The 1924 colonnades with the 2003 seating bowl rising inside them.",
+    "kind": "today",
+    "note": "Commons, 19 Feb 2010, tagged with the colonnades."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Soldier Field on June 26, 2020.jpg",
+    "year": 2020,
+    "caption": "Soldier Field on the lakefront in June 2020.",
+    "kind": "today",
+    "note": "Commons."
+  }
+]

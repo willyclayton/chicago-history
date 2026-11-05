@@ -1,0 +1,74 @@
+{
+  "id": "mart",
+  "moments": [
+    {
+      "year": 1930,
+      "date": "May 5, 1930",
+      "title": "The Mart opens",
+      "text": "Marshall Field & Co. opened its huge wholesale market on the north bank of the river, pulling 13 warehouses under one roof. With about 4 million square feet, it was the largest building in the world.",
+      "kind": "built"
+    },
+    {
+      "year": 1945,
+      "title": "Joseph Kennedy buys it",
+      "text": "With the Depression and the war having hurt wholesale trade, Field's sold the building to a group led by Joseph P. Kennedy for far less than it cost to build.",
+      "kind": "changed"
+    },
+    {
+      "year": 1998,
+      "date": "Jan 1998",
+      "title": "The Kennedys sell",
+      "text": "After more than 50 years, the Kennedy family sold the Mart to Vornado Realty Trust as part of a larger deal.",
+      "kind": "changed"
+    },
+    {
+      "year": 2018,
+      "date": "Sept 29, 2018",
+      "title": "Art on theMART lights up",
+      "text": "Projectors across the river began throwing digital art onto 2.5 acres of the Mart's river wall, billed as the largest permanent digital art projection in the world.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: offices, showrooms and night shows",
+      "text": "The Mart holds offices and design showrooms, and Art on theMART plays on its river wall on many nights.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Floor space",
+      "value": "about 4 million square feet"
+    },
+    {
+      "label": "World's largest building",
+      "value": "1930 until the Pentagon (1943)"
+    },
+    {
+      "label": "Kennedy ownership",
+      "value": "1945 to 1998"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Merchandise Mart (Encyclopedia of Chicago)",
+      "url": "https://www.encyclopedia.chicagohistory.org/pages/812.html"
+    },
+    {
+      "title": "Merchandise Mart (Chicago Architecture Center)",
+      "url": "https://www.architecture.org/learn/resources/buildings-of-chicago/building/merchandise-mart/"
+    },
+    {
+      "title": "Art On theMART to Launch September 29, 2018 (City of Chicago)",
+      "url": "https://chicago.gov/city/en/depts/mayor/press_room/press_releases/2018/august/081618_ArtOntheMart.html"
+    },
+    {
+      "title": "Merchandise Mart (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Merchandise_Mart"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Opening May 5, 1930, Marshall Field & Co. as builder, about 4 million sq ft, Kennedy purchase 1945 and Vornado sale Jan 1998 confirmed (Wikipedia, Chicago Architecture Center, Encyclopedia of Chicago). The Kennedy price is disputed ($12.5 million or $16 million), so no figure is given. Art on theMART launched Sept 29, 2018 (City of Chicago). 'Largest building until the Pentagon' per Wikipedia."
+  }
+}

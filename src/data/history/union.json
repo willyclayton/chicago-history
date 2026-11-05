@@ -1,0 +1,86 @@
+{
+  "id": "union",
+  "moments": [
+    {
+      "year": 1913,
+      "title": "Work begins",
+      "text": "Construction started on a new station for several railroads on Canal St, following plans by Daniel Burnham's office, which became Graham, Anderson, Probst & White after his death in 1912.",
+      "kind": "built"
+    },
+    {
+      "year": 1925,
+      "date": "May 1925",
+      "title": "Union Station opens",
+      "text": "The station opened with its Great Hall, a waiting room about 110 feet high under a long barrel-vaulted skylight, and a separate concourse building east of Canal St.",
+      "kind": "built"
+    },
+    {
+      "year": 1969,
+      "title": "The concourse is torn down",
+      "text": "The railroads demolished the concourse building over the tracks and sold the air rights for an office tower; most concourse space moved underground.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1987,
+      "title": "The Untouchables staircase",
+      "text": "The station's south grand staircase was the setting for the baby-carriage shootout in Brian De Palma's film The Untouchables.",
+      "kind": "event"
+    },
+    {
+      "year": 2002,
+      "date": "May 1, 2002",
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated Union Station a Chicago Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2019,
+      "title": "Light returns to the Great Hall",
+      "text": "A $22 million restoration uncovered and repaired the Great Hall's skylight, letting daylight back into the room.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Amtrak and Metra hub",
+      "text": "Union Station is Chicago's busiest rail terminal, used by Amtrak long-distance trains and Metra commuter lines.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "May 1925",
+      "note": "The HABS record gives May 15, 1925, with a grand opening that July."
+    },
+    {
+      "label": "Great Hall height",
+      "value": "about 110 feet"
+    },
+    {
+      "label": "Landmark",
+      "value": "May 1, 2002"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chicago Union Station: Our Past (Chicago Union Station)",
+      "url": "https://chicagounionstation.com/about/past"
+    },
+    {
+      "title": "Chicago Union Station (Historic American Buildings Survey IL-1249, Illinois DNR)",
+      "url": "https://dnrhistoric.illinois.gov/content/dam/soi/en/web/dnrhistoric/preserve/recordation/habs-il-1249.pdf"
+    },
+    {
+      "title": "Chicago, IL: Union Station (CHI) (Amtrak Great American Stations)",
+      "url": "https://www.greatamericanstations.com/stations/CHI"
+    },
+    {
+      "title": "Union Station (Chicago Architecture Center)",
+      "url": "https://www.architecture.org/online-resources/buildings/union-station"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Work began in 1913 per most sources (HABS lists 1919 to 1925 as construction dates), so the story's 'ten years in the making' was changed to say work began in 1913. Opening May 1925 (HABS May 15; another source May 16). Concourse demolished 1969 (some say 1968); Chicago Landmark May 1, 2002; $22 million Great Hall skylight restoration finished 2019 (Amtrak Great American Stations). The Untouchables staircase confirmed by Amtrak's station fact sheet. The story's claim that most long-distance trips changed trains here was not confirmed and was reworded."
+  }
+}

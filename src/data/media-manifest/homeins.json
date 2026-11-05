@@ -1,0 +1,53 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2010634573/",
+    "year": 1885,
+    "caption": "An 1885 poster of the new ten-story Home Insurance Building, often called the first skyscraper.",
+    "kind": "place",
+    "note": "LOC; L. Prang & Co. lithograph poster, 1885 (also ppmsca.41005)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Home Insurance Building.JPG",
+    "year": 1900,
+    "approx": true,
+    "caption": "The Home Insurance Building at LaSalle and Adams after two floors were added in 1891.",
+    "kind": "place",
+    "note": "Commons; 'photograph, after 1891' (page also says circa 1920s)."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/cph.3c21712/",
+    "year": 1905,
+    "approx": true,
+    "caption": "City Hall and the Home Insurance Building on LaSalle Street.",
+    "kind": "place",
+    "note": "LOC copy negative 'City Hall and Home Insurance Building'; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Field building, Chicago LCCN2003688803.jpg",
+    "year": 1935,
+    "approx": true,
+    "caption": "The Art Deco Field Building, which replaced the Home Insurance Building in 1934.",
+    "kind": "place",
+    "note": "Commons copy of LOC LCCN 2003688803, no known restrictions; date not seen."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Field Building 135 S LaSalle Chicago.jpg",
+    "year": 2011,
+    "caption": "135 S. LaSalle today, on the corner where the first skyscraper stood.",
+    "kind": "today",
+    "note": "Commons; Christopher Macsurak 2011."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Field Building 135 South Lasalle Street entrance.jpg",
+    "year": 2011,
+    "caption": "The Field Building's Adams Street entrance.",
+    "kind": "today",
+    "note": "Commons; 2011."
+  }
+]

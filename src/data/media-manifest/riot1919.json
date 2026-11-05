@@ -1,0 +1,51 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:Chicago-race-riot.jpg",
+    "year": 1919,
+    "caption": "A white gang roams the South Side hunting for Black residents during the riot.",
+    "kind": "event",
+    "note": "Commons; printed in The West Virginian, 31 Jul 1919."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Victim is stoned during Chicago Race Riot July 1919.jpg",
+    "year": 1919,
+    "caption": "A Black man is stoned and beaten beside a house as a crowd looks on, July 1919.",
+    "kind": "event",
+    "sensitive": true,
+    "note": "Commons; same scene also on Commons as 'Chicago Race Riot 1919 stoning.png' (Schomburg, Chicago Commission on Race Relations). Disturbing image."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago race riot, soldiers with rifles standing guard at vandalized house.jpg",
+    "year": 1919,
+    "caption": "Soldiers with rifles guard a vandalized house after the riot.",
+    "kind": "aftermath",
+    "note": "Title seen in the listing for Category:Chicago Race Riot of 1919; no File: URL in results."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago race riot, three African American men moving furniture while young Caucasian boys watch.jpg",
+    "year": 1919,
+    "caption": "Three Black men carry furniture out of a home as white boys watch.",
+    "kind": "aftermath",
+    "note": "Title seen in the listing for Category:Chicago Race Riot of 1919; no File: URL in results."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Chicago Race Riot 1919 leaving house.png",
+    "year": 1919,
+    "caption": "A family leaves its damaged home after the riot.",
+    "kind": "aftermath",
+    "note": "Commons; NYPL Schomburg Center, from the Chicago Commission on Race Relations' report."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Map of 1919 Chicago Race Riot Hot Spots extending over the Black Belt.jpg",
+    "year": 1919,
+    "caption": "The Chicago Tribune's map of riot hot spots across the South Side's Black Belt.",
+    "kind": "map",
+    "note": "Commons; 1919 Chicago Daily Tribune map."
+  }
+]

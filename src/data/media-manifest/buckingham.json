@@ -1,0 +1,29 @@
+[
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/pictures/item/2013647020/",
+    "year": 1912,
+    "approx": true,
+    "caption": "Grant Park and Michigan Avenue around 1910, years before the fountain was built.",
+    "kind": "place",
+    "note": "LOC panoramic postcard view by Max Rigot, dated 1910/1912; exact framing not seen. Result URL was loc.gov without www."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2018649000/",
+    "year": 1930,
+    "approx": true,
+    "caption": "'A play of water and color lights': Buckingham Fountain lit up at night, about 1930.",
+    "kind": "place",
+    "note": "LOC Keystone View Co. stereograph, ca. 1930. Search showed URL without trailing slash."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Buckingham Fountain Chicago.jpg",
+    "year": 2010,
+    "approx": true,
+    "caption": "Buckingham Fountain in Grant Park today, with the skyline behind it.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

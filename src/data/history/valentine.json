@@ -1,0 +1,82 @@
+{
+  "id": "valentine",
+  "moments": [
+    {
+      "year": 1929,
+      "date": "Feb 14, 1929",
+      "title": "Seven men shot in a Clark St garage",
+      "text": "Gunmen, two of them dressed as police officers, lined up seven men tied to Bugs Moran's gang against the wall of the S-M-C Cartage garage and shot them. Moran's gang used the garage to store liquor.",
+      "kind": "event"
+    },
+    {
+      "year": 1929,
+      "date": "Feb 15, 1929",
+      "title": "Front-page news across the country",
+      "text": "Photos of the bodies on the garage floor ran in Chicago and national newspapers, and the story led front pages the next day. The coverage fed public outrage against the city's gangsters.",
+      "kind": "event"
+    },
+    {
+      "year": 1929,
+      "title": "Capone suspected, no one tried",
+      "text": "Al Capone's outfit was widely blamed, but Capone was in Florida at the time, and no one was ever tried for the killings.",
+      "kind": "event"
+    },
+    {
+      "year": 1967,
+      "title": "The garage is torn down",
+      "text": "The building was demolished in 1967. A Canadian businessman, George Patey, bought the bricks from the wall where the men were shot.",
+      "kind": "demolished"
+    },
+    {
+      "year": 2012,
+      "date": "Feb 14, 2012",
+      "title": "The wall goes on display in Las Vegas",
+      "text": "The Mob Museum in Las Vegas opened on the massacre's 83rd anniversary with the reassembled brick wall as one of its main exhibits.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: a quiet lawn on Clark St",
+      "text": "The site is a fenced, landscaped side yard of a senior apartment building, with no marker.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Killed",
+      "value": "7",
+      "note": "Six members of Moran's gang and one associate."
+    },
+    {
+      "label": "Convictions",
+      "value": "none",
+      "note": "The case is officially unsolved."
+    },
+    {
+      "label": "Garage demolished",
+      "value": "1967"
+    }
+  ],
+  "sources": [
+    {
+      "title": "St. Valentine's Day Massacre (Encyclopedia of Chicago)",
+      "url": "https://www.encyclopedia.chicagohistory.org/pages/1191.html"
+    },
+    {
+      "title": "See the St. Valentine's Day Massacre of 1929, in Color (History.com)",
+      "url": "https://www.history.com/articles/valentines-day-massacre-capone"
+    },
+    {
+      "title": "St. Valentine's Day Massacre Wall (The Mob Museum)",
+      "url": "https://themobmuseum.org/exhibits/massacre-wall/"
+    },
+    {
+      "title": "What's Left of the Site of the St. Valentine's Day Massacre? (Chicago Detours)",
+      "url": "https://chicagodetours.com/whats-left-site-st-valentines-day-massacre/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Date, address (2122 N. Clark), seven victims, gunmen dressed as police, no one tried, and 1967 demolition confirmed (Encyclopedia of Chicago, History.com, Britannica). Newspaper coverage: History.com and the Inquirer describe the crime-scene photos in local and national papers and the public outrage. Mob Museum opened Feb 14, 2012 with the wall. The site is now a side yard of the CHA's Margaret Day Blake senior apartments (Chicago Detours)."
+  }
+}

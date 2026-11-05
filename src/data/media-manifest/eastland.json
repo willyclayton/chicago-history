@@ -1,0 +1,76 @@
+[
+  {
+    "source": "commons",
+    "ref": "File:SS Eastland.jpg",
+    "year": 1910,
+    "approx": true,
+    "caption": "The excursion steamer Eastland at the dock in better days.",
+    "kind": "place",
+    "note": "Commons; described as taken before the Navy bought the ship in 1917."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2014699553/",
+    "year": 1915,
+    "caption": "The Eastland lies on its side in the Chicago River on July 24, 1915.",
+    "kind": "event",
+    "note": "LOC Bain News Service glass negative, 'EASTLAND overturned in Chicago River, 7/24/15'."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/item/2017658559/",
+    "year": 1915,
+    "caption": "Survivors stand on the upturned hull while small boats crowd in and onlookers line the bank.",
+    "kind": "event",
+    "note": "LOC print, dated July 25 1915."
+  },
+  {
+    "source": "commons",
+    "ref": "File:EastlandKenosha.jpg",
+    "year": 1915,
+    "caption": "The tug Kenosha pulls alongside the overturned hull to take off survivors.",
+    "kind": "event",
+    "note": "Commons; Chicago Daily News photo (LOC/CHM), c. 24 July 1915."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Eastland disaster port side.jpg",
+    "year": 1915,
+    "caption": "Rescuers on the ship's port side as it rests in the river.",
+    "kind": "event",
+    "note": "Commons; details not seen beyond the title."
+  },
+  {
+    "source": "commons",
+    "ref": "File:\"Amazing Photograph of Eastland Disaster\" (Chicago Tribune Jul 25 1915 page 3).jpg",
+    "year": 1915,
+    "caption": "The Chicago Tribune's page of July 25, 1915, with its 'amazing photograph' of the capsized ship.",
+    "kind": "newspaper",
+    "note": "Commons; Chicago Tribune 25 Jul 1915 p. 3, PD-US."
+  },
+  {
+    "source": "loc",
+    "ref": "https://www.loc.gov/resource/cph.3c26620/",
+    "year": 1915,
+    "caption": "The wreck of the Eastland, photographed by a Chicago studio days after the disaster.",
+    "kind": "aftermath",
+    "note": "LOC copy negative; copyright deposit by Kaufmann, Weimer & Fabry Co., July 29 1915."
+  },
+  {
+    "source": "commons",
+    "ref": "File:The SS Eastland Disaster, Chicago River, Chicago, Illinois (9181647188).jpg",
+    "year": 2013,
+    "caption": "The riverbank between Clark and LaSalle where the Eastland rolled over, today.",
+    "kind": "today",
+    "note": "Commons; Ken Lund 2013 series (may show the historical marker)."
+  },
+  {
+    "source": "commons",
+    "ref": "File:Eastland Disaster Plaque.jpg",
+    "year": 2015,
+    "approx": true,
+    "caption": "The marker on the river's edge at Wacker Drive and Clark Street.",
+    "kind": "today",
+    "note": "Commons; date not seen."
+  }
+]

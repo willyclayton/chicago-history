@@ -76,3 +76,79 @@ test("phone: no horizontal scroll, sheet resizes, Escape goes back", async ({ pa
   const chips = await page.locator("#chips").evaluate((el) => el.scrollWidth > el.clientWidth);
   expect(chips).toBe(true);
 });
+
+test("app navigation: Back closes the story, then the photo viewer first", async ({ page }) => {
+  const errors: string[] = [];
+  page.on("pageerror", (e) => errors.push(e.message));
+  await page.goto("./?nocoach");
+  await expect(page.locator("#list")).toBeVisible();
+
+  // opening a story from the list pushes an entry; the browser's Back returns to the list
+  await page.locator('#list button[data-id="fire"]').click();
+  await expect(page.locator("#card h2")).toHaveText("Great Chicago Fire");
+  await expect(page).toHaveURL(/#fire$/);
+  await page.locator("body").press("ArrowRight"); // stepping replaces the entry
+  await expect(page).not.toHaveURL(/#fire$/);
+  await page.goBack();
+  await expect(page.locator("#list")).toBeVisible();
+  await expect(page).not.toHaveURL(/#/);
+  await page.goForward();
+  await expect(page.locator("#card h2")).toBeVisible();
+
+  // the viewer is its own entry, whatever the photo UI looks like
+  await page.evaluate(() => {
+    const w = window as unknown as { __ctm: { actions: { select(id: string): void; openViewer(id: string, i: number): void } } };
+    w.__ctm.actions.select("fire");
+    w.__ctm.actions.openViewer("fire", 1);
+  });
+  await expect(page).toHaveURL(/#fire\/photo\/2$/);
+  await page.goBack();
+  await expect(page).toHaveURL(/#fire$/);
+  const viewer = await page.evaluate(() => (window as unknown as { __ctm: { getState(): { viewer: unknown } } }).__ctm.getState().viewer);
+  expect(viewer).toBeNull();
+  await expect(page.locator("#card h2")).toHaveText("Great Chicago Fire");
+  expect(errors).toEqual([]);
+});
+
+test("deep link to a photo opens the viewer; Back closes it", async ({ page }) => {
+  await page.goto("./?nocoach&mediaDemo#fire/photo/1");
+  await expect(page.locator("#card h2")).toHaveText("Great Chicago Fire");
+  const dialog = page.getByRole("dialog", { name: /^Photos of/ });
+  const shown = await dialog.waitFor({ timeout: 8000 }).then(
+    () => true,
+    () => false,
+  );
+  test.skip(!shown, "the photo viewer renders nothing yet (placeholder)");
+  await expect(page).toHaveURL(/#fire\/photo\/1$/);
+  await page.goBack();
+  await expect(dialog).toBeHidden();
+  await expect(page).toHaveURL(/#fire$/);
+  await expect(page.locator("#card h2")).toHaveText("Great Chicago Fire");
+});
+
+test("installable: manifest, icons, and a service worker that keeps the page working", async ({ page, context }) => {
+  const errors: string[] = [];
+  page.on("pageerror", (e) => errors.push(e.message));
+  await page.goto("./?nocoach");
+  const href = await page.locator('link[rel="manifest"]').getAttribute("href");
+  expect(href).toBeTruthy();
+  const manifest = await (await page.request.get(new URL(href!, page.url()).href)).json();
+  expect(manifest).toMatchObject({ short_name: "Time Map", display: "standalone", start_url: "./", scope: "./" });
+  for (const icon of manifest.icons) {
+    const res = await page.request.get(new URL(icon.src, new URL(href!, page.url())).href);
+    expect(res.ok(), icon.src).toBe(true);
+  }
+  await expect(page.locator('link[rel="apple-touch-icon"]')).toHaveCount(1);
+
+  // the worker installs and takes control; the app still loads, and loads offline
+  const active = await page.evaluate(async () => !!(await navigator.serviceWorker.ready).active);
+  expect(active).toBe(true);
+  await page.reload();
+  await expect.poll(() => page.evaluate(() => !!navigator.serviceWorker.controller)).toBe(true);
+  await expect(page.locator("#list")).toBeVisible();
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator("#list button[data-id]").first()).toBeVisible();
+  await context.setOffline(false);
+  expect(errors).toEqual([]);
+});

@@ -1,0 +1,59 @@
+{
+  "id": "eastland",
+  "moments": [
+    {
+      "year": 1915,
+      "date": "July 24, 1915, morning",
+      "title": "Boarding for the company picnic",
+      "text": "Western Electric had chartered the Eastland and other boats to take workers and their families from the Clark St dock to a picnic in Michigan City, Indiana. Boarding stopped at the ship's limit of 2,500 passengers.",
+      "kind": "event"
+    },
+    {
+      "year": 1915,
+      "date": "July 24, 1915, about 7:30 a.m.",
+      "title": "The Eastland rolls over at the dock",
+      "text": "The overloaded steamer listed and then rolled onto its port side into about 20 feet of water, trapping hundreds below deck. 844 passengers and crew died, only feet from the riverbank.",
+      "kind": "event"
+    },
+    {
+      "year": 1915,
+      "date": "Aug 14, 1915",
+      "title": "The ship is raised",
+      "text": "Salvage crews raised the Eastland from the river bottom about three weeks after the disaster. It was sold at auction that December.",
+      "kind": "changed"
+    },
+    {
+      "year": 1918,
+      "title": "Reborn as the USS Wilmette",
+      "text": "The Navy converted the ship into a gunboat called the USS Wilmette and used it to train sailors on Lake Michigan through World War II.",
+      "kind": "changed"
+    },
+    {
+      "year": 1947,
+      "title": "Scrapped",
+      "text": "After the Navy decommissioned it in 1945, the old Eastland was sold for scrap in 1946 and broken up by 1947.",
+      "kind": "demolished"
+    },
+    {
+      "year": 2026,
+      "title": "Today: a marker on the Riverwalk",
+      "text": "A historical marker near the Clark St bridge recalls the city's deadliest disaster, and the Eastland Disaster Historical Society holds commemorations each July.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    { "label": "Deaths", "value": "844 passengers and crew", "note": "Britannica says at least 844 lives were lost." },
+    { "label": "Passengers aboard", "value": "about 2,500 (estimated)", "note": "The ship's limit; some accounts say more were aboard." },
+    { "label": "Distance from shore", "value": "a few feet", "note": "The ship rolled over while still at the dock." }
+  ],
+  "sources": [
+    { "title": "Eastland disaster (Britannica)", "url": "https://www.britannica.com/event/Eastland-disaster" },
+    { "title": "Location (Eastland Disaster Historical Society)", "url": "https://eastlanddisaster.org/history/location" },
+    { "title": "Eastland Disaster (WTTW Chicago Time Machine)", "url": "https://www.wttw.com/timemachine/eastland-disaster" },
+    { "title": "SS Eastland (Wikipedia)", "url": "https://en.wikipedia.org/wiki/SS_Eastland" }
+  ],
+  "checked": {
+    "date": "2026-11-04",
+    "notes": "Date, Western Electric charter, Clark St dock (south bank between Clark and LaSalle) and 844 deaths confirmed (Britannica, Eastland Disaster Historical Society, WTTW). Britannica gives the roll at about 7:30 a.m. after boarding stopped at 2,500. The story now says the ship rolled over 'at the dock' rather than 'tied to the dock', since some lines were being cast off. Raised Aug 14, 1915; Navy service as USS Wilmette from 1918; scrapped 1946 to 1947 (Wikipedia; one source says 1948). The date the Riverwalk marker was placed was not confirmed."
+  }
+}
