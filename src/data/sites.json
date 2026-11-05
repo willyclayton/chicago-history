@@ -11,7 +11,20 @@
     "address": "North bank at the river mouth, near 401 N. Michigan Ave",
     "story": "Jean Baptiste Point du Sable, a Black trader of likely Haitian and French descent, built a farm and trading post on the north bank of the river in the 1780s. He is counted as Chicago's first permanent non-Native settler. He and his Potawatomi wife, Kitihawa, ran the post until he sold it in 1800.",
     "today": "Pioneer Court, beside the DuSable Bridge",
-    "sources": []
+    "sources": [
+      {
+        "title": "Jean Baptiste Point Du Sable Homesite (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Jean_Baptiste_Point_Du_Sable_Homesite"
+      },
+      {
+        "title": "DuSable, Jean Baptiste Point (1745-1818) (BlackPast)",
+        "url": "https://new.blackpast.org/african-american-history/dusable-jean-baptiste-point-1745-1818"
+      },
+      {
+        "title": "Jean Baptiste Point du Sable (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Jean_Baptiste_Point_du_Sable"
+      }
+    ]
   },
   {
     "id": "fortdearborn",
@@ -53,7 +66,20 @@
     "address": "Where the North and South Branches meet",
     "story": "In the late 1820s and early 1830s, the land where the river's branches meet held Chicago's first taverns and store and some of its first church services. Chicago was incorporated as a town in 1833 with a few hundred residents, then as a city in 1837.",
     "today": "Wolf Point towers and the Riverwalk",
-    "sources": []
+    "sources": [
+      {
+        "title": "Wolf Point, Chicago (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Wolf_Point,_Chicago"
+      },
+      {
+        "title": "History in River North (Domu)",
+        "url": "https://www.domu.com/chicago/neighborhoods/river-north/history-in-river-north?page=1"
+      },
+      {
+        "title": "Timeline of Chicago history (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Timeline_of_Chicago_history"
+      }
+    ]
   },
   {
     "id": "cemetery",
@@ -67,7 +93,20 @@
     "address": "Lakefront north of North Ave",
     "story": "The city buried its dead on the lakefront north of town starting in 1843. Fear that graves this close to the lake were spreading disease led the city to move burials away in the 1860s and turn the land into Lincoln Park. Not every grave was moved, and remains still turn up during construction.",
     "today": "The 1858 Couch family tomb, behind the Chicago History Museum",
-    "sources": []
+    "sources": [
+      {
+        "title": "Hidden Truths: The Chicago City Cemetery and Lincoln Park (Northwestern University)",
+        "url": "https://hiddentruths.northwestern.edu/factors.html"
+      },
+      {
+        "title": "Lincoln Park (Encyclopedia of Chicago)",
+        "url": "https://encyclopedia.chicagohistory.org/pages/955.html"
+      },
+      {
+        "title": "What's That Building? The Couch Tomb in Chicago's Lincoln Park (WBEZ)",
+        "url": "https://wbez.org/morning-shift/2018/10/25/whats-that-building-the-couch-tomb-in-chicagos-lincoln-park"
+      }
+    ]
   },
   {
     "id": "canal",
@@ -78,24 +117,50 @@
     "category": "growth",
     "lat": 41.8435,
     "lng": -87.665,
-    "address": "South Branch at Bridgeport (approximate)",
-    "story": "The 96-mile canal ran from the South Branch at Bridgeport to the Illinois River, linking the Great Lakes to the Mississippi. It made Chicago the country's shipping hub, and many of the Irish laborers who dug it settled in Bridgeport.",
-    "today": "Canal Origins Park area in Bridgeport",
-    "sources": []
+    "address": "Canal Origins Park, 2701 S. Ashland Ave, Bridgeport",
+    "story": "The 96-mile canal ran from the South Branch at Bridgeport to the Illinois River at LaSalle, linking the Great Lakes to the Mississippi. It helped turn Chicago into a boomtown, and many of the Irish laborers who dug it settled in Bridgeport. It carried little cargo after a larger canal opened in 1900 and closed in 1933.",
+    "today": "Canal Origins Park in Bridgeport",
+    "sources": [
+      {
+        "title": "Illinois and Michigan Canal (Encyclopedia of Chicago)",
+        "url": "https://encyclopedia.chicagohistory.org/pages/626.html"
+      },
+      {
+        "title": "Canal Origins Park (Chicago Park District)",
+        "url": "https://www.chicagoparkdistrict.com/parks-facilities/canal-origins-park"
+      },
+      {
+        "title": "Illinois and Michigan Canal Origin site (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1332"
+      }
+    ]
   },
   {
     "id": "stpats",
     "year": 1856,
-    "date": "1856",
+    "date": "Dec 25, 1856",
     "title": "Old St. Patrick's Church",
     "short": "Old St. Pat's",
     "category": "building",
     "lat": 41.879,
     "lng": -87.6445,
     "address": "700 W. Adams St",
-    "story": "Built by Irish immigrants and dedicated in 1856, the church sat just west of the path of the 1871 fire and came through untouched. It is often called the oldest public building in the city.",
+    "story": "Founded by Irish immigrants in 1846, the parish dedicated its church on Christmas Day 1856. The 1871 fire passed about two blocks away, and the church came through untouched. It is often called the oldest public building in the city.",
     "today": "Still an active parish, known for its block party",
-    "sources": []
+    "sources": [
+      {
+        "title": "History (Old St. Patrick's Church)",
+        "url": "https://www.oldstpats.org/history/"
+      },
+      {
+        "title": "Old St. Patrick's Church (Clio)",
+        "url": "https://theclio.com/entry/33847"
+      },
+      {
+        "title": "Architecture in Chicago: Surviving Structures (University of Illinois Library)",
+        "url": "https://omeka-s.library.illinois.edu/s/idhh/page/architecture-in-chicago-surviving-structures"
+      }
+    ]
   },
   {
     "id": "graceland",
@@ -109,7 +174,20 @@
     "address": "4001 N. Clark St",
     "story": "A rural garden cemetery when it opened, Graceland became the resting place of the people who built Chicago: Daniel Burnham, Louis Sullivan, Mies van der Rohe, Potter and Bertha Palmer, detective Allan Pinkerton and boxer Jack Johnson.",
     "today": "Open to visitors; Lorado Taft's Eternal Silence statue is a landmark",
-    "sources": []
+    "sources": [
+      {
+        "title": "Graceland Cemetery (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Graceland_Cemetery"
+      },
+      {
+        "title": "Graceland Cemetery (The Cultural Landscape Foundation)",
+        "url": "https://tclf.org/graceland-cemetery-il"
+      },
+      {
+        "title": "Graceland Cemetery (Chicago Architecture Center)",
+        "url": "https://www.architecture.org/online-resources/buildings-of-chicago/graceland-cemetery"
+      }
+    ]
   },
   {
     "id": "wigwam",
@@ -343,7 +421,20 @@
     "address": "1800 S. Prairie Ave",
     "story": "H.H. Richardson designed this fortress-like granite home on Prairie Avenue, the city's millionaires' row, where Marshall Field and George Pullman also lived. Its plain street wall and sunny inner courtyard broke with Victorian fashion.",
     "today": "Glessner House museum",
-    "sources": []
+    "sources": [
+      {
+        "title": "The Glessner House Museum and Prairie Avenue Historic District (National Park Service)",
+        "url": "https://www.nps.gov/places/the-glessner-house-museum-and-prairie-avenue-historic-district.htm"
+      },
+      {
+        "title": "Glessner House (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1315"
+      },
+      {
+        "title": "John J. Glessner House (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/John_J._Glessner_House"
+      }
+    ]
   },
   {
     "id": "auditorium",
@@ -574,9 +665,22 @@
     "lat": 41.969,
     "lng": -87.6597,
     "address": "4802 N. Broadway",
-    "story": "The Uptown bar opened in 1907. In the Prohibition years, Capone gunman \"Machine Gun\" Jack McGurn had a stake in it. In 1986 it became home to Marc Smith's Uptown Poetry Slam, which spread the poetry slam around the world.",
+    "story": "The Uptown bar is usually dated to 1907, when it was Pop Morse's Roadhouse. During Prohibition, Capone gunman \"Machine Gun\" Jack McGurn is said to have had a stake in it. In 1986 it became home to Marc Smith's Uptown Poetry Slam, which spread the poetry slam around the world.",
     "today": "Still a jazz club, and the slam still runs on Sunday nights",
-    "sources": []
+    "sources": [
+      {
+        "title": "Green Mill Cocktail Lounge (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Green_Mill_Cocktail_Lounge"
+      },
+      {
+        "title": "The Green Mill in Chicago (National Trust for Historic Preservation)",
+        "url": "https://savingplaces.org/stories/the-green-mill-in-chicago"
+      },
+      {
+        "title": "The Green Mill (Chicago Literary Hall of Fame)",
+        "url": "https://chicagoliteraryhof.org/literary_chicago_map/landmark/the-green-mill"
+      }
+    ]
   },
   {
     "id": "conservatory",
@@ -931,7 +1035,20 @@
     "address": "1300 S. DuSable Lake Shore Dr",
     "story": "Max Adler, a Sears executive, gave the city the first planetarium in the Western Hemisphere. It sits at the tip of fill built for the lakefront, with one of the best skyline views in town.",
     "today": "Adler Planetarium",
-    "sources": []
+    "sources": [
+      {
+        "title": "Adler Planetarium (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Adler_Planetarium"
+      },
+      {
+        "title": "Adler Planetarium (Encyclopedia of Chicago)",
+        "url": "https://encyclopedia.chicagohistory.org/pages/23.html"
+      },
+      {
+        "title": "May 12, 1930: Adler Planetarium opens (Astronomy)",
+        "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/may-12-1930-adler-planetarium-opens/"
+      }
+    ]
   },
   {
     "id": "mart",
@@ -1000,7 +1117,20 @@
     "address": "2433 N. Lincoln Ave",
     "story": "FBI agents shot bank robber John Dillinger, then \"Public Enemy No. 1,\" in the alley beside the Biograph after he walked out of a movie. One of the two women with him had tipped off the agents.",
     "today": "The Biograph Theater building still stands",
-    "sources": []
+    "sources": [
+      {
+        "title": "Biograph Theater (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1251"
+      },
+      {
+        "title": "Dillinger gunned down (HISTORY)",
+        "url": "https://www.history.com/this-day-in-history/july-22/dillinger-gunned-down"
+      },
+      {
+        "title": "Year of the Gangster, Part 3 (FBI)",
+        "url": "https://www.fbi.gov/news/stories/2009/july/dillinger_072209"
+      }
+    ]
   },
   {
     "id": "pile1",
@@ -1041,7 +1171,20 @@
     "address": "Roberts Temple Church of God in Christ, 4021 S. State St",
     "story": "Emmett Till, a 14-year-old from Chicago, was murdered while visiting family in Mississippi. His mother, Mamie Till-Mobley, insisted on an open casket so the world could see what was done to him. Tens of thousands came, and photos in Jet magazine helped spark the civil rights movement.",
     "today": "Roberts Temple, part of a national monument since 2023",
-    "sources": []
+    "sources": [
+      {
+        "title": "How Emmett Till's Open-Casket Funeral Reignited the Civil Rights Movement (Smithsonian)",
+        "url": "https://www.smithsonianmag.com/smithsonian-institution/emmett-tills-open-casket-funeral-reignited-the-civil-rights-movement-180956483/"
+      },
+      {
+        "title": "Emmett Till and Mamie Till-Mobley National Monument (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Emmett_Till_and_Mamie_Till-Mobley_National_Monument"
+      },
+      {
+        "title": "Roberts Temple Church of God in Christ (Emmett Till Memory Project)",
+        "url": "https://tillapp.emmett-till.org/items/show/20"
+      }
+    ]
   },
   {
     "id": "chess",
@@ -1273,7 +1416,20 @@
     "address": "Old Comiskey Park, 35th St and Shields Ave",
     "story": "Between games of a White Sox doubleheader, radio DJ Steve Dahl blew up a crate of disco records in center field. Thousands of fans stormed the field, and the Sox had to forfeit the second game.",
     "today": "A parking lot north of today's ballpark, with old home plate marked",
-    "sources": []
+    "sources": [
+      {
+        "title": "The night exploding albums caused a team to forfeit (MLB.com)",
+        "url": "https://www.mlb.com/news/disco-demolition-night-chicago-comiskey-park"
+      },
+      {
+        "title": "Disco is dealt death blow by fans of the Chicago White Sox (HISTORY)",
+        "url": "https://www.history.com/this-day-in-history/disco-is-dealt-death-blow-by-fans-of-the-chicago-white-sox"
+      },
+      {
+        "title": "Disco Demolition Night (Baseball-Reference Bullpen)",
+        "url": "https://www.baseball-reference.com/bullpen/Disco_Demolition_Night"
+      }
+    ]
   },
   {
     "id": "harpo",
@@ -1299,9 +1455,22 @@
     "lat": 41.8892,
     "lng": -87.6388,
     "address": "Kinzie St bridge over the North Branch",
-    "story": "Pilings driven near the bridge had cracked a forgotten 1900s freight tunnel under the river. River water poured into the tunnel network and flooded Loop basements, shutting down much of downtown for days. Damage was estimated in the billions.",
-    "today": "The Kinzie St bridge; the tunnels are sealed",
-    "sources": []
+    "story": "Pilings driven near the Kinzie St bridge had cracked a little-used freight tunnel under the river. An estimated 250 million gallons of river water poured into the tunnel network and flooded Loop basements, shutting down much of downtown for days. Damage and lost business were estimated at about $1.9 billion.",
+    "today": "The Kinzie St bridge over the North Branch",
+    "sources": [
+      {
+        "title": "25 Years Ago Today: Great Chicago Flood Paralyzes The Loop (CBS Chicago)",
+        "url": "https://www.cbsnews.com/amp/chicago/news/25-years-ago-today-great-chicago-flood-paralyzes-the-loop"
+      },
+      {
+        "title": "Chicago flood (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chicago_flood"
+      },
+      {
+        "title": "The Great Loop Flood (WBEZ)",
+        "url": "https://www.wbez.org/stories/the-great-loop-flood/65a8c36e-946c-45f0-b8d6-a0b2388bd220"
+      }
+    ]
   },
   {
     "id": "paseo",

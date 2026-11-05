@@ -1,0 +1,76 @@
+{
+  "id": "greenmill",
+  "moments": [
+    {
+      "year": 1907,
+      "title": "Pop Morse's Roadhouse",
+      "text": "The bar at 4802 N. Broadway is usually dated to 1907, when it was Pop Morse's Roadhouse, serving visitors to nearby Graceland and St. Boniface cemeteries. City records suggest a saloon may have opened there as early as 1898.",
+      "kind": "built"
+    },
+    {
+      "year": 1920,
+      "title": "Prohibition and the McGurn connection",
+      "text": "Renamed Green Mill Gardens, the club kept serving liquor during Prohibition. Capone gunman \"Machine Gun\" Jack McGurn is said to have owned a stake in it in the 1920s.",
+      "kind": "event"
+    },
+    {
+      "year": 1986,
+      "title": "New owner, new life",
+      "text": "After a slump in the 1970s, Dave Jemilo bought the Green Mill from the Brend family, who had run it since 1960 and revived it.",
+      "kind": "changed"
+    },
+    {
+      "year": 1986,
+      "date": "July 1986",
+      "title": "The Uptown Poetry Slam",
+      "text": "Poet Marc Smith started a competitive poetry night on the club's slow Sundays. The format spread around the world; some accounts say the slam began at another bar and moved here in 1987.",
+      "kind": "event"
+    },
+    {
+      "year": 2025,
+      "date": "June 2025",
+      "title": "Building put up for sale",
+      "text": "Jemilo, who bought the building and neighboring storefronts in 2021, listed them for sale; the Sun-Times reported the club would keep operating.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Green Mill",
+      "text": "The Green Mill is still a jazz club, and the Uptown Poetry Slam still runs on Sunday nights.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "1907 (traditional date)",
+      "note": "City records point to a saloon on the site by 1898."
+    },
+    {
+      "label": "Poetry slam began",
+      "value": "1986"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Green Mill Cocktail Lounge (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Green_Mill_Cocktail_Lounge"
+    },
+    {
+      "title": "The Green Mill in Chicago (National Trust for Historic Preservation)",
+      "url": "https://savingplaces.org/stories/the-green-mill-in-chicago"
+    },
+    {
+      "title": "The Green Mill (Chicago Literary Hall of Fame)",
+      "url": "https://chicagoliteraryhof.org/literary_chicago_map/landmark/the-green-mill"
+    },
+    {
+      "title": "Green Mill building for sale in Uptown (Chicago Sun-Times)",
+      "url": "https://chicago.suntimes.com/news/2025/06/05/green-mill-building-sale-uptown"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "1907 Pop Morse's Roadhouse is the usual date; Wikipedia notes city records suggest 1898, so the year stays 1907 but is flagged. McGurn's stake is reported as alleged by some sources, so the story now says 'is said to have'. Jemilo bought it in 1986; slam began 1986 (one source says it moved here in 1987). Building listed for sale June 2025 (Sun-Times); outcome not confirmed. The 1920 moment year marks the Prohibition era generally, not a dated event."
+  }
+}

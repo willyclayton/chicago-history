@@ -1,0 +1,70 @@
+{
+  "id": "flood",
+  "moments": [
+    {
+      "year": 1900,
+      "title": "Tunnels under the Loop",
+      "text": "Around the turn of the 20th century, crews dug a network of narrow tunnels under downtown streets for a telephone system that was never finished. The tunnels were later used to haul freight, then sat little used.",
+      "kind": "built"
+    },
+    {
+      "year": 1992,
+      "date": "Apr 13, 1992",
+      "title": "The Loop floods from below",
+      "text": "Great Lakes Dredge and Dock had driven new wooden pilings around the Kinzie St bridge, and the added soil pressure cracked the wall of a freight tunnel beneath the river. River water poured through the breach, flooding basements across the Loop with an estimated 250 million gallons; power was cut, and most downtown businesses stayed closed for about three days, some for weeks.",
+      "kind": "event"
+    },
+    {
+      "year": 1992,
+      "date": "Apr 14, 1992",
+      "title": "The city had been warned",
+      "text": "A city memo that had urged immediate repairs to the leaking tunnel came to light the day after the flood.",
+      "kind": "event"
+    },
+    {
+      "year": 1995,
+      "title": "A case for the Supreme Court",
+      "text": "The fight over who was to blame reached the U.S. Supreme Court as Jerome B. Grubart, Inc. v. Great Lakes Dredge & Dock Co. The contractor settled most of the business lawsuits in 1996 for an undisclosed sum.",
+      "kind": "event"
+    },
+    {
+      "year": 2026,
+      "title": "Today: the Kinzie St bridge",
+      "text": "The Kinzie St bridge still crosses the North Branch where the tunnel was breached.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Water",
+      "value": "about 250 million gallons (estimated)"
+    },
+    {
+      "label": "Cost",
+      "value": "about $1.9 billion (estimated)",
+      "note": "Sources give about $1.9 billion to $2 billion in damage and lost business; WBEZ cites hundreds of millions in building damage."
+    }
+  ],
+  "sources": [
+    {
+      "title": "25 Years Ago Today: Great Chicago Flood Paralyzes The Loop (CBS Chicago)",
+      "url": "https://www.cbsnews.com/amp/chicago/news/25-years-ago-today-great-chicago-flood-paralyzes-the-loop"
+    },
+    {
+      "title": "Chicago flood (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chicago_flood"
+    },
+    {
+      "title": "The Great Loop Flood (WBEZ)",
+      "url": "https://www.wbez.org/stories/the-great-loop-flood/65a8c36e-946c-45f0-b8d6-a0b2388bd220"
+    },
+    {
+      "title": "Memo urged immediate tunnel repairs (UPI)",
+      "url": "https://www.upi.com/Archives/1992/04/14/Memo-urged-immediate-tunnel-repairs/1286703224000/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Date, Kinzie St pilings by Great Lakes Dredge and Dock, about 250 million gallons, and about three days of Loop closures confirmed (CBS, Wikipedia, ABC7). Damage estimates run about $1.9 to $2 billion (WBEZ cites hundreds of millions in building damage alone); the story now says 'estimated at about $1.9 billion'. 'Forgotten' tunnel changed to 'little-used', since a city memo shows officials knew of the leak (UPI, Apr 14, 1992). Tunnels dated only to around the turn of the century, so the 1900 moment year is approximate. Supreme Court case 513 U.S. 527 (1995) and the 1996 settlement per Wikipedia. The old 'today' claim that the tunnels are sealed was not confirmed and was dropped."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "id": "disco",
+  "moments": [
+    {
+      "year": 1910,
+      "date": "July 1, 1910",
+      "title": "Comiskey Park opens",
+      "text": "The White Sox moved into their new ballpark at 35th St and Shields Ave, their home for the next 80 years.",
+      "kind": "built"
+    },
+    {
+      "year": 1979,
+      "date": "July 12, 1979",
+      "title": "98 cents and a disco record",
+      "text": "For a White Sox and Tigers doubleheader, fans who brought a disco record got in for 98 cents. Tens of thousands filled the park, and an estimated 20,000 more were left outside.",
+      "kind": "event"
+    },
+    {
+      "year": 1979,
+      "date": "July 12, 1979",
+      "title": "The records blow up, the fans pour in",
+      "text": "Between games, WLUP disc jockey Steve Dahl blew up a crate of records in center field. An estimated 7,000 fans stormed the field; at least nine people were hurt and 39 were arrested.",
+      "kind": "event"
+    },
+    {
+      "year": 1979,
+      "date": "July 13, 1979",
+      "title": "The Sox forfeit",
+      "text": "American League president Lee MacPhail ruled the unplayed second game a forfeit win for Detroit.",
+      "kind": "event"
+    },
+    {
+      "year": 1991,
+      "title": "Old Comiskey comes down",
+      "text": "After the White Sox moved into a new ballpark across 35th St, the old park was torn down and its site paved for parking.",
+      "kind": "demolished"
+    },
+    {
+      "year": 2026,
+      "title": "Today: home plate in a parking lot",
+      "text": "A plaque in the parking lot north of Rate Field marks old Comiskey's home plate, inscribed \"Comiskey Park 1910-1990.\"",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Crowd",
+      "value": "about 50,000 inside (estimated)",
+      "note": "Estimates range up to almost 60,000, with about 20,000 more outside."
+    },
+    {
+      "label": "On the field",
+      "value": "about 7,000 (estimated)"
+    },
+    {
+      "label": "Arrests",
+      "value": "39",
+      "note": "At least nine injuries were reported."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The night exploding albums caused a team to forfeit (MLB.com)",
+      "url": "https://www.mlb.com/news/disco-demolition-night-chicago-comiskey-park"
+    },
+    {
+      "title": "Disco is dealt death blow by fans of the Chicago White Sox (HISTORY)",
+      "url": "https://www.history.com/this-day-in-history/disco-is-dealt-death-blow-by-fans-of-the-chicago-white-sox"
+    },
+    {
+      "title": "Disco Demolition Night (Baseball-Reference Bullpen)",
+      "url": "https://www.baseball-reference.com/bullpen/Disco_Demolition_Night"
+    },
+    {
+      "title": "Old Comiskey Park home plate marker (Baseball Pilgrimages)",
+      "url": "https://baseballpilgrimages.com/markers/comiskeypark.html"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Date, 98-cent admission, Dahl, and the forfeit ruled by Lee MacPhail the next day confirmed (MLB.com, HISTORY, Baseball-Reference). Crowd figures vary (50,000 to almost 60,000 inside); about 7,000 on the field per WGN; at least nine injured and 39 arrests per HISTORY. Comiskey opened July 1, 1910 and was demolished in 1991; home plate plaque in the lot north of Rate Field (HMdb, Baseball Pilgrimages). Story confirmed; no changes."
+  }
+}

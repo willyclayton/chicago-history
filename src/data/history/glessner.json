@@ -1,0 +1,73 @@
+{
+  "id": "glessner",
+  "moments": [
+    {
+      "year": 1887,
+      "title": "Richardson's house for the Glessners",
+      "text": "Architect H.H. Richardson designed the granite house for John J. Glessner, an executive with the International Harvester Company, and it was finished late in 1887. It is Richardson's only surviving building in Chicago.",
+      "kind": "built"
+    },
+    {
+      "year": 1887,
+      "title": "\"Like a prison\"",
+      "text": "With walls set nearly at the property line and few windows facing the street, the house turned its back on Prairie Avenue and opened onto a private courtyard. Neighbors, among them George Pullman, disliked the rough stone, and some likened it to a prison.",
+      "kind": "event"
+    },
+    {
+      "year": 1922,
+      "title": "Millionaires' row fades",
+      "text": "Many of Prairie Avenue's Gilded Age mansions were later torn down; George Pullman's was razed in 1922 after his widow's death.",
+      "kind": "changed"
+    },
+    {
+      "year": 1966,
+      "title": "Saved from demolition",
+      "text": "Preservationists saved the house from demolition, an effort that also created the group now called the Chicago Architecture Center.",
+      "kind": "event"
+    },
+    {
+      "year": 1970,
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated the house a landmark, and it opened for tours in 1971.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Glessner House museum",
+      "text": "An independent nonprofit formed in 1994 runs the house as a museum in the Prairie Avenue Historic District.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Completed",
+      "value": "1887"
+    },
+    {
+      "label": "Architect",
+      "value": "H.H. Richardson"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Glessner House Museum and Prairie Avenue Historic District (National Park Service)",
+      "url": "https://www.nps.gov/places/the-glessner-house-museum-and-prairie-avenue-historic-district.htm"
+    },
+    {
+      "title": "Glessner House (Chicago Landmarks)",
+      "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1315"
+    },
+    {
+      "title": "John J. Glessner House (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/John_J._Glessner_House"
+    },
+    {
+      "title": "Glessner House (Open House Chicago)",
+      "url": "https://openhousechicago.org/sites/rec3SrkWjyQoNiWzg"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Address, Richardson, completion in late 1887 and Glessner's role at International Harvester confirmed (Wikipedia). Marshall Field and George Pullman as Prairie Avenue neighbors, Pullman's mansion razed 1922, Chicago Landmark 1970, tours from 1971 (NPS). Saved in 1966 with the founding of what is now the Chicago Architecture Center (Open House Chicago). Museum nonprofit formed 1994. National Historic Landmark date not confirmed. Story confirmed; no changes; year kept at 1887."
+  }
+}

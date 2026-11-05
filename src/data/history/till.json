@@ -1,0 +1,78 @@
+{
+  "id": "till",
+  "moments": [
+    {
+      "year": 1955,
+      "title": "A Chicago boy killed in Mississippi",
+      "text": "In August 1955, 14-year-old Emmett Till of Chicago was murdered while visiting relatives in Mississippi, and his body was sent home to his mother.",
+      "kind": "event"
+    },
+    {
+      "year": 1955,
+      "date": "Sept 1955",
+      "title": "\"Let the people see what they did to my boy\"",
+      "text": "Mamie Till-Mobley insisted on an open casket at Roberts Temple Church of God in Christ in Bronzeville. Over several days of viewing and the funeral, an estimated 50,000 or more people filed past or crowded State St outside.",
+      "kind": "event"
+    },
+    {
+      "year": 1955,
+      "date": "Sept 15, 1955",
+      "title": "The photos in Jet",
+      "text": "Jet magazine published photographs of Till in his casket. The images are widely credited with helping spark the civil rights movement.",
+      "kind": "event"
+    },
+    {
+      "year": 2006,
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated Roberts Temple a landmark, with support from preservation groups.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2023,
+      "date": "July 25, 2023",
+      "title": "Part of a national monument",
+      "text": "On what would have been Till's 82nd birthday, President Biden established the Emmett Till and Mamie Till-Mobley National Monument, with Roberts Temple as its Chicago site and two sites in Mississippi.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Roberts Temple",
+      "text": "The church on State St in Bronzeville is the Chicago site of the national monument.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Mourners",
+      "value": "about 50,000 or more (estimated)",
+      "note": "Estimates run from about 50,000 to 100,000 across the visitation and funeral."
+    },
+    {
+      "label": "National monument",
+      "value": "July 25, 2023",
+      "note": "Three sites in Illinois and Mississippi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "How Emmett Till's Open-Casket Funeral Reignited the Civil Rights Movement (Smithsonian)",
+      "url": "https://www.smithsonianmag.com/smithsonian-institution/emmett-tills-open-casket-funeral-reignited-the-civil-rights-movement-180956483/"
+    },
+    {
+      "title": "Emmett Till and Mamie Till-Mobley National Monument (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emmett_Till_and_Mamie_Till-Mobley_National_Monument"
+    },
+    {
+      "title": "Roberts Temple Church of God in Christ (Emmett Till Memory Project)",
+      "url": "https://tillapp.emmett-till.org/items/show/20"
+    },
+    {
+      "title": "President Biden signs proclamation for Emmett Till National Monument (ABC7 Chicago)",
+      "url": "https://abc7chicago.com/emmett-till-monument-death-house-mamie/13544957/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Open-casket funeral at Roberts Temple confirmed (Smithsonian, Emmett Till Memory Project). Sources give Sept 3, 4 or 3 to 6, 1955, so the date stays 'Sept 1955'. Crowd estimates run 50,000 to 100,000; the story's 'tens of thousands' stays. Jet published the casket photos Sept 15, 1955. Chicago Landmark 2006 (Landmarks Illinois, Preservation Chicago). National monument proclaimed July 25, 2023 (Wikipedia, ABC7). Story confirmed; no changes."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "adler",
+  "moments": [
+    {
+      "year": 1928,
+      "title": "A gift from a Sears executive",
+      "text": "Max Adler, a retired Sears vice president, offered $500,000 to build a planetarium after seeing the new Zeiss projectors in Germany. His cousin, architect Ernest Grunsfeld Jr., designed the building.",
+      "kind": "event"
+    },
+    {
+      "year": 1930,
+      "date": "May 12, 1930",
+      "title": "First planetarium in the Western Hemisphere",
+      "text": "The Adler Planetarium and Astronomical Museum opened on Adler's birthday, on Northerly Island, part of the new lakefront fill. Its Zeiss II projector was the only imported item in the building.",
+      "kind": "built"
+    },
+    {
+      "year": 1931,
+      "title": "A gold medal for the design",
+      "text": "The Chicago chapter of the American Institute of Architects gave Grunsfeld a gold medal for the building.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 1970,
+      "title": "The original projector retires",
+      "text": "The first Zeiss projector was replaced with a newer Zeiss Mark VI and shipped to Jackson, Mississippi.",
+      "kind": "changed"
+    },
+    {
+      "year": 1987,
+      "date": "Feb 27, 1987",
+      "title": "Listed on the National Register",
+      "text": "The planetarium was added to the National Register of Historic Places.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Adler Planetarium",
+      "text": "The Adler is still a planetarium and astronomy museum at the lakefront end of the Museum Campus, with a wide view of the skyline.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "May 12, 1930"
+    },
+    {
+      "label": "Adler's gift",
+      "value": "$500,000",
+      "note": "Offered in 1928."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adler Planetarium (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Adler_Planetarium"
+    },
+    {
+      "title": "Adler Planetarium (Encyclopedia of Chicago)",
+      "url": "https://encyclopedia.chicagohistory.org/pages/23.html"
+    },
+    {
+      "title": "May 12, 1930: Adler Planetarium opens (Astronomy)",
+      "url": "https://www.astronomy.com/today-in-the-history-of-astronomy/may-12-1930-adler-planetarium-opens/"
+    },
+    {
+      "title": "America's first planetarium projector (Adler Planetarium)",
+      "url": "https://www.adlerplanetarium.org/blog/americas-first-planetarium-projector-history/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Opened to the public May 12, 1930 (dedicated May 11 per one source); Max Adler a retired Sears vice president; $500,000 offered 1928; architect Ernest Grunsfeld Jr. won the AIA Chicago gold medal in 1931 (Wikipedia, Astronomy). Zeiss II replaced by Mark VI in 1970 (Adler blog). NRHP Feb 27, 1987; National Historic Landmark status was not confirmed in the sources found. Story confirmed; no changes."
+  }
+}

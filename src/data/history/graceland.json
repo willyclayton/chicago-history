@@ -1,0 +1,68 @@
+{
+  "id": "graceland",
+  "moments": [
+    {
+      "year": 1860,
+      "title": "A garden cemetery north of the city",
+      "text": "Businessman Thomas Barbour Bryan founded Graceland at what is now 4001 N. Clark St, with a layout by Swain Nelson. His partners included William Butler Ogden.",
+      "kind": "built"
+    },
+    {
+      "year": 1870,
+      "title": "Redesigned as a landscape",
+      "text": "Horace Cleveland redesigned the grounds, and landscape architect Ossian Cole Simonds later shaped them. Many of the graves moved from the old lakefront City Cemetery were reburied here and at other new cemeteries.",
+      "kind": "changed"
+    },
+    {
+      "year": 1912,
+      "title": "Burnham's island",
+      "text": "Architect and planner Daniel Burnham was buried with his family on a small island in Lake Willowmere. Louis Sullivan, Mies van der Rohe, Potter and Bertha Palmer and Allan Pinkerton are also buried here.",
+      "kind": "event"
+    },
+    {
+      "year": 1946,
+      "title": "Jack Johnson laid to rest",
+      "text": "Boxer Jack Johnson died in a car crash in June 1946 and was buried beside his first wife, Etta.",
+      "kind": "event"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Graceland Cemetery",
+      "text": "The cemetery, about 120 acres, is open to visitors. Lorado Taft's hooded bronze Eternal Silence, made for the Graves family plot, is its best-known monument.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Founded",
+      "value": "1860"
+    },
+    {
+      "label": "Size",
+      "value": "about 120 acres",
+      "note": "Sources give 119 or 121 acres."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Graceland Cemetery (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Graceland_Cemetery"
+    },
+    {
+      "title": "Graceland Cemetery (The Cultural Landscape Foundation)",
+      "url": "https://tclf.org/graceland-cemetery-il"
+    },
+    {
+      "title": "Graceland Cemetery (Chicago Architecture Center)",
+      "url": "https://www.architecture.org/online-resources/buildings-of-chicago/graceland-cemetery"
+    },
+    {
+      "title": "Jack Johnson's niece visits grave after posthumous pardon (Illinois Public Media)",
+      "url": "https://will.illinois.edu/news/story/jack-johnsons-niece-visits-grave-after-posthumous-pardon"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Founded 1860 by Thomas Barbour Bryan, Swain Nelson layout, Cleveland redesign 1870, Simonds landscape (Wikipedia). Burials of Sullivan, Mies, the Palmers and Pinkerton (Wikipedia); Burnham on Willowmere island in 1912 (graveyards.com, TCLF); Jack Johnson buried beside Etta after his June 1946 death (AP via Illinois Public Media). Eternal Silence by Taft for the Graves plot (Wikipedia); its date was not confirmed. Story confirmed; no changes."
+  }
+}

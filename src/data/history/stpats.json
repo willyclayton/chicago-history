@@ -1,0 +1,78 @@
+{
+  "id": "stpats",
+  "moments": [
+    {
+      "year": 1846,
+      "title": "An Irish parish is founded",
+      "text": "Irish immigrants founded St. Patrick's parish on Easter morning, 1846.",
+      "kind": "event"
+    },
+    {
+      "year": 1853,
+      "date": "May 23, 1853",
+      "title": "Cornerstone laid",
+      "text": "Work began on the parish's permanent church on the West Side.",
+      "kind": "built"
+    },
+    {
+      "year": 1856,
+      "date": "Dec 25, 1856",
+      "title": "Dedicated on Christmas Day",
+      "text": "The new church was dedicated on Christmas Day, 1856.",
+      "kind": "built"
+    },
+    {
+      "year": 1871,
+      "date": "Oct 1871",
+      "title": "Spared by the Great Fire",
+      "text": "The fire passed about two blocks from the church, which came through untouched. Because it survived, it is often called the oldest public building in the city.",
+      "kind": "event"
+    },
+    {
+      "year": 1956,
+      "title": "The first block party",
+      "text": "The parish's first \"World's Largest Block Party\" drew about 5,000 people to Desplaines St, according to the church.",
+      "kind": "event"
+    },
+    {
+      "year": 1977,
+      "title": "On the National Register",
+      "text": "Old St. Patrick's was listed on the National Register of Historic Places. One source says it was also among the first buildings named a Chicago Landmark, in 1964.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Old St. Pat's",
+      "text": "The church at 700 W. Adams St is still an active parish, and its summer block party is still held.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Dedicated",
+      "value": "Dec 25, 1856"
+    },
+    {
+      "label": "Distance from the 1871 fire",
+      "value": "about two blocks"
+    }
+  ],
+  "sources": [
+    {
+      "title": "History (Old St. Patrick's Church)",
+      "url": "https://www.oldstpats.org/history/"
+    },
+    {
+      "title": "Old St. Patrick's Church (Clio)",
+      "url": "https://theclio.com/entry/33847"
+    },
+    {
+      "title": "Architecture in Chicago: Surviving Structures (University of Illinois Library)",
+      "url": "https://omeka-s.library.illinois.edu/s/idhh/page/architecture-in-chicago-surviving-structures"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Parish founded 1846; cornerstone May 23, 1853; dedicated Christmas Day 1856; fire missed it by about two blocks; first block party 1956 (Old St. Patrick's history page, Clio). NRHP 1977 consistent across sources; the 1964 Chicago Landmark claim comes from a single source and is flagged. Date sharpened to Dec 25, 1856."
+  }
+}
