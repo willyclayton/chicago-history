@@ -96,7 +96,6 @@ test("app navigation: Back closes the story, then the photo viewer first", async
   await expect(page.locator("#card h2")).toBeVisible();
 
   // the viewer is its own entry, whatever the photo UI looks like
-  await page.locator('#list button[data-id="fire"]').click().catch(() => {});
   await page.evaluate(() => {
     const w = window as unknown as { __ctm: { actions: { select(id: string): void; openViewer(id: string, i: number): void } } };
     w.__ctm.actions.select("fire");

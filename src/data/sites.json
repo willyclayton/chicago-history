@@ -23,10 +23,23 @@
     "lat": 41.8874,
     "lng": -87.6243,
     "address": "Michigan Ave and Wacker Dr, south bank of the river",
-    "story": "The U.S. Army built Fort Dearborn here in 1803. In August 1812, during the War of 1812, the garrison and settlers evacuated and were attacked by Potawatomi warriors along the lakeshore near today's 18th St and Prairie Ave, and the fort was burned. It was rebuilt in 1816 and taken apart over the following decades; the last building was gone by 1857.",
+    "story": "The U.S. Army built Fort Dearborn here in 1803. In August 1812, during the War of 1812, the garrison and settlers evacuated and were attacked by Potawatomi warriors along the lakeshore near today's 18th St; an estimated 52 to 86 of them were killed, and the fort was burned. It was rebuilt in 1816 and taken apart in stages, and most of it was gone by 1857.",
     "today": "Brass markers in the sidewalk outline the fort's footprint",
     "flagStar": true,
-    "sources": []
+    "sources": [
+      {
+        "title": "Fort Dearborn (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Fort_Dearborn"
+      },
+      {
+        "title": "Battle of Fort Dearborn (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Fort_Dearborn"
+      },
+      {
+        "title": "Battle of Fort Dearborn marker (Illinois State Historical Society)",
+        "url": "https://www.historyillinois.org/historical-markers/battle-of-fort-dearborn"
+      }
+    ]
   },
   {
     "id": "wolfpoint",
@@ -921,7 +934,20 @@
     "story": "Chicago's second world's fair marked 100 years since the town's founding. It was built on new lakefront fill, including Northerly Island, in the depths of the Depression, and was popular enough to reopen for a second summer.",
     "today": "Northerly Island park",
     "flagStar": true,
-    "sources": []
+    "sources": [
+      {
+        "title": "Century of Progress (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Century_of_Progress"
+      },
+      {
+        "title": "Century of Progress records, finding aid (Hagley Museum and Library)",
+        "url": "https://findingaids.hagley.org/repositories/2/resources/291"
+      },
+      {
+        "title": "Remembering Meigs Field: It's Been 20 Years Since the Airport Was Ordered Bulldozed Overnight (WTTW)",
+        "url": "https://news.wttw.com/2023/03/31/remembering-meigs-field-it-s-been-20-years-airport-was-ordered-bulldozed-overnight"
+      }
+    ]
   },
   {
     "id": "biograph",

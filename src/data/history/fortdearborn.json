@@ -1,0 +1,88 @@
+{
+  "id": "fortdearborn",
+  "moments": [
+    {
+      "year": 1803,
+      "title": "The Army builds a stockade",
+      "text": "U.S. troops built a wooden fort on the south bank of the Chicago River, near today's Michigan Ave and Wacker Dr. It was named for Secretary of War Henry Dearborn.",
+      "kind": "built"
+    },
+    {
+      "year": 1812,
+      "date": "Aug 15, 1812",
+      "title": "The Battle of Fort Dearborn",
+      "text": "Ordered to evacuate during the War of 1812, about 148 soldiers, women and children marched south along the lakeshore and were attacked by Potawatomi warriors about a mile and a half from the fort. Estimates of the evacuees killed run from about 52 to 86; the Potawatomi burned the fort the next day.",
+      "kind": "event"
+    },
+    {
+      "year": 1816,
+      "title": "A second fort on the same site",
+      "text": "After a treaty in which the Potawatomi ceded the surrounding land, the Army rebuilt the fort where the first one stood.",
+      "kind": "built"
+    },
+    {
+      "year": 1857,
+      "title": "Torn down",
+      "text": "Abandoned by the Army in the 1830s, the fort was taken apart in stages; part was cleared in 1855 so the riverbank could be dredged. Most sources say the last buildings were gone by 1857, though remnants are also said to have burned in the 1871 fire.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1971,
+      "date": "Sept 15, 1971",
+      "title": "Named a Chicago Landmark",
+      "text": "The city designated the fort site a landmark, and bronze markers set in the sidewalk trace part of the fort's outline at Michigan and Wacker.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2009,
+      "date": "Aug 15, 2009",
+      "title": "Battle of Fort Dearborn Park",
+      "text": "On the battle's anniversary, the Chicago Park District dedicated a small park at 18th St and Calumet Ave, near the approximate site of the fighting.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: markers at Michigan and Wacker",
+      "text": "Brass and bronze markers in the pavement at the south end of the DuSable Bridge show where the fort stood. It is one of the four stars on the Chicago flag.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Evacuees",
+      "value": "about 148",
+      "note": "Soldiers, militia, women and children."
+    },
+    {
+      "label": "Evacuees killed",
+      "value": "52 to 86 (estimated)",
+      "note": "Counts differ by source; the Illinois state marker says more than 60. About 15 Potawatomi are said to have died."
+    },
+    {
+      "label": "Landmark designation",
+      "value": "Sept 15, 1971"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fort Dearborn (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fort_Dearborn"
+    },
+    {
+      "title": "Battle of Fort Dearborn (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Fort_Dearborn"
+    },
+    {
+      "title": "Battle of Fort Dearborn marker (Illinois State Historical Society)",
+      "url": "https://www.historyillinois.org/historical-markers/battle-of-fort-dearborn"
+    },
+    {
+      "title": "Battle of Fort Dearborn Park (Chicago Park District)",
+      "url": "https://www.chicagoparkdistrict.com/parks-facilities/battle-fort-dearborn-park"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Built 1803, destroyed Aug 1812, rebuilt 1816 (Wikipedia). Casualty counts disagree: the Wikipedia infobox gives 52 killed (38 military, 14 civilian), other accounts 86 of 148, the state marker 'more than 60'; the range is shown as estimated. The end date is disputed (1856, 1857, a building left until 1860, or remnants burned in 1871); the story now says most of the fort was gone by 1857. Sources place the battle near 18th St between Prairie and Calumet, so the story says 'near today's 18th St'. Landmark Sept 15, 1971 and sidewalk markers per HMdb and Waymarking listings. Park dedicated Aug 15, 2009 (Chicago Park District, WBEZ)."
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "progress",
+  "moments": [
+    {
+      "year": 1933,
+      "date": "May 27, 1933",
+      "title": "The fair opens on the lakefront",
+      "text": "A Century of Progress International Exposition opened on Northerly Island and the lakefront south of Grant Park, marking 100 years since Chicago's founding as a town. It ran in the depths of the Depression.",
+      "kind": "event"
+    },
+    {
+      "year": 1934,
+      "date": "May 26, 1934",
+      "title": "Back for a second summer",
+      "text": "Planned to close in November 1933, the fair did well enough to reopen the next May, with President Franklin Roosevelt urging it on to help the economy. It closed for good on Oct 31, 1934.",
+      "kind": "changed"
+    },
+    {
+      "year": 1948,
+      "date": "Dec 10, 1948",
+      "title": "Meigs Field opens on the island",
+      "text": "The peninsula was widened for a single-runway airport for small planes, which used the old fairgrounds for some 55 years.",
+      "kind": "changed"
+    },
+    {
+      "year": 2003,
+      "date": "Mar 2003",
+      "title": "The runway is bulldozed overnight",
+      "text": "After years of fights over the airport, Mayor Richard M. Daley had crews tear up the Meigs runway overnight without notice to make way for a park.",
+      "kind": "demolished"
+    },
+    {
+      "year": 2015,
+      "title": "Northerly Island park reopens",
+      "text": "The Chicago Park District opened a redesigned, lightly developed nature park on the island, the result of a series of projects to return it to parkland.",
+      "kind": "changed"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Northerly Island",
+      "text": "The fair site is now Northerly Island park, beside the Adler Planetarium, and McCormick Place covers part of the old grounds to the south. The fair is the fourth star on the Chicago flag.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Ran",
+      "value": "May 27, 1933 to Oct 31, 1934",
+      "note": "Two seasons, with a winter break."
+    },
+    {
+      "label": "Visitors",
+      "value": "about 48 million (estimated)",
+      "note": "Wikipedia gives 48,469,227; Encyclopedia.com gives 48,769,227."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Century of Progress (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Century_of_Progress"
+    },
+    {
+      "title": "Century of Progress records, finding aid (Hagley Museum and Library)",
+      "url": "https://findingaids.hagley.org/repositories/2/resources/291"
+    },
+    {
+      "title": "Remembering Meigs Field: It's Been 20 Years Since the Airport Was Ordered Bulldozed Overnight (WTTW)",
+      "url": "https://news.wttw.com/2023/03/31/remembering-meigs-field-it-s-been-20-years-airport-was-ordered-bulldozed-overnight"
+    },
+    {
+      "title": "Meigs Field (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Meigs_Field"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Ran May 27, 1933 to Oct 31, 1934 (Hagley); reopened May 26, 1934 after a planned Nov 12, 1933 close. Attendance differs by about 300,000 between Wikipedia and Encyclopedia.com, so it is given as about 48 million, estimated. Meigs Field opened Dec 10, 1948 and was bulldozed in Mar 2003 (Wikipedia, WTTW). Park reopened 2015 per Chicago Park District coverage. Story left as written; it is consistent with these sources."
+  }
+}
