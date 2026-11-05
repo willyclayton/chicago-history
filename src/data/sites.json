@@ -369,9 +369,22 @@
     "lat": 41.8717,
     "lng": -87.6476,
     "address": "800 S. Halsted St",
-    "story": "Jane Addams and Ellen Gates Starr opened a settlement house in an old mansion to serve the neighborhood's immigrant families, with classes, a kindergarten, a gym and public baths. Addams won the Nobel Peace Prize in 1931.",
+    "story": "Jane Addams and Ellen Gates Starr opened a settlement house in the 1856 Hull mansion to serve the neighborhood's immigrant families, with a kindergarten, clubs, classes and later a gym and a public bath. By 1907 it had grown to 13 buildings, and Addams won the Nobel Peace Prize in 1931.",
     "today": "Jane Addams Hull-House Museum, on the UIC campus",
-    "sources": []
+    "sources": [
+      {
+        "title": "Hull House (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1329"
+      },
+      {
+        "title": "Hull-House (Britannica)",
+        "url": "https://www.britannica.com/topic/Hull-House"
+      },
+      {
+        "title": "Hull House (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hull_House"
+      }
+    ]
   },
   {
     "id": "artinst",
@@ -1016,7 +1029,20 @@
     "address": "2120 S. Michigan Ave",
     "story": "Leonard and Phil Chess ran their label here on what was called Record Row. Muddy Waters, Howlin' Wolf, Chuck Berry and Etta James recorded in the building, and the Rolling Stones cut a session here in 1964.",
     "today": "Willie Dixon's Blues Heaven Foundation",
-    "sources": []
+    "sources": [
+      {
+        "title": "Chess Records Office and Studio (Chicago Landmarks)",
+        "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1267"
+      },
+      {
+        "title": "Chess Records (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chess_Records"
+      },
+      {
+        "title": "Historic Chess Studio (Willie Dixon's Blues Heaven Foundation)",
+        "url": "https://www.bluesheaven.com/historic-chess-studio.html"
+      }
+    ]
   },
   {
     "id": "secondcity",
@@ -1097,9 +1123,22 @@
     "lat": 41.8839,
     "lng": -87.6299,
     "address": "Daley Plaza, 50 W. Washington St",
-    "story": "Pablo Picasso designed the 50-foot Cor-Ten steel sculpture for the new Civic Center plaza and gave the design to the city. Chicagoans have argued ever since about whether it's a woman, a baboon or an Afghan hound.",
+    "story": "Pablo Picasso designed the 50-foot Cor-Ten steel sculpture for the new Civic Center plaza and turned down a $100,000 fee, calling it a gift to the city. Picasso never explained it, and Chicagoans have argued ever since about whether it is a woman, a horse or a baboon.",
     "today": "Daley Plaza",
-    "sources": []
+    "sources": [
+      {
+        "title": "\"The Picasso\" (Untitled sculpture) (City of Chicago)",
+        "url": "https://chicago.gov/city/en/depts/dca/supp_info/chicago_s_publicartthepicassountitledsculpture.html"
+      },
+      {
+        "title": "Chicago Picasso (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chicago_Picasso"
+      },
+      {
+        "title": "Pablo's gift (WBEZ)",
+        "url": "https://www.wbez.org/arts/2011/08/15/pablos-gift"
+      }
+    ]
   },
   {
     "id": "dnc68",

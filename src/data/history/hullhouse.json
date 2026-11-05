@@ -1,0 +1,87 @@
+{
+  "id": "hullhouse",
+  "moments": [
+    {
+      "year": 1856,
+      "title": "Charles Hull builds a country house",
+      "text": "Real estate developer Charles J. Hull built an Italianate mansion on Halsted St.",
+      "kind": "built"
+    },
+    {
+      "year": 1889,
+      "date": "Sept 18, 1889",
+      "title": "Addams and Starr move in",
+      "text": "Jane Addams and Ellen Gates Starr opened a settlement house in the mansion, by then surrounded by crowded immigrant neighborhoods. They started with a kindergarten and added clubs, night classes, a day nursery and more.",
+      "kind": "event"
+    },
+    {
+      "year": 1907,
+      "title": "A 13-building complex",
+      "text": "Hull-House had grown into a complex of 13 buildings, adding over the years a gymnasium, a swimming pool, a public kitchen, a coffee house, an art gallery and a boarding club for working women.",
+      "kind": "changed"
+    },
+    {
+      "year": 1931,
+      "title": "Addams wins the Nobel Peace Prize",
+      "text": "Addams shared the prize with Nicholas Murray Butler, becoming the first American woman to win it.",
+      "kind": "event"
+    },
+    {
+      "year": 1963,
+      "title": "Cleared for a university campus",
+      "text": "The city chose the neighborhood for the University of Illinois's new Chicago Circle campus. The settlement moved out, and all but the mansion and the dining hall were torn down.",
+      "kind": "demolished"
+    },
+    {
+      "year": 1965,
+      "date": "June 23, 1965",
+      "title": "National Historic Landmark",
+      "text": "The Hull mansion was named a National Historic Landmark, and in 1974 a Chicago Landmark.",
+      "kind": "commemorated"
+    },
+    {
+      "year": 2026,
+      "title": "Today: Jane Addams Hull-House Museum",
+      "text": "The mansion and the dining hall are a museum run by the University of Illinois Chicago. The Hull House Association, which carried on the social services elsewhere, closed in January 2012.",
+      "kind": "today"
+    }
+  ],
+  "facts": [
+    {
+      "label": "Opened",
+      "value": "Sept 18, 1889"
+    },
+    {
+      "label": "Buildings at its height",
+      "value": "13",
+      "note": "By 1907, per the Chicago Landmarks entry."
+    },
+    {
+      "label": "Surviving buildings",
+      "value": "2",
+      "note": "The 1856 mansion and the dining hall."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hull House (Chicago Landmarks)",
+      "url": "https://webapps1.chicago.gov/landmarksweb/web/landmarkdetails.htm?lanId=1329"
+    },
+    {
+      "title": "Hull-House (Britannica)",
+      "url": "https://www.britannica.com/topic/Hull-House"
+    },
+    {
+      "title": "Hull House (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hull_House"
+    },
+    {
+      "title": "Jane Addams, biographical (Nobel Prize)",
+      "url": "https://www.nobelprize.org/prizes/peace/1931/addams/biographical/"
+    }
+  ],
+  "checked": {
+    "date": "2026-11-05",
+    "notes": "Opening Sept 18, 1889 and the 1856 Hull mansion confirmed (Wikipedia, Chicago Landmarks). 13 buildings by 1907 and the 1963 move for the UIC campus per Chicago Landmarks. NHL June 23, 1965; Chicago Landmark June 12, 1974. Nobel 1931 shared with Butler (Nobel Prize, Britannica). Programs (kindergarten, gymnasium, public bath) appear in several biographies without exact dates. Association closed Jan 2012 per Wikipedia only. Sources disagree on whether the dining hall was kept in place or moved."
+  }
+}

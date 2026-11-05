@@ -27,3 +27,15 @@ body{-webkit-tap-highlight-color:transparent}
   .ctm-update{top:auto;left:50%;bottom:calc(var(--sheet-h,40dvh) + 16px)}
 }
 @media (prefers-reduced-motion:reduce){.ctm-update{animation:none}}
+
+/* Phone: with the sheet fully open there's no map to control, and the map
+   buttons would otherwise ride up over the timeline dock. */
+@media (max-width: 760px) {
+  .app:has(#panel.full) .mapctl,
+  .app:has(#panel.full) .legend,
+  .app:has(#panel.full) .mapfail {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
